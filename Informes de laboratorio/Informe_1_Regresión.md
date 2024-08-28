@@ -2,7 +2,22 @@
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
 
+
+<p align="center">
+## Informe de Laboratorio
+</p>
+
+<p align="justify">
+ ### INTEGRANTES DEL EQUIPO
+ - Alarcon Arias Julio Erick
+ - Atao Surichaqui Ester Solamyt
+ - Condori Mamani Nardy Liz
+ - Vega Pahuara Millene Nadile
+</p>
+
+ <p align="center">
 # United States Environmental Protection Agency
+</p>
 
 ## Introducción: 
 
