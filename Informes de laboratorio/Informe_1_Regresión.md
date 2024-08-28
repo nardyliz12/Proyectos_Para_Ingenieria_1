@@ -29,17 +29,17 @@ En este contexto, el ozono emerge como un contaminante atmosférico de gran preo
 <p align="justify">
 Se utilizaon datos diarios de concentracion de ozono para Florida,obtenidos de la base de datos de la EPA para los años 2022 y 2023.El analisis se realizo mediante regresion lineal simple,utilizando el tiempo(en dias ) como variable independiente y la concentracion de ozono como variable dependiente.
   
--El proceso incluyó los siguientes pasos:
+1.El proceso incluyó los siguientes pasos:
 
--Recolección y limpieza de datos
+2.Recolección y limpieza de datos
 
--Análisis exploratorio de datos
+3.Análisis exploratorio de datos
 
--Aplicación de regresión lineal
+4.Aplicación de regresión lineal
 
--Evaluación del modelo mediante el coeficiente de determinación (R²)
+5.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
--Visualización de resultados
+6.Visualización de resultados
 
 </p>
 
