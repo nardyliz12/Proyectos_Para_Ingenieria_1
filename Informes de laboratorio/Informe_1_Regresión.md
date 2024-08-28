@@ -349,7 +349,7 @@ Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 202
 ### Matriz de Correlación
 <p align="justify">
 - Fuerte Correlación entre "Daily Max 8-hour Ozone Concentration" y "Daily AQI Value":
-  Existe una correlación muy fuerte de **0.97** entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI). Lo que sugiere que a medida que aumenta la concentración de ozono, el valor del AQI también tiende a aumentar de manera significativa.
+  Existe una correlación muy fuerte de 0.97 entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI). Lo que sugiere que a medida que aumenta la concentración de ozono, el valor del AQI también tiende a aumentar de manera significativa.
 </p>
 <p align="justify">
 - Baja Correlación con "County FIPS Code":
@@ -363,6 +363,42 @@ Las variables "County FIPS Code" muestran una correlación muy baja con las dem�
 #### Matriz de correlación 
 
 ![image](https://github.com/user-attachments/assets/081c3111-c99d-45b0-b12f-f4b0634ad668)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Valores reales vs. valores predichos 
+
+![image](https://github.com/user-attachments/assets/d84d89d5-e942-4608-8192-f6bb23b41ab8)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Histograma de residuos para verificar la normalidad 
+
+![image](https://github.com/user-attachments/assets/ec2eb6ac-e9e5-4cc1-82e7-1219b60624db)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Diagrama de dispersión de residuos vs. valores predichos 
+
+![image](https://github.com/user-attachments/assets/c9fe3e6a-47e6-4e0a-80b4-fd7ea66cad12)
 
 </td>
 </tr>
