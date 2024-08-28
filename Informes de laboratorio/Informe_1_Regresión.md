@@ -330,12 +330,40 @@ Una vez de haber concatenado ambas datas en una sola y haber identificado las co
 Para enriquecer el análisis temporal y permitir una mejor modelización de nuestros datos, se extrajeron componentes temporales de la columna de fecha del DataFrame "ozono_dataset", donde se  añadieron nuevas columnas para el año, mes y día de la semana utilizando las funciones ".dt.year", ".dt.month", y ".dt.dayofweek", adicional a ello, se le aplicó la técnica de codificación one-hot a las variables categóricas mediante la función "pd.get_dummies()", convirtiéndolas en variables numéricas binarias, lo cual nos facilita su inclusión en modelos de aprendizaje automático de acuerdo a los parámetros establecidos.
 </p>
 <p align="justify">
-Asimismo, se definieron las características de la variable(X) y la variable objetivo (y) de nuestro modelo, donde las características establecidas para nuestro objetivo, se utilizó del DataFrame "ozono_dataset_" excluyendo la columna del target 'Daily AQI Value' y la columna 'Date', dado que la  variable objetivo se definió como 'Daily AQI Value',  posteriormente a ello, los datos se dividieron en conjuntos de entrenamiento y prueba utilizando la función "train_test_split" de "scikit-learn", con un 70% de los datos para entrenamiento y un 30% para realizar la prueba, incluyendo un estado aleatorio fijo para la reproducibilidad de los datos. Los tamaños resultantes para realizar el entrenamiento fueron de 28,014 observaciones, mientras qye 12,006 son para la prueba, con un total 148 características en cada conjunto.
+Asimismo, se definieron las características de la variable(X) y la variable objetivo (y) de nuestro modelo, donde las características establecidas para nuestro objetivo, se utilizó del DataFrame "ozono_dataset_" excluyendo la columna del target 'Daily AQI Value' y la columna 'Date', dado que la  variable objetivo se definió como 'Daily AQI Value',  posteriormente a ello, los datos se dividieron en conjuntos de entrenamiento y prueba utilizando la función "train_test_split" de "scikit-learn", con un 70% de los datos para entrenamiento y un 30% para realizar la prueba, incluyendo un estado aleatorio fijo para la reproducibilidad de los datos. Los tamaños resultantes para realizar el entrenamiento fueron de 28,014 observaciones, mientras que 12,006 son para la prueba, con un total 148 características en cada conjunto.
 </p>
 
+<table>
+<tr>
+<td valign="top">
 
+|Tamaño de la variable objetivo del entrenamiento | 28014|
+|-------------------------------------------------|------|
+| Tamaño de la variable objetivo de prueba         |12006 |
+</td>
+</tr>
+</table>
 
+#### Ajuste y entrenamiento del modelo
+<p align="justify">
+Después  de haber realizado la división de "entrenamiento-prueba", se utilizó la clase "LinearRegression" de la biblioteca scikit-learn para crear un modelo de regresión lineal, donde se instanció un objeto de regresión lineal llamado "lm", para luego, ajustar el  modelo a los datos de entrenamiento (X_train y y_train) utilizando el método "fit()", este proceso de ajuste nos permitió que el modelo aprendiera la relación entre las características y la variable objetivo directamente en el objeto "lm", sin la necesidad de asignar el resultado a otra variable.
+</p>
 
+<table>
+<tr>
+<td valign="top">
+
+|LinearRegression |
+|-------------------------------------------------|
+| LinearRegression()       |
+</td>
+</tr>
+</table>
+
+**Verificamos la intercepción y los coeficientes y los colocamos en un DataFrame**
+<p align="justify">
+Una vez de haber ajustado el modelo de regresión lineal, se imprimió el término de intersección (intercept_) y los coeficientes (coef_) del modelo, donde indican el punto donde la línea de regresión cruza el eje (Y) y la magnitud del impacto de cada característica en nuestra variable objetivo, respectivamente. Luego, se creó un DataFrame llamado "cdf" utilizando pandas, que contiene los coeficientes del modelo asociados a cada característica del los datos, ya que eso nos facilita la interpretación y análisis de la importancia de dichas características, presentes para la predicción.
+</p>
 ### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
 ##5.Visualización de resultados
