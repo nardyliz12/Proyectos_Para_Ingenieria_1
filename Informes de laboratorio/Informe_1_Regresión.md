@@ -471,6 +471,7 @@ Sin embargo, la baja correlación entre el código FIPS del condado y los nivele
 <p align="justify">
 Es importante señalar que, aunque se observa un ligero aumento en los niveles de ozono, se requiere un análisis más detallado y a largo plazo para determinar si esta tendencia es estadísticamente significativa y si representa una amenaza real para la calidad del aire en Florida.
 </p>  
+
 ## Referencias:
 
 - [1] J. L. Schnell et al., "Elucidating the influence of anthropogenic emissions and meteorological variability on US surface ozone," Environmental Research Letters, vol. 15, no. 7, p. 074050, 2020. [Online]. Available: https://iopscience.iop.org/article/10.1088/1748-9326/ab8a6b
