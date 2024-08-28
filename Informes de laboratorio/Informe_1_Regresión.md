@@ -2,11 +2,9 @@
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
 
-<div style="text-align: center;">
-  Informe de Laboratorio N° 1
-</div>
+# INFORME DE LABORATORIO N° 1
 
- ### INTEGRANTES DEL EQUIPO
+ ### Intregantes del equipo:
  
  - Alarcon Arias Julio Erick
  - Atao Surichaqui Ester Solamyt
