@@ -45,8 +45,8 @@ Para realizar la visualización de los datos es importante poder analizar las co
 <tr>
 <td valign="top">
 
-### Resultados para 2022:
-#### Columnas con valores nulos
+####  2022:
+##### Columnas con valores nulos
 
 | Columna    | Cantidad de nulos |
 |------------|-------------------|
@@ -56,8 +56,8 @@ Para realizar la visualización de los datos es importante poder analizar las co
 </td>
 <td valign="top">
 
-### Resultados para 2023:
-#### Columnas con valores nulos
+#### 2023:
+##### Columnas con valores nulos
 
 | Columna     | Cantidad de nulos |
 |-------------|-------------------|
@@ -72,6 +72,123 @@ Para realizar la visualización de los datos es importante poder analizar las co
 <p align="justify">
 Adicional a ello es necesario buscar todas las columnas que cuentan con un valor único, es decir, todas aquellas que por más que existan 1000 filas tienen el mismo dato, lo cual nos favorece para poder ver cuáles son aquellos datos que no son tan relevantes para hacer la regresión. Por lo que, debemos eliminar todas las columnas que tienen un único valor constante, como (Units, AQS Parameter Code, AQS Parameter Description, State FIPS Code, y State), ya que no aportan información relevante. Sin embargo, no se eliminó las columna de (Source y POC) porque, aunque tienen un solo valor en una tabla, en la otra tienen múltiples valores, lo que podría ser utilidad para la predicción.
 </p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### 2022:
+##### Columnas con un solo valor único
+
+| Columna    | Valor Único |
+|------------|-------------------|
+|  Source    | AQS               |
+|  Units     | ppm               |
+| AQS Parameter Code |   44201   |
+| AQS Parameter Description|Ozone|
+| State FIPS Code | 12           |
+| State      | Florida           |
+
+</td>
+<td valign="top">
+
+#### 2023:
+##### Columnas con un solo valor único
+
+| Columna     | Valor Único |
+|-------------|-------------------|
+| POC         | 1                 |
+|  Units      | ppm               |
+| AQS Parameter Code   | 44201               |
+| AQS Parameter Description |   Ozone |
+|  State FIPS Code | 12     |
+|   State     |  Florida  |
+
+</td>
+</tr>
+</table>
+
+<p align="justify">
+Realizar la división y la identificación de las columnas tanto categóricas como numéricas nos ayuda a poder poder verificar cuales son las variables que debemos tomar en cuenta para poder convertir en uno o en el otro de ser necesario, es decir, si necesito columnas del tipo categórico pero mi datasets es numérico o al contrario se puede hacer la conversión para que no exista algún tipo de error.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### 2022:
+##### Columnas categóricas
+
+| Columna    | Valores Únicos |
+|------------|-------------------|
+|       POC        |             [1, 2]              |
+| Daily Obs Count  |      [17, 15, 14, 16, 13]       |
+| Percent Complete | [100.0, 88.0, 82.0, 94.0, 76.0] |
+|   Method Code    |       [47, 190, 215, 87]        |
+
+</td>
+<td valign="top">
+
+#### 2023:
+##### Columnas categóricas
+
+| Columna     | Valores Únicos |
+|-------------|-------------------|
+|      Source      |                    ['AQS', 'AirNow']                    |
+| Percent Complete | [100.0, 76.0, 88.0, 94.0, 82.0, 75.0, 79.0, 83.0, 96.0] |
+|   Method Code    |                [47.0, nan, 87.0, 215.0]                 |
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### 2022:
+
+| Columnas numéricas    |
+|------------|
+|                 Date                 |
+|               Site ID                |
+| Daily Max 8-hour Ozone Concentration |
+|           Daily AQI Value            |
+|           Local Site Name            |
+|              CBSA Code               |
+|              CBSA Name               |
+|           County FIPS Code           |
+|                County                |
+|            Site Latitude             |
+|            Site Longitude            |
+
+</td>
+<td valign="top">
+
+#### 2023:
+
+| Columnas numéricas     |
+|-------------|
+|                 Date                 |
+|               Site ID                |
+| Daily Max 8-hour Ozone Concentration |
+|           Daily AQI Value            |
+|           Local Site Name            |
+|              CBSA Code               |
+|              CBSA Name               |
+|           County FIPS Code           |
+|                County                |
+|            Site Latitude             |
+|            Site Longitude            |
+
+</td>
+</tr>
+</table>
+
+
+
+
+
 ### 2.Análisis exploratorio de datos
 
 ### 3.Aplicación de regresión lineal
