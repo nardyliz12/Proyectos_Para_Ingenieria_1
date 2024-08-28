@@ -185,12 +185,129 @@ Realizar la división y la identificación de las columnas tanto categóricas co
 </tr>
 </table>
 
+### Visualización de la Distribución de Datos
+<p align="justify">
+Lograr comprender mejor los datos que nos proporciona cada Dataset, además, de ver la mejor distribución del aire en los dos años presentados (2022-2023) podemos realizar la implementación de histogramas lo que nos permitiría visualizar del como se lograrían distribuir los valores a las variables clave de lo que se quiere identificar, donde nos ayuda a proporcionar una idea más clara sobre la concentración y la frecuencia de los diferentes rangos de valores que este contiene al tener datos, tales como la concentración y la calidad del aire y realizar la comparación de distribución entre ambos en diferentes periodos, por ende, la elección de histogramas se basa en la capacidad de poder mostrar de manera más efectiva la distribución que se presenta en determinadas variables continuas, además, de poder comparar dichas frecuencias entre distintos conjuntos de datos lo que nos permite identificar patrones y posibles anomalías que se presentan en los diferentes tipos de años.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Histogram of Daily Max 8-hour Ozone Concentration and Daily AQI Value
+
+ ![image](https://github.com/user-attachments/assets/843c8f41-de41-4b07-aa5f-a09eb4f9e251)
+
+</td>
+</tr>
+</table>
+
+<p align="justify">
+Asimismo, para analizar la distribución de todos los datos del ozono y el calidad del aire (AQI), también se puede tomar en cuenta los gráficos de densidad, dado que estos son útiles para poder visualizar la forma de la distribución de un conjunto de datos y así comparar la distribución que se presenta en cada tipo de conjunto, ya que estas visualizaciones nos proporcionan una comprensión visual más clara de las diferencias en la distribución que se presenta en los datos evaluados, lo que es de gran utilidad para el análisis de los datos presentados.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Density of Daily Max 8-hour Ozone Concentration and Daily AQI Value
+
+![image](https://github.com/user-attachments/assets/3793066e-66e3-49ea-8082-70039d837e9f)
+
+</td>
+</tr>
+</table>
+
+### 2.Preparación de Datos para el Análisis Predictivo 
+
+#### Analisis del target
+<p align="justify">
+Como uno de los siguientes pasos es poder realizar la selección del Target, es decir, la variable objetivo, en nuestro caso realizamos la selección de la variable de "Daily AQI value", dado que es la variable que se dará a predecir utilizando el resto de las variables disponibles en el conjunto de datos, por lo cual cabemos en la necesidad de poder convertir las columnas de la fecha de ambos periodos (2022-2023) en el tipo de datos "Datetime", ya que esto nos permite un manejo más eficiente con las fechas, además, de que facilita la realización del análisis basado en el tiempo, tales como la agrupación de datos por mes o año, siguiendo la creación de características temporales de ser necesario.
+</p>
+<p align="justify">
+Asímismo, para poder analizar nuestra variable objetivo en el año 2022 y 2023 se optó por crear un histograma con "seaborn" que incluye una estimación de la densidad de Kernel (KDE) para visualizar la distribución de dichos valores, donde se calculó y mostró la media de nuestra variable, logrando proporcionar una medida central de la calidad del aire durante ambos periodos.
+</p>  
+
+<table>
+<tr>
+<td valign="top">
+
+#### Media del target 2022: 
+
+34.30938563137883
+
+![image](https://github.com/user-attachments/assets/28ff990f-7991-44d7-8e09-5325914b1729)
 
 
+</td>
+<td valign="top">
+
+#### Media del target 2023: 
+
+36.21700279552716
+
+![image](https://github.com/user-attachments/assets/1e1aa3f2-cb7e-49a7-8689-0b259c8bc969)
 
 
-### 2.Análisis exploratorio de datos
+</td>
+</tr>
+</table>
 
+### Resumen general de los datos
+
+<table>
+<tr>
+<td valign="top">
+
+#### Resumen 2022: 
+
+![image](https://github.com/user-attachments/assets/4623a3db-5660-464d-b6dd-5cf79c09d031)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Resumen 2023: 
+
+![image](https://github.com/user-attachments/assets/41ca3b65-2aa5-4798-b875-8bbb87d470d0)
+
+</td>
+</tr>
+</table>
+<p align="justify">
+Adicionalmente, considerar crear un gráfico de caja y bigotes para poder comparar la distribución de nuestra variable objetivo es importante, porque nos permite observar de cómo están distribuidas estos datos a lo largo de un rango, además, de que nos muestra la mediana, los cuartiles y los rangos intercuartílicos, asímismo, nos permiten detectar los "outliers", es decir, los puntos que están fuera de los bigotes del gráfico, que son considerados como valores atípicos donde nos permite identificar datos que se desvían significativamente y que se puede visualizar.
+</p>  
+
+<table>
+<tr>
+<td valign="top">
+
+#### Gráfico de Bigotes (2022-2023)
+
+![image](https://github.com/user-attachments/assets/4c577cf4-d0cf-4e61-a029-37fe3e6ff057)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Daily AQI Value 2022-2023: 
+
+![image](https://github.com/user-attachments/assets/e458ffe3-5c3f-475b-aac6-f2c992d2463c)
+
+</td>
+</tr>
+</table>
+
+
+<p align="justify">
 ### 3.Aplicación de regresión lineal
 
 ### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
