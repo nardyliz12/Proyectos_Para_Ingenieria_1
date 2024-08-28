@@ -322,6 +322,20 @@ Una vez de haber concatenado ambas datas en una sola y haber identificado las co
 </tr>
 </table>
 
+### 3. Aplicación del Modelo de regresión 
+
+#### División de entrenamiento-prueba
+
+<p align="justify">
+
+</p>
+
+
+
+
+
+
+
 ### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
 ##5.Visualización de resultados
@@ -332,6 +346,27 @@ Una vez de haber concatenado ambas datas en una sola y haber identificado las co
 
 Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 2023,se obtuvieron los siguientes resultados:
 
+### Matriz de Correlación
+<p align="justify">
+- Fuerte Correlación entre "Daily Max 8-hour Ozone Concentration" y "Daily AQI Value":
+  Existe una correlación muy fuerte de **0.97** entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI). Lo que sugiere que a medida que aumenta la concentración de ozono, el valor del AQI también tiende a aumentar de manera significativa.
+</p>
+<p align="justify">
+- Baja Correlación con "County FIPS Code":
+Las variables "County FIPS Code" muestran una correlación muy baja con las demás variables, indicando que la ubicación del condado (codificada por FIPS) no está significativamente relacionada con los valores de ozono o AQI.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Matriz de correlación 
+
+![image](https://github.com/user-attachments/assets/081c3111-c99d-45b0-b12f-f4b0634ad668)
+
+</td>
+</tr>
+</table>
 
 ## Discusión:
 ## Referencias:
