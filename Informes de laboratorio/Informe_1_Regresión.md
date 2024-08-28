@@ -459,18 +459,26 @@ Las variables "County FIPS Code" muestran una correlación muy baja con las dem�
 </table>
 
 ## Discusión:
-
+<p align="justify">
 Los resultados obtenidos revelan una tendencia ligeramente ascendente en los niveles de ozono en Florida durante 2022 y 2023. Esta observación concuerda con estudios previos que han identificado un aumento gradual en las concentraciones de ozono troposférico en varias regiones de Estados Unidos [1].
-
+</p>
+<p align="justify">
 La fuerte correlación (0.97) entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI) es consistente con los hallazgos de Zhang et al. [2], quienes también encontraron una relación estrecha entre estos parámetros en su análisis de la calidad del aire urbano.
-
+</p>
+<p align="justify">
 Sin embargo, la baja correlación entre el código FIPS del condado y los niveles de ozono sugiere que otros factores, como las condiciones meteorológicas locales o las fuentes de emisión, podrían tener un impacto más significativo en las concentraciones de ozono que la ubicación geográfica específica dentro del estado. Esto se alinea con las conclusiones de Cooper et al. [3], quienes destacaron la importancia de las condiciones atmosféricas en la formación y acumulación de ozono troposférico.
-
+</p>
+<p align="justify">
 Es importante señalar que, aunque se observa un ligero aumento en los niveles de ozono, se requiere un análisis más detallado y a largo plazo para determinar si esta tendencia es estadísticamente significativa y si representa una amenaza real para la calidad del aire en Florida.
+</p>  
 ## Referencias:
 
-[1] J. L. Schnell et al., "Elucidating the influence of anthropogenic emissions and meteorological variability on US surface ozone," Environmental Research Letters, vol. 15, no. 7, p. 074050, 2020. [Online]. Available: https://iopscience.iop.org/article/10.1088/1748-9326/ab8a6b
-[2] Y. Zhang et al., "Tropospheric ozone change from 1980 to 2010 dominated by equatorward redistribution of emissions," Nature Geoscience, vol. 9, no. 12, pp. 875-879, 2016. [Online]. Available: https://www.nature.com/articles/ngeo2827
-[3] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
-[4] United States Environmental Protection Agency, "Outdoor Air Quality Data," [Online]. Available: https://www.epa.gov/outdoor-air-quality-data. [Accessed: 28-Aug-2024].
-[5] Florida Department of Environmental Protection, "Air Quality," [Online]. Available: https://floridadep.gov/air. [Accessed: 28-Aug-2024].
+- [1] J. L. Schnell et al., "Elucidating the influence of anthropogenic emissions and meteorological variability on US surface ozone," Environmental Research Letters, vol. 15, no. 7, p. 074050, 2020. [Online]. Available: https://iopscience.iop.org/article/10.1088/1748-9326/ab8a6b
+
+- [2] Y. Zhang et al., "Tropospheric ozone change from 1980 to 2010 dominated by equatorward redistribution of emissions," Nature Geoscience, vol. 9, no. 12, pp. 875-879, 2016. [Online]. Available: https://www.nature.com/articles/ngeo2827
+
+- [3] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
+
+- [4] United States Environmental Protection Agency, "Outdoor Air Quality Data," [Online]. Available: https://www.epa.gov/outdoor-air-quality-data. [Accessed: 28-Aug-2024].
+
+- [5] Florida Department of Environmental Protection, "Air Quality," [Online]. Available: https://floridadep.gov/air. [Accessed: 28-Aug-2024].
