@@ -22,6 +22,7 @@ Al ser una entidad que trata de controlar la contaminación del aire y el agua, 
 <p align="justify">
 En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos. El objetivo es lograr identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
 </p>
+
 ## Metodología:
 
 <p align="justify">
