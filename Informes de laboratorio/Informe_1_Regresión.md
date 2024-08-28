@@ -3,10 +3,8 @@
 </p>
 
 <center>
-  
-  # Informe de Laboratorio N° 1
-  
-</center>
+**Informe de Laboratorio N° 1**
+  </center>
 
   
  ### INTEGRANTES DEL EQUIPO
