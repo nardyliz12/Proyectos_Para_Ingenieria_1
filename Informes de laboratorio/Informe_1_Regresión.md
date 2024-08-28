@@ -9,6 +9,11 @@ Es por tal motivo que en esta oportunidad abordaremos datos relacionados con el 
 
 
 ## Metodología:
+
+Se utilizaon datos diarios de concentracion de ozono para Florida,obtenidos de la base de datos de la EPA para los años 2022 y 2023.El analisis se realizo mediante regresion lineal simple,utilizando el tiempo(en dias ) como variable independiente y la concentracion de ozono como variable dependiente.
+
 ## Resultados: 
+
+
 ## Discusión:
 ## Referencias:
