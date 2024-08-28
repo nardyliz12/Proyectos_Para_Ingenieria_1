@@ -35,15 +35,50 @@ La regresión lineal es uno de los métodos que se utiliza para lograr predecir 
 Por ende, para realizar la regresión lineal en base a los datos encontrados en las datas del EPA logramos realizar un proceso el cual nos ayuda a identificar los patrones de concentración del ozono, lo que ayuda a identificar las variables que necesitamos para predecir de manera efectiva y que tenga la menor cantidad errores posibles, lo que involucra seguir la siguiente secuencia de pasos:
 </p>  
 
-1.Recolección y limpieza de datos
+### 1. Visualización de los datos
 
-2.Análisis exploratorio de datos
+<p align="justify">
+Para realizar la visualización de los datos es importante poder analizar las columnas que se presentan en el Dataset, además, de analizarlos a profundidad, para luego poder mostrar los datos establecidos de cada periodo, en este caso mostramos los valores nulos de cada uno de las Datasets tanto del 2022 como 2023 viendo la cantidad de nulos que presentaba en sus columnas.
+</p>
 
-3.Aplicación de regresión lineal
+<table>
+<tr>
+<td valign="top">
 
-4.Evaluación del modelo mediante el coeficiente de determinación (R²)
+### Resultados para 2022:
+#### Columnas con valores nulos
 
-5.Visualización de resultados
+| Columna    | Cantidad de nulos |
+|------------|-------------------|
+| CBSA Code  | 711               |
+| CBSA Name  | 711               |
+
+</td>
+<td valign="top">
+
+### Resultados para 2023:
+#### Columnas con valores nulos
+
+| Columna     | Cantidad de nulos |
+|-------------|-------------------|
+| Method Code | 123               |
+| CBSA Code   | 713               |
+| CBSA Name   | 713               |
+
+</td>
+</tr>
+</table>
+
+<p align="justify">
+Adicional a ello es necesario buscar todas las columnas que cuentan con un valor único, es decir, todas aquellas que por más que existan 1000 filas tienen el mismo dato, lo cual nos favorece para poder ver cuáles son aquellos datos que no son tan relevantes para hacer la regresión. Por lo que, debemos eliminar todas las columnas que tienen un único valor constante, como (Units, AQS Parameter Code, AQS Parameter Description, State FIPS Code, y State), ya que no aportan información relevante. Sin embargo, no se eliminó las columna de (Source y POC) porque, aunque tienen un solo valor en una tabla, en la otra tienen múltiples valores, lo que podría ser utilidad para la predicción.
+</p>
+### 2.Análisis exploratorio de datos
+
+### 3.Aplicación de regresión lineal
+
+### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
+
+##5.Visualización de resultados
 
 </p>
 
