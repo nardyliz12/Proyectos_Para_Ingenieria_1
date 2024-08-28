@@ -218,7 +218,7 @@ Asimismo, para analizar la distribución de todos los datos del ozono y el calid
 </tr>
 </table>
 
-### 2.Preparación de Datos para el Análisis Predictivo 
+### 2. Preparación de Datos para el Análisis Predictivo 
 
 #### Analisis del target
 <p align="justify">
@@ -306,9 +306,21 @@ Adicionalmente, considerar crear un gráfico de caja y bigotes para poder compar
 </tr>
 </table>
 
-
 <p align="justify">
-### 3.Aplicación de regresión lineal
+Una vez de haber concatenado ambas datas en una sola y haber identificado las columnas correspondientes a cada una de ellas, se creó una matriz de correlación para el Dataframe de "ozono_dataset" después de haber eliminado las columnas categóricas especificadas anteriormente, esta matriz resultante nos muestra la relación entre las variables numéricas con valores que indican la fuerza y dirección de las correlaciones entre ellas que van de -1 a 1.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+#### Tabla de la matriz de correlación 
+
+![image](https://github.com/user-attachments/assets/03477579-52cc-4610-9976-f00b17d883d7)
+
+</td>
+</tr>
+</table>
 
 ### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
