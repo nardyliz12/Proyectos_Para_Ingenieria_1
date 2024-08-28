@@ -4,10 +4,13 @@
 
 
 <p align="center">
+  
 ## Informe de Laboratorio
 </p>
 
+
 <p align="justify">
+  
  ### INTEGRANTES DEL EQUIPO
  - Alarcon Arias Julio Erick
  - Atao Surichaqui Ester Solamyt
@@ -16,7 +19,9 @@
 </p>
 
  <p align="center">
+   
 # United States Environmental Protection Agency
+
 </p>
 
 ## Introducción: 
