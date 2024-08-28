@@ -2,11 +2,10 @@
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
 
-<center>
-**Informe de Laboratorio N° 1**
-  </center>
+<div style="text-align: center;">
+  **Informe de Laboratorio N° 1**
+</div>
 
-  
  ### INTEGRANTES DEL EQUIPO
  
  - Alarcon Arias Julio Erick
