@@ -11,9 +11,6 @@
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
 
-
-## United States Environmental Protection Agency
-
 ## Introducción: 
 
 <p align="justify">
