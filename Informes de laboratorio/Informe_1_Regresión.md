@@ -3,7 +3,7 @@
 </p>
 
 <div style="text-align: center;">
-  **Informe de Laboratorio N° 1**
+  Informe de Laboratorio N° 1
 </div>
 
  ### INTEGRANTES DEL EQUIPO
