@@ -22,14 +22,25 @@ Al ser una entidad que trata de controlar la contaminación del aire y el agua, 
 <p align="justify">
 Es por tal motivo que en esta oportunidad abordaremos datos relacionados con el 'Aire' tomando en cuenta la calidad de dicho parámetro, que fue recopilado mediante monitores ubicados al aire libre en todos los Estados Unidos
 </p>
+En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos. El objetivo es identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
 
 ## Metodología:
 
 <p align="justify">
 Se utilizaon datos diarios de concentracion de ozono para Florida,obtenidos de la base de datos de la EPA para los años 2022 y 2023.El analisis se realizo mediante regresion lineal simple,utilizando el tiempo(en dias ) como variable independiente y la concentracion de ozono como variable dependiente.
+  
+El proceso incluyó los siguientes pasos:
+Recolección y limpieza de datos
+Análisis exploratorio de datos
+Aplicación de regresión lineal
+Evaluación del modelo mediante el coeficiente de determinación (R²)
+Visualización de resultados
+
 </p>
 
 ## Resultados: 
+
+Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 2023,se obtuvieron los siguientes resultados:
 
 
 ## Discusión:
