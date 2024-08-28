@@ -364,6 +364,32 @@ Después  de haber realizado la división de "entrenamiento-prueba", se utilizó
 <p align="justify">
 Una vez de haber ajustado el modelo de regresión lineal, se imprimió el término de intersección (intercept_) y los coeficientes (coef_) del modelo, donde indican el punto donde la línea de regresión cruza el eje (Y) y la magnitud del impacto de cada característica en nuestra variable objetivo, respectivamente. Luego, se creó un DataFrame llamado "cdf" utilizando pandas, que contiene los coeficientes del modelo asociados a cada característica del los datos, ya que eso nos facilita la interpretación y análisis de la importancia de dichas características, presentes para la predicción.
 </p>
+
+<table>
+<tr>
+<td valign="top">
+
+| Columna    | Coefficients |
+|------------|-------------------|
+| Site ID	|0.000003|
+|POC	|-0.069752|
+|Daily Max 8-hour Ozone Concentration	|1042.315108|
+|Daily Obs Count|	0.076398|
+|Percent Complete |	-0.017970|
+|...	| ...|        
+|County_Sarasota	|-0.132123|
+|County_Seminole	|-0.062811|
+|County_St. Lucie	|-0.038961|
+|County_Volusia	|-0.019379|
+|County_Wakulla       | -0.002585|
+</td>
+</tr>
+</table>
+
+#### Cálculo de errores estándar y estadística t para los coeficientes
+<p align="justify">
+Para lograr evaluar e significado estadístico de los coeficientes de nuestro modelo de regresión lineal, se logró calcular los errores estándar de cada coeficiente establecidos en cada una de las columnas, donde primeramente, se determinó el número de observaciones (n) y el número de características (k), para luego calcular los grados de libertad (dfN). Asímismo, se predijeron los valores en el conjunto de entrenamiento y se calculó el error cuadrático, adicionalmente, se calcularon los errores estándar de xada uno de los coeficientes, teniendo en cuenta la variabilidad de cada característica en el conjunto de datos, para luego crear una DataFrame que incluya los coeficientes, los errores estándar y las estadísticas t (t-statistic), que se obtuvieron dividiendo los coeficientes entre sus errores estándar, por lo que este análisis nos permite evaluar la relevancia de cada característica en el modelo.
+</p>
 ### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
 ##5.Visualización de resultados
