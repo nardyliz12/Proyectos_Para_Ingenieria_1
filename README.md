@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d8bc40b1-0a52-4907-b9bd-68271631e26b)# Proyectos_Para_Ingenieria_1
+# Proyectos Para Ingenieria 1
 # Universidad
 
 ![Imagen](https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png)
