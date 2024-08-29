@@ -569,10 +569,6 @@ El valor diario del Índice de Calidad del Aire (AQI) y la concentración máxim
 </p>
 <p align="justify">
 Por otro lado,la baja correlación entre las variables de ozono/AQI y el código FIPS del condado indica que la ubicación geográfica en Florida no afecta los niveles de ozono. El descubrimiento sugiere dos interpretaciones adicionales: las fuentes de precursores de ozono podrían estar distribuidas de manera bastante uniforme en todo el estado, o las condiciones meteorológicas favorecedoras de la formación de ozono podrían ser similares en todo el área. Sin embargo, según Cooper et al. [4], las fuentes de emisión específicas o las condiciones meteorológicas locales podrían tener un mayor impacto en las concentraciones de ozono que la ubicación geográfica en sí.Esta observación enfatiza la complejidad de la dinámica del ozono y enfatiza la necesidad de considerar más allá de la simple distribución espacial, múltiples variables en su formación y acumulación. Para comprender mejor la variabilidad espacial de los niveles de ozono en Florida, futuros estudios podrían beneficiarse de incorporar datos meteorológicos detallados y un análisis más detallado de las fuentes de emisión.
-
-</p>
-<p align="justify">
-Es importante señalar que, aunque se observa un ligero aumento en los niveles de ozono, se requiere un análisis más detallado y a largo plazo para determinar si esta tendencia es estadísticamente significativa y si representa una amenaza real para la calidad del aire en Florida.
 </p>
 
 **Observaciones sobre el Modelo**:
