@@ -390,12 +390,83 @@ Una vez de haber ajustado el modelo de regresión lineal, se imprimió el térmi
 <p align="justify">
 Para lograr evaluar e significado estadístico de los coeficientes de nuestro modelo de regresión lineal, se logró calcular los errores estándar de cada coeficiente establecidos en cada una de las columnas, donde primeramente, se determinó el número de observaciones (n) y el número de características (k), para luego calcular los grados de libertad (dfN). Asímismo, se predijeron los valores en el conjunto de entrenamiento y se calculó el error cuadrático, adicionalmente, se calcularon los errores estándar de xada uno de los coeficientes, teniendo en cuenta la variabilidad de cada característica en el conjunto de datos, para luego crear una DataFrame que incluya los coeficientes, los errores estándar y las estadísticas t (t-statistic), que se obtuvieron dividiendo los coeficientes entre sus errores estándar, por lo que este análisis nos permite evaluar la relevancia de cada característica en el modelo.
 </p>
-### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
 
-##5.Visualización de resultados
+<table>
+<tr>
+<td valign="top">
 
+| Columna    | Standard Error|	t-statistic|
+|------------|-------------------|------------|
+| Site ID	| 3.987962e-08	|84.584249 |
+|POC	| 1.857944e-01|	-0.375426|
+|Daily Max 8-hour Ozone Concentration	|1.544165e+00	|675.002230|
+|Daily Obs Count| 3.223418e-02| 2.370097|
+|Percent Complete | 6.074531e-03|	-2.958253|
+|...	|     ...|	...|
+|County_Sarasota	| 6.733248e-02	|-1.962248|
+|County_Seminole	|1.162257e-01	|-0.540426|
+|County_St. Lucie	|1.129457e-01	|-0.344954|
+|County_Volusia	|1.144931e-01|	-0.169258|
+|County_Wakulla | 1.164628e-01	| -0.022195|
+</td>
+</tr>
+</table>
+
+<p align="justify">
+Para poder asegurar la correcta interpretación de los resultados correspondientes a los datos, se convirtió el tipo de los nombres de las características en un  (X_train.columns) a cadenas de texto, asimismo, se reasignó el índice del DataFrame "cdf" a estos nombres de características, permitiendo así una identificación clara y concisa de cada coeficiente y su correspondiente estadística, además, las características de dichos elementos se ordenaron en función de su "t-statistic" de manera descendente, reflejando la importancia relativa que tiene eb la predicción de nuestra variable objetivo 'Daily AQI Value', para finalmente, imprimir la lista de características en orden de importancia, destacando cuáles tienen un mayor impacto predictivo de acuerdo al modelo de regresión lineal.
 </p>
 
+<table>
+<tr>
+<td valign="top">
+
+| Las características organizadas en orden de importancia para predecir el valor de Daily AQI |
+|------------|
+|Daily Max 8-hour Ozone Concentration | 
+|Site ID | 
+|Month |
+|Local Site Name_USMC Reserve Center (Gandy)|
+|County_Hillsborough|
+|County_Manatee|
+|...|
+ | DayOfWeek  |
+|Method Code|
+|Site Longitude|
+|Site Latitude| 
+</td>
+</tr>
+</table>
+  
+### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
+
+<p align="justify">
+Asimismo se realizó el calculó el valor del coeficiente de determinación 𝑅^2 para evaluar el desempeño que ejerce el modelo de regresión lineal ajustado, donde este coeficiente se obtiene utilizando la función "metrics.r2_score" de "scikit-learn", además, de que mide la proporción de la varianza en la variable objetivo 'Daily AQI Value' que es explicada por las características del modelo, ya que obtener un valor de 𝑅^2 cercano a 1 indica que el modelo tiene un buen ajuste, explicando una gran parte de la variabilidad observada en los datos de entrenamiento realizados en los períodos establecidos.
+</p>
+
+<table>
+<tr>
+<td valign="top">
+
+| Valor del R cuadrado del ajuste del modelo | 0.942|
+|--------------------|-------------|
+</td>
+</tr>
+</table>
+
+### 5. Visualización de resultados
+
+#### Matrices de evaluación de predicción, estimación de error y regresión
+
+##### Predicción usando el modelo lm
+<p align="justify">
+Al utilizar los datos de prueba para lograr evaluar el desempeño del modelo de regresión lineal ajustado empleado, a su vez realizando predicciones sobre el conjunto de características de prueba (X_test), se debe verificar el tipo y tamaño del objeto de predicciones resultantes para asegurarse de que este se alinie con las expectativas esperesdas, por lo cual, se generó un gráfico de dispersión que comparará los valores reales de 'Daily AQI Value' en el conjunto de prueba (y_test) con los valores predichos, además de que en el gráfico, se añadió una línea roja de 45 grados para facilitar la visualización de qué tan cerca están las predicciones de los valores reales, lo que nos ayuda a evaluar visualmente la precisión con la que conto el modelo.
+</p>
+<p align="justify">
+Por consiguiente para evaluar la normalidad de los errores que presenta el modelo, se creó un histograma de los residuos de la data, que son las diferencias entre los valores reales de 'Daily AQI Value' en el conjunto de prueba (y_test) y los valores predichos por el modelo de regresión, para ello se utilizó "seaborn", junto con una estimación de la densidad de Kernel (KDE) que facilita la visualización en la distribución de los residuos, ya que un histograma con una forma aproximadamente normal (en forma de campana) nos indicaría que los errores están distribuidos de manera simétrica alrededor del cero, lo cual es un buen indicativo de la calidad del modelo utilizado.
+</p>
+<p align="justify">
+Adicionalmente se generó un diagrama de dispersión de residuos frente a los valores predichos de la data para evaluar la presencia de patrones en los errores del modelo, lo cual es muy crucial para poder verificar la validez de las suposiciones de linealidad en la regresión, ya que en el gráfico, se evidencian los residuos, es decir, las diferencias entre los valores reales y los predichos por la regresión que se trazaron en función de los valores predicidos, adicional a ello se le añadió una línea horizontal en y=0 para facilitar la visualización de la dispersión de los residuos alrededor de esta línea lo que indica un patrón aleatorio y una dispersión uniforme de los puntos alrededor de la línea si el modelo está bien especificado y que los residuos son independientes y tienen varianza constante.
+</p>
 ## Resultados: 
 
 Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 2023,se obtuvieron los siguientes resultados:
