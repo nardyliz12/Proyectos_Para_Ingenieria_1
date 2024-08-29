@@ -472,10 +472,10 @@ Adicionalmente se generó un diagrama de dispersión de residuos frente a los va
 
 Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 2023,se obtuvieron los siguientes resultados:
 
-### Matriz de Correlación
+### Matriz de Correlación:
 <p align="justify">
 - Fuerte Correlación entre "Daily Max 8-hour Ozone Concentration" y "Daily AQI Value":
-  Existe una correlación muy fuerte de 0.97 entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI). Lo que sugiere que a medida que aumenta la concentración de ozono, el valor del AQI también tiende a aumentar de manera significativa.
+Existe una correlación muy fuerte de 0.97 entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI). Lo que sugiere que a medida que aumenta la concentración de ozono, el valor del AQI también tiende a aumentar de manera significativa.
 </p>
 <p align="justify">
 - Baja Correlación con "County FIPS Code":
@@ -494,6 +494,10 @@ Las variables "County FIPS Code" muestran una correlación muy baja con las dem�
 </tr>
 </table>
 
+### Comparación de valores reales y valores predichos:
+<p align="justify">
+Si realizamos la visualización del gráfico correspondiente a la distribución frente al valor real comparado con los valores predecidos después de haberde aplicado el entrenamiento de la Data con regresión lineal se obtuvo que nuestro modelo de regresión lineal funciona bastante bien para predecir los valores dentro de un rango medio, pero hay que tener en cuenta que muy parte de ello presenta dificultades para predecir valores extremos, es decir, valores que contengan datos altos, lo que podría indicar que el modelo subestima los valores reales en esos casos, esto podría ser una señal de que el modelo necesita realizar mejoras quizá a través de la inclusión de más características, la transformación de algunas variables o la consideración de un modelo más complejo si los valores altos son importantes al momento de realizar el análisis, pero muy fuera de ello se puede identificar que las predicciones son razonablemente precisas, dado que coinciden bien con los valores reales para rangos más bajos que contiene la data, pero eso no quita el hecho de que necesita mejoras para mejorar la predicción.
+</p>
 <table>
 <tr>
 <td valign="top">
@@ -506,10 +510,15 @@ Las variables "County FIPS Code" muestran una correlación muy baja con las dem�
 </tr>
 </table>
 
+### Histograma de residuos para verificar la normalidad :
+<p align="justify">
+Una vez de haber realizado la comparación de los valores reales y predictivos, pasamos a ver los resultados presentados en el histograma que contiene los residuos para ver la normalidad de los datos, y de acuerdo a ello se logra visualizar que en su mayoría los datos se encuentran centrados alrededor del cero, lo que nos sugiere que los errores del modelo son pequeños, sin embargo, la distribución presenta una fuerte asimetría hacia el lado derecho con algunos residuos que se extienden hasta 60 lo que nos indica que cuenta con presencia de errores en ciertos casos al no tener la forma de una campana simétrica típica en la distribución normal, por lo cual en los resultados muestra una distribución sesgada con la cola larga hacia la derecha que sugiere que los residuos no son normales, además, de indicarnos que el modelo contiene dificultades para poder manejar ciertos valores que quizá no se pudieron capturar por el modelo y que afectaron en ciertos aspectos a las predicciones realizadas.
+</p>
+
 <table>
 <tr>
 <td valign="top">
-
+  
 #### Histograma de residuos para verificar la normalidad 
 
 ![image](https://github.com/user-attachments/assets/ec2eb6ac-e9e5-4cc1-82e7-1219b60624db)
@@ -518,10 +527,15 @@ Las variables "County FIPS Code" muestran una correlación muy baja con las dem�
 </tr>
 </table>
 
+
+### Comparación de los residos y valores predichos:
+<p align="justify">
+En este gráfico nos muestra un diagrama de dispersión de los residuos en función a los valores predichos en el modelo ya establecido, donde se logra observar que los residuos se mantienen cerca de cero tal cual como se mencionó anteriormente para todos los valores que contienen un bajo rango menos de 40, lo que sugiere que el modelo predice razonablemente bien en ese rango, sin embargo, a medida que dichos valores aumentan los residuos se incrementan de manera significativa mostrando una tendencia ascendente, dado que dicha curva indica que el modelo no captura adecuadamente las relaciones subyacentes para los valores más grandes que existe dentro de la Data, lo que sugiere que el modelo podría estar infraestimando a los valores más altos que existen, resultando en residuos positivos muy grandes, al evidenciar la presencia de un patrón en los residuos nos indica que las suposiciones de linealidad que es la constancia de varianza de los errores pueden ni estar netamente satisfechas, lo que implica que existen relaciones no lineales en los datos que no están siendo capturados por el modelo de regresión lineal actual.
+</p>
+
 <table>
 <tr>
 <td valign="top">
-
 #### Diagrama de dispersión de residuos vs. valores predichos 
 
 ![image](https://github.com/user-attachments/assets/c9fe3e6a-47e6-4e0a-80b4-fd7ea66cad12)
