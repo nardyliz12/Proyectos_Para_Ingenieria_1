@@ -583,7 +583,9 @@ Aunque las métricas MAE y RMSE son bajas y el R² es alto, lo que sugiere un bu
 </p>
 
 <p align="justify">
-En resumen, el modelo muestra un rendimiento general sólido, pero tiene áreas donde se puede mejorar, especialmente en la gestión de errores para valores predichos altos. [Link del código en colab](https://colab.research.google.com/drive/1I4PNfXti8X8RvR-hyJtEjr5WPyJGERJh?usp=sharing)
+En resumen, el modelo muestra un rendimiento general sólido, pero tiene áreas donde se puede mejorar, especialmente en la gestión de errores para valores predichos altos. 
+  
+  [Link del código en colab](https://colab.research.google.com/drive/1I4PNfXti8X8RvR-hyJtEjr5WPyJGERJh?usp=sharing)
 
 </p>
 
