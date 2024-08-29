@@ -1,4 +1,4 @@
-# Proyectos_Para_Ingenieria_1
+![image](https://github.com/user-attachments/assets/d8bc40b1-0a52-4907-b9bd-68271631e26b)# Proyectos_Para_Ingenieria_1
 # Universidad
 
 ![Imagen](https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png)
@@ -9,3 +9,6 @@
 2. Atao Surichaqui Ester Solamyt
 3. Condori Mamani Nardy Liz
 4. Vega Pahuara Millene Nadile
+
+# Objetivo de desarrollo sostenible (ODS) 
+![Imagen](https://www.isglobal.org/documents/10179/6939518/sdg+13+grande+es.jpg/cba42d02-4e25-4cc3-b045-a4f1a9f0ed40?t=1539694658000)
