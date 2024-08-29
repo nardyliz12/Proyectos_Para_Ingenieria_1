@@ -544,6 +544,35 @@ En este gráfico nos muestra un diagrama de dispersión de los residuos en funci
 </tr>
 </table>
 
+<p align="justify">
+Para ver los resultados del análisis de errores del modelo de regresión lineal se tiene lo siguiente:
+</p>
+<p align="justify">
+- Error absoluto medio (MAE):   1.248 este valor nos indica que en promedio las predicciones del modelo están a una distancia de aproximadamente 1.25 unidades del valor real de la Data lo que sugiere que el modelo es bastante preciso en términos absolutos al predecir dichos valores.
+</p>
+<p align="justify">
+- Error cuadrático medio (MSE): 6.676 en este caso nos indica que aunque el modelo generalmente predice con precisión, existe algunos errores de predicción más grandes que aumentan dicho valor, dado que el MSE es un promedio de los cuadrados de los errores, lo que penaliza más a los errores grandes que a los pequeños.
+</p>
+<p align="justify">
+- Raíz del error cuadrático medio: 2.584 en este caso nos indica que en promedio las predicciones están a 2.5 84 unidades del valor real lo que sigue indicando un buen nivel de precisión, pero mostrando también que hay cierta variabilidad en la precisión de las predicciones realizadas.
+</p>
+<p align="justify">
+- Coeficiente de determinación: 0.939 en este caso nos indica que el modelo es capaz de poder explicar el 93.9% de la variabilidad de los datos de la DataFrame de prueba, lo que sugiere que el modelo de regresión lineal ajusta bien los datos y tiene un buen poder predictivo.
+</p>
+
+**Observaciones sobre el Modelo**:
+<p align="justify">
+Aunque las métricas MAE y RMSE son bajas y el R² es alto, lo que sugiere un buen rendimiento, se identificaron problemas de heterocedasticidad a través de los gráficos de residuos. Estos problemas indican que el modelo no mantiene una varianza constante en los errores, especialmente para valores predichos más altos.
+</p>
+
+**Mejoras Futuras**:
+<p align="justify">
+   - **Mejora del Modelo**: Podría ser beneficioso realizar transformaciones en las variables o explorar modelos alternativos para manejar mejor la heterocedasticidad observada.
+   - **Revisión de Outliers**: Los valores atípicos identificados en los gráficos de residuos podrían estar afectando la precisión del modelo y deben ser revisados cuidadosamente.
+</p>
+<p align="justify">
+En resumen, el modelo muestra un rendimiento general sólido, pero tiene áreas donde se puede mejorar, especialmente en la gestión de errores para valores predichos altos.
+</p>
 ## Discusión:
 <p align="justify">
 Los resultados obtenidos revelan una tendencia ligeramente ascendente en los niveles de ozono en Florida durante 2022 y 2023. Esta observación concuerda con estudios previos que han identificado un aumento gradual en las concentraciones de ozono troposférico en varias regiones de Estados Unidos [1].
