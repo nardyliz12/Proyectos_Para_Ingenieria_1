@@ -601,6 +601,4 @@ https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-docu
 
 - [4] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
 
-- [45] United States Environmental Protection Agency, "Outdoor Air Quality Data," [Online]. Available: https://www.epa.gov/outdoor-air-quality-data. [Accessed: 28-Aug-2024].
 
-- [6] Florida Department of Environmental Protection, "Air Quality," [Online]. Available: https://floridadep.gov/air. [Accessed: 28-Aug-2024].
