@@ -20,7 +20,7 @@ La agencia de protección ambiental (United States Environmental Protection Agen
 Al ser una entidad que trata de controlar la contaminación del aire y el agua, siendo puntos importantes para la vida humana, esta agencia llegó a otorgar miles de millones de dólares en subvenciones de fondo para poder reducir los gases de efecto invernadero y así acelerar las soluciones de energía limpia para que logre combatir las crisis climáticas que existen actualmente y favorecer al planeta y a familias enteras, lo cual ha ido mejorando con el tiempo tras existir fondos que benefician a nuestro entorno y mejoran las condiciones climáticas con las que contamos actualmente.
 </p>
 <p align="justify">
-En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente[1]. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos[1]. El objetivo es lograr identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
+En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación  debido a sus efectos perjudiciales tanto en el medio ambiente como en la salud humana[1]. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados por la red de monitoreo de la EPA. Nuestro objetivo principal es encontrar patrones y tendencias en los niveles de ozono durante este período utilizando técnicas de regresión lineal para representar la relación entre el tiempo y las concentraciones de ozono.
 </p>
 
 # Metodología:
@@ -565,10 +565,11 @@ Para ver los resultados del análisis de errores del modelo de regresión lineal
 Los resultados obtenidos revelan una tendencia ligeramente ascendente en los niveles de ozono en Florida durante 2022 y 2023. Esta observación concuerda con estudios previos que han identificado un aumento gradual en las concentraciones de ozono  en varias regiones de Estados Unidos [1].
 </p>
 <p align="justify">
-La fuerte correlación (0.97) entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI) es consistente con los hallazgos de Zhang et al. [2], quienes también encontraron una relación estrecha entre estos parámetros en su análisis de la calidad del aire urbano.
+El valor diario del Índice de Calidad del Aire (AQI) y la concentración máxima diaria de ozono en 8 horas tenían una fuerte correlación (0.97), lo que confirma la validez del AQI como un indicador confiable de la calidad del aire en relación con el ozono.Este hallazgo corrobora los resultados de Zhang et al. [2], quienes también encontraron una relación estrecha entre estos parámetros durante su análisis de la calidad del aire en las ciudades. Esta correlación es fuerte porque el AQI se calcula utilizando contaminantes como el ozono [3].Esta relación sólida enfatiza el papel crucial del ozono en la calidad general del aire y respalda el uso del AQI como una herramienta útil para informar al público general sobre los riesgos de salud relacionados con la contaminación por ozono.
 </p>
 <p align="justify">
-Sin embargo, la baja correlación entre el código FIPS del condado y los niveles de ozono sugiere que otros factores, como las condiciones meteorológicas locales o las fuentes de emisión, podrían tener un impacto más significativo en las concentraciones de ozono que la ubicación geográfica específica dentro del estado. Esto se alinea con las conclusiones de Cooper et al. [3], quienes destacaron la importancia de las condiciones atmosféricas en la formación y acumulación de ozono.
+La baja correlación entre las variables de ozono/AQI y el código FIPS del condado indica que la ubicación geográfica en Florida no afecta los niveles de ozono. El descubrimiento sugiere dos interpretaciones adicionales: las fuentes de precursores de ozono podrían estar distribuidas de manera bastante uniforme en todo el estado, o las condiciones meteorológicas favorecedoras de la formación de ozono podrían ser similares en todo el área. Sin embargo, según Cooper et al. [4], las fuentes de emisión específicas o las condiciones meteorológicas locales podrían tener un mayor impacto en las concentraciones de ozono que la ubicación geográfica en sí.Esta observación enfatiza la complejidad de la dinámica del ozono troposférico y enfatiza la necesidad de considerar más allá de la simple distribución espacial, múltiples variables en su formación y acumulación. Para comprender mejor la variabilidad espacial de los niveles de ozono en Florida, futuros estudios podrían beneficiarse de incorporar datos meteorológicos detallados y un análisis más detallado de las fuentes de emisión.
+
 </p>
 <p align="justify">
 Es importante señalar que, aunque se observa un ligero aumento en los niveles de ozono, se requiere un análisis más detallado y a largo plazo para determinar si esta tendencia es estadísticamente significativa y si representa una amenaza real para la calidad del aire en Florida.
@@ -595,8 +596,11 @@ En resumen, el modelo muestra un rendimiento general sólido, pero tiene áreas 
 
 - [2] Y. Zhang et al., "Tropospheric ozone change from 1980 to 2010 dominated by equatorward redistribution of emissions," Nature Geoscience, vol. 9, no. 12, pp. 875-879, 2016. [Online]. Available: https://www.nature.com/articles/ngeo2827
 
-- [3] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
+- [3] U.S. Environmental Protection Agency, "Technical Assistance Document for the Reporting of Daily Air Quality":
+https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
 
-- [4] United States Environmental Protection Agency, "Outdoor Air Quality Data," [Online]. Available: https://www.epa.gov/outdoor-air-quality-data. [Accessed: 28-Aug-2024].
+- [4] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
 
-- [5] Florida Department of Environmental Protection, "Air Quality," [Online]. Available: https://floridadep.gov/air. [Accessed: 28-Aug-2024].
+- [45] United States Environmental Protection Agency, "Outdoor Air Quality Data," [Online]. Available: https://www.epa.gov/outdoor-air-quality-data. [Accessed: 28-Aug-2024].
+
+- [6] Florida Department of Environmental Protection, "Air Quality," [Online]. Available: https://floridadep.gov/air. [Accessed: 28-Aug-2024].
