@@ -562,13 +562,13 @@ Para ver los resultados del análisis de errores del modelo de regresión lineal
 
 ## Discusión:
 <p align="justify">
-Los resultados obtenidos revelan una tendencia ligeramente ascendente en los niveles de ozono en Florida durante 2022 y 2023. Esta observación concuerda con estudios previos que han identificado un aumento gradual en las concentraciones de ozono troposférico en varias regiones de Estados Unidos [1].
+Los resultados obtenidos revelan una tendencia ligeramente ascendente en los niveles de ozono en Florida durante 2022 y 2023. Esta observación concuerda con estudios previos que han identificado un aumento gradual en las concentraciones de ozono  en varias regiones de Estados Unidos [1].
 </p>
 <p align="justify">
 La fuerte correlación (0.97) entre la concentración máxima diaria de ozono en 8 horas y el valor diario del Índice de Calidad del Aire (AQI) es consistente con los hallazgos de Zhang et al. [2], quienes también encontraron una relación estrecha entre estos parámetros en su análisis de la calidad del aire urbano.
 </p>
 <p align="justify">
-Sin embargo, la baja correlación entre el código FIPS del condado y los niveles de ozono sugiere que otros factores, como las condiciones meteorológicas locales o las fuentes de emisión, podrían tener un impacto más significativo en las concentraciones de ozono que la ubicación geográfica específica dentro del estado. Esto se alinea con las conclusiones de Cooper et al. [3], quienes destacaron la importancia de las condiciones atmosféricas en la formación y acumulación de ozono troposférico.
+Sin embargo, la baja correlación entre el código FIPS del condado y los niveles de ozono sugiere que otros factores, como las condiciones meteorológicas locales o las fuentes de emisión, podrían tener un impacto más significativo en las concentraciones de ozono que la ubicación geográfica específica dentro del estado. Esto se alinea con las conclusiones de Cooper et al. [3], quienes destacaron la importancia de las condiciones atmosféricas en la formación y acumulación de ozono.
 </p>
 <p align="justify">
 Es importante señalar que, aunque se observa un ligero aumento en los niveles de ozono, se requiere un análisis más detallado y a largo plazo para determinar si esta tendencia es estadísticamente significativa y si representa una amenaza real para la calidad del aire en Florida.
