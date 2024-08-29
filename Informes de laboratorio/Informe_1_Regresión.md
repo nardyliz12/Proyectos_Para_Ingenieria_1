@@ -20,7 +20,7 @@ La agencia de protección ambiental (United States Environmental Protection Agen
 Al ser una entidad que trata de controlar la contaminación del aire y el agua, siendo puntos importantes para la vida humana, esta agencia llegó a otorgar miles de millones de dólares en subvenciones de fondo para poder reducir los gases de efecto invernadero y así acelerar las soluciones de energía limpia para que logre combatir las crisis climáticas que existen actualmente y favorecer al planeta y a familias enteras, lo cual ha ido mejorando con el tiempo tras existir fondos que benefician a nuestro entorno y mejoran las condiciones climáticas con las que contamos actualmente.
 </p>
 <p align="justify">
-En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos[1]. El objetivo es lograr identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
+En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente[1]. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos[1]. El objetivo es lograr identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
 </p>
 
 # Metodología:
@@ -593,7 +593,7 @@ En resumen, el modelo muestra un rendimiento general sólido, pero tiene áreas 
 
 - [1] D. J. Jacob, "Introduction to Atmospheric Chemistry," Princeton University Press, 1999. [Online]. Available: https://acmg.seas.harvard.edu/people/daniel-jacob/files/atmosphere-book. [Accessed: 27-Aug-2024].
 
-- [23 Y. Zhang et al., "Tropospheric ozone change from 1980 to 2010 dominated by equatorward redistribution of emissions," Nature Geoscience, vol. 9, no. 12, pp. 875-879, 2016. [Online]. Available: https://www.nature.com/articles/ngeo2827
+- [2] Y. Zhang et al., "Tropospheric ozone change from 1980 to 2010 dominated by equatorward redistribution of emissions," Nature Geoscience, vol. 9, no. 12, pp. 875-879, 2016. [Online]. Available: https://www.nature.com/articles/ngeo2827
 
 - [3] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
 
