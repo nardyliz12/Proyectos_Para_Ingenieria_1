@@ -1,4 +1,4 @@
-# Proyectos Para Ingenieria 1
+# Proyectos Para Ingeniería 1
 # Universidad
 
 ![Imagen](https://semanadelcannabis.cayetano.edu.pe/assets/img/logo-upch.png)
