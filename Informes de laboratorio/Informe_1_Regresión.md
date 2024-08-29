@@ -11,7 +11,7 @@
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
 
-## Introducción: 
+# Introducción: 
 
 <p align="justify">
 La agencia de protección ambiental (United States Environmental Protection Agency o simplemente EPA por sus siglas en ingles), es el encargado de proteger la salud de todos los seres humanos, asimismo, del medio ambiente y todos los recursos naturales como labor principal. El objetivo de esta agencia es poder crear y hacer cumplir las leyes ambientales establecidas para este medio, además, de que inspecciona cada recurso natural para brindar apoyo técnico y así poder minimizar las amenazas que pueden presentarse, asímismo, pueda respaldar la planificación de recuperación de cada uno de estos puntos.
@@ -23,7 +23,7 @@ Al ser una entidad que trata de controlar la contaminación del aire y el agua, 
 En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación debido a sus efectos negativos en la salud humana y el medio ambiente. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados mediante monitores ubicados al aire libre en todos los Estados Unidos. El objetivo es lograr identificar tendencias y patrones en los niveles de ozono a lo largo de este período, lo que podría informar futuras políticas y estrategias de gestión ambiental.
 </p>
 
-## Metodología:
+# Metodología:
 
 <p align="justify">
 Los datos fueron utilizados para realizar la identificación en la concentración de Ozono de manera diaria, los cuales fueron obtenidos de la base de datos del EPA para un periodo de dos años (2022-2023). El análisis se realizó mediante una regresión lineal, tomando en cuenta los datos del tiempo (en días) como variable independiente y la concentración de Ozono como variable dependiente.
@@ -35,7 +35,7 @@ La regresión lineal es uno de los métodos que se utiliza para lograr predecir 
 Por ende, para realizar la regresión lineal en base a los datos encontrados en las datas del EPA logramos realizar un proceso el cual nos ayuda a identificar los patrones de concentración del ozono, lo que ayuda a identificar las variables que necesitamos para predecir de manera efectiva y que tenga la menor cantidad errores posibles, lo que involucra seguir la siguiente secuencia de pasos:
 </p>  
 
-### 1. Visualización de los datos
+## 1. Visualización de los datos
 
 <p align="justify">
 Para realizar la visualización de los datos es importante poder analizar las columnas que se presentan en el Dataset, además, de analizarlos a profundidad, para luego poder mostrar los datos establecidos de cada periodo, en este caso mostramos los valores nulos de cada uno de las Datasets tanto del 2022 como 2023 viendo la cantidad de nulos que presentaba en sus columnas.
@@ -218,7 +218,7 @@ Asimismo, para analizar la distribución de todos los datos del ozono y el calid
 </tr>
 </table>
 
-### 2. Preparación de Datos para el Análisis Predictivo 
+## 2. Preparación de Datos para el Análisis Predictivo 
 
 #### Analisis del target
 <p align="justify">
@@ -322,9 +322,9 @@ Una vez de haber concatenado ambas datas en una sola y haber identificado las co
 </tr>
 </table>
 
-### 3. Aplicación del Modelo de regresión 
+## 3. Aplicación del Modelo de regresión 
 
-#### División de entrenamiento-prueba
+#### División de entrenamiento-prueba:
 
 <p align="justify">
 Para enriquecer el análisis temporal y permitir una mejor modelización de nuestros datos, se extrajeron componentes temporales de la columna de fecha del DataFrame "ozono_dataset", donde se  añadieron nuevas columnas para el año, mes y día de la semana utilizando las funciones ".dt.year", ".dt.month", y ".dt.dayofweek", adicional a ello, se le aplicó la técnica de codificación one-hot a las variables categóricas mediante la función "pd.get_dummies()", convirtiéndolas en variables numéricas binarias, lo cual nos facilita su inclusión en modelos de aprendizaje automático de acuerdo a los parámetros establecidos.
@@ -344,7 +344,7 @@ Asimismo, se definieron las características de la variable(X) y la variable obj
 </tr>
 </table>
 
-#### Ajuste y entrenamiento del modelo
+#### Ajuste y entrenamiento del modelo:
 <p align="justify">
 Después  de haber realizado la división de "entrenamiento-prueba", se utilizó la clase "LinearRegression" de la biblioteca scikit-learn para crear un modelo de regresión lineal, donde se instanció un objeto de regresión lineal llamado "lm", para luego, ajustar el  modelo a los datos de entrenamiento (X_train y y_train) utilizando el método "fit()", este proceso de ajuste nos permitió que el modelo aprendiera la relación entre las características y la variable objetivo directamente en el objeto "lm", sin la necesidad de asignar el resultado a otra variable.
 </p>
@@ -386,7 +386,7 @@ Una vez de haber ajustado el modelo de regresión lineal, se imprimió el térmi
 </tr>
 </table>
 
-#### Cálculo de errores estándar y estadística t para los coeficientes
+#### Cálculo de errores estándar y estadística t para los coeficientes:
 <p align="justify">
 Para lograr evaluar e significado estadístico de los coeficientes de nuestro modelo de regresión lineal, se logró calcular los errores estándar de cada coeficiente establecidos en cada una de las columnas, donde primeramente, se determinó el número de observaciones (n) y el número de características (k), para luego calcular los grados de libertad (dfN). Asímismo, se predijeron los valores en el conjunto de entrenamiento y se calculó el error cuadrático, adicionalmente, se calcularon los errores estándar de xada uno de los coeficientes, teniendo en cuenta la variabilidad de cada característica en el conjunto de datos, para luego crear una DataFrame que incluya los coeficientes, los errores estándar y las estadísticas t (t-statistic), que se obtuvieron dividiendo los coeficientes entre sus errores estándar, por lo que este análisis nos permite evaluar la relevancia de cada característica en el modelo.
 </p>
@@ -437,7 +437,7 @@ Para poder asegurar la correcta interpretación de los resultados correspondient
 </tr>
 </table>
   
-### 4.Evaluación del modelo mediante el coeficiente de determinación (R²)
+## 4. Evaluación del modelo mediante el coeficiente de determinación (R²)
 
 <p align="justify">
 Asimismo se realizó el calculó el valor del coeficiente de determinación 𝑅^2 para evaluar el desempeño que ejerce el modelo de regresión lineal ajustado, donde este coeficiente se obtiene utilizando la función "metrics.r2_score" de "scikit-learn", además, de que mide la proporción de la varianza en la variable objetivo 'Daily AQI Value' que es explicada por las características del modelo, ya que obtener un valor de 𝑅^2 cercano a 1 indica que el modelo tiene un buen ajuste, explicando una gran parte de la variabilidad observada en los datos de entrenamiento realizados en los períodos establecidos.
@@ -453,11 +453,11 @@ Asimismo se realizó el calculó el valor del coeficiente de determinación 𝑅
 </tr>
 </table>
 
-### 5. Visualización de resultados
+## 5. Visualización de resultados
 
-#### Matrices de evaluación de predicción, estimación de error y regresión
+### Matrices de evaluación de predicción, estimación de error y regresión
 
-##### Predicción usando el modelo lm
+#### Predicción usando el modelo lm:
 <p align="justify">
 Al utilizar los datos de prueba para lograr evaluar el desempeño del modelo de regresión lineal ajustado empleado, a su vez realizando predicciones sobre el conjunto de características de prueba (X_test), se debe verificar el tipo y tamaño del objeto de predicciones resultantes para asegurarse de que este se alinie con las expectativas esperesdas, por lo cual, se generó un gráfico de dispersión que comparará los valores reales de 'Daily AQI Value' en el conjunto de prueba (y_test) con los valores predichos, además de que en el gráfico, se añadió una línea roja de 45 grados para facilitar la visualización de qué tan cerca están las predicciones de los valores reales, lo que nos ayuda a evaluar visualmente la precisión con la que conto el modelo.
 </p>
@@ -467,7 +467,8 @@ Por consiguiente para evaluar la normalidad de los errores que presenta el model
 <p align="justify">
 Adicionalmente se generó un diagrama de dispersión de residuos frente a los valores predichos de la data para evaluar la presencia de patrones en los errores del modelo, lo cual es muy crucial para poder verificar la validez de las suposiciones de linealidad en la regresión, ya que en el gráfico, se evidencian los residuos, es decir, las diferencias entre los valores reales y los predichos por la regresión que se trazaron en función de los valores predicidos, adicional a ello se le añadió una línea horizontal en y=0 para facilitar la visualización de la dispersión de los residuos alrededor de esta línea lo que indica un patrón aleatorio y una dispersión uniforme de los puntos alrededor de la línea si el modelo está bien especificado y que los residuos son independientes y tienen varianza constante.
 </p>
-## Resultados: 
+
+# Resultados: 
 
 Tras aplicar la regresion lineal a los datos de ozono de Florida para 2022 y 2023,se obtuvieron los siguientes resultados:
 
