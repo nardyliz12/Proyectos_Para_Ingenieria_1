@@ -14,10 +14,10 @@
 # Introducción: 
 
 <p align="justify">
-La agencia de protección ambiental (United States Environmental Protection Agency o simplemente EPA por sus siglas en ingles), es el encargado de proteger la salud de todos los seres humanos, asimismo, del medio ambiente y todos los recursos naturales como labor principal. El objetivo de esta agencia es poder crear y hacer cumplir las leyes ambientales establecidas para este medio, además, de que inspecciona cada recurso natural para brindar apoyo técnico y así poder minimizar las amenazas que pueden presentarse, asímismo, pueda respaldar la planificación de recuperación de cada uno de estos puntos.
+La agencia de protección ambiental (United States Environmental Protection Agency o simplemente EPA por sus siglas en ingles), es el encargado de proteger la salud de todos los seres humanos, asimismo, del medio ambiente y todos los recursos naturales como labor principal [6]. El objetivo de esta agencia es poder crear y hacer cumplir las leyes ambientales establecidas para este medio, además, de que inspecciona cada recurso natural para brindar apoyo técnico y así poder minimizar las amenazas que pueden presentarse, asímismo, pueda respaldar la planificación de recuperación de cada uno de estos puntos [6].
 </p>
 <p align="justify">
-Al ser una entidad que trata de controlar la contaminación del aire y el agua, siendo puntos importantes para la vida humana, esta agencia llegó a otorgar miles de millones de dólares en subvenciones de fondo para poder reducir los gases de efecto invernadero y así acelerar las soluciones de energía limpia para que logre combatir las crisis climáticas que existen actualmente y favorecer al planeta y a familias enteras, lo cual ha ido mejorando con el tiempo tras existir fondos que benefician a nuestro entorno y mejoran las condiciones climáticas con las que contamos actualmente.
+Al ser una entidad que trata de controlar la contaminación del aire y el agua, siendo puntos importantes para la vida humana, esta agencia llegó a otorgar miles de millones de dólares en subvenciones de fondo para poder reducir los gases de efecto invernadero y así acelerar las soluciones de energía limpia para que logre combatir las crisis climáticas que existen actualmente y favorecer al planeta y a familias enteras, lo cual ha ido mejorando con el tiempo tras existir fondos que benefician a nuestro entorno y mejoran las condiciones climáticas con las que contamos actualmente [5].
 </p>
 <p align="justify">
 En este contexto, el ozono emerge como un contaminante atmosférico de gran preocupación  debido a sus efectos perjudiciales tanto en el medio ambiente como en la salud humana[1]. Este informe se centra en el análisis de los niveles de ozono en el estado de Florida durante los años 2022 y 2023, utilizando datos recopilados por la red de monitoreo de la EPA. Nuestro objetivo principal es encontrar patrones y tendencias en los niveles de ozono durante este período utilizando técnicas de regresión lineal para representar la relación entre el tiempo y las concentraciones de ozono.
@@ -29,7 +29,7 @@ En este contexto, el ozono emerge como un contaminante atmosférico de gran preo
 Los datos fueron utilizados para realizar la identificación en la concentración de Ozono de manera diaria, los cuales fueron obtenidos de la base de datos del EPA para un periodo de dos años (2022-2023). El análisis se realizó mediante una regresión lineal, tomando en cuenta los datos del tiempo (en días) como variable independiente y la concentración de Ozono como variable dependiente.
 </p>
 <p align="justify">
-La regresión lineal es uno de los métodos que se utiliza para lograr predecir el valor de una determinada variable en función del valor de otra variable, donde el valor que se desea predecir corresponde a la variable dependiente mientras que la otra variable pasa ser la variable independiente tal como se mencionó con anterioridad, el objetivo detrás de la regresión lineal es estimar los coeficientes de dicha ecuación, donde involucra una o más variables independientes, dado que asi logra predecir mejor el valor de la variable dependiente, hay que tener en cuenta que la regresión lineal se ajusta a una línea recta que muchas veces minimiza las discrepancias entre los valores de salida y los valores reales.
+La regresión lineal es uno de los métodos que se utiliza para lograr predecir el valor de una determinada variable en función del valor de otra variable, donde el valor que se desea predecir corresponde a la variable dependiente mientras que la otra variable pasa ser la variable independiente tal como se mencionó con anterioridad [8], el objetivo detrás de la regresión lineal es estimar los coeficientes de dicha ecuación, donde involucra una o más variables independientes, dado que asi logra predecir mejor el valor de la variable dependiente, hay que tener en cuenta que la regresión lineal se ajusta a una línea recta que muchas veces minimiza las discrepancias entre los valores de salida y los valores reales.
 </p>  
 <p align="justify">
 Por ende, para realizar la regresión lineal en base a los datos encontrados en las datas del EPA logramos realizar un proceso el cual nos ayuda a identificar los patrones de concentración del ozono, lo que ayuda a identificar las variables que necesitamos para predecir de manera efectiva y que tenga la menor cantidad errores posibles, lo que involucra seguir la siguiente secuencia de pasos:
@@ -597,4 +597,13 @@ https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-docu
 
 - [4] O. R. Cooper et al., "Increasing springtime ozone mixing ratios in the free troposphere over western North America," Nature, vol. 463, no. 7279, pp. 344-348, 2010. [Online]. Available: https://www.nature.com/articles/nature08708
 
+- [5] EPA, "EPA Awards $27B in Greenhouse Gas Reduction Fund Grants to Accelerate Clean Energy Solutions," [Online]. Available: https://www.epa.gov/newsreleases/epa-awards-27b-greenhouse-gas-reduction-fund-grants-accelerate-clean-energy-solutions (accessed Aug. 28, 2024).
+
+- [6]  USA.gov., "Agencia de Protección Ambiental de Estados Unidos," [Online]. Available: https://www.usa.gov/es/agencias/agencia-de-proteccion-ambiental-de-estados-unidos#:~:text=La%20Agencia%20de%20Protecci%C3%B3n%20Ambiental,ambiente%20y%20los%20recursos%20naturales (accessed Aug. 28, 2024).
+
+- [7] EPA en español, "Información básica sobre implementación de las leyes ambientales," [Online]. Available: https://espanol.epa.gov/espanol/informacion-basica-sobre-implementacion-de-las-leyes-ambientales (accessed Aug. 28, 2024).
+
+- [8] *Revista Chilena de Anestesia*, "Regresión lineal," [Online]. Available: https://revistachilenadeanestesia.cl/regresion-lineal/#:~:text=La%20regresi%C3%B3n%20lineal%20permite%20predecir,y%20homogeneidad%20de%20las%20varianzas (accessed Aug. 28, 2024).
+
+- [9] Amazon Web Services, Inc., "¿Qué es la regresión lineal?," [Online]. Available: https://aws.amazon.com/es/what-is/linear-regression/ (accessed Aug. 28, 2024).
 
