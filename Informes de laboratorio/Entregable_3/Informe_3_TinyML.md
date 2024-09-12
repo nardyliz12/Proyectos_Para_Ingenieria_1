@@ -18,11 +18,12 @@
 
 | Arduino Nano 33 BLE Sense | Edge Impulse |
 | ----------- | ----------- |
-| <img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |<img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |
+| <img src="https://github.com/user-attachments/assets/853746c4-dfe0-47c1-9257-bd59a878f8e4" width="550"/> |<img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/bbb13367-91bf-4cde-8e2a-e266267bcfd0" width="500"/>
 </div>
+
 
 ### 2.1.1 Diseño del impulso
 ### 2.1.2 Características espectrales
