@@ -11,7 +11,7 @@
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
 
-# 1.- Introducción
+# 1.- Introducción:
 
 # 2.- Metodología:
 ## 2.1 Preparación de datos
