@@ -15,6 +15,15 @@
 
 # 2.- Metodología:
 ## 2.1 Preparación de datos (Captura de movimientos)
+
+| Arduino Nano 33 BLE Sense | Edge Impulse |
+| ----------- | ----------- |
+| <img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |<img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bbb13367-91bf-4cde-8e2a-e266267bcfd0" width="500"/>
+</div>
+
 ### 2.1.1 Diseño del impulso
 ### 2.1.2 Características espectrales
 ### 2.1.3 Clasificación y entrenamiento
