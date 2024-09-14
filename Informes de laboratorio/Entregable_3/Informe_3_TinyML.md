@@ -18,7 +18,12 @@ En el contexto actual de la evolución tecnológica, la inteligencia artificial 
 En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine, con el objetivo de inferir en un microcontrolador Arduino Nano 33 BLE Sense. El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
 
 # 2.- Metodología:
+
+Este proyecto siguió una serie de pasos estructurados para lograr la implementación de un modelo de TinyML en el microcontrolador Arduino Nano 33 BLE Sense, con el fin de reconocer patrones de movimiento y accionar diferentes LEDs en función de los gestos identificados. A continuación, se describen las etapas principales.
+
 ## 2.1 Preparación de datos (Captura de movimientos)
+
+La primera fase consistió en la recopilación de datos de los movimientos que se deseaba reconocer: el dibujo de un círculo, el número 3 y el número 1. Se realizaron múltiples repeticiones de cada uno de estos gestos, asegurando una variabilidad suficiente en la captura de datos para mejorar la precisión del modelo. Estos movimientos fueron registrados a través de Edge Impulse, que se encargó de almacenar los datos para su posterior análisis y procesamiento.
 
 | Arduino Nano 33 BLE Sense | Edge Impulse |
 | ----------- | ----------- |
