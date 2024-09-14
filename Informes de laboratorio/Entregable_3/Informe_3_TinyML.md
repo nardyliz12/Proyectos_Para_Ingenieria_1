@@ -23,9 +23,9 @@ El sistema está diseñado para identificar patrones de movimiento y activar dif
 # 2.- Metodología:
 El objetivo principal de este proyecto es implementar un sistema de detección de formas y números utilizando Tiny Machine Learning (TinyML) en el microcontrolador  Arduino  Nano 33 BLE Sense. El sistema debe ser capaz de encender un LED de diferentes colores en función de los patrones dibujados, específicamente:
 
-*LED rojo para un círculo.
-LED azul para el número 3.
-LED verde para el número 1.
+* LED rojo para un círculo.
+* LED azul para el número 3.
+* LED verde para el número 1.
 
 A continuación, se describen las etapas principales.
  
