@@ -80,12 +80,12 @@ En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la
 
 # 5.- Referencias bibliográficas:
 
-- Arduino. (2023). Arduino Nano 33 BLE Sense overview. Arduino. https://www.arduino.cc
+- Arduino, "Arduino Nano 33 BLE Sense Overview," Arduino, 2023. [Online]. Available: https://www.arduino.cc.
 
-- Edge Impulse. (2023). Edge Impulse documentation. Edge Impulse. https://docs.edgeimpulse.com
+- Edge Impulse, "Edge Impulse Documentation," Edge Impulse, 2023. [Online]. Available: https://docs.edgeimpulse.com.
 
-- Google. (2023). Teachable Machine: Train a computer to recognize your own images, sounds, & poses. Google. https://teachablemachine.withgoogle.com
+- Google, "Teachable Machine: Train a Computer to Recognize Your Own Images, Sounds, & Poses," Google, 2023. [Online]. Available: https://teachablemachine.withgoogle.com.
 
-- David, M., Li, S., Kumar, P., & Martínez, R. (2021). Tiny machine learning for gesture recognition on embedded devices. Sensors, 21(8), 2751. https://doi.org/10.3390/s21082751
+- M. David, S. Li, P. Kumar, and R. Martínez, "Tiny Machine Learning for Gesture Recognition on Embedded Devices," Sensors, vol. 21, no. 8, p. 2751, 2021. doi: 10.3390/s21082751.
 
-- Warden, P., & Situnayake, D. (2019). TinyML: Machine learning with TensorFlow Lite on Arduino and ultra-low-power microcontrollers. O'Reilly Media.
+- P. Warden and D. Situnayake, TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers. O'Reilly Media, 2019.
