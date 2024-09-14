@@ -27,6 +27,7 @@ El sistema está diseñado para identificar patrones de movimiento y activar dif
 <p align="justify">
 El objetivo principal de este proyecto es implementar un sistema de detección de formas y números utilizando Tiny Machine Learning (TinyML) en el microcontrolador  Arduino  Nano 33 BLE Sense. El sistema debe ser capaz de encender un LED de diferentes colores en función de los patrones dibujados, específicamente:
 </p>
+
 * LED rojo para un círculo.
 * LED azul para el número 3.
 * LED verde para el número 1.
@@ -38,7 +39,7 @@ A continuación, se describen las etapas principales.
 Utilizaremos un modelo de TinyML en el Arduino Nano 33 BLE Sense para identificar los patrones objetivos. Por ende, la primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos donde el  80% de los datos fueron tomados para el entrenamiento y el otro 20% para la prueba.
 </p>
 <p align="justify">
-Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante el sitio de web de [https://tinyml.seas.harvard.edu/magic_wand/] que tambien captura los gestos correspondiente al arduino que se esta utilizando mediante una conexión bluetooth, que se encargó de almacenar los datos para su análisis y procesamiento posterior en un formato JSON.
+Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante el sitio de web de (https://tinyml.seas.harvard.edu/magic_wand/) que tambien captura los gestos correspondiente al arduino que se esta utilizando mediante una conexión bluetooth, donde se encarga de almacenar los datos para su análisis y procesamiento posterior en el formato JSON.
 </p>
 
 
@@ -46,16 +47,18 @@ Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del
 | ----------- | ----------- |
 | <img src="https://github.com/user-attachments/assets/853746c4-dfe0-47c1-9257-bd59a878f8e4" width="300"/>   <br> Fuente: Mouser Electronics Perú | <img src="https://github.com/user-attachments/assets/86f001a4-8cb3-4476-9531-437076508bbf" width="550"/> |
 
+<p align="justify">
+Para ello se tomo un total de 100 muestras de cada clase, de los cuales tal como se menciono anteriormente se encuentran en un 80% y un 20% entre entrenamiento y prueba, tal como se evidencia a continunación:
+</p>
+
 <div align="center">
     <img src="https://github.com/user-attachments/assets/f38cc160-e3b4-47a7-9a06-3ca6a652a10c" width="500"/>
 </div>
 
-
 ### 2.1.1 Diseño del impulso
 <p align="justify">
-Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. 
+Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. Como los datos consisten frente a sus ejes de entrada que se encuentran al momento de hacer la recolección de datos mediante los sensores del Arduino Nano 33 Ble Sense como el acelerómetro, se utilizó un tamaño de ventana de 2 segundos, mientras que el resto se realizó por defecto. Hay que tener en cuenta que en el análisis espectral se verifica el bloque de procesamiento de dichos ejes de entrada mencionados, para así contar con el bloque de aprendizaje que es la clasificación, siempre tomando en cuenta las características espectrales con los que cuenta, incluyendo las salidas que en este caso son 3 (círculo, uno y tres), por otro lado, como la recolección de los datos se realizó fuera del Edge Impulse, los datos cuentas solamente con dos dimensiones (x, y), lo cual no afecta a nuestro modelo para hacer el entrenamiento.
 </p>
-
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/bdbd9fe9-bbfa-4b77-984f-b9936469d718" width="500"/>
@@ -63,7 +66,7 @@ Con los datos recolectados preparados, el siguiente paso es desarrollar y entren
 
 ### 2.1.2 Características espectrales
 <p align="justify">
-Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamiento de los datos. Estos ajustes definen las características que tendran los datos antes de que sean enviados a la red neuronal. 
+Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamiento de los datos teniendolos por defecto. Estos ajustes definen las características que tendran los datos antes de que sean enviados a la red neuronal. 
 </p>
 <div align="center">
     <img src="https://github.com/user-attachments/assets/8e169668-d6df-4efb-aa5e-ea57a1f55550" width="500"/>
@@ -79,7 +82,7 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 <table>
   <tr>
-    <th width="33%"> :</th>
+    <th width="33%"> Si visualizamos la configuración </th>
     <th width="33%"> :</th>
     <th width="33%"> :</th>
   </tr>
