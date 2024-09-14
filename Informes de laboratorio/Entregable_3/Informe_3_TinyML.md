@@ -74,3 +74,13 @@ Sin embargo, también surgieron algunos desafíos. Uno de ellos fue la sensibili
 En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la creación de soluciones inteligentes a pequeña escala, y su integración en microcontroladores como el Arduino Nano 33 BLE Sense abre un abanico de posibilidades para futuras aplicaciones en áreas como la automatización, la interacción humano-máquina y la robótica. El éxito de este proyecto sienta las bases para futuras mejoras, tales como la incorporación de más gestos y la optimización del modelo para entornos más complejos.
 
 # 5.- Referencias bibliográficas:
+
+- Arduino. (2023). Arduino Nano 33 BLE Sense overview. Arduino. https://www.arduino.cc
+
+- Edge Impulse. (2023). Edge Impulse documentation. Edge Impulse. https://docs.edgeimpulse.com
+
+- Google. (2023). Teachable Machine: Train a computer to recognize your own images, sounds, & poses. Google. https://teachablemachine.withgoogle.com
+
+- David, M., Li, S., Kumar, P., & Martínez, R. (2021). Tiny machine learning for gesture recognition on embedded devices. Sensors, 21(8), 2751. https://doi.org/10.3390/s21082751
+
+- Warden, P., & Situnayake, D. (2019). TinyML: Machine learning with TensorFlow Lite on Arduino and ultra-low-power microcontrollers. O'Reilly Media.
