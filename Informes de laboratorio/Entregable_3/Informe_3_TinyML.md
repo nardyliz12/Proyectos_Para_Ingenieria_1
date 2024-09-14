@@ -15,8 +15,10 @@
 
 En la actualidad, el avance de la tecnología ha permitido la miniaturización y optimización de sistemas de inteligencia artificial, dando lugar al concepto de Tiny Machine Learning (TinyML). Este término TinyML [1] se refiere al uso de inteligencia artificial liviana en dispositivos integrados  que permite ejecutarlo en dispositivos con recursos limitados, como microcontroladores y sensores embebidos, lo que abre nuevas posibilidades para su integración en aplicaciones del Internet de las Cosas (IoT).
 
+En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine. El uso de estos servicios [2] facilita la creación de modelos solo conectando un microcontrolador, como el Arduino Nano 33 BLE Sense, lo que permite interactuar con dispositivos de manera eficiente y en tiempo real, sin la necesidad de depender de conexiones a la nube. 
 
-En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine, con el objetivo de inferir en un microcontrolador Arduino Nano 33 BLE Sense. El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
+El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
+
 
 # 2.- Metodología:
 
@@ -83,9 +85,7 @@ En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la
 
 * [1] TinyML Foundation, “TinyML,” 2021. [Online]. Available: https://www.tinyml.org. [Accessed: 11-Sep-2024].
 
-- Arduino, "Arduino Nano 33 BLE Sense Overview," Arduino, 2023. [Online]. Available: https://www.arduino.cc.
-
-- Edge Impulse, "Edge Impulse Documentation," Edge Impulse, 2023. [Online]. Available: https://docs.edgeimpulse.com.
+- [2] Edge Impulse Documentation, "Getting Started with Edge Impulse for TinyML Projects," Edge Impulse, Inc., 2020.
 
 - Google, "Teachable Machine: Train a Computer to Recognize Your Own Images, Sounds, & Poses," Google, 2023. [Online]. Available: https://teachablemachine.withgoogle.com.
 
