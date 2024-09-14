@@ -106,7 +106,7 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 | Imagen    | Resultado |
 |------------|-------------------|
-| <img src="https://github.com/user-attachments/assets/23720c9f-78a4-4da2-af05-4901942338c2" width="20000"/> | Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. |              
+| <img src="https://github.com/user-attachments/assets/23720c9f-78a4-4da2-af05-4901942338c2" width="240000"/> | Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. A pesar de ser el porcentaje más bajo a pesar de que el entrenamiento se dio de manera exitosa, lo que nos podría indicar que quiza existan anomalías que provocan dichas interferencias. |              
 
 
 
