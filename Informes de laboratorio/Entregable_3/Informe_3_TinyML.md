@@ -48,7 +48,9 @@ Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del
 
 ### 2.1.1 Diseño del impulso
 
+Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. 
 
+Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamiento de los datos. Estos ajustes definen las características que tendran los datos antes de que sean enviados a la red neuronal. 
 
 
 <div align="center">
