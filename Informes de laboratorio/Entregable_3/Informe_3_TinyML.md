@@ -106,25 +106,25 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 | Imagen    | Resultado |
 |------------|-------------------|
-| https://github.com/user-attachments/assets/0993fe75-3ce3-4eae-bc24-bcf59067a9ac
-  | 711               |
+| <img src="https://github.com/user-attachments/assets/23720c9f-78a4-4da2-af05-4901942338c2" width="20000"/> | Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. |              
+
 
 
 ## Número Uno
 
 | Imagen    | Resultado |
 |------------|-------------------|
-| CBSA Code  | 711               |
+| <img src="https://github.com/user-attachments/assets/c721665a-c84c-45bb-9821-ff99dc6e4658" width="20000"/> |Seguidamente en esta ocasión para el número 1 la predicción fue de un 99.6% lo que nos indica una correcta interpretación del modelo más que el resto. Ya que si vemos las interferencias del resto nos da que para el circulo da en un 0%, mientras que para el número 3 dio un porcentaje de 0.004%. Siendo este el más alto, y el modelo mejor interpretado sin equivocación en predecir los movimientos.             |
 
 ## Número Tres
 
 | Imagen    | Resultado |
 |------------|-------------------|
-| CBSA Code  | 711               |
+| <img src="https://github.com/user-attachments/assets/7393055b-d720-44ff-a99a-a742a84ae7ed" width="20000"/>   | Para este caso el modelo ha llegado a clasificar con un total de confianza del 76% siendo el segundo modelo en ser más probable, pero eso no quita el hecho de que  presente ciertas interferencias como no estar completamente seguro contra las otras clases, ya que las demás tanto el circulo como el uno abarcan el porcentaje faltante.               |
 
 # 4.- Discusión:
 <p align="justify">
-El desarrollo e implementación del modelo de TinyML en el Arduino Nano 33 BLE Sense fue exitoso, cumpliendo con los objetivos planteados al inicio del proyecto. La integración de herramientas como Edge Impulse y Teachable Machine resultó efectiva para entrenar un modelo capaz de identificar gestos específicos, tales como el dibujo de un círculo, el número 3 y el número 1, y traducirlos en acciones concretas, como el encendido de LEDs de diferentes colores.
+El desarrollo e implementación del modelo de TinyML en el Arduino Nano 33 BLE Sense fue exitoso, cumpliendo con los objetivos planteados al inicio del proyecto. La integración de herramientas como Edge Impulse y la plataforma de Magic_Wand_ML resultó efectiva para entrenar un modelo capaz de identificar gestos específicos, tales como el dibujo de un círculo, el número 3 y el número 1, y traducirlos en acciones concretas, como el encendido de LEDs de diferentes colores.
 </p>
 <p align="justify">
 Uno de los aspectos más destacables fue la precisión del modelo para reconocer correctamente los patrones de movimiento, a pesar de las limitaciones de procesamiento del microcontrolador. Esto demuestra que la aplicación de TinyML en dispositivos embebidos es una opción viable para proyectos que requieren una rápida respuesta a estímulos del entorno sin depender de plataformas de computación más potentes.
