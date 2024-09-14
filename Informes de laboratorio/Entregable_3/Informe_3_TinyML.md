@@ -81,7 +81,7 @@ En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la
 
 # 5.- Referencias bibliográficas:
 
-[1] TinyML Foundation, “TinyML,” 2021. [Online]. Available: https://www.tinyml.org. [Accessed: 11-Sep-2024].
+* [1] TinyML Foundation, “TinyML,” 2021. [Online]. Available: https://www.tinyml.org. [Accessed: 11-Sep-2024].
 
 - Arduino, "Arduino Nano 33 BLE Sense Overview," Arduino, 2023. [Online]. Available: https://www.arduino.cc.
 
