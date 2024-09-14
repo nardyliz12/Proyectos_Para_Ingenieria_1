@@ -13,6 +13,10 @@
 
 # 1.- Introducción:
 
+En el contexto actual de la evolución tecnológica, la inteligencia artificial (IA) y el aprendizaje automático están penetrando cada vez más en dispositivos de bajo consumo, dando lugar al desarrollo de modelos de Tiny Machine Learning (TinyML). Este enfoque permite la implementación de modelos de IA en dispositivos con recursos limitados, como microcontroladores, abriendo nuevas posibilidades en el ámbito de la automatización y la interacción con el entorno físico.
+
+En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine, con el objetivo de inferir en un microcontrolador Arduino Nano 33 BLE Sense. El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
+
 # 2.- Metodología:
 ## 2.1 Preparación de datos (Captura de movimientos)
 
