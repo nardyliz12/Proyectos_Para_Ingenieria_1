@@ -21,12 +21,17 @@ El sistema está diseñado para identificar patrones de movimiento y activar dif
 
 
 # 2.- Metodología:
+El objetivo principal de este proyecto es implementar un sistema de detección de formas y números utilizando Tiny Machine Learning (TinyML) en el microcontrolador  Arduino  Nano 33 BLE Sense. El sistema debe ser capaz de encender un LED de diferentes colores en función de los patrones dibujados, específicamente:
 
-Este proyecto siguió una serie de pasos estructurados para lograr la implementación de un modelo de TinyML en el microcontrolador Arduino Nano 33 BLE Sense, con el fin de reconocer patrones de movimiento y accionar diferentes LEDs en función de los gestos identificados. A continuación, se describen las etapas principales.
+*LED rojo para un círculo.
+LED azul para el número 3.
+LED verde para el número 1.
 
+A continuación, se describen las etapas principales.
+ 
 ## 2.1 Preparación de datos (Captura de movimientos)
 
-La primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos donde el  80% de los datos fueron tomados para el entrenamiento y el otro 20% para la prueba.
+Utilizaremos un modelo de TinyML en el Arduino Nano 33 BLE Sense para identificar los patrones objetivos. Por ende, la primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos donde el  80% de los datos fueron tomados para el entrenamiento y el otro 20% para la prueba.
 
 Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante Edge Impulse, que se encargó de almacenar los datos para su análisis y procesamiento posterior.
 
@@ -42,6 +47,9 @@ Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del
 
 
 ### 2.1.1 Diseño del impulso
+
+
+
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/bdbd9fe9-bbfa-4b77-984f-b9936469d718" width="500"/>
