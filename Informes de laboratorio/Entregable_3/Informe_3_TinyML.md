@@ -64,6 +64,8 @@ Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamient
 </div>
 
 ### 2.1.3 Clasificación y entrenamiento
+Con todos los datos procesados, es hora de comenzar a entrenar la red neuronal. Las redes neuronales [3] consisten en una serie de capas de unidades de procesamiento, llamadas neuronas, que realizan transformaciones de los datos de entrada para generar un dato de salida. 
+
 <table>
   <tr>
     <th width="33%"> :</th>
@@ -100,6 +102,7 @@ En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la
 * [1] TinyML Foundation, “TinyML,” 2021. [Online]. Available: https://www.tinyml.org. [Accessed: 11-Sep-2024].
 
 - [2] Edge Impulse Documentation, "Getting Started with Edge Impulse for TinyML Projects," Edge Impulse, Inc., 2020.
+- [3] M. Molina, «Ciencia detrás de la magia. Redes neuronales.», Rev Elect AnestesiaR, vol. 15, n.º 12, ene. 2024.
 
 - Google, "Teachable Machine: Train a Computer to Recognize Your Own Images, Sounds, & Poses," Google, 2023. [Online]. Available: https://teachablemachine.withgoogle.com.
 
