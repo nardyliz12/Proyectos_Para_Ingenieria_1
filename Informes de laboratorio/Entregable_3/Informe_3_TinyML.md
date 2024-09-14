@@ -13,7 +13,8 @@
 
 # 1.- Introducción:
 
-En el contexto actual de la evolución tecnológica, la inteligencia artificial (IA) y el aprendizaje automático están penetrando cada vez más en dispositivos de bajo consumo, dando lugar al desarrollo de modelos de Tiny Machine Learning (TinyML). Este enfoque permite la implementación de modelos de IA en dispositivos con recursos limitados, como microcontroladores, abriendo nuevas posibilidades en el ámbito de la automatización y la interacción con el entorno físico.
+En la actualidad, el avance de la tecnología ha permitido la miniaturización y optimización de sistemas de inteligencia artificial, dando lugar al concepto de Tiny Machine Learning (TinyML). Este término TinyML [1] se refiere al uso de inteligencia artificial liviana en dispositivos integrados  que permite ejecutarlo en dispositivos con recursos limitados, como microcontroladores y sensores embebidos, lo que abre nuevas posibilidades para su integración en aplicaciones del Internet de las Cosas (IoT).
+
 
 En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine, con el objetivo de inferir en un microcontrolador Arduino Nano 33 BLE Sense. El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
 
@@ -79,6 +80,8 @@ Sin embargo, también surgieron algunos desafíos. Uno de ellos fue la sensibili
 En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la creación de soluciones inteligentes a pequeña escala, y su integración en microcontroladores como el Arduino Nano 33 BLE Sense abre un abanico de posibilidades para futuras aplicaciones en áreas como la automatización, la interacción humano-máquina y la robótica. El éxito de este proyecto sienta las bases para futuras mejoras, tales como la incorporación de más gestos y la optimización del modelo para entornos más complejos.
 
 # 5.- Referencias bibliográficas:
+
+[1] TinyML Foundation, “TinyML,” 2021. [Online]. Available: https://www.tinyml.org. [Accessed: 11-Sep-2024].
 
 - Arduino, "Arduino Nano 33 BLE Sense Overview," Arduino, 2023. [Online]. Available: https://www.arduino.cc.
 
