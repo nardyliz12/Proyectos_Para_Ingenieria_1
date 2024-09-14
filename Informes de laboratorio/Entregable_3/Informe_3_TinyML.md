@@ -26,7 +26,7 @@ Este proyecto siguió una serie de pasos estructurados para lograr la implementa
 
 ## 2.1 Preparación de datos (Captura de movimientos)
 
-La primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos de entrenamiento y prueba para el modelo.
+La primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos donde el  80% de los datos fueron tomados para el entrenamiento y el otro 20% para la prueba.
 
 Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante Edge Impulse, que se encargó de almacenar los datos para su análisis y procesamiento posterior.
 
