@@ -15,7 +15,7 @@
 
 En la actualidad, el avance de la tecnología ha permitido la miniaturización y optimización de sistemas de inteligencia artificial, dando lugar al concepto de Tiny Machine Learning (TinyML). Este término TinyML [1] se refiere al uso de inteligencia artificial liviana en dispositivos integrados  que permite ejecutarlo en dispositivos con recursos limitados, como microcontroladores y sensores embebidos, lo que abre nuevas posibilidades para su integración en aplicaciones del Internet de las Cosas (IoT).
 
-En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse y Teachable Machine. El uso de estos servicios [2] facilita la creación de modelos solo conectando un microcontrolador, como el Arduino Nano 33 BLE Sense, lo que permite interactuar con dispositivos de manera eficiente y en tiempo real, sin la necesidad de depender de conexiones a la nube. 
+En este proyecto, se realizó un modelo de TinyML utilizando la plataforma Edge Impulse. El uso de este servicio [2] facilita la creación de modelos solo conectando un microcontrolador, como el Arduino Nano 33 BLE Sense, lo que permite interactuar con dispositivos de manera eficiente y en tiempo real, sin la necesidad de depender de conexiones a la nube. 
 
 El sistema está diseñado para identificar patrones de movimiento y activar diferentes LEDs en función de los gestos detectados. En concreto, el Arduino enciende un LED rojo al detectar la figura de un círculo, un LED azul cuando se dibuja el número 3 y un LED verde al reconocer el número 1. Este proyecto no solo demuestra las capacidades del TinyML en la interpretación de movimientos, sino que también resalta la viabilidad de implementar soluciones inteligentes en dispositivos embebidos con recursos limitados.
 
@@ -26,7 +26,11 @@ Este proyecto siguió una serie de pasos estructurados para lograr la implementa
 
 ## 2.1 Preparación de datos (Captura de movimientos)
 
-La primera fase consistió en la recopilación de datos de los movimientos que se deseaba reconocer: el dibujo de un círculo, el número 3 y el número 1. Se realizaron múltiples repeticiones de cada uno de estos gestos, asegurando una variabilidad suficiente en la captura de datos para mejorar la precisión del modelo. Estos movimientos fueron registrados a través de Edge Impulse, que se encargó de almacenar los datos para su posterior análisis y procesamiento.
+La primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos de entrenamiento y prueba para el modelo.
+
+Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante Edge Impulse, que se encargó de almacenar los datos para su análisis y procesamiento posterior.
+
+
 
 | Arduino Nano 33 BLE Sense | Edge Impulse |
 | ----------- | ----------- |
