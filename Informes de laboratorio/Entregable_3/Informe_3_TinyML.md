@@ -50,7 +50,6 @@ Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del
 
 Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. 
 
-Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamiento de los datos. Estos ajustes definen las características que tendran los datos antes de que sean enviados a la red neuronal. 
 
 
 <div align="center">
@@ -58,6 +57,7 @@ Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamient
 </div>
 
 ### 2.1.2 Características espectrales
+Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamiento de los datos. Estos ajustes definen las características que tendran los datos antes de que sean enviados a la red neuronal. 
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/8e169668-d6df-4efb-aa5e-ea57a1f55550" width="500"/>
