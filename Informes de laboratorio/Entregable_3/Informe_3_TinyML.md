@@ -71,8 +71,6 @@ Uno de los aspectos más destacables fue la precisión del modelo para reconocer
 
 Sin embargo, también surgieron algunos desafíos. Uno de ellos fue la sensibilidad del dispositivo a variaciones sutiles en los gestos, lo que requería un entrenamiento más exhaustivo del modelo con un conjunto de datos adecuado para mejorar la robustez de las predicciones. Además, el uso de sensores de movimiento en entornos con ruido o interferencias podría afectar la exactitud de las predicciones, lo que sugiere la necesidad de una calibración más precisa o de la implementación de algoritmos de filtrado de señal.
 
-En términos de eficiencia energética, el Arduino Nano 33 BLE Sense demostró ser un dispositivo adecuado para este tipo de aplicaciones, ya que su bajo consumo permitió una operación continua sin comprometer el rendimiento. Esto es particularmente relevante en proyectos donde se prioriza la portabilidad y la autonomía energética.
-
 En conclusión, este proyecto evidencia que TinyML tiene un gran potencial en la creación de soluciones inteligentes a pequeña escala, y su integración en microcontroladores como el Arduino Nano 33 BLE Sense abre un abanico de posibilidades para futuras aplicaciones en áreas como la automatización, la interacción humano-máquina y la robótica. El éxito de este proyecto sienta las bases para futuras mejoras, tales como la incorporación de más gestos y la optimización del modelo para entornos más complejos.
 
 # 5.- Referencias bibliográficas:
