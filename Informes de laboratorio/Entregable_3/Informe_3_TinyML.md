@@ -38,7 +38,7 @@ A continuación, se describen las etapas principales.
 Utilizaremos un modelo de TinyML en el Arduino Nano 33 BLE Sense para identificar los patrones objetivos. Por ende, la primera fase del proyecto consistió en la captura y preparación de los datos del sensor para reconocer los patrones de un círculo, el número 3 y el número 1. Los datos fueron clasificados y organizados en categorías correspondientes a cada patrón. Posteriormente, se dividieron en conjuntos donde el  80% de los datos fueron tomados para el entrenamiento y el otro 20% para la prueba.
 </p>
 <p align="justify">
-Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante Edge Impulse, que se encargó de almacenar los datos para su análisis y procesamiento posterior.
+Para asegurar una variabilidad adecuada en los datos y mejorar la precisión del modelo, se realizaron múltiples repeticiones de cada gesto. Estos movimientos fueron registrados mediante el sitio de web de [https://tinyml.seas.harvard.edu/magic_wand/] que tambien captura los gestos correspondiente al arduino que se esta utilizando mediante una conexión bluetooth, que se encargó de almacenar los datos para su análisis y procesamiento posterior en un formato JSON.
 </p>
 
 
@@ -98,6 +98,8 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 ## 2.2 Implementación del modelo (Para Arduino IDE)
 # 3.- Resultados:
+
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo e implementación del modelo de TinyML en el Arduino Nano 33 BLE Sense fue exitoso, cumpliendo con los objetivos planteados al inicio del proyecto. La integración de herramientas como Edge Impulse y Teachable Machine resultó efectiva para entrenar un modelo capaz de identificar gestos específicos, tales como el dibujo de un círculo, el número 3 y el número 1, y traducirlos en acciones concretas, como el encendido de LEDs de diferentes colores.
