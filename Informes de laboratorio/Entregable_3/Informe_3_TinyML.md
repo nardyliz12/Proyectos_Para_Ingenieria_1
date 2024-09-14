@@ -66,7 +66,7 @@ Luego, ajustamos los parámetros de escala, filtro y FFT para el preprocesamient
 ### 2.1.3 Clasificación y entrenamiento
 Con todos los datos procesados, es hora de comenzar a entrenar la red neuronal. Las redes neuronales [3] consisten en una serie de capas de unidades de procesamiento, llamadas neuronas, que realizan transformaciones de los datos de entrada para generar un dato de salida. 
 
-Por eso, ajustamos los hiperparámetros del modelo  para mejorar la precisión y el rendimiento. Una vez ya procesado tendremos el modelo entrenado y podremos ver el porcentaje del nivel de precisión que hemos obtenido (cuanto más grande sea este porcentaje mejor). En nuestro caso el nivel de precisión obtenido es del %.
+Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperparámetros durante el proceso de entrenamiento. Tras el procesamiento, obtenemos el modelo entrenado y revisamos su precisión, que se expresa como un porcentaje; a mayor porcentaje, mejor es el rendimiento del modelo. En nuestro caso, logramos una precisión del 97.9%, lo que indica un alto nivel de exactitud en la detección.
 
 
 
