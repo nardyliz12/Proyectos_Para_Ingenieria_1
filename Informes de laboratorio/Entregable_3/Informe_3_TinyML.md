@@ -102,6 +102,25 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 ## 2.2 Implementación del modelo (Para Arduino IDE)
 # 3.- Resultados:
 
+## Círculo
+
+| Imagen    | Resultado |
+|------------|-------------------|
+| https://github.com/user-attachments/assets/0993fe75-3ce3-4eae-bc24-bcf59067a9ac
+  | 711               |
+
+
+## Número Uno
+
+| Imagen    | Resultado |
+|------------|-------------------|
+| CBSA Code  | 711               |
+
+## Número Tres
+
+| Imagen    | Resultado |
+|------------|-------------------|
+| CBSA Code  | 711               |
 
 # 4.- Discusión:
 <p align="justify">
