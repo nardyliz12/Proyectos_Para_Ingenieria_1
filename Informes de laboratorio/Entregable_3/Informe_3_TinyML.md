@@ -93,7 +93,10 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
   </tr>
 </table>
 
+De esta manera, se puede observar que la predicción del modelo puede llegar a ser imprecisa, pero no significa que lo sea, sino que será de menor medida en comparación con las predicciónes correctas de cada una de clases.
+
 ### 2.1.4 Despliegue
+Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento del modelo ajustado a nuestro reto, Edge Impulse nos configura el formato del modelo como una librería para diferentes tipos de lenguajes, incluyendo a Arduino IDE, para que así este se logre programar para el Arduno Nano 33 BLE Sense que se esta utilizando.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3b530319-cfc3-4f8b-bd59-d34b2ec2c151" width="500"/>
