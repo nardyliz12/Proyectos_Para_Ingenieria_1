@@ -52,16 +52,16 @@ Para ello se tomo un total de 100 muestras de cada clase, de los cuales tal como
 </p>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/f38cc160-e3b4-47a7-9a06-3ca6a652a10c" width="500"/>
+    <img src="https://github.com/user-attachments/assets/f38cc160-e3b4-47a7-9a06-3ca6a652a10c" width="550"/>
 </div>
 
 ### 2.1.1 Diseño del impulso
 <p align="justify">
-Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. Como los datos consisten frente a sus ejes de entrada que se encuentran al momento de hacer la recolección de datos mediante los sensores del Arduino Nano 33 Ble Sense como el acelerómetro, se utilizó un tamaño de ventana de 2 segundos, mientras que el resto se realizó por defecto. Hay que tener en cuenta que en el análisis espectral se verifica el bloque de procesamiento de dichos ejes de entrada mencionados, para así contar con el bloque de aprendizaje que es la clasificación, siempre tomando en cuenta las características espectrales con los que cuenta, incluyendo las salidas que en este caso son 3 (círculo, uno y tres), por otro lado, como la recolección de los datos se realizó fuera del Edge Impulse, los datos cuentas solamente con dos dimensiones (x, y), lo cual no afecta a nuestro modelo para hacer el entrenamiento.
+Con los datos recolectados preparados, el siguiente paso es desarrollar y entrenar un modelo. Para ello, seleccionamos el bloque de procesamiento de análisis espectral recomendado junto con un bloque de aprendizaje. Estos componentes son esenciales para procesar y extraer conocimiento de los datos. Como los datos consisten frente a sus ejes de entrada, estos se encuentran al momento de hacer la recolección de datos mediante los sensores del Arduino Nano 33 Ble Sense como el acelerómetro, además, se utilizó un tamaño de ventana de 2 segundos, mientras que el resto se realizó por defecto. Hay que tener en cuenta que en el análisis espectral se verifica el bloque de procesamiento de dichos ejes de entrada mencionados, para así contar con el bloque de aprendizaje que es la clasificación, siempre tomando en cuenta las características espectrales con los que cuenta, incluyendo las salidas que en este caso son 3 (círculo, uno y tres), por otro lado, como la recolección de los datos se realizó fuera del Edge Impulse, los datos cuentas solamente con dos dimensiones (x, y), lo cual no afecta a nuestro modelo para hacer el entrenamiento.
 </p>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/bdbd9fe9-bbfa-4b77-984f-b9936469d718" width="500"/>
+    <img src="https://github.com/user-attachments/assets/bdbd9fe9-bbfa-4b77-984f-b9936469d718" width="550"/>
 </div>
 
 ### 2.1.2 Características espectrales
@@ -109,7 +109,7 @@ Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento de
 ## 2.2 Implementación del modelo (Para Arduino IDE)
 
 <p align="justify">
-Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo de TinyML desarrollado en Edge Impulse en el entorno de desarrollo de Arduino. En el transcurso de todo este proceso hemos presentado algunos errores que requerían ajustes para garantizar que el sistema funcionara correctamente, dado que al principio, el código solamente se encargaba de ejecutar las predicciones del modelo que se realizaron, por lo que se tuvo que adaptar de acuerdo a nuestro reto, para asi pudiese leer las coordenadas del acelerómetro en la placa y reconocer los gestos del usuario al momento de emplearlo.
+Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo de TinyML desarrollado en Edge Impulse en el entorno de desarrollo de Arduino. En el transcurso de todo este proceso hemos presentado algunos errores que requerían ajustes para garantizar que el sistema funcionara correctamente, dado que al principio, el código solamente se encargaba de ejecutar las predicciones del modelo que se realizaron, por lo que se tuvo que adaptar de acuerdo a nuestro reto, para que asi pudiese leer las coordenadas del acelerómetro en la placa y reconocer los gestos del usuario al momento de emplearlo.
 </p>
 Para llevar a cabo esta integración de manera adecuada, es necesario seguir una serie de pasos, comenzando con la inclusión de librerías esenciales que nos permitirán conectar el modelo y los periféricos de la placa. A continuación, detallamos la implementación del código.
 </p>
