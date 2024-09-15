@@ -281,6 +281,8 @@ Las funciones *turnOffLEDs* y *turnOnLEDs* controlan los LEDs para visualizar la
 
 ## Círculo
 
+https://github.com/user-attachments/assets/b9362162-e73d-4996-8679-384ecda9e214
+
 | Imagen    | 
 |------------|
 | <div align="center"> <img src="https://github.com/user-attachments/assets/f7715a84-a426-4675-aaad-303a5bef4c72" width="500"/> </div>   | 
@@ -298,6 +300,8 @@ https://github.com/user-attachments/assets/b2825701-a173-4e74-9dce-c2b9e5ca7cdc
 | <img src="https://github.com/user-attachments/assets/c721665a-c84c-45bb-9821-ff99dc6e4658" width="20000"/> |Seguidamente en esta ocasión para el número 1 la predicción fue de un 99.6% lo que nos indica una correcta interpretación del modelo más que el resto. Ya que si vemos las interferencias del resto nos da que para el circulo da en un 0%, mientras que para el número 3 dio un porcentaje de 0.004%. Siendo este el más alto, y el modelo mejor interpretado sin equivocación en predecir los movimientos.             |
 
 ## Número Tres
+
+https://github.com/user-attachments/assets/1577d882-1ebc-4841-a246-1bf910850b25
 
 | Imagen    | Resultado |
 |------------|-------------------|
