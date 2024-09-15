@@ -103,7 +103,7 @@ Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento de
 </p>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/3b530319-cfc3-4f8b-bd59-d34b2ec2c151" width="500"/>
+    <img src="https://github.com/user-attachments/assets/e9f2c60f-832e-41d6-935a-77d4c08d3668" width="500"/>
 </div>
 
 ## 2.2 Implementación del modelo (Para Arduino IDE)
@@ -280,9 +280,11 @@ Las funciones turnOffLEDs y turnOnLEDs controlan los LEDs para visualizar la pre
 
 ## Círculo
 
-| Imagen    | Resultado |
-|------------|-------------------|
-| <img src="https://github.com/user-attachments/assets/23720c9f-78a4-4da2-af05-4901942338c2" width="80000"/> | Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. A pesar de ser el porcentaje más bajo a pesar de que el entrenamiento se dio de manera exitosa, lo que nos podría indicar que quiza existan anomalías que provocan dichas interferencias. |              
+| Imagen    | 
+|------------|
+| <div align="center"> <img src="https://github.com/user-attachments/assets/f7715a84-a426-4675-aaad-303a5bef4c72" width="500"/> </div>   | 
+|Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. A pesar de ser el porcentaje más bajo a pesar de que el entrenamiento se dio de manera exitosa, lo que nos podría indicar que quiza existan anomalías que provocan dichas interferencias. |              
+
 
 ## Número Uno
 
