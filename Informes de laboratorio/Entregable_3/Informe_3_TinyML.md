@@ -281,7 +281,7 @@ Las funciones *turnOffLEDs* y *turnOnLEDs* controlan los LEDs para visualizar la
 
 ## Círculo
 
-https://github.com/user-attachments/assets/b9362162-e73d-4996-8679-384ecda9e214
+[https://github.com/user-attachments/assets/b9362162-e73d-4996-8679-384ecda9e214](https://github.com/user-attachments/assets/3d82f916-15f0-456b-88e1-31b2e6a22f88)
 
 | Imagen    | 
 |------------|
