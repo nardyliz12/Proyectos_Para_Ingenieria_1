@@ -139,16 +139,19 @@ Implementamos la función raw_feature_get_data, que se encarga de recuperar los 
       return 0;
     }
 
-2.2.4 Función setup:
+2.2.4 Configuración del sistema:
 
-    void setup() {
+En la función setup, inicializamos la comunicación en serie para la depuración y llamamos a la función initPeripherals, donde configuramos los LEDs como salidas y preparamos el sensor IMU. Si el sensor no se inicializa correctamente, imprimimos un mensaje de error y detenemos la ejecución.
+  
+     void setup() {
        Serial.begin(115200);
        initPeripherals();
     }
 
-Inicializa la comunicación serie a 115200 baudios y llama a la función initPeripherals para preparar los periféricos, como los LED y el sensor IMU
 
-2.2.5 Función loop:
+2.2.5 Captura y clasificación de datos:
+
+En el bucle principal (loop), recolectamos los datos del sensor a través de la función collectSensorData. Si la captura es exitosa, realizamos la clasificación de estos datos con el modelo preentrenado llamando a classifySignal. Dependiendo del resultado, encendemos un LED específico para indicar la categoría predicha y mostramos los detalles de la clasificación.
 
     void loop() {
        if (!collectSensorData()) {
@@ -157,61 +160,64 @@ Inicializa la comunicación serie a 115200 baudios y llama a la función initPer
         return;
     }
 
-    ei_impulse_result_t result;
-    if (classifySignal(&result) != EI_IMPULSE_OK) {
-        Serial.println("Classification failed!");
-        delay(1000);
-        return;
+        ei_impulse_result_t result;
+        if (classifySignal(&result) != EI_IMPULSE_OK) {
+            Serial.println("Classification failed!");
+            delay(1000);
+            return;
+         }
+
+        printInferenceResult(result);
+        delay(1000); // Pausa de 1 segundo antes de repetir el ciclo
     }
 
-    printInferenceResult(result);
-    delay(1000); // Pausa de 1 segundo antes de repetir el ciclo
-}
+2.2.6 Captura de datos del sensor:
 
-Esta función es el bucle principal. En cada iteración, intenta recolectar datos del sensor con collectSensorData(). Si falla, imprime un mensaje de error y espera un segundo. Luego, intenta clasificar los datos recolectados con classifySignal(). Si la clasificación tiene éxito, se imprimen los resultados con printInferenceResult(), y el ciclo se repite después de una pausa de 1 segundo.
+Para recolectar los datos de aceleración, utilizamos la función collectSensorData. Aquí leemos las componentes X e Y de la aceleración a intervalos regulares (cada 100 ms) y almacenamos estos valores en el arreglo features.
 
-2.2.6 Función initPeripherals:
+      void initPeripherals() {
+          pinMode(LEDR, OUTPUT);
+          pinMode(LEDG, OUTPUT);
+          pinMode(LEDB, OUTPUT);
+          turnOffLEDs();
 
-void initPeripherals() {
-    pinMode(LEDR, OUTPUT);
-    pinMode(LEDG, OUTPUT);
-    pinMode(LEDB, OUTPUT);
-    turnOffLEDs();
-
-    if (!IMU.begin()) {
-        Serial.println("Failed to initialize IMU!");
-        while (1);
+         if (!IMU.begin()) {
+           Serial.println("Failed to initialize IMU!");
+           while (1);
+       }
     }
-}
 
-Configura los pines de los LEDs como salidas y los apaga con turnOffLEDs(). Luego, inicializa el sensor IMU. Si no se puede inicializar, imprime un mensaje de error y entra en un bucle infinito para detener la ejecución.
 
-2.2.7 Función collectSensorData:
+2.2.7 Clasificación de datos:
 
-bool collectSensorData() {
-    for (int i = 0; i < NUM_FEATURES / 2; i++) {
-        if (IMU.accelerationAvailable()) {
-            float x, y, z;
-            IMU.readAcceleration(x, y, z);
-            features[2 * i] = x;
-            features[2 * i + 1] = y;
-        } else {
-            return false; // No data available
+Con la función classifySignal, preparamos los datos capturados para ser clasificados. Utilizamos la función run_classifier para procesar los datos y obtener un resultado de inferencia, que luego almacenamos en la variable result.
+
+    bool collectSensorData() {
+        for (int i = 0; i < NUM_FEATURES / 2; i++) {
+            if (IMU.accelerationAvailable()) {
+                float x, y, z;
+                IMU.readAcceleration(x, y, z);
+                features[2 * i] = x;
+                features[2 * i + 1] = y;
+            } else {
+                return false; // No data available
+            }
+            delay(100); // Ajusta según la velocidad de muestreo
         }
-        delay(100); // Ajusta según la velocidad de muestreo
+         return true;
     }
-    return true;
-}
 
-2.2.8 Función classifySignal:
+2.2.8 Interpretación y visualización de resultados:
 
-EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
-    signal_t features_signal;
-    features_signal.total_length = NUM_FEATURES;
-    features_signal.get_data = &raw_feature_get_data;
+Finalmente, con la función printInferenceResult, mostramos en el monitor serie los tiempos de procesamiento, los resultados de clasificación para cada categoría, y si es aplicable, el valor de anomalía detectado. Dependiendo del índice de la predicción, encendemos uno de los tres LEDs para reflejar el resultado.
 
-    return run_classifier(&features_signal, result, false);
-}
+    EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
+        signal_t features_signal;
+        features_signal.total_length = NUM_FEATURES;
+        features_signal.get_data = &raw_feature_get_data;
+
+     return run_classifier(&features_signal, result, false);
+    }
 
 Esta función prepara los datos para la clasificación. Utiliza raw_feature_get_data para proporcionar los datos almacenados al clasificador y luego ejecuta el clasificador de Edge Impulse (run_classifier). El resultado de la clasificación se almacena en result.
 
