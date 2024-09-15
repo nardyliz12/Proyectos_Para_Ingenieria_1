@@ -305,6 +305,8 @@ Para ver una demostración completa de cómo funciona, haz clic en la siguiente 
 
 [![Ver el video](https://img.youtube.com/vi/dZNEkwrauEw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dZNEkwrauEw)
 
+https://github.com/nardyliz12/Documentos-/blob/312361fff5e753be57c243b550ddf1af9b819730/lv_0_20240914135110.mp4
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo e implementación del modelo de TinyML en el Arduino Nano 33 BLE Sense fue exitoso, cumpliendo con los objetivos planteados al inicio del proyecto. La integración de herramientas como Edge Impulse y la plataforma de Magic_Wand_ML resultó efectiva para entrenar un modelo capaz de identificar gestos específicos, tales como el dibujo de un círculo, el número 3 y el número 1, y traducirlos en acciones concretas, como el encendido de LEDs de diferentes colores.
