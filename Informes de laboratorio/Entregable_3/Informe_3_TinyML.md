@@ -114,16 +114,17 @@ Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo 
 Para llevar a cabo esta integración de manera adecuada, es necesario seguir una serie de pasos, comenzando con la inclusión de librerías esenciales que nos permitirán conectar el modelo y los periféricos de la placa. A continuación, detallamos la implementación del código.
 </p>
 
-2.2.1 Inclusión de Librerías:
+### Inclusión de Librerías:
 
-Iniciamos nuestro código incluyendo las librerías necesarias. Utilizamos A_inferencing.h para manejar el modelo de inferencia y Arduino_LSM9DS1.h para interactuar con el sensor IMU, que se encargará de recolectar los datos de aceleración en los ejes X e Y.
+Iniciamos nuestro código incluyendo las librerías necesarias. Utilizamos *Reconocimiento_de_n_meros_y_formas_inferencing.h* para manejar el modelo de inferencia y *Arduino_BMI270_BMM150.h* para interactuar con el sensor IMU, que se encargará de recolectar los datos de aceleración en los ejes X e Y.
 
-    #include <A_inferencing.h>
-    #include <Arduino_LSM9DS1.h>
+```
+#include <Reconocimiento_de_n_meros_y_formas_inferencing.h>
+#include <Arduino_BMI270_BMM150.h>
+```
 
 
-
-2.2.2 Definición de constantes y variables:
+### Definición de constantes y variables:
 
 Definimos una constante NUM_FEATURES que contiene el número total de características que vamos a extraer del sensor, 124 en total (62 pares de datos X e Y). Luego, creamos un arreglo features para almacenar estos valores de aceleración.
 
@@ -132,7 +133,7 @@ Definimos una constante NUM_FEATURES que contiene el número total de caracterí
     float features[NUM_FEATURES];
 
 
-2.2.3 Recuperación de datos:
+### Recuperación de datos:
 
 Implementamos la función raw_feature_get_data, que se encarga de recuperar los datos de características desde el arreglo features y proporcionárselos al clasificador.
 
@@ -141,9 +142,9 @@ Implementamos la función raw_feature_get_data, que se encarga de recuperar los 
       return 0;
     }
 
-2.2.4 Configuración del sistema:
+### Configuración del sistema:
 
-En la función setup, inicializamos la comunicación en serie para la depuración y llamamos a la función initPeripherals, donde configuramos los LEDs como salidas y preparamos el sensor IMU. Si el sensor no se inicializa correctamente, imprimimos un mensaje de error y detenemos la ejecución.
+En la función setup, inicializamos la comunicación en serie para la depuración y llamamos a la función *initPeripherals*, donde configuramos los LEDs como salidas y preparamos el sensor IMU. Si el sensor no se inicializa correctamente, imprimimos un mensaje de error y detenemos la ejecución.
   
      void setup() {
        Serial.begin(115200);
@@ -151,9 +152,9 @@ En la función setup, inicializamos la comunicación en serie para la depuració
     }
 
 
-2.2.5 Captura y clasificación de datos
+### Captura y clasificación de datos
 
-Dentro del ciclo principal loop, recolectamos los datos de aceleración utilizando collectSensorData. Si la recolección es exitosa, procedemos a clasificar esos datos con el modelo llamando a classifySignal. Dependiendo del resultado de la clasificación, encendemos el LED correspondiente para representar la categoría predicha.
+Dentro del ciclo principal loop, recolectamos los datos de aceleración utilizando *collectSensorData*. Si la recolección es exitosa, procedemos a clasificar esos datos con el modelo llamando a *classifySignal*. Dependiendo del resultado de la clasificación, encendemos el LED correspondiente para representar la categoría predicha.
 
     void loop() {
        if (!collectSensorData()) {
@@ -173,9 +174,9 @@ Dentro del ciclo principal loop, recolectamos los datos de aceleración utilizan
         delay(1000); // Pausa de 1 segundo antes de repetir el ciclo
     }
 
-2.2.6 Captura de datos del sensor:
+### Captura de datos del sensor:
 
-En la función initPeripherals, configuramos los pines de los LEDs como salidas, apagamos inicialmente todos los LEDs con turnOffLEDs(), e intentamos inicializar el sensor IMU. Si la inicialización falla, el código se detiene.
+En la función *initPeripherals*, configuramos los pines de los LEDs como salidas, apagamos inicialmente todos los LEDs con *turnOffLEDs()*, e intentamos inicializar el sensor IMU. Si la inicialización falla, el código se detiene.
 
       void initPeripherals() {
           pinMode(LEDR, OUTPUT);
@@ -190,9 +191,9 @@ En la función initPeripherals, configuramos los pines de los LEDs como salidas,
     }
 
 
-2.2.7 Captura de datos del sensor
+### Captura de datos del sensor
 
-La función collectSensorData lee las componentes X e Y de la aceleración del sensor IMU y almacena esos valores en el arreglo features. Este proceso se repite hasta recolectar las 124 características necesarias, con una pequeña pausa entre lecturas para ajustar la velocidad de muestreo.
+La función &collectSensorData* lee las componentes X e Y de la aceleración del sensor IMU y almacena esos valores en el arreglo features. Este proceso se repite hasta recolectar las 124 características necesarias, con una pequeña pausa entre lecturas para ajustar la velocidad de muestreo.
 
     bool collectSensorData() {
         for (int i = 0; i < NUM_FEATURES / 2; i++) {
@@ -209,9 +210,9 @@ La función collectSensorData lee las componentes X e Y de la aceleración del s
          return true;
     }
 
-2.2.8 Clasificación de datos
+### Clasificación de datos
 
-Para clasificar los datos capturados, utilizamos la función classifySignal. Esta función toma los datos del sensor, los pasa al modelo de inferencia, y retorna el resultado de la clasificación. La estructura signal_t permite que el modelo acceda a los datos del arreglo features.
+Para clasificar los datos capturados, utilizamos la función *classifySignal*. Esta función toma los datos del sensor, los pasa al modelo de inferencia, y retorna el resultado de la clasificación. La estructura *signal_t* permite que el modelo acceda a los datos del arreglo features.
 
     EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
         signal_t features_signal;
@@ -222,7 +223,7 @@ Para clasificar los datos capturados, utilizamos la función classifySignal. Est
     }
 
 
-2.2.9 Interpretación y visualización de resultados
+### Interpretación y visualización de resultados
 
 Finalmente, mostramos los resultados de la inferencia en el monitor serie, incluidos los tiempos de procesamiento y los valores de clasificación. Dependiendo del índice de la predicción, encendemos el LED correspondiente. Si el modelo incluye la detección de anomalías, también mostramos ese valor.
 
@@ -247,9 +248,9 @@ Finalmente, mostramos los resultados de la inferencia en el monitor serie, inclu
             #endif
         }
 
-2.2.10 Control de LEDs
+### Control de LEDs
 
-Las funciones turnOffLEDs y turnOnLEDs controlan los LEDs para visualizar la predicción de la inferencia. Dependiendo del resultado, se enciende un LED específico: rojo, verde o azul.
+Las funciones *turnOffLEDs* y *turnOnLEDs* controlan los LEDs para visualizar la predicción de la inferencia. Dependiendo del resultado, se enciende un LED específico: rojo, verde o azul.
 
     void turnOffLEDs() {
         digitalWrite(LEDR, HIGH);
