@@ -289,6 +289,8 @@ Las funciones *turnOffLEDs* y *turnOnLEDs* controlan los LEDs para visualizar la
 
 ## Número Uno
 
+https://github.com/nardyliz12/Documentos-/issues/1#issue-2526733323
+
 | Imagen    | Resultado |
 |------------|-------------------|
 | <img src="https://github.com/user-attachments/assets/c721665a-c84c-45bb-9821-ff99dc6e4658" width="20000"/> |Seguidamente en esta ocasión para el número 1 la predicción fue de un 99.6% lo que nos indica una correcta interpretación del modelo más que el resto. Ya que si vemos las interferencias del resto nos da que para el circulo da en un 0%, mientras que para el número 3 dio un porcentaje de 0.004%. Siendo este el más alto, y el modelo mejor interpretado sin equivocación en predecir los movimientos.             |
@@ -305,7 +307,6 @@ Para ver una demostración completa de cómo funciona, haz clic en la siguiente 
 
 [![Ver el video](https://img.youtube.com/vi/dZNEkwrauEw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dZNEkwrauEw)
 
-https://github.com/nardyliz12/Documentos-/blob/312361fff5e753be57c243b550ddf1af9b819730/lv_0_20240914135110.mp4
 
 # 4.- Discusión:
 <p align="justify">
