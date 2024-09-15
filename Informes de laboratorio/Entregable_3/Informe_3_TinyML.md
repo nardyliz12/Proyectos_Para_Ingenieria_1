@@ -82,9 +82,9 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 <table>
   <tr>
-    <th width="33%"> Si visualizamos la configuración de la red neuronal se ve de la siguiente manera, donde el número de ciclos de entrenamiento fue de 30 épocas, mientras que la tasa de aprendizaje (learning rate) fue de 0.01, y separando un pequeño porcentaje para realizar la validación: </th>
-    <th width="33%"> En este punto pasamos al entrenamiento del modelo, donde se obtuvo un 97.9% tal como se mencionó anteriormente con una pérdida de 0.04 en general,  lo que nos indica que se trata de un modelo formalmente eficiente:</th>
-    <th width="33%"> Si pasamos a la fase de exploración de los datos, en vista gráfica, se evidencia de la siguiente manera:</th>
+    <th width="33%"> Si visualizamos la configuración de la red neuronal se ve de la siguiente manera, donde el número de ciclos de entrenamiento fue de 30 épocas, mientras que la tasa de aprendizaje (learning rate) fue de 0.01, y separando un pequeño porcentaje para realizar la validación:</th>
+    <th width="33%"> En este punto pasamos al entrenamiento del modelo, donde se obtuvo un 97.9% tal como se mencionó anteriormente con una pérdida de 0.04 en general, lo que nos indica que se trata de un modelo formalmente eficiente:</th>
+    <th width="33%"> Si pasamos a la fase de exploración de los datos en vista gráfica, se evidencia de la siguiente manera:</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4d0f74b3-e360-4c8a-ae7a-426701a33aad" width="400"/></td>
