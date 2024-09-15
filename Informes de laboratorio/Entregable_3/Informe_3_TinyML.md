@@ -122,6 +122,8 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 |------------|-------------------|
 | <img src="https://github.com/user-attachments/assets/7393055b-d720-44ff-a99a-a742a84ae7ed" width="20000"/>   | Para este caso el modelo ha llegado a clasificar con un total de confianza del 76% siendo el segundo modelo en ser más probable, pero eso no quita el hecho de que  presente ciertas interferencias como no estar completamente seguro contra las otras clases, ya que las demás tanto el circulo como el uno abarcan el porcentaje faltante.               |
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ](https://youtube.com/shorts/dZNEkwrauEw?si=SjPWg056n-rc_uLJ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo e implementación del modelo de TinyML en el Arduino Nano 33 BLE Sense fue exitoso, cumpliendo con los objetivos planteados al inicio del proyecto. La integración de herramientas como Edge Impulse y la plataforma de Magic_Wand_ML resultó efectiva para entrenar un modelo capaz de identificar gestos específicos, tales como el dibujo de un círculo, el número 3 y el número 1, y traducirlos en acciones concretas, como el encendido de LEDs de diferentes colores.
