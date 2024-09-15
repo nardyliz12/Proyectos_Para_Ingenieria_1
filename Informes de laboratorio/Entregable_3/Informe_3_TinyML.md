@@ -289,7 +289,9 @@ Las funciones *turnOffLEDs* y *turnOnLEDs* controlan los LEDs para visualizar la
 
 ## Número Uno
 
-https://github.com/nardyliz12/Documentos-/issues/1#issue-2526733323
+
+https://github.com/user-attachments/assets/b2825701-a173-4e74-9dce-c2b9e5ca7cdc
+
 
 | Imagen    | Resultado |
 |------------|-------------------|
