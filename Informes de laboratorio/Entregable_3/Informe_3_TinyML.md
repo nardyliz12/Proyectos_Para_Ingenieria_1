@@ -111,6 +111,8 @@ Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento de
 <p align="justify">
 Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo de TinyML desarrollado en Edge Impulse en el entorno de desarrollo de Arduino. En el transcurso de todo este proceso hemos presentado algunos errores que requerían ajustes para garantizar que el sistema funcionara correctamente, dado que al principio, el código solamente se encargaba de ejecutar las predicciones del modelo que se realizaron, por lo que se tuvo que adaptar de acuerdo a nuestro reto, para asi pudiese leer las coordenadas del acelerómetro en la placa y reconocer los gestos del usuario al momento de emplearlo.
 </p>
+Para llevar a cabo esta integración de manera adecuada, es necesario seguir una serie de pasos, comenzando con la inclusión de librerías esenciales que nos permitirán conectar el modelo y los periféricos de la placa. A continuación, detallamos la implementación del código.
+</p>
 
 2.2.1 Inclusión de Librerías:
 
