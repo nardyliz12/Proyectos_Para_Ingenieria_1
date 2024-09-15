@@ -82,9 +82,9 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 
 <table>
   <tr>
-    <th width="33%"> Si visualizamos la configuración de la red neuronal se ve de la siguiente manera, donde el número de ciclos de entrenamiento fue de 30 épocas, mientras que la tasa de aprendizaje (learning rate) fue de 0.01, y separando un pequeño porcentaje para realizar la validación:</th>
-    <th width="33%"> En este punto pasamos al entrenamiento del modelo, donde se obtuvo un 97.9% tal como se mencionó anteriormente con una pérdida de 0.04 en general, lo que nos indica que se trata de un modelo formalmente eficiente:</th>
-    <th width="33%"> Si pasamos a la fase de exploración de los datos en vista gráfica, se evidencia de la siguiente manera:</th>
+    <th width="20%"> Si visualizamos la configuración de la red neuronal se ve de la siguiente manera, donde el número de ciclos de entrenamiento fue de 30 épocas, mientras que la tasa de aprendizaje (learning rate) fue de 0.01, y separando un pequeño porcentaje para realizar la validación:</th>
+    <th width="20%"> En este punto pasamos al entrenamiento del modelo, donde se obtuvo un 97.9% tal como se mencionó anteriormente con una pérdida de 0.04 en general, lo que nos indica que se trata de un modelo formalmente eficiente:</th>
+    <th width="20%"> Si pasamos a la fase de exploración de los datos en vista gráfica, se evidencia de la siguiente manera:</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/4d0f74b3-e360-4c8a-ae7a-426701a33aad" width="400"/></td>
@@ -93,10 +93,14 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
   </tr>
 </table>
 
+<p align="justify">
 De esta manera, se puede observar que la predicción del modelo puede llegar a ser imprecisa, pero no significa que lo sea, sino que será de menor medida en comparación con las predicciónes correctas de cada una de clases.
+</p>
 
 ### 2.1.4 Despliegue
+<p align="justify">
 Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento del modelo ajustado a nuestro reto, Edge Impulse nos configura el formato del modelo como una librería para diferentes tipos de lenguajes, incluyendo a Arduino IDE, para que así este se logre programar para el Arduno Nano 33 BLE Sense que se esta utilizando.
+</p>
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3b530319-cfc3-4f8b-bd59-d34b2ec2c151" width="500"/>
