@@ -108,8 +108,6 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 |------------|-------------------|
 | <img src="https://github.com/user-attachments/assets/23720c9f-78a4-4da2-af05-4901942338c2" width="240000"/> | Como se puede observar una ves de haber realizado el entrenamiento, se puede evidenciar que la predicción fue de un 67%, mientras que el numero 1 fue del 10%, asimismo el número 3 en un 22% lo cual nos indica que el modelo interpreta los diferentes tipos de datos con algunas interpretaciones distintas, pero apesar de ello si llega identificar correctamente cuando se esta dibujando un círculo. A pesar de ser el porcentaje más bajo a pesar de que el entrenamiento se dio de manera exitosa, lo que nos podría indicar que quiza existan anomalías que provocan dichas interferencias. |              
 
-
-
 ## Número Uno
 
 | Imagen    | Resultado |
@@ -122,8 +120,11 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 |------------|-------------------|
 | <img src="https://github.com/user-attachments/assets/7393055b-d720-44ff-a99a-a742a84ae7ed" width="20000"/>   | Para este caso el modelo ha llegado a clasificar con un total de confianza del 76% siendo el segundo modelo en ser más probable, pero eso no quita el hecho de que  presente ciertas interferencias como no estar completamente seguro contra las otras clases, ya que las demás tanto el circulo como el uno abarcan el porcentaje faltante.               |
 
-[![Ver el video](https://img.youtube.com/vi/dZNEkwrauEw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dZNEkwrauEw)
+## Demostración de la procedimiento 
 
+Para ver una demostración completa de cómo funciona, haz clic en la siguiente imagen para ver el video:
+
+[![Ver el video](https://img.youtube.com/vi/dZNEkwrauEw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dZNEkwrauEw)
 
 # 4.- Discusión:
 <p align="justify">
