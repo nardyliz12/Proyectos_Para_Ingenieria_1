@@ -112,22 +112,40 @@ Pasando a la siguiente fase, una vez de haber realizado todo el entrenamiento de
 Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo de TinyML desarrollado en Edge Impulse en el entorno de desarrollo de Arduino. En el transcurso de todo este proceso hemos presentado algunos errores que requerían ajustes para garantizar que el sistema funcionara correctamente, dado que al principio, el código solamente se encargaba de ejecutar las predicciones del modelo que se realizaron, por lo que se tuvo que adaptar de acuerdo a nuestro reto, para asi pudiese leer las coordenadas del acelerómetro en la placa y reconocer los gestos del usuario al momento de emplearlo.
 </p>
 
+2.2.1 Inclusión de Librerías:
+
 #include <A_inferencing.h>
 #include <Arduino_LSM9DS1.h>
+
+Se incluyen las librerías necesarias. A_inferencing.h es para la inferencia de modelos preentrenados en Edge Impulse y Arduino_LSM9DS1.h para interactuar con el sensor IMU (Inertial Measurement Unit) LSM9DS1.
+
+2.2.2 Definición de constantes y variables:
 
 #define NUM_FEATURES 124 // Número total de características esperadas (62 pares de X, Y)
 
 float features[NUM_FEATURES];
+
+Se define NUM_FEATURES como 124, que representa el número total de características que se van a extraer del sensor (62 pares de datos X e Y). Luego, se declara un array features que almacenará los datos capturados.
+
+2.2.3 Función raw_feature_get_data:
 
 int raw_feature_get_data(size_t offset, size_t length, float *out_ptr) {
     memcpy(out_ptr, features + offset, length * sizeof(float));
     return 0;
 }
 
+Esta función se utiliza para proporcionar los datos de características almacenados en el array features al clasificador. Copia un conjunto de datos del array en la posición de salida out_ptr.
+
+2.2.4 Función setup:
+
 void setup() {
     Serial.begin(115200);
     initPeripherals();
 }
+
+Inicializa la comunicación serie a 115200 baudios y llama a la función initPeripherals para preparar los periféricos, como los LED y el sensor IMU
+
+2.2.5 Función loop:
 
 void loop() {
     if (!collectSensorData()) {
@@ -147,6 +165,10 @@ void loop() {
     delay(1000); // Pausa de 1 segundo antes de repetir el ciclo
 }
 
+Esta función es el bucle principal. En cada iteración, intenta recolectar datos del sensor con collectSensorData(). Si falla, imprime un mensaje de error y espera un segundo. Luego, intenta clasificar los datos recolectados con classifySignal(). Si la clasificación tiene éxito, se imprimen los resultados con printInferenceResult(), y el ciclo se repite después de una pausa de 1 segundo.
+
+2.2.6 Función initPeripherals:
+
 void initPeripherals() {
     pinMode(LEDR, OUTPUT);
     pinMode(LEDG, OUTPUT);
@@ -158,6 +180,10 @@ void initPeripherals() {
         while (1);
     }
 }
+
+Configura los pines de los LEDs como salidas y los apaga con turnOffLEDs(). Luego, inicializa el sensor IMU. Si no se puede inicializar, imprime un mensaje de error y entra en un bucle infinito para detener la ejecución.
+
+2.2.7 Función collectSensorData:
 
 bool collectSensorData() {
     for (int i = 0; i < NUM_FEATURES / 2; i++) {
@@ -174,6 +200,8 @@ bool collectSensorData() {
     return true;
 }
 
+2.2.8 Función classifySignal:
+
 EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
     signal_t features_signal;
     features_signal.total_length = NUM_FEATURES;
@@ -181,6 +209,10 @@ EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
 
     return run_classifier(&features_signal, result, false);
 }
+
+Esta función prepara los datos para la clasificación. Utiliza raw_feature_get_data para proporcionar los datos almacenados al clasificador y luego ejecuta el clasificador de Edge Impulse (run_classifier). El resultado de la clasificación se almacena en result.
+
+2.2.9 Función printInferenceResult:
 
 void printInferenceResult(ei_impulse_result_t result) {
     Serial.printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\n",
@@ -203,6 +235,9 @@ void printInferenceResult(ei_impulse_result_t result) {
 #endif
 }
 
+Imprime los resultados de la inferencia, incluyendo los tiempos de procesamiento, los valores de clasificación de cada categoría y si hubo alguna predicción de anomalía. También enciende un LED según el resultado de la clasificación.
+
+2.2.10 Funciones para controlar los LEDs:
 void turnOffLEDs() {
     digitalWrite(LEDR, HIGH);
     digitalWrite(LEDG, HIGH);
@@ -226,6 +261,8 @@ void turnOnLEDs(int pred_index) {
             break;
     }
 }
+
+ turnOffLEDs apaga todos los LEDs poniendo los pines en estado alto. turnOnLEDs enciende un LED específico dependiendo del índice de la predicción (pred_index). Si no hay coincidencia, se apagan todos los LEDs.
 
 
 # 3.- Resultados:
