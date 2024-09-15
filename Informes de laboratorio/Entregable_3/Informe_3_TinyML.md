@@ -100,6 +100,11 @@ Para optimizar la precisión y el rendimiento del modelo, ajustamos los hiperpar
 </div>
 
 ## 2.2 Implementación del modelo (Para Arduino IDE)
+
+<p align="justify">
+Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo de TinyML desarrollado en Edge Impulse en el entorno de desarrollo de Arduino. Nos encontramos con algunos errores durante este proceso que requerían ajustes para garantizar que el sistema funcionara correctamente. Al principio, el código solo se encargaba de ejecutar las predicciones del modelo, por lo que tuvimos que adaptarlo para que pudiera leer las coordenadas del acelerómetro en la placa y reconocer los gestos del usuario.
+</p>
+
 # 3.- Resultados:
 
 ## Círculo
