@@ -149,9 +149,9 @@ En la función setup, inicializamos la comunicación en serie para la depuració
     }
 
 
-2.2.5 Captura y clasificación de datos:
+2.2.5 Captura y clasificación de datos
 
-En el bucle principal (loop), recolectamos los datos del sensor a través de la función collectSensorData. Si la captura es exitosa, realizamos la clasificación de estos datos con el modelo preentrenado llamando a classifySignal. Dependiendo del resultado, encendemos un LED específico para indicar la categoría predicha y mostramos los detalles de la clasificación.
+Dentro del ciclo principal loop, recolectamos los datos de aceleración utilizando collectSensorData. Si la recolección es exitosa, procedemos a clasificar esos datos con el modelo llamando a classifySignal. Dependiendo del resultado de la clasificación, encendemos el LED correspondiente para representar la categoría predicha.
 
     void loop() {
        if (!collectSensorData()) {
@@ -173,7 +173,7 @@ En el bucle principal (loop), recolectamos los datos del sensor a través de la 
 
 2.2.6 Captura de datos del sensor:
 
-Para recolectar los datos de aceleración, utilizamos la función collectSensorData. Aquí leemos las componentes X e Y de la aceleración a intervalos regulares (cada 100 ms) y almacenamos estos valores en el arreglo features.
+En la función initPeripherals, configuramos los pines de los LEDs como salidas, apagamos inicialmente todos los LEDs con turnOffLEDs(), e intentamos inicializar el sensor IMU. Si la inicialización falla, el código se detiene.
 
       void initPeripherals() {
           pinMode(LEDR, OUTPUT);
@@ -188,9 +188,9 @@ Para recolectar los datos de aceleración, utilizamos la función collectSensorD
     }
 
 
-2.2.7 Clasificación de datos:
+2.2.7 Captura de datos del sensor
 
-Con la función classifySignal, preparamos los datos capturados para ser clasificados. Utilizamos la función run_classifier para procesar los datos y obtener un resultado de inferencia, que luego almacenamos en la variable result.
+La función collectSensorData lee las componentes X e Y de la aceleración del sensor IMU y almacena esos valores en el arreglo features. Este proceso se repite hasta recolectar las 124 características necesarias, con una pequeña pausa entre lecturas para ajustar la velocidad de muestreo.
 
     bool collectSensorData() {
         for (int i = 0; i < NUM_FEATURES / 2; i++) {
@@ -207,9 +207,9 @@ Con la función classifySignal, preparamos los datos capturados para ser clasifi
          return true;
     }
 
-2.2.8 Interpretación y visualización de resultados:
+2.2.8 Clasificación de datos
 
-Finalmente, con la función printInferenceResult, mostramos en el monitor serie los tiempos de procesamiento, los resultados de clasificación para cada categoría, y si es aplicable, el valor de anomalía detectado. Dependiendo del índice de la predicción, encendemos uno de los tres LEDs para reflejar el resultado.
+Para clasificar los datos capturados, utilizamos la función classifySignal. Esta función toma los datos del sensor, los pasa al modelo de inferencia, y retorna el resultado de la clasificación. La estructura signal_t permite que el modelo acceda a los datos del arreglo features.
 
     EI_IMPULSE_ERROR classifySignal(ei_impulse_result_t *result) {
         signal_t features_signal;
@@ -219,59 +219,59 @@ Finalmente, con la función printInferenceResult, mostramos en el monitor serie 
      return run_classifier(&features_signal, result, false);
     }
 
-Esta función prepara los datos para la clasificación. Utiliza raw_feature_get_data para proporcionar los datos almacenados al clasificador y luego ejecuta el clasificador de Edge Impulse (run_classifier). El resultado de la clasificación se almacena en result.
 
-2.2.9 Función printInferenceResult:
+2.2.9 Interpretación y visualización de resultados
 
-void printInferenceResult(ei_impulse_result_t result) {
-    Serial.printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\n",
-                  result.timing.dsp, result.timing.classification, result.timing.anomaly);
+Finalmente, mostramos los resultados de la inferencia en el monitor serie, incluidos los tiempos de procesamiento y los valores de clasificación. Dependiendo del índice de la predicción, encendemos el LED correspondiente. Si el modelo incluye la detección de anomalías, también mostramos ese valor.
 
-    int max_index = -1;
-    float max_value = 0.0;
-    for (uint16_t i = 0; i < EI_CLASSIFIER_LABEL_COUNT; i++) {
-        Serial.printf("  %s: %.5f\n", ei_classifier_inferencing_categories[i], result.classification[i].value);
-        if (result.classification[i].value > max_value) {
-            max_value = result.classification[i].value;
-            max_index = i;
+    void printInferenceResult(ei_impulse_result_t result) {
+        Serial.printf("Timing: DSP %d ms, inference %d ms, anomaly %d ms\n",
+                      result.timing.dsp, result.timing.classification, result.timing.anomaly);
+
+        int max_index = -1;
+        float max_value = 0.0;
+        for (uint16_t i = 0; i < EI_CLASSIFIER_LABEL_COUNT; i++) {
+            Serial.printf("  %s: %.5f\n", ei_classifier_inferencing_categories[i], result.classification[i].value);
+            if (result.classification[i].value > max_value) {
+                max_value = result.classification[i].value;
+                max_index = i;
+              }
+           }
+
+            turnOnLEDs(max_index);
+
+            #if EI_CLASSIFIER_HAS_ANOMALY
+            Serial.printf("Anomaly prediction: %.3f\n", result.anomaly);
+            #endif
+        }
+
+2.2.10 Control de LEDs
+
+Las funciones turnOffLEDs y turnOnLEDs controlan los LEDs para visualizar la predicción de la inferencia. Dependiendo del resultado, se enciende un LED específico: rojo, verde o azul.
+
+    void turnOffLEDs() {
+        digitalWrite(LEDR, HIGH);
+        digitalWrite(LEDG, HIGH);
+        digitalWrite(LEDB, HIGH);
+    }
+
+    void turnOnLEDs(int pred_index) {
+         turnOffLEDs();
+         switch (pred_index) {
+            case 0:
+                digitalWrite(LEDR, LOW);
+                break;
+            case 1:
+                digitalWrite(LEDG, LOW);
+                break;
+            case 2:
+                digitalWrite(LEDB, LOW);
+                break;
+            default:
+                turnOffLEDs();
+                break;
         }
     }
-
-    turnOnLEDs(max_index);
-
-#if EI_CLASSIFIER_HAS_ANOMALY
-    Serial.printf("Anomaly prediction: %.3f\n", result.anomaly);
-#endif
-}
-
-Imprime los resultados de la inferencia, incluyendo los tiempos de procesamiento, los valores de clasificación de cada categoría y si hubo alguna predicción de anomalía. También enciende un LED según el resultado de la clasificación.
-
-2.2.10 Funciones para controlar los LEDs:
-void turnOffLEDs() {
-    digitalWrite(LEDR, HIGH);
-    digitalWrite(LEDG, HIGH);
-    digitalWrite(LEDB, HIGH);
-}
-
-void turnOnLEDs(int pred_index) {
-    turnOffLEDs();
-    switch (pred_index) {
-        case 0:
-            digitalWrite(LEDR, LOW);
-            break;
-        case 1:
-            digitalWrite(LEDG, LOW);
-            break;
-        case 2:
-            digitalWrite(LEDB, LOW);
-            break;
-        default:
-            turnOffLEDs();
-            break;
-    }
-}
-
- turnOffLEDs apaga todos los LEDs poniendo los pines en estado alto. turnOnLEDs enciende un LED específico dependiendo del índice de la predicción (pred_index). Si no hay coincidencia, se apagan todos los LEDs.
 
 
 # 3.- Resultados:
