@@ -114,41 +114,44 @@ Hemos utilizado la placa Arduino Nano 33 BLE Sense para integrar nuestro modelo 
 
 2.2.1 Inclusión de Librerías:
 
-#include <A_inferencing.h>
-#include <Arduino_LSM9DS1.h>
+Iniciamos nuestro código incluyendo las librerías necesarias. Utilizamos A_inferencing.h para manejar el modelo de inferencia y Arduino_LSM9DS1.h para interactuar con el sensor IMU, que se encargará de recolectar los datos de aceleración en los ejes X e Y.
 
-Se incluyen las librerías necesarias. A_inferencing.h es para la inferencia de modelos preentrenados en Edge Impulse y Arduino_LSM9DS1.h para interactuar con el sensor IMU (Inertial Measurement Unit) LSM9DS1.
+    #include <A_inferencing.h>
+    #include <Arduino_LSM9DS1.h>
+
+
 
 2.2.2 Definición de constantes y variables:
 
-#define NUM_FEATURES 124 // Número total de características esperadas (62 pares de X, Y)
+Definimos una constante NUM_FEATURES que contiene el número total de características que vamos a extraer del sensor, 124 en total (62 pares de datos X e Y). Luego, creamos un arreglo features para almacenar estos valores de aceleración.
 
-float features[NUM_FEATURES];
+    #define NUM_FEATURES 124 // Número total de características esperadas (62 pares de X, Y)
 
-Se define NUM_FEATURES como 124, que representa el número total de características que se van a extraer del sensor (62 pares de datos X e Y). Luego, se declara un array features que almacenará los datos capturados.
+    float features[NUM_FEATURES];
 
-2.2.3 Función raw_feature_get_data:
 
-int raw_feature_get_data(size_t offset, size_t length, float *out_ptr) {
-    memcpy(out_ptr, features + offset, length * sizeof(float));
-    return 0;
-}
+2.2.3 Recuperación de datos:
 
-Esta función se utiliza para proporcionar los datos de características almacenados en el array features al clasificador. Copia un conjunto de datos del array en la posición de salida out_ptr.
+Implementamos la función raw_feature_get_data, que se encarga de recuperar los datos de características desde el arreglo features y proporcionárselos al clasificador.
+
+    int raw_feature_get_data(size_t offset, size_t length, float *out_ptr) {
+        memcpy(out_ptr, features + offset, length * sizeof(float));
+      return 0;
+    }
 
 2.2.4 Función setup:
 
-void setup() {
-    Serial.begin(115200);
-    initPeripherals();
-}
+    void setup() {
+       Serial.begin(115200);
+       initPeripherals();
+    }
 
 Inicializa la comunicación serie a 115200 baudios y llama a la función initPeripherals para preparar los periféricos, como los LED y el sensor IMU
 
 2.2.5 Función loop:
 
-void loop() {
-    if (!collectSensorData()) {
+    void loop() {
+       if (!collectSensorData()) {
         Serial.println("Failed to collect data!");
         delay(1000);
         return;
