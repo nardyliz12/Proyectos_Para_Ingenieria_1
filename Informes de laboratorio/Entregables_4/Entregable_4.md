@@ -81,7 +81,9 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 
 ## MODELADO 3D
 
-#Componentes
+# Componentes
+
+
 <img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/Vista%20explosiva.png" alt="Imagen" width="300"/>
 
 
