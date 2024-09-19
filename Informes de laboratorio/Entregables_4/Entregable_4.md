@@ -21,3 +21,7 @@
 | **Sostenibilidad**       | Equilibrio energetica                               | Uso de baterías recargables y/o paneles solares para minimizar el impacto ambiental y asegurar autonomía. |
 |                          | Durabilidad                                         | Diseño para larga vida útil, reduciendo la necesidad de reemplazo frecuente y generación de residuos. |          |
 
+
+## Diseño/Estructura
+
+
