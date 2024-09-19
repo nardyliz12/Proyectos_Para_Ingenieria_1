@@ -79,5 +79,8 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 | **Almacenamiento de Datos**                 | Los datos se almacenan para permitir análisis históricos y generar reportes detallados sobre la evolución de la calidad del aire.                                       |
 | **Aplicación para Políticas Públicas**      | Apoya la implementación de políticas de salud y medio ambiente a nivel local, proporcionando datos fiables y en tiempo real para la toma de decisiones.                 |
 
+## MODELADO 3D
 
+### Caja Principal
+### Dispositivo de monitoreo 
 
