@@ -80,10 +80,11 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 | **Aplicación para Políticas Públicas**      | Apoya la implementación de políticas de salud y medio ambiente a nivel local, proporcionando datos fiables y en tiempo real para la toma de decisiones.                 |
 
 ## MODELADO 3D
-![Imagen](https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/Vista%20explosiva.png)
+
+<img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/Vista%20explosiva.png" alt="Imagen" width="300"/>
 
 
-![Imagen](https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/componentes.png)
+<img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/componentes.png" alt="Imagen" width="300"/>
 
 ### Caja Principal
 ### Dispositivo de monitoreo 
