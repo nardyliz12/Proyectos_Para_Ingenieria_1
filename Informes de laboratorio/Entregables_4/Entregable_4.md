@@ -12,6 +12,8 @@
 
 ## Objetivo:
 
+Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y monóxido de Carbono(CO) para la toma de decisiones.
+
 ## ORGANIZACIÓN
 
 | Característica principal | Característica secundaria                           | Estudio del caso industrial                                                                                   |
