@@ -14,6 +14,17 @@
 
 Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y monóxido de Carbono(CO) para la toma de decisiones.
 
+## DISEÑO/ESTRUCTURA
+
+| Característica principal | Característica secundaria                                   | Estudio del caso industrial                                                                                   |
+|--------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Geometría**            | Dimensiones del dispositivo                                 | Altura: 17,5 cm; Largo: 20,9 cm |
+|                          | Portabilidad                                                | Diseño compacto para fácil instalación en diferentes ubicaciones de Chicla.    |
+|                          | Cinemática                                                  | Dispositivo estático con captación de flujos de aire para monitoreo.                    |
+| **Materiales**           | Carcasa: Material resistente a condiciones climáticas       | Selección de materiales que garanticen durabilidad y protección contra lluvia, polvo y variaciones de temperatura.|
+|                          | Componentes internos: Electrónica de alta calidad           | Selección de sensores y componentes que ofrezcan la mejor relación calidad-precio y precisión en las mediciones. |
+
+
 ## ORGANIZACIÓN
 
 | Característica principal | Característica secundaria                           | Estudio del caso industrial                                                                                   |
@@ -24,9 +35,9 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 |                          | Durabilidad                                         | Diseño para larga vida útil, reduciendo la necesidad de reemplazo frecuente y generación de residuos. |          |
 
 
-## Diseño/Estructura
 
-## Uso
+
+## USO
 
 | **Especificación**                          | **Descripción**                                                                                                                                                       |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
