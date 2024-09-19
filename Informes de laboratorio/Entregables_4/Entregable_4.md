@@ -60,6 +60,7 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 | **Impacto en la Comunidad y Operaciones**   | El proyecto tiene un impacto directo en la comunidad industrial de Chicla, permitiendo una mayor conciencia sobre la contaminación y mejorando la toma de decisiones en materia de políticas ambientales y de salud ocupacional. Se espera que las alertas en tiempo real también mejoren la reacción ante episodios críticos de contaminación. |
 | **Escalabilidad y Viabilidad** | El modelo es escalable a otras ciudades con necesidades similares de monitoreo ambiental. Además, su estructura modular permite incorporar nuevos contaminantes o adaptar las mediciones a otros entornos industriales. La viabilidad técnica y económica lo convierte en una solución aplicable a nivel nacional o en sectores industriales específicos. |
 
+##Especificaciones técnicas
 
 | **Especificación**                          | **Descripción**                                                                                                                                                       |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
