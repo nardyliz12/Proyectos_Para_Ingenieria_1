@@ -35,9 +35,17 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 |                          | Durabilidad                                         | Diseño para larga vida útil, reduciendo la necesidad de reemplazo frecuente y generación de residuos. |          |
 
 
+## Realización y producción
 
+| *Etapa de realización*   | *Actividad*                           | *Descripción del proceso*                                                   | *Recursos requeridos*                                                         |
+|----------------------------|-----------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| *Diseño y prototipo*      | Diseño del dispositivo de monitoreo     | Diseño del gabinete, selección de sensores y componentes de energía.          | Herramientas CAD, software de simulación, materiales como PCB, sensores PM2.5, PM10, CO, paneles solares. |
+| *Fabricación*             | Impresión 3D y montaje de componentes   | Producción del gabinete mediante impresión 3D, integración de sensores y circuitos electrónicos. | Impresoras 3D, componentes electrónicos, ensambladores técnicos.               |
+| *Desarrollo de software*  | Programación del microcontrolador y plataforma de monitoreo | Desarrollo de código para el microcontrolador (ESP32), creación de la plataforma web/móvil para visualización y alertas. | Programadores, software de desarrollo, plataformas de hosting y base de datos. |
+| *Pruebas*                 | Pruebas de campo                       | Instalación del dispositivo en Chicla y monitoreo de su rendimiento en condiciones reales. | Personal técnico, equipos de medición complementarios, software de análisis.    |
+| *Producción en serie*     | Fabricación masiva y despliegue         | Fabricación de múltiples unidades para su instalación en varias ubicaciones.   | Proveedores de componentes, líneas de producción, logística para distribución.  |
 
-## USO
+## Uso
 
 | **Especificación**                          | **Descripción**                                                                                                                                                       |
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
