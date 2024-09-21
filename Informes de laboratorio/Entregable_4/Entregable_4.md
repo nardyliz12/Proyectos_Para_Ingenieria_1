@@ -95,11 +95,8 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 # Componentes
 
 
-<img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/Vista%20explosiva.png" alt="Imagen" width="300"/>
+<img src="https://github.com/user-attachments/assets/af5044de-5cf7-4a33-a21a-7f0ace647b2e" alt="Imagen" width="550"/>
 
 
-<img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregables_4/componentes.png" alt="Imagen" width="300"/>
-
-### Caja Principal
-### Dispositivo de monitoreo 
+<img src="https://github.com/user-attachments/assets/a8b415e5-df63-4704-876e-677318198a6c" alt="Imagen" width="550"/>
 
