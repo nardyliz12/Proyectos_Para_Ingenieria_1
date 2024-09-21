@@ -13,18 +13,18 @@
 ## Objetivo:
 
 Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y monóxido de Carbono(CO) para la toma de decisiones.
+
 ## FUNCIÓN
 |Característica principal |	Característica secundaria | Estudio del caso industrial |
 |--------------------------|---------------------------|-----------------------------|
-|                          |PLA (polímero termoplástico): para el sistema de monitoreo.|                            |
-| **Material**            |  Acero: para sujetar las piezas                         |                            |
-| **Energía**              |Corriente continua (batería de 12V): con un panel solar.  |                             |  
+|  **Material** |PLA (polímero termoplástico): para el sistema de monitoreo.| Se utilizará para la carcasa del dispositivo de monitoreo, ofreciendo protección a los sensores, elementos de comunicación y componentes electrónicos contra condiciones ambientales externas como humedad y polvo. Este material termoplástico es adecuado para crear una estructura duradera y resistente para el equipo.|
+|             |  Acero: para sujetar el sistemas un poste  |  Se utilizará acero para sujetar el sistema de monitoreo a un poste, asegurando la estabilidad y durabilidad de los sensores. Este material proporciona una base robusta y resistente a las condiciones ambientales, garantizando un montaje seguro y prolongado del dispositivo.|
+| **Energía**              |Corriente continua (baterías de litio recargables)  | El sistema de monitoreo y control funcionará con energía proporcionada por baterías de litio recargables, las cuales serán alimentadas por un panel solar. Esto asegura un suministro energético autónomo y sostenible para el funcionamiento continuo del dispositivo, incluso en ubicaciones remotas. |  
 |    **Señal**             | Analógica: para el registro de datos por parte de los sensores.| Los sensores que medirán los parámetros de calidad del aire emitirán señales analógicas continuas. Estos parámetros podrían incluir: Partículas en suspensión (PM2.5, PM10), Monóxido de carbono (CO).|
 |                          |  Digital: transmisión vía Wi-Fi.| Los sensores de calidad del aire enviarán los datos a una plataforma en la nube a través de Wi-Fi, donde serán almacenados en una base de datos para su análisis y monitoreo en tiempo real. |
 |**Definición de interfaces**  | Software en la nube  |   Los datos de los sensores de calidad del aire serán visualizados a través de un software o plataforma en la nube, accesible desde cualquier dispositivo con conexión a internet, permitiendo el control y monitoreo en tiempo real del sistema. |
 |                          |   Interfaz manual |Se proporcionará una guía paso a paso para el uso, instalación y mantenimiento del dispositivo de monitoreo de calidad del aire, facilitando su correcta implementación y operación por parte del usuario. |
 |     **Costos**           |        Regular                   |  El costo del sistema se mantiene dentro del alcance de los materiales o componentes utilizados, como los sensores, módulos de comunicación (Wi-Fi), y la infraestructura para el almacenamiento y visualización de los datos (plataforma en la nube). Esto garantiza que el sistema sea accesible y económicamente viable.                |
-
 ## DISEÑO/ESTRUCTURA
 
 | Característica principal | Característica secundaria                                   | Estudio del caso industrial                                                                                   |
