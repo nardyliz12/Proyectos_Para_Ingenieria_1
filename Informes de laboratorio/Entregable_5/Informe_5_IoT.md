@@ -12,8 +12,8 @@
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
 
-# Introducción
-# Metodología
-# Resultados
-# Discución
-# Referencias Bibliográficas
+# 1.- Introducción:
+# 2.- Metodología:
+# 3.- Resultados:
+# 4.- Discusión:
+# 5.- Referencias bibliográficas:
