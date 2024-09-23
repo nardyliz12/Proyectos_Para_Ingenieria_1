@@ -70,6 +70,58 @@ void loop() {
 <p align="justify">
 Este código esta diseñado para ejecutar la placa del ESP32 y leer el valor del potenciómetro conectado al pin analógico 34, para así enviar datos al monitor serie, la función 'setup()' inicia la comunicación serie con una velocidad de 115200 baudios. El valor analógico del potenciómetro, que varía según su posición, se lee utilizando la función 'analogRead()' en la función 'loop()' y se almacena en la variable valor. Luego, usando 'Serial.println()', este valor se imprime en el monitor serie, para finalmente, esperar 500 milisegundos antes de leer el valor de nuevo, repitiendo el proceso indefinidamente.
 </p> 
+<p align="justify">
+Como actividad adicional era mejorar el código anterior haciendo el uso de un promediado de los datos en cuestión para convertirlos en valores del ADC a valores de voltaje, como se presenta s continuación.
+</p> 
+
+```
+int potPin = 34; // Pin donde está conectado el potenciómetro
+const int numReadings = 10; // Número de lecturas para promediar
+int readings[numReadings]; // Arreglo para almacenar lecturas
+int currentIndex = 0; // Índice actual de la lectura
+float total = 0; // Suma total de las lecturas
+float average = 0; // Promedio de las lecturas
+
+void setup() {
+    Serial.begin(115200); // Inicializar el monitor serie
+    // Inicializar el arreglo de lecturas
+    for (int i = 0; i < numReadings; i++) {
+        readings[i] = 0;
+    }
+}
+
+void loop() {
+    // Restar la lectura más antigua de la suma total
+    total -= readings[currentIndex];
+    // Leer el nuevo valor del potenciómetro
+    readings[currentIndex] = analogRead(potPin);
+    // Sumar la nueva lectura a la suma total
+    total += readings[currentIndex];
+    // Actualizar el índice para la siguiente lectura
+    currentIndex = (currentIndex + 1) % numReadings; // Vuelve al inicio si llega al final
+
+    // Calcular el promedio
+    average = total / numReadings;
+
+    // Convertir a voltaje (suponiendo un ADC de 12 bits y Vcc de 3.3V)
+    float voltage = (average / 4095.0) * 3.3;
+
+    // Mostrar el promedio y el voltaje en el monitor serie
+    Serial.print("Promedio ADC: ");
+    Serial.print(average);
+    Serial.print(" | Voltaje: ");
+    Serial.println(voltage, 3); // Mostrar con 3 decimales
+
+    delay(500); // Esperar medio segundo
+}
+```
+<p align="justify">
+Para suavizar las variaciones, este bloque mide el valor del potenciómetro conectado, donde la función "setup()" inicia la serie de comunicación y configura un arreglo para almacenar las lecturas. El arreglo se actualiza al restar la lectura más antigua, agregando la nueva lectura del potenciómetro, para luego calcular el promedio en el bucle "loop()". Este promedio se convierte a un valor de voltaje, asumiendo un ADC de 12 bits y una tensión de alimentación de 3.3V, que luego se imprime en el monitor serie con tres decimales para repetir el ciclo cada cincuenta milisegundos.
+</p> 
+
+
+
+
 
 # 3.- Resultados:
 # 4.- Discusión:
