@@ -171,6 +171,13 @@ void loop() {
 Con este código, podemos conectar el ESP32 a cualquier red Wi-Fi, pero en este caso es "Zildran" con la contraseña "74698486sope". La función "setup()" inicializa la comunicación del monitor serie a 115200 bauds y intenta establecer la conexión Wi-Fi con "WiFi.begin(ssid, password)". Se imprime un punto en el monitor serie cada segundo mientras se completa la conexión. Después de conectarse, el ESP32 imprime el mensaje "Conectado a la red WiFi", que se acompaña de la dirección IP asignada, que se obtiene utilizando "WiFi.localIP()".
 </p> 
 
+## 2.3 Arquitectura en la Nube
+<p align="justify">
+
+</p> 
+
+
+
 # 3.- Resultados:
 # 4.- Discusión:
 # 5.- Referencias bibliográficas:
