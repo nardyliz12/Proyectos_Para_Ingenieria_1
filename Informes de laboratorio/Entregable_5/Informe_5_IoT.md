@@ -20,6 +20,7 @@ El Internet de las Cosas (IoT) es descrito como uno de los objetos físicos o gr
 <p align="justify">
 Este campo ha logrado evolucionar a lo largo del tiempo gracias a la aparición de múltiples tecnologías en diferentes tipos de sistemas integrados, donde cada vez resulta ser más potente frente al aprendizaje automático [3]. Al ser una herramienta conocida abarca diferentes tipos de campos tradicionales, tales como los sistemas embebidos, las redes de sensores analámbricos, asimismo, los sistemas de control y la automatización, estos componentes hacen posible que se el internet de las cosas de manera colectiva como individual [4].
 </p>
+
 # 2.- Metodología:
 # 3.- Resultados:
 # 4.- Discusión:
