@@ -20,7 +20,10 @@ El Internet de las Cosas (IoT) es descrito como uno de los objetos físicos o gr
 <p align="justify">
 Este campo ha logrado evolucionar a lo largo del tiempo gracias a la aparición de múltiples tecnologías en diferentes tipos de sistemas integrados, donde cada vez resulta ser más potente frente al aprendizaje automático [3]. Al ser una herramienta conocida abarca diferentes tipos de campos tradicionales, tales como los sistemas embebidos, las redes de sensores analámbricos, asimismo, los sistemas de control y la automatización, estos componentes hacen posible que se el internet de las cosas de manera colectiva como individual [4].
 </p>
-
+<p align="justify">
+Ahora que sabemos un poco más, de que trata el internet de las cosas, en este informe mostrará la configuración y programación de los diferentes tipos de dispositivos utilizados como un ESP32 en este caso, donde se conectó para adquirir datos de acuerdo a una serie de plataformas usando protocolos de comunicación como Wi-Fi, por ende el objetivo es poder entender los fundamentos de dichos protocolos de comunicación utilizados en IoT evaluando su uso según el contexto que se nos plantee, para monitorear y analizar datos en tiempo real mediante plataformas que se encuentran en la nube.  
+</p> 
+ 
 # 2.- Metodología:
 # 3.- Resultados:
 # 4.- Discusión:
