@@ -38,7 +38,7 @@ Fuente: Electromanía Perú
 
 </div>
 
-## Adquisición de datos en IoT
+## 2.1 Adquisición de datos en IoT
 <p align="justify">
 El proceso para capturar información mediante los sensores y su conversión en señales digitales para realizar el análisis nos permiten tomar decisiones automatizadas basadas en datos que se emiten en tiempo real, dado que tiene aplicaciones relacionadas con la automatización y el monitoreo remoto, para ello, se utilizó un componente electrónico que es el potenciómetro, qué es un tipo de resistor mayormente utilizado para ajustar voltajes en un circuito, donde controla la resistencia entre sus terminales, sin embargo, en ciertos contextos suele funcionar como un sensor de posición o cómo un sensor de desplazamiento, dado que convierte el movimiento mecánico (como girar una perilla) en un cambio de resistencia que puede llegar a ser medido eléctricamente. Adicionalmente, se debe adquirir un convertidor ADC para que convierta todas las señales analógicas a señales digitales, asimismo, se debe contar con la transmisión de datos que se refiere al envío de dichos datos a la nube o plataformas qué tiene IoT.
 </p> 
@@ -52,7 +52,7 @@ Fuente: Geekbot Electronics
 
 </div>
 
-### Lectura de un Potenciómetro con ESP32
+### 2.1.1 Lectura de un Potenciómetro con ESP32
 
 ```
 int potPin = 34; // Pin donde está conectado el potenciómetro
@@ -119,9 +119,57 @@ void loop() {
 Para suavizar las variaciones, este bloque mide el valor del potenciómetro conectado, donde la función "setup()" inicia la serie de comunicación y configura un arreglo para almacenar las lecturas. El arreglo se actualiza al restar la lectura más antigua, agregando la nueva lectura del potenciómetro, para luego calcular el promedio en el bucle "loop()". Este promedio se convierte a un valor de voltaje, asumiendo un ADC de 12 bits y una tensión de alimentación de 3.3V, que luego se imprime en el monitor serie con tres decimales para repetir el ciclo cada cincuenta milisegundos.
 </p> 
 
+## 2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
+
+<p align="justify">
+La biblioteca de "WiFi.h" está dirigido para las placas de Arduino, donde nos permite conectar dispositivos basados en microcontroladores como el ESP32 a redes de Wi-Fi, esta biblioteca también nos proporciona funciones para configurar conexiones inalámbricas, además, de gestionar las redes y transferir datos a través del Wi-Fi. Algunas de las funcionalidades con las que cuenta este tipo de biblioteca es poder conectarse a una red Wi-Fi con un SSID y contraseña, además, de consultar el estado de la conexión Wi-Fi que se encuentra alrededor, asimismo, puede llegar obtener la dirección IP asignada por la red, como también realizar conexiones a servidores o servicios en línea a través del Wi-Fi, lo cual es particularmente utilizado para este tipo de proyectos como en la implementación en IoT, donde las dispositivos necesitan conectarse a internet y comunicarse entre ellos a través de las redes inalámbricas, para tener un monitoreo remoto y control de dispositivos, asímismo, emplear proyectos de automatización dentro del hogar.   
+</p> 
+
+### 2.2.1 Scanner WIFI con ESP32
+
+| Encontrar Redes Wi-Fi cercanas  | Redes  Wi-Fi  |
+|----------------------|-----------------------|
+| Para escanear las redes Wi-Fi con el ESP32, se configura un código que permite verificar todas las redes Wi-Fi cercanas en nuestra área. Este código muestra el número total de redes encontradas con el nombre (SSID) y la intensidad de la señal (RSSI). Los resultados se imprimen en el monitor serie con una pausa de 5 segundos entre cada escaneo. | <img src="https://github.com/user-attachments/assets/35430843-5053-4c84-a494-20cd5019aadb" alt="ESP32 DEVKIT V1" width="1000"/> |
 
 
+<p align="justify">
+En está ocasión se creó un código para diseñar una red Wi-Fi usando un smartphone como Hotspot, donde este pueda conectarse a ella mediante el ESP32, para luego poder visualizar en el monitor serial la dirección IP asignada a la red Wi-Fi establecida con el siguiente código: 
+</p> 
 
+```
+#include <WiFi.h>
+
+// Configuración del SSID y contraseña de la red Wi-Fi
+const char* ssid = "Zildran";         // Cambia esto por el nombre del Hotspot
+const char* password = "74698486sope"; // Cambia esto por la contraseña del Hotspot
+
+void setup() {
+  // Iniciar el monitor serie
+  Serial.begin(115200);
+  
+  // Iniciar la conexión Wi-Fi
+  Serial.println("Conectando a Wi-Fi...");
+  WiFi.begin(ssid, password);
+
+  // Esperar a que la conexión se establezca
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println(".");
+  }
+
+  // Imprimir la dirección IP asignada una vez conectado
+  Serial.println("Conectado a la red WiFi");
+  Serial.print("Dirección IP: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  // No se requiere hacer nada en el bucle
+}
+```
+<p align="justify">
+Con este código, podemos conectar el ESP32 a cualquier red Wi-Fi, pero en este caso es "Zildran" con la contraseña "74698486sope". La función "setup()" inicializa la comunicación del monitor serie a 115200 bauds y intenta establecer la conexión Wi-Fi con "WiFi.begin(ssid, password)". Se imprime un punto en el monitor serie cada segundo mientras se completa la conexión. Después de conectarse, el ESP32 imprime el mensaje "Conectado a la red WiFi", que se acompaña de la dirección IP asignada, que se obtiene utilizando "WiFi.localIP()".
+</p> 
 
 # 3.- Resultados:
 # 4.- Discusión:
