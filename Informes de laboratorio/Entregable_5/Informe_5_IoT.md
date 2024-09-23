@@ -31,7 +31,7 @@ Actualmente existen muchas tarjetas de desarrollo y microcontroladores que está
 
  |ESP32 DEVKIT V1|
  |----------------|
- |  ![image](https://github.com/user-attachments/assets/33d1f57b-d356-45b1-857f-ec45ecc49cce)|
+ |![image](https://github.com/user-attachments/assets/c0fa98ed-c5b5-4600-93c8-94ea1ca31a0c)|
  Fuente: Electromanía Perú
 
  
