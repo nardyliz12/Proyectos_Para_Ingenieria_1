@@ -29,12 +29,29 @@ Ahora que sabemos un poco más, de que trata el internet de las cosas, en este i
 Actualmente existen muchas tarjetas de desarrollo y microcontroladores que están orientados al internet de las cosas, pero para esta actividad solamente nos enfocamos en el ESP32 Dev kit 1, que es un microcontrolador de bajo costo y consumo de energía, ya que cuenta con una tecnología vía Wi-Fi y Bluetooth que permite controlar todo tipo de sensores, lo cual lo hace ser eficaz y económico. 
 </p> 
 
- |ESP32 DEVKIT V1|
- |----------------|
- |![image](https://github.com/user-attachments/assets/c0fa98ed-c5b5-4600-93c8-94ea1ca31a0c)|
- Fuente: Electromanía Perú
+<div align="center">
 
- 
+|ESP32 DEVKIT V1|
+|---------------|
+|<img src="https://github.com/user-attachments/assets/c0fa98ed-c5b5-4600-93c8-94ea1ca31a0c" alt="ESP32 DEVKIT V1" width="300"/>|
+Fuente: Electromanía Perú
+
+</div>
+
+## Adquisición de datos en IoT
+<p align="justify">
+El proceso para capturar información mediante los sensores y su conversión en señales digitales para realizar el análisis nos permiten tomar decisiones automatizadas basadas en datos que se emiten en tiempo real, dado que tiene aplicaciones relacionadas con la automatización y el monitoreo remoto, para ello, se utilizó un componente electrónico que es el potenciómetro, qué es un tipo de resistor mayormente utilizado para ajustar voltajes en un circuito, donde controla la resistencia entre sus terminales, sin embargo, en ciertos contextos suele funcionar como un sensor de posición o cómo un sensor de desplazamiento, dado que convierte el movimiento mecánico (como girar una perilla) en un cambio de resistencia que puede llegar a ser medido eléctricamente. Adicionalmente, se debe adquirir un convertidor ADC para que convierta todas las señales analógicas a señales digitales, asimismo, se debe contar con la transmisión de datos que se refiere al envío del dichos datos a la nube o plataformas qué tiene IoT.
+</p> 
+
+<div align="center">
+
+|Potenciómetro|
+|---------------|
+|<img src="https://github.com/user-attachments/assets/668bfeb7-ea61-4a7e-ab11-2a40c98237f4" alt="ESP32 DEVKIT V1" width="300"/> |
+Fuente: Geekbot Electronics
+
+</div>
+
 # 3.- Resultados:
 # 4.- Discusión:
 # 5.- Referencias bibliográficas:
