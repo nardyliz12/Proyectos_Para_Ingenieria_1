@@ -40,7 +40,7 @@ Fuente: Electromanía Perú
 
 ## Adquisición de datos en IoT
 <p align="justify">
-El proceso para capturar información mediante los sensores y su conversión en señales digitales para realizar el análisis nos permiten tomar decisiones automatizadas basadas en datos que se emiten en tiempo real, dado que tiene aplicaciones relacionadas con la automatización y el monitoreo remoto, para ello, se utilizó un componente electrónico que es el potenciómetro, qué es un tipo de resistor mayormente utilizado para ajustar voltajes en un circuito, donde controla la resistencia entre sus terminales, sin embargo, en ciertos contextos suele funcionar como un sensor de posición o cómo un sensor de desplazamiento, dado que convierte el movimiento mecánico (como girar una perilla) en un cambio de resistencia que puede llegar a ser medido eléctricamente. Adicionalmente, se debe adquirir un convertidor ADC para que convierta todas las señales analógicas a señales digitales, asimismo, se debe contar con la transmisión de datos que se refiere al envío del dichos datos a la nube o plataformas qué tiene IoT.
+El proceso para capturar información mediante los sensores y su conversión en señales digitales para realizar el análisis nos permiten tomar decisiones automatizadas basadas en datos que se emiten en tiempo real, dado que tiene aplicaciones relacionadas con la automatización y el monitoreo remoto, para ello, se utilizó un componente electrónico que es el potenciómetro, qué es un tipo de resistor mayormente utilizado para ajustar voltajes en un circuito, donde controla la resistencia entre sus terminales, sin embargo, en ciertos contextos suele funcionar como un sensor de posición o cómo un sensor de desplazamiento, dado que convierte el movimiento mecánico (como girar una perilla) en un cambio de resistencia que puede llegar a ser medido eléctricamente. Adicionalmente, se debe adquirir un convertidor ADC para que convierta todas las señales analógicas a señales digitales, asimismo, se debe contar con la transmisión de datos que se refiere al envío de dichos datos a la nube o plataformas qué tiene IoT.
 </p> 
 
 <div align="center">
@@ -51,6 +51,25 @@ El proceso para capturar información mediante los sensores y su conversión en 
 Fuente: Geekbot Electronics
 
 </div>
+
+### Lectura de un Potenciómetro con ESP32
+
+```
+int potPin = 34; // Pin donde está conectado el potenciómetro
+
+void setup() {
+  Serial.begin(115200); // Inicializar el monitor serie
+}
+
+void loop() {
+  int valor = analogRead(potPin); // Leer valor del potenciómetro
+  Serial.println(valor); // Mostrar valor en el monitor serie
+  delay(500); // Esperar medio segundo
+}
+```
+<p align="justify">
+Este código esta diseñado para ejecutar la placa del ESP32 y leer el valor del potenciómetro conectado al pin analógico 34, para así enviar datos al monitor serie, la función 'setup()' inicia la comunicación serie con una velocidad de 115200 baudios. El valor analógico del potenciómetro, que varía según su posición, se lee utilizando la función 'analogRead()' en la función 'loop()' y se almacena en la variable valor. Luego, usando 'Serial.println()', este valor se imprime en el monitor serie, para finalmente, esperar 500 milisegundos antes de leer el valor de nuevo, repitiendo el proceso indefinidamente.
+</p> 
 
 # 3.- Resultados:
 # 4.- Discusión:
