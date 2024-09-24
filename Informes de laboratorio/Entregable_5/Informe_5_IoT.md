@@ -173,7 +173,15 @@ Con este código, podemos conectar el ESP32 a cualquier red Wi-Fi, pero en este 
 
 ## 2.3 Arquitectura en la Nube
 <p align="justify">
+La arquitectura en la nube hace referencia a la forma en la que se logran integrar las distintas tecnologías que existen para crear la nube, es decir, los entornos qué tiene TI para separar o agrupar y compartir los recursos que existen a través de la red [5], además, se define la forma en la que se conectan todos los elementos y las funciones, para así diseñar la nube y ejecutar las distintas aplicaciones existentes actualmente, para ser precisos la arquitectura en IoT es un proceso en el cual toda la información viaja a través de la red en forma de datos digitalizados desde los sensores a un centro de datos que en este caso es la nube, donde estos datos son procesados y almacenados muchas veces en tiempo real.
+</p> 
 
+### 2.3.1 Enviando datos a la red
+<p align="justify">
+Para esta sección se realizó un código que muestre en tiempo real la variación del potenciómetro conectado al ESP32 en una de las plataformas de IoT que en este caso es ThingSpeak, y así poder enviar los datos en tiempo real a la nube.
+</p> 
+<p align="justify">
+Para saber un poco más, ThingSpeak es un servicio de plataforma correspondiente a IoT que nos permite agregar, visualizar y analizar el flujo de los datos en tiempo real en la nube, ya que puede enviar datos a la plataforma desde cualquier dispositivo, además, de crear visualizaciones instantáneas en tiempo real de los datos y enviar alertas utilizando servicios web [6], para ello se siguió los siguientes pasos: 
 </p> 
 
 
@@ -186,3 +194,5 @@ Con este código, podemos conectar el ESP32 a cualquier red Wi-Fi, pero en este 
 - [2] N. Dey, A. E. Hassanien, C. Bhatt, A. Ashour, and S. C. Satapathy, Internet of Things and Big Data Analytics Toward Next-Generation Intelligence. Cham, Switzerland: Springer, 2018. [Online]. Available: https://search.worldcat.org/es/title/1001327784. [Accessed: 23-Sep-2024].
 - [3] J. Hu, B. Lennox, H. Niu, J. Carrasco, & F. Arvin "Fault-tolerant cooperative navigation of networked UAV swarms for forest fire monitoring," *ScienceDirect*, vol. 123, April 2022. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0005109822000802. [Accessed: 23-Sep-2024].
 - [4] J. Hu, B. Lennox, & F. Arvin, "Robust formation control for networked robotic systems using Negative Imaginary dynamics," *Automatica*, vol. 140, June 2022. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0005109822000802. [Accessed: 23-Sep-2024].
+- [5] Red Hat, "¿Qué es la arquitectura en la nube?", Red Hat, Agosto 2022. [Online ]. Disponible: https://www.redhat.com/es/topics/cloud-computing/what-is-cloud-architecture. [Accedido: 23-sep-2024].
+- [6] MathWorks, "ThingSpeak Documentation," MathWorks, [Online]. Available: https://la.mathworks.com/help/thingspeak/. [Accessed: 24-Sep-2024].
