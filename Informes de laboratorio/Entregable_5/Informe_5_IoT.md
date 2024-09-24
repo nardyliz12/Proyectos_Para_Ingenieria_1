@@ -281,6 +281,8 @@ Este código conecta el ESP32 a la plataforma ThingSpeak para (IoT), utilizando 
 
 ### 2.3.2 Controlando desde la nube
 
+## 2.4 Mini Proyecto con Node-RED
+
 
 
 # 3.- Resultados:
