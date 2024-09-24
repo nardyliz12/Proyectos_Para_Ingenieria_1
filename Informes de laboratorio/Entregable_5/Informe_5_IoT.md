@@ -184,7 +184,100 @@ Para esta sección se realizó un código que muestre en tiempo real la variaci�
 Para saber un poco más, ThingSpeak es un servicio de plataforma correspondiente a IoT que nos permite agregar, visualizar y analizar el flujo de los datos en tiempo real en la nube, ya que puede enviar datos a la plataforma desde cualquier dispositivo, además, de crear visualizaciones instantáneas en tiempo real de los datos y enviar alertas utilizando servicios web [6], para ello se siguió los siguientes pasos: 
 </p> 
 
+<div align="center">
+  
+| Creación de la cuenta en ThingSpeak|
+|-------------------------------------|
+|<img src="https://github.com/user-attachments/assets/d5e8d112-e0c6-4f22-8c39-bea9c9722b8d" alt="ESP32 DEVKIT V1" width="550"/>|
 
+</div>
+
+|  Una vez creada la cuenta, procedemos a crear un canal nuevo, como se muestra a continuación.  |  <img src="https://github.com/user-attachments/assets/9b95458a-1abd-4598-9f1b-850089bbd804" alt="ESP32 DEVKIT V1" width="1100"/>|
+|----------------------|-----------------------|
+|Luego, procedemos a llenar solo los campos de Nombre del Canal, y los Field que serán las variables a enviar desde nuestro microcontrolador, como se muestra en la imagen. | <img src="https://github.com/user-attachments/assets/d3b97115-0ef1-4172-bd04-451cf675dc49" alt="ESP32 DEVKIT V1" width="1100"/> |
+
+|    Para visualizar la interfaz                                   |        Secuencia                                                                                                                         |
+|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Mostrar la interfaz                       | Una vez de haber creado el canal pasamos al siguiente paso de mostrar la interfaz, donde nos moveremos hacia el lado de los API Keys.         |
+| Crear y copiar API Key                    | Una vez de haber ingresado a ese punto y haber creado el API copiamos dichos datos como el Channel ID y el API Key creado.                    |
+| Usar con ESP32                            | Utilizaremos estos datos en nuestro código para hacer la demostración juntamente con el ESP32.                                                |
+| Channel ID                    |  <img src="https://github.com/user-attachments/assets/5791e169-f39a-4163-99a2-536637d352d4" alt="ESP32 DEVKIT V1" width="500"/>                                                  |
+| API Key                    |  <img src="https://github.com/user-attachments/assets/40d94168-731f-43f5-b695-f92d8925ff1d" alt="ESP32 DEVKIT V1" width="500"/>                                                  |
+
+#### NUESTRO CÓDIGO
+```
+/*
+ * Conexión hacia la plataforma ThingSpeak para proyectos 
+ * de Internet de las Cosas (IoT) usando un potenciómetro
+ */
+
+/* Incluimos las librerías necesarias */
+#include <WiFi.h>
+#include <ThingSpeak.h>
+
+/* Definimos el pin del potenciómetro */
+#define POT_PIN  34  // Pin al que está conectado el potenciómetro
+
+/* Definimos como constantes las credenciales de acceso a la red WiFi */
+const char* ssid = "WIFI_SSID";
+const char* password = "WIFI_PASSWORD";
+
+/* Definimos las credenciales para la conexión a ThingSpeak */
+unsigned long channelID = 2668052;
+const char* WriteAPIKey = "DN86CF0JEUBMZFEO";
+
+/* Definimos el cliente WiFi que usaremos */
+WiFiClient cliente;
+
+void setup() {
+  /* Iniciamos el terminal Serial a una velocidad de 115200 */
+  Serial.begin(115200);
+  delay(1000);
+  
+  /* Conectamos a la red WiFi */
+  Serial.println("Conectando al WiFi...");
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  
+  /* Conexión establecida */
+  Serial.println("\nConectado al WiFi");
+  ThingSpeak.begin(cliente);
+  delay(5000);
+}
+
+void loop() {
+  /* Hacemos la medición del potenciómetro */
+  medicion();
+
+  /* Enviamos los datos a ThingSpeak */
+  ThingSpeak.writeFields(channelID, WriteAPIKey);
+  Serial.println("Datos enviados a ThingSpeak!");
+
+  /* Pausa de 10 segundos antes de la siguiente medición */
+  delay(10000);
+}
+
+/* Función de medición del potenciómetro */
+void medicion() {
+  /* Leemos el valor del potenciómetro y lo convertimos a un rango de 0 a 100 */
+  int potValue = analogRead(POT_PIN);
+  float potPorcentaje = (potValue / 4095.0) * 100.0;  // Convertimos el valor a un porcentaje
+  
+  /* Imprimimos el valor leído en el terminal Serial */
+  Serial.print("Valor del potenciómetro: ");
+  Serial.println(potPorcentaje);
+  Serial.println("-----------------------------------------");
+  
+  /* Enviamos el valor del potenciómetro como Field 1 a ThingSpeak */
+  ThingSpeak.setField(1, potPorcentaje);
+}
+```
+<p align="justify">
+Este código conecta el ESP32 a la plataforma ThingSpeak para (IoT), utilizando un potenciómetro para medir valores analógicos, donde incluye las librerías necesarias que definen los pines del potenciómetro así como las credenciales de acceso a la red WiFi y ThingSpeak (mediante "channelID" y "WriteAPIKey"). En la función "setup()" se inicia la conexión WiFi y una vez establecida se configura la conexión a ThingSpeak. En el bucle principal (`loop()`), el valor del potenciómetro se lee, se convierte en porcentaje y se imprime en el monitor en serie, luego el valor se envía a ThingSpeak como un campo (Field 1) para ser visualizado, asimismo, los datos se envíaran a la plataforma de ThingSoeak repetidamente cada 10 segundos.
+</p>   
 
 # 3.- Resultados:
 # 4.- Discusión:
