@@ -434,6 +434,11 @@ Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar 
 
 # 3.- Resultados:
 # 4.- Discusión:
+
+El desarrollo de este proyecto de Internet de las cosas nos permitió examinar y considerar varias preguntas importantes relacionadas con la implementación de sistemas basados en Internet:
+
+Fiabilidad de la adquisición de datos en tiempo real: pudimos verificar que los datos del potenciómetro y del sensor de temperatura se enviaron correctamente a la nube a través de ThingSpeak.
+
 # 5.- Referencias bibliográficas:
 
 - [1] "Internet of Things (IoT)," IoT Agenda, TechTarget. [Online]. Available: https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT. [Accessed: 23-Sep-2024].
