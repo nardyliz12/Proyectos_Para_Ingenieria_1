@@ -113,8 +113,8 @@ void loop() {
     Serial.println(voltage, 3); // Mostrar con 3 decimales
 
     delay(500); // Esperar medio segundo
-}
-```
+
+````
 <p align="justify">
 Para suavizar las variaciones, este bloque mide el valor del potenciómetro conectado, donde la función "setup()" inicia la serie de comunicación y configura un arreglo para almacenar las lecturas. El arreglo se actualiza al restar la lectura más antigua, agregando la nueva lectura del potenciómetro, para luego calcular el promedio en el bucle "loop()". Este promedio se convierte a un valor de voltaje, asumiendo un ADC de 12 bits y una tensión de alimentación de 3.3V, que luego se imprime en el monitor serie con tres decimales para repetir el ciclo cada cincuenta milisegundos.
 </p> 
@@ -285,222 +285,139 @@ En esta sección, implementamos el control de un LED conectado a uno de los pine
 #### NUESTRO CÓDIGO
 ```
 /* Incluimos las librerías necesarias */
-
 #include <WiFi.h>
-
 #include <ThingSpeak.h>
 
 
-
 /* Definimos los pines */
-
 #define POT_PIN 34  // Pin al que está conectado el potenciómetro (ADC)
-
 #define LED_PIN 14  // Pin al que está conectado el LED (PWM)
 
 
-
 /* Definimos como constantes las credenciales de acceso a la red WiFi */
-
 const char* ssid = "UPCH_CENTRAL";    // Cambia por tu SSID
-
 const char* password = "CAYETANO2022";      // Cambia por tu contraseña
 
 
-
 /* Definimos las credenciales para la conexión a ThingSpeak */
-
 unsigned long channelID = 2669324;
-
 const char* WriteAPIKey = "9HKQ74WQDXEIOJTG";
 
 
-
 /* Definimos el cliente WiFi que usaremos */
-
 WiFiClient cliente;
 
 
-
 /* Variable para controlar el tiempo entre envíos a ThingSpeak y monitor serie */
-
 unsigned long previousMillis = 0;
-
 const long interval = 15000; // Cambiar el intervalo a 15 segundos
 
 
-
 void setup() {
-
  /* Iniciamos el terminal Serial a una velocidad de 115200 */
-
  Serial.begin(115200);
-
  delay(1000);
 
 
-
  /* Configuración del pin del LED */
-
  pinMode(LED_PIN, OUTPUT);
 
 
-
  /* Conectamos a la red WiFi */
-
  Serial.println("Conectando al WiFi...");
-
  WiFi.begin(ssid, password);
-
  while (WiFi.status() != WL_CONNECTED) {
-
   delay(500);
-
   Serial.print(".");
-
  }
 
 
-
  /* Conexión establecida */
-
  Serial.println("\nConectado al WiFi");
-
  ThingSpeak.begin(cliente);
-
 }
 
 
-
 void loop() {
-
  /* Controlamos el brillo del LED */
-
  controlLedBrillo();
-
  
 
  /* Verificamos si ha pasado el intervalo para enviar datos a ThingSpeak y mostrar en el monitor serie */
-
  unsigned long currentMillis = millis();
-
  if (currentMillis - previousMillis >= interval) {
-
   previousMillis = currentMillis;
-
-  
+ 
 
   /* Enviamos los datos a ThingSpeak */
 
   enviarDatosThingSpeak();
 
-  
 
   /* Imprimimos los datos en el monitor serie */
-
   imprimirDatosSerie();
 
-  
 
   Serial.println("Datos enviados a ThingSpeak!");
-
  }
-
 }
-
 
 
 /* Función para controlar el brillo del LED en tiempo real */
-
 void controlLedBrillo() {
-
  /* Leemos el valor del potenciómetro */
-
  int potValue = analogRead(POT_PIN);
-
  int ledBrightness = map(potValue, 0, 4095, 0, 255); // Mapeamos el valor del potenciómetro al rango de 0-255
-
  
 
  /* Ajustamos el brillo del LED */
-
  analogWrite(LED_PIN, ledBrightness);
-
 }
-
 
 
 /* Función para enviar los datos a ThingSpeak */
-
 void enviarDatosThingSpeak() {
-
  int potValue = analogRead(POT_PIN);
-
  float potPorcentaje = (potValue / 4095.0) * 100.0; // Convertimos el valor a un porcentaje
-
  int ledBrightness = map(potValue, 0, 4095, 0, 255); // Mapeamos el valor del potenciómetro al rango de 0-255
-
 
 
  /* Enviamos el valor del potenciómetro como Field 1 a ThingSpeak */
-
  ThingSpeak.setField(1, potPorcentaje);
 
 
-
  /* Enviamos el valor del brillo del LED como Field 2 a ThingSpeak */
-
  ThingSpeak.setField(2, ledBrightness);
 
 
-
  /* Enviamos los datos a ThingSpeak y verificamos el código de respuesta */
-
  int response = ThingSpeak.writeFields(channelID, WriteAPIKey);
-
  if (response == 200) {
-
   Serial.println("Datos enviados correctamente a ThingSpeak.");
-
  } else {
-
   Serial.print("Error al enviar datos. Código de error: ");
-
   Serial.println(response);
-
  }
-
 }
-
 
 
 /* Función para imprimir los datos en el monitor serie */
-
 void imprimirDatosSerie() {
-
  int potValue = analogRead(POT_PIN);
-
  int ledBrightness = map(potValue, 0, 4095, 0, 255); // Mapeamos el valor del potenciómetro al rango de 0-255
-
  float potPorcentaje = (potValue / 4095.0) * 100.0; // Convertimos el valor a un porcentaje
 
- 
+
 
  /* Imprimimos los datos en el terminal Serial */
-
  Serial.println("-----------------------------------------");
-
  Serial.print("Valor del potenciómetro: ");
-
  Serial.println(potPorcentaje);
-
  Serial.print("Brillo del LED: ");
-
  Serial.println(ledBrightness);
-
  Serial.println("-----------------------------------------");
-
 }
+```
 
 
 ## 2.4 Mini Proyecto con Node-RED
