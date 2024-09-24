@@ -279,6 +279,10 @@ void medicion() {
 Este código conecta el ESP32 a la plataforma ThingSpeak para (IoT), utilizando un potenciómetro para medir valores analógicos, donde incluye las librerías necesarias que definen los pines del potenciómetro así como las credenciales de acceso a la red WiFi y ThingSpeak (mediante "channelID" y "WriteAPIKey"). En la función "setup()" se inicia la conexión WiFi y una vez establecida se configura la conexión a ThingSpeak. En el bucle principal (`loop()`), el valor del potenciómetro se lee, se convierte en porcentaje y se imprime en el monitor en serie, luego el valor se envía a ThingSpeak como un campo (Field 1) para ser visualizado, asimismo, los datos se envíaran a la plataforma de ThingSoeak repetidamente cada 10 segundos.
 </p>   
 
+### 2.3.2 Controlando desde la nube
+
+
+
 # 3.- Resultados:
 # 4.- Discusión:
 # 5.- Referencias bibliográficas:
