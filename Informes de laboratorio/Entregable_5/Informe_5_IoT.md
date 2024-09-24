@@ -408,7 +408,6 @@ void imprimirDatosSerie() {
  float potPorcentaje = (potValue / 4095.0) * 100.0; // Convertimos el valor a un porcentaje
 
 
-
  /* Imprimimos los datos en el terminal Serial */
  Serial.println("-----------------------------------------");
  Serial.print("Valor del potenciómetro: ");
