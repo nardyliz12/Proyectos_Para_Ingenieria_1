@@ -420,6 +420,17 @@ void imprimirDatosSerie() {
 Este código nos permite encender o apagar el LED de manera remota, dependiendo del valor recibido desde la plataforma ThingSpeak, lo que se comprueban comprueban con éxito en las pruebas realizadas.
 
 ## 2.4 Mini Proyecto con Node-RED
+Para el mini proyecto, se utilizó Node-RED como una herramienta para gestionar y visualizar el flujo de datos en tiempo real, utilizando el protocolo MQTT. Se desarrolló un flujo de trabajo que recibe datos de un sensor de temperatura conectado al ESP32 y los envía a través de un broker MQTT, permitiendo la visualización en un panel de control en Node-RED.
+
+#### Pasos del mini proyecto:
+
+Conexión a Node-RED:Se configura una interfaz gráfica que recibe datos del ESP32 mediante un broker MQTT.
+
+Visualización: Los datos obtenidos del sensor se visualiza en un panel de control, lo que permite  monitorear en tiempo real el comportamiento del sistema.
+
+Control remoto: Se implementa la capacidad de enviar comandos al ESP32 para controlar un LED conectado a través de Node-RED, lo que  permite manejar el dispositivo desde una interfaz gráfica sencilla.
+
+Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar dispositivos IoT en sistemas de monitoreo y control en tiempo real.
 
 
 
