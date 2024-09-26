@@ -469,13 +469,12 @@ Finalmente, se verificó que el sistema es capaz de proporcionar lecturas de vol
 
 ### Scanner WIFI con ESP32:
 
-|Redes Wi Fi cercanas | Imagen |
-|----------------------|-----------------------|
-|En este trabajo, la biblioteca WiFi.h se utilizó para habilitar la conectividad inalámbrica del microcontrolador ESP32, permitiendo la transmisión de datos de forma remota y en tiempo real. Esta biblioteca fue clave para establecer la comunicación con una red WiFi y enviar los valores capturados por el potenciómetro hacia un servidor o monitor serie. Gracias a la integración de esta biblioteca, se logró que el dispositivo ESP32 se conectara a una red inalámbrica configurada previamente, facilitando su uso en aplicaciones IoT (Internet of Things), donde la monitorización y el control a distancia son esenciales. La implementación permitió que los datos leídos, como los valores de voltaje del potenciómetro, se visualizaran y analizaran de manera remota, destacando su utilidad en sistemas de monitoreo o control industrial y doméstico.
-Este uso de la biblioteca WiFi.h demuestra la capacidad del ESP32 para funcionar en aplicaciones que requieren conectividad constante y manejo de datos en tiempo real, sentando las bases para desarrollos futuros donde la eficiencia y la conectividad juegan un papel fundamental.| <img src="https://github.com/user-attachments/assets/ccfec72f-6212-46fe-abcc-62bd2424cc33" alt="ESP32 DEVKIT V1" width="800"/>|
-
-https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
-
+|Promedio ADC y Voltaje | Imagen |
+|-----------------------|------------------|
+|Se desarrolló e implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34. El microcontrolador utiliza su ADC para convertir los valores analógicos en señales digitales, logrando capturar un rango de valores entre 0 y 4095, correspondientes a un voltaje de 0 a 3.3V.
+La transmisión de datos se configuró a una velocidad de 115200 baudios, lo que garantiza una comunicación eficiente con el monitor serie para el monitoreo en tiempo real. El valor del potenciómetro se lee constantemente mediante la función analogRead(), con una frecuencia de 50 ms entre lecturas, lo que permite un muestreo más preciso y estable.
+Para optimizar la precisión de las lecturas, se implementó un algoritmo de promediado. Un arreglo almacena las lecturas recientes del potenciómetro, descartando las más antiguas. Esto minimiza el impacto de las fluctuaciones de ruido, asegurando una lectura más estable y representativa del valor real. El valor promedio se convierte a voltaje utilizando la relación del ADC (12 bits) y la tensión de referencia del ESP32, obteniendo una precisión de tres decimales en la visualización del voltaje.
+Finalmente, se verificó que el sistema es capaz de proporcionar lecturas de voltaje estables, como un valor promedio de 1.410V a partir de un valor ADC de 1750.| <img src="https://github.com/user-attachments/assets/bdff6d84-d4c1-4745-8eb0-dba961c0e9fa" alt="ESP32 DEVKIT V1" width="800"/>|
 
 ### Scanner WIFI con ESP32 con un Smartphone:
 
