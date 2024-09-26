@@ -70,6 +70,15 @@ void loop() {
 <p align="justify">
 Este código esta diseñado para ejecutar la placa del ESP32 y leer el valor del potenciómetro conectado al pin analógico 34, para así enviar datos al monitor serie, la función 'setup()' inicia la comunicación serie con una velocidad de 115200 baudios. El valor analógico del potenciómetro, que varía según su posición, se lee utilizando la función 'analogRead()' en la función 'loop()' y se almacena en la variable valor. Luego, usando 'Serial.println()', este valor se imprime en el monitor serie, para finalmente, esperar 500 milisegundos antes de leer el valor de nuevo, repitiendo el proceso indefinidamente.
 </p> 
+
+<div align="center">
+
+|Potenciómetrocon ESP32   |
+|------|
+| <img src="https://github.com/user-attachments/assets/e577fc3b-ed8b-4b79-8820-0e009486eb07" alt="ESP32 DEVKIT V1" width="300"/>    |
+
+</div>
+
 <p align="justify">
 Como actividad adicional era mejorar el código anterior haciendo el uso de un promediado de los datos en cuestión para convertirlos en valores del ADC a valores de voltaje, como se presenta s continuación.
 </p> 
@@ -442,7 +451,7 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 
 |Node-Red|Flujo|
 |---|----|
-|Con los nodos y mqtt nosotros estamos publicando el mensaje equipo 10 por él tópico equipo 4, para luego poder recepcionar este mensaje en el sp32 e imprimirlo por el monitor serie, además, con los nodos de mqtt y debug nos suscribimos al topico "OutTopic" y mostramos el mensaje en la sección debug de mensajes, ya que a través de este topico estariamos enviando desde el ESP32 el mensaje "equipo 4" más un número que indica la cantidad de mensajes que podríamos mandar al ejecutarlo.    |<img src="https://github.com/user-attachments/assets/3adf020f-b44f-4ca9-8c46-0b71dc4cf365" alt="ESP32 DEVKIT V1" width="5000"/> |
+|Con los nodos y mqtt nosotros estamos publicando el mensaje equipo 10 por él tópico equipo 4, para luego poder recepcionar este mensaje en el ESP32 e imprimirlo por el monitor serie, además, con los nodos de mqtt y debug nos suscribimos al topico "OutTopic" y mostramos el mensaje en la sección debug de mensajes, ya que a través de este topico estariamos enviando desde el ESP32 el mensaje "equipo 4" más un número que indica la cantidad de mensajes que podríamos mandar al ejecutarlo.    |<img src="https://github.com/user-attachments/assets/3adf020f-b44f-4ca9-8c46-0b71dc4cf365" alt="ESP32 DEVKIT V1" width="5000"/> |
 
 # 3.- Resultados:
 
