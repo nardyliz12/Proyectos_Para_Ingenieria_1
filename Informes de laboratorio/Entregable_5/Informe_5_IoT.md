@@ -425,18 +425,12 @@ Este código permite usar un potenciómetro para controlar el LED conectado a un
 </p> 
 
 ## 2.4 Mini Proyecto con Node-RED
-
-Para el mini proyecto, se utilizó Node-RED como una herramienta para gestionar y visualizar el flujo de datos en tiempo real, utilizando el protocolo MQTT. Se desarrolló un flujo de trabajo que recibe datos de un sensor de temperatura conectado al ESP32 y los envía a través de un broker MQTT, permitiendo la visualización en un panel de control en Node-RED.
-
-#### Pasos del mini proyecto:
-
-1.Conexión a Node-RED:Se configura una interfaz gráfica que recibe datos del ESP32 mediante un broker MQTT.
-
-2.Visualización: Los datos obtenidos del sensor se visualiza en un panel de control, lo que permite  monitorear en tiempo real el comportamiento del sistema.
-
-3.Control remoto: Se implementa la capacidad de enviar comandos al ESP32 para controlar un LED conectado a través de Node-RED, lo que  permite manejar el dispositivo desde una interfaz gráfica sencilla.
-
-Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar dispositivos IoT en sistemas de monitoreo y control en tiempo real.
+<p align="justify">
+Para el mini proyecto, se estuvo utilizando Node-RED como una herramienta para gestionar y visualizar el flujo de datos en tiempo real, utilizando el protocolo MQTT. Se desarrolló un flujo de trabajo que recibe datos de de manera aleatoria conectado al ESP32 y los envía a través de un broker MQTT, permitiendo la visualización en un panel de control en Node-RED.
+</p> 
+<p align="justify">
+Este método con Node-RED permite la configuración de una interfaz gráfica que recibe datos del ESP32 a través de un broker MQTT, lo que permite visualizar datos provenientes de los sensores en un panel de control en tiempo real, lo que facilita el monitoreo del sistema. Además, se incluye control remoto, lo que permite enviar instrucciones al ESP32 para manejar cualquier dispositivo conectado a través de una interfaz gráfica básica. Esto destaca la capacidad de Node-RED para integrar eficientemente y fácilmente dispositivos IoT en sistemas de monitoreo y control en tiempo real.
+</p> 
 
 # 3.- Resultados:
 
