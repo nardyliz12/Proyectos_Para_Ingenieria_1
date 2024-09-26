@@ -440,6 +440,10 @@ Para el mini proyecto, se estuvo utilizando Node-RED como una herramienta para g
 Este método con Node-RED permite la configuración de una interfaz gráfica que recibe datos del ESP32 a través de un broker MQTT, lo que permite visualizar datos provenientes de los sensores en un panel de control en tiempo real, lo que facilita el monitoreo del sistema. Además, se incluye control remoto, lo que permite enviar instrucciones al ESP32 para manejar cualquier dispositivo conectado a través de una interfaz gráfica básica. Esto destaca la capacidad de Node-RED para integrar eficientemente y fácilmente dispositivos IoT en sistemas de monitoreo y control en tiempo real.
 </p> 
 
+|Node-Red|Flujo|
+|---|----|
+|Con los nodos y mqtt nosotros estamos publicando el mensaje equipo 10 por él tópico equipo 4, para luego poder recepcionar este mensaje en el sp32 e imprimirlo por el monitor serie, además, con los nodos de mqtt y debug nos suscribimos al topico "OutTopic" y mostramos el mensaje en la sección debug de mensajes, ya que a través de este topico estariamos enviando desde el ESP32 el mensaje "equipo 4" más un número que indica la cantidad de mensajes que podríamos mandar al ejecutarlo.    |<img src="https://github.com/user-attachments/assets/3adf020f-b44f-4ca9-8c46-0b71dc4cf365" alt="ESP32 DEVKIT V1" width="5000"/> |
+
 # 3.- Resultados:
 
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
