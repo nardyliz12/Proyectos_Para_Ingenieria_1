@@ -442,21 +442,31 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 
 # 3.- Resultados:
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
+
 ## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
-### Scanner WIFI con ESP32
+
+### Scanner WIFI con ESP32:
+
+|Redes Wi Fi cercanas | Imagen |
+|-------------|------------------|
+|.   | <img src="https://github.com/user-attachments/assets/ccfec72f-6212-46fe-abcc-62bd2424cc33" alt="ESP32 DEVKIT V1" width="800"/>|
 
 https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
 
-### Scanner WIFI con ESP32 con un Smartphone
+### Scanner WIFI con ESP32 con un Smartphone:
+
+|Obtencióndel de la direcciónIp del Smartphone | Imagen |
+|-------------|------------------|
+|.   | <img src="https://github.com/user-attachments/assets/80b07a3a-cac8-4e08-a9cc-42a50a3064f4" alt="ESP32 DEVKIT V1" width="800"/>|
 
 ## 2.3.3 Arquitectura en la nube
-### Conexión a ThingSpeak
+### Conexión a ThingSpeak:
 
 |ThingSpeak con potenciómetro | Gráfico |
 |-------------|------------------|
 |<img src="https://github.com/user-attachments/assets/c8e89189-574d-49c5-9e1e-f09aea6657c9" alt="ESP32 DEVKIT V1" width="800"/> | <img src="https://github.com/user-attachments/assets/1099d9be-cefc-4b79-9296-34bad29f37d5" alt="ESP32 DEVKIT V1" width="800"/>|
 
-### Control desde la nube utilizando ThingSpeak (Led)
+### Control desde la nube utilizando ThingSpeak (Led):
 
 <p align="justify">
 En esta sección, se detalla el comportamiento del sistema diseñado, que permite controlar el brillo de un LED mediante un potenciómetro y enviar los datos de manera remota a la plataforma ThingSpeak. Los datos se enviaron cada 15 segundos, y fueron visualizados mediante gráficas en la nube, donde La imagen muestra dos gráficos: uno para el brillo del LED (Campo 1) y otro para el potenciómetro (Campo 2). Los valores del potenciómetro oscilan entre 30 y 150, mientras que el brillo del LED fluctúa entre 20 y 60. Estos datos fueron capturados y enviados a ThingSpeak, lo que permitió su monitoreo remoto y en tiempo real. Los gráficos están alineados temporalmente, demostrando la relación directa entre los cambios en la resistencia del potenciómetro y el ajuste del brillo del LED, como se muestras continuación:
