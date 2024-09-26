@@ -443,6 +443,11 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 # 3.- Resultados:
 
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
+Se desarrolló un código para el ESP32 que permite la lectura del valor de un potenciómetro conectado al pin analógico 34, enviando los datos al monitor serie. En primer lugar, se configuró la comunicación serie a 115200 baudios, lo que permitió una transmisión eficiente de datos entre el ESP32 y el monitor serie, facilitando el monitoreo en tiempo real de las lecturas del potenciómetro. La función `analogRead()` en el ciclo `loop()` captura continuamente los valores analógicos, almacenándolos en la variable "valor" y mostrándolos en el monitor serie. Esto permite observar la influencia de la posición del potenciómetro en el valor analógico, crucial para evaluar el rendimiento del dispositivo.
+
+Con un intervalo de lectura de 500 milisegundos, se lograron detectar variaciones sin perder información, aunque este tiempo puede ser insuficiente para aplicaciones que requieren respuestas más rápidas. Esta implementación sienta las bases para mejoras futuras, como el promediado de lecturas, que podría aumentar la estabilidad y precisión de los datos, reduciendo el ruido en las mediciones.
+
+Luego, para optimizar los resultados de las lecturas promediadas, se implementó un arreglo que permite almacenar múltiples lecturas del potenciómetro. La lectura más antigua se descarta, lo que garantiza que solo se utilicen las lecturas más recientes para calcular el promedio. Este promedio se convierte en un valor de voltaje, considerando un ADC de 12 bits y una tensión de alimentación de 3.3V. El valor promedio se muestra en el monitor serie con una precisión de tres decimales. El ciclo de lectura y promediado se repite cada 50 milisegundos, lo que resulta en una visualización más estable y precisa de las fluctuaciones en el valor del potenciómetro.
 
 |Promedio ADC y Voltaje | Imagen |
 |-------------|------------------|
