@@ -449,7 +449,7 @@ Este código permite usar un potenciómetro para controlar el LED conectado a un
 
 |Redes Wi Fi cercanas | Imagen |
 |----------------------|-----------------------|
-|Se implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34, utilizando su ADC para convertir las señales analógicas en digitales dentro de un rango de 0 a 4095 (0 a 3.3V). La transmisión de datos a 115200 baudios permitió una comunicación eficiente en tiempo real. Las lecturas se realizaron cada 50 ms, y se utilizó un algoritmo de promediado para obtener valores más estables, minimizando el ruido. Se logró una precisión de tres decimales en la conversión a voltaje, obteniendo lecturas estables como 1.410V a partir de un valor ADC de 1750.| <img src="!https://github.com/user-attachments/assets/50cf620e-72d5-4966-babf-e339722fc9d6" alt="ESP32 DEVKIT V1" width="8000"/>|
+|Se implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34, utilizando su ADC para convertir las señales analógicas en digitales dentro de un rango de 0 a 4095 (0 a 3.3V). La transmisión de datos a 115200 baudios permitió una comunicación eficiente en tiempo real. Las lecturas se realizaron cada 50 ms, y se utilizó un algoritmo de promediado para obtener valores más estables, minimizando el ruido. Se logró una precisión de tres decimales en la conversión a voltaje, obteniendo lecturas estables como 1.410V a partir de un valor ADC de 1750.| <img src="https://github.com/user-attachments/assets/50cf620e-72d5-4966-babf-e339722fc9d6" alt="ESP32 DEVKIT V1" width="8000"/>|
 
 
 
