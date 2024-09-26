@@ -457,20 +457,16 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
 
-Se desarrolló un código para el ESP32 que permitió la lectura del valor de un potenciómetro conectado al pin analógico 34, lo que permitió capturar valores analógicos variables, que son convertidos en señales digitales por el ADC del microcontrolador.
-
-- Configuración del sistema:
-Se configuró la transmisión de datos entre el ESP32 y el monitor serie a 115200 baudios, lo que asegura una comunicación rápida y eficiente para el monitoreo en tiempo real.
-
-- Captura de datos:
-La función analogRead() se utiliza dentro del ciclo loop() para leer el valor del potenciómetro constantemente. Esta lectura corresponde a un valor digitalizado de 12 bits, lo que genera un rango de 0 a 4095, donde 0 corresponde a 0V y 4095 a 3.3V, la tensión de referencia del ESP32. El programa inicial tenía un retardo de 500 ms entre lecturas, lo que es suficiente para aplicaciones de monitoreo lento, pero podría no ser adecuado para sistemas que requieren respuestas más rápidas.
-
-- Promediado de lecturas:
-Luego, para optimizar los resultados de las lecturas promediadas, se implementó un arreglo que permite almacenar múltiples lecturas del potenciómetro. La lectura más antigua se descarta, lo que garantiza que solo se utilicen las lecturas más recientes para calcular el promedio. Este promedio se convierte en un valor de voltaje, considerando un ADC de 12 bits y una tensión de alimentación de 3.3V. El valor promedio se muestra en el monitor serie con una precisión de tres decimales. El ciclo de lectura y promediado se repite cada 50 milisegundos, lo que resulta en una visualización más estable y precisa de las fluctuaciones en el valor del potenciómetro.
-
 |Promedio ADC y Voltaje | Imagen |
 |-------------|------------------|
-|.   | <img src="https://github.com/user-attachments/assets/bdff6d84-d4c1-4745-8eb0-dba961c0e9fa" alt="ESP32 DEVKIT V1" width="800"/>|
+|Se desarrolló e implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34. El microcontrolador utiliza su ADC para convertir los valores analógicos en señales digitales, logrando capturar un rango de valores entre 0 y 4095, correspondientes a un voltaje de 0 a 3.3V.
+
+La transmisión de datos se configuró a una velocidad de 115200 baudios, lo que garantiza una comunicación eficiente con el monitor serie para el monitoreo en tiempo real. El valor del potenciómetro se lee constantemente mediante la función analogRead(), con una frecuencia de 50 ms entre lecturas, lo que permite un muestreo más preciso y estable.
+
+Para optimizar la precisión de las lecturas, se implementó un algoritmo de promediado. Un arreglo almacena las lecturas recientes del potenciómetro, descartando las más antiguas. Esto minimiza el impacto de las fluctuaciones de ruido, asegurando una lectura más estable y representativa del valor real. El valor promedio se convierte a voltaje utilizando la relación del ADC (12 bits) y la tensión de referencia del ESP32, obteniendo una precisión de tres decimales en la visualización del voltaje.
+
+Finalmente, se verificó que el sistema es capaz de proporcionar lecturas de voltaje estables, como un valor promedio de 1.410V a partir de un valor ADC de 1750.  | <img src="https://github.com/user-attachments/assets/bdff6d84-d4c1-4745-8eb0-dba961c0e9fa" alt="ESP32 DEVKIT V1" width="800"/>|
+
 
 ## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
 
