@@ -495,7 +495,7 @@ https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
 
 |ThingSpeak con potenciómetro | Imagen |
 |-------------|------------------|
-| | <img src="https://github.com/user-attachments/assets/7dd3d394-bf36-48bc-9d9e-43fdff09a69b" alt="ESP32 DEVKIT V1" width="800"/>|
+|Después de haber configurado correctamente el código se puede observar que hemos llegado al resultado esperado de poder conectar el ESP32 juntamente con la plataforma de ThingSpeak, dado que nos muestra el valor del potenciómetro y el cambio de los datos en la plataforma de ThingSpeak como se visualiza en las imágenes, brindandonos un mensaje que que se conecto correctamente. | <img src="https://github.com/user-attachments/assets/7dd3d394-bf36-48bc-9d9e-43fdff09a69b" alt="ESP32 DEVKIT V1" width="800"/>|
 
 |ThingSpeak  | Gráfico |
 |-------------|------------------|
