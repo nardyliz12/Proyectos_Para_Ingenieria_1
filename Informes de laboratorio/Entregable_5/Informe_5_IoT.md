@@ -447,9 +447,11 @@ Este código permite usar un potenciómetro para controlar el LED conectado a un
 
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
 
-|Promedio ADC y Voltaje | Imagen |
-|-------------|------------------|
-|Se desarrolló e implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34. El microcontrolador utiliza su ADC para convertir los valores analógicos en señales digitales, logrando capturar un rango de valores entre 0 y 4095, correspondientes a un voltaje de 0 a 3.3V.La transmisión de datos se configuró a una velocidad de 115200 baudios, lo que garantiza una comunicación eficiente con el monitor serie para el monitoreo en tiempo real. El valor del potenciómetro se lee constantemente mediante la función analogRead(), con una frecuencia de 50 ms entre lecturas, lo que permite un muestreo más preciso y estable.Para optimizar la precisión de las lecturas, se implementó un algoritmo de promediado. Un arreglo almacena las lecturas recientes del potenciómetro, descartando las más antiguas. Esto minimiza el impacto de las fluctuaciones de ruido, asegurando una lectura más estable y representativa del valor real. El valor promedio se convierte a voltaje utilizando la relación del ADC (12 bits) y la tensión de referencia del ESP32, obteniendo una precisión de tres decimales en la visualización del voltaje.Finalmente, se verificó que el sistema es capaz de proporcionar lecturas de voltaje estables, como un valor promedio de 1.410V a partir de un valor ADC de 1750.| <img src="https://github.com/user-attachments/assets/bdff6d84-d4c1-4745-8eb0-dba961c0e9fa" alt="ESP32 DEVKIT V1" width="8000"/>|
+|Redes Wi Fi cercanas | Imagen |
+|----------------------|-----------------------|
+|Se implementó un código en el ESP32 para leer los valores de un potenciómetro conectado al pin analógico 34, utilizando su ADC para convertir las señales analógicas en digitales dentro de un rango de 0 a 4095 (0 a 3.3V). La transmisión de datos a 115200 baudios permitió una comunicación eficiente en tiempo real. Las lecturas se realizaron cada 50 ms, y se utilizó un algoritmo de promediado para obtener valores más estables, minimizando el ruido. Se logró una precisión de tres decimales en la conversión a voltaje, obteniendo lecturas estables como 1.410V a partir de un valor ADC de 1750.| <img src="https://github.com/user-attachments/assets/ccfec72f-6212-46fe-abcc-62bd2424cc33" alt="ESP32 DEVKIT V1" width="800"/>|
+https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
+
 
 
 ## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
