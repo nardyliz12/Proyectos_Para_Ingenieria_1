@@ -480,10 +480,8 @@ https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
 ### Scanner WIFI con ESP32 con un Smartphone:
 
 |Obtencióndel de la dirección IP del Smartphone | Imagen |
-|-------------|------------------| 
-|En esta sección se describe el uso de un ESP32 como escáner WiFi para obtener la dirección IP de un smartphone conectado a la misma red inalámbrica. Utilizando la funcionalidad de escaneo de redes del ESP32, el dispositivo es capaz de detectar y listar las direcciones IP de los dispositivos conectados a la red, incluyendo smartphones. Esta característica permite verificar qué dispositivos están en línea y obtener información relevante sobre ellos, como la dirección IP, lo cual es útil en aplicaciones de monitoreo de redes o proyectos de IoT (Internet de las Cosas).
-Se incluye una imagen que muestra el proceso de detección y el resultado en el que se obtiene la dirección IP del smartphone, ayudando a visualizar el funcionamiento del ESP32 en esta tarea específica.   | <img src="https://github.com/user-attachments/assets/80b07a3a-cac8-4e08-a9cc-42a50a3064f4" alt="ESP32 DEVKIT V1" width="800"/>|
-
+|-------------|------------------|
+| Es necesario conocer de como utilizando un ESP32 podemos conectar a una red Wi-Fi de cualquier dispositivo, sin que éste cuente con internet. Al tener una red Wi-Fi existente y colocar el usuario y contraseña se puede extraer una conexión con este obteniendo su dirección IP, lo cual se puede visualizar en la salida del monitor serial del dispositivo que se ha conectado exitosamente, indicando que la conexión WiFi ha sido establecida correctamente y el dispositivo está listo para comunicarse a través de la red, como se muestra en la imagen.  | <img src="https://github.com/user-attachments/assets/80b07a3a-cac8-4e08-a9cc-42a50a3064f4" alt="ESP32 DEVKIT V1" width="3000"/>|
 ## 2.3.3 Arquitectura en la nube
 ### Conexión a ThingSpeak:
 
