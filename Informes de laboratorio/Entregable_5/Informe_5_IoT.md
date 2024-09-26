@@ -426,7 +426,8 @@ Este código permite usar un potenciómetro para controlar el LED conectado a un
 
 <img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregable_5/20240919_145938.jpg?raw=true" alt="Descripción de la imagen" width="550" />
 
-<a href="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregable_5/20240919_154812~2.mp4?raw=true" download>Descargar Video</a>
+<a href="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/20240919_154812~2.mp4?raw=true" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Ver Video</a>
+
 
 
 
