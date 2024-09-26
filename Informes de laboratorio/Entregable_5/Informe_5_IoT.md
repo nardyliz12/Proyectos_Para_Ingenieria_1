@@ -280,7 +280,9 @@ Este código conecta el ESP32 a la plataforma ThingSpeak para (IoT), utilizando 
 </p>   
 
 ### 2.3.2 Controlando desde la nube
+<p align="justify">
 En esta sección, se implementó el control de un LED conectado a uno de los pines digitales del ESP32 a través de la plataforma ThingSpeak, permitiendo el control remoto del dispositivo desde la nube. Utilizamos el protocolo MQTT para recibir datos y enviar comandos desde la nube hacia el dispositivo.
+</p> 
 
 #### NUESTRO CÓDIGO
 ```
@@ -420,6 +422,7 @@ void imprimirDatosSerie() {
 Este código nos permite encender o apagar el LED de manera remota, dependiendo del valor recibido desde la plataforma ThingSpeak, lo que se comprueban comprueban con éxito en las pruebas realizadas.
 
 ## 2.4 Mini Proyecto con Node-RED
+
 Para el mini proyecto, se utilizó Node-RED como una herramienta para gestionar y visualizar el flujo de datos en tiempo real, utilizando el protocolo MQTT. Se desarrolló un flujo de trabajo que recibe datos de un sensor de temperatura conectado al ESP32 y los envía a través de un broker MQTT, permitiendo la visualización en un panel de control en Node-RED.
 
 #### Pasos del mini proyecto:
@@ -434,17 +437,21 @@ Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar 
 
 # 3.- Resultados:
 # 4.- Discusión:
-
+<p align="justify">
 El desarrollo del proyecto con el ESP32, ThingSpeak y Node-RED resalta la creciente importancia de las tecnologías de Internet de las Cosas (IoT) en la creación de sistemas de monitoreo y control. A medida que las ciudades y los entornos se vuelven más interconectados, la capacidad de gestionar dispositivos de manera remota se vuelve esencial. Este proyecto no solo demuestra la viabilidad técnica de integrar diversos componentes en un solo sistema, sino que también abre la puerta a una serie de aplicaciones prácticas en diferentes ámbitos.
-
+</p>   
+<p align="justify">
 Uno de los aspectos más destacados del proyecto fue la conexión del ESP32 a la plataforma ThingSpeak, que permite el almacenamiento y visualización de datos en la nube. Esta funcionalidad es fundamental para proyectos de IoT, ya que proporciona una interfaz accesible desde cualquier lugar, facilitando la toma de decisiones informadas. Sin embargo, un desafío que se presentó fue la latencia en la transmisión de datos. Si bien se lograron enviar los datos cada 10 segundos, la velocidad de respuesta podría ser un factor crítico en aplicaciones donde se requiere un monitoreo en tiempo real más inmediato. Futuros trabajos podrían explorar optimizaciones en la configuración de red o la utilización de protocolos alternativos como MQTT para mejorar esta latencia.
-
+</p>   
+<p align="justify">
 La implementación del control del LED a través de Node-RED también plantea interesantes implicaciones. Este sistema no solo permite la personalización del entorno a través del ajuste del brillo, sino que también sirve como un ejemplo claro de cómo la automatización puede mejorar la eficiencia energética. No obstante, se deben considerar aspectos de seguridad, ya que el control remoto de dispositivos electrónicos plantea riesgos potenciales de acceso no autorizado. Integrar protocolos de seguridad robustos será crucial en futuros desarrollos para garantizar la integridad del sistema.
-
+</p>   
+<p align="justify">
 Además, la capacidad de visualización y gestión de datos en tiempo real a través de Node-RED proporciona una experiencia de usuario intuitiva. Sin embargo, la complejidad de la interfaz puede ser un obstáculo para usuarios menos técnicos. Por lo tanto, se sugiere investigar la creación de interfaces de usuario más amigables y accesibles, que permitan a un público más amplio interactuar con los sistemas IoT sin necesidad de un conocimiento técnico avanzado.
-
+</p>   
+<p align="justify">
 En resumen, el proyecto no solo ha logrado cumplir con los objetivos propuestos, sino que también ha resaltado áreas de mejora y oportunidades para futuros desarrollos. La integración de tecnologías IoT ofrece un potencial significativo para transformar la manera en que interactuamos con el entorno, y este trabajo representa un paso hacia la creación de soluciones más innovadoras y efectivas.
-
+</p> 
 # 5.- Referencias bibliográficas:
 
 - [1] "Internet of Things (IoT)," IoT Agenda, TechTarget. [Online]. Available: https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT. [Accessed: 23-Sep-2024].
