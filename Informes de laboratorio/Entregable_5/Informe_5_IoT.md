@@ -441,8 +441,13 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 </p> 
 
 # 3.- Resultados:
-
-## 2.3.2 Control desde la nube utilizando ThingSpeak
+## 3.2.1 Lectura de un Potenciómetro con ESP32
+## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
+### Scanner WIFI con ESP32
+### Scanner WIFI con ESP32 con un Smartphone
+## 2.3.3 Arquitectura en la nube
+### Conexión a ThingSpeak
+### Control desde la nube utilizando ThingSpeak (Led)
 
 <p align="justify">
 En esta sección, se detalla el comportamiento del sistema diseñado, que permite controlar el brillo de un LED mediante un potenciómetro y enviar los datos de manera remota a la plataforma ThingSpeak. Los datos se enviaron cada 15 segundos, y fueron visualizados mediante gráficas en la nube, donde La imagen muestra dos gráficos: uno para el brillo del LED (Campo 1) y otro para el potenciómetro (Campo 2). Los valores del potenciómetro oscilan entre 30 y 150, mientras que el brillo del LED fluctúa entre 20 y 60. Estos datos fueron capturados y enviados a ThingSpeak, lo que permitió su monitoreo remoto y en tiempo real. Los gráficos están alineados temporalmente, demostrando la relación directa entre los cambios en la resistencia del potenciómetro y el ajuste del brillo del LED, como se muestras continuación:
