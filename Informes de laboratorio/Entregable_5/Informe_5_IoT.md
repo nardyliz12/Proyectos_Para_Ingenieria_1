@@ -444,6 +444,9 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
 ## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
 ### Scanner WIFI con ESP32
+
+https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
+
 ### Scanner WIFI con ESP32 con un Smartphone
 ## 2.3.3 Arquitectura en la nube
 ### Conexión a ThingSpeak
