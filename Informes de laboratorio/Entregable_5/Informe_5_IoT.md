@@ -436,6 +436,11 @@ Para el mini proyecto, se utilizó Node-RED como una herramienta para gestionar 
 Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar dispositivos IoT en sistemas de monitoreo y control en tiempo real.
 
 # 3.- Resultados:
+
+2.Control remoto de dispositivos: Logramos controlar un LED de manera remota a través de ThingSpeak. El ESP32 respondió adecuadamente a los comandos enviados desde la nube, encendiendo o apagando el LED sin retrasos significativos.
+
+Las pruebas mostraron que, siempre que la conexión Wi-Fi se mantuvo estable, el control remoto del LED fue instantáneo, confirmando la capacidad de ThingSpeak para interactuar con dispositivos IoT en tiempo real.
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo del proyecto con el ESP32, ThingSpeak y Node-RED resalta la creciente importancia de las tecnologías de Internet de las Cosas (IoT) en la creación de sistemas de monitoreo y control. A medida que las ciudades y los entornos se vuelven más interconectados, la capacidad de gestionar dispositivos de manera remota se vuelve esencial. Este proyecto no solo demuestra la viabilidad técnica de integrar diversos componentes en un solo sistema, sino que también abre la puerta a una serie de aplicaciones prácticas en diferentes ámbitos.
