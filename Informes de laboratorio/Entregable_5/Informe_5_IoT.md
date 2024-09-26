@@ -280,9 +280,10 @@ Este código conecta el ESP32 a la plataforma ThingSpeak para (IoT), utilizando 
 </p>   
 
 ### 2.3.2 Controlando desde la nube
-<p align="justify">
-En esta sección, se implementó el control de un LED conectado a uno de los pines digitales del ESP32 a través de la plataforma ThingSpeak, permitiendo el control remoto del dispositivo desde la nube. Utilizamos el protocolo MQTT para recibir datos y enviar comandos desde la nube hacia el dispositivo.
-</p> 
+
+| Controlando un Led para verlo en la nube   |  Imagen |
+|----------------------|-----------------------|
+| En esta sección, se implementó un código para el control de un LED conectado a uno de los pines digitales del ESP32 a través de la plataforma ThingSpeak mediante un potenciómetro, permitiendo el control remoto del Led para mandar los datos a la nube. Para ello fue necesario implementar una rede Wi-Fi, juntamente con el API que nos brinda la plataforma de ThingSpeak para visualizar los datos.| <img src="https://github.com/user-attachments/assets/5c2b45ef-9269-4285-b7bf-c3170ff4518b" alt="ESP32 DEVKIT V1" width="3000"/> |
 
 #### NUESTRO CÓDIGO
 ```
