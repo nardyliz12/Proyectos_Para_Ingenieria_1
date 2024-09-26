@@ -438,14 +438,17 @@ Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar 
 
 # 3.- Resultados:
 
-2.Control remoto de dispositivos: Logramos controlar un LED de manera remota a través de ThingSpeak. El ESP32 respondió adecuadamente a los comandos enviados desde la nube, encendiendo o apagando el LED sin retrasos significativos.
+2.3.2 Control desde la nube utilizando ThingSpeak
+En este parte, se detalla el comportamiento del sistema diseñado, que permite controlar el brillo de un LED mediante un potenciómetro y enviar los datos de manera remota a la plataforma ThingSpeak. Los datos se enviaron cada 15 segundos, y fueron visualizados mediante gráficas en la nube.
 
-Las pruebas mostraron que, siempre que la conexión Wi-Fi se mantuvo estable, el control remoto del LED fue instantáneo, confirmando la capacidad de ThingSpeak para interactuar con dispositivos IoT en tiempo real.
-
-| Encontrar Redes Wi-Fi cercanas  | Redes  Wi-Fi  |
+| Gráficas de ThingSpeak para el control del LED y potenciómetro.  | Imagen  |
 |----------------------|-----------------------|
 | Para escanear las redes Wi-Fi con el ESP32, se configura un código que permite verificar todas las redes Wi-Fi cercanas en nuestra área, donde se muestra el número total de redes encontradas con el nombre (SSID) y la intensidad de la señal (RSSI). Los resultados se imprimen en el monitor serie con una pausa de 5 segundos entre cada escaneo. | <img src="https://github.com/user-attachments/assets/35430843-5053-4c84-a494-20cd5019aadb" alt="ESP32 DEVKIT V1" width="1000"/> |
 
+Visualización y análisis de los datos en ThingSpeak
+
+Campo 1 (LED_P): La gráfica de este campo muestra las variaciones en el brillo del LED, que fluctúan entre valores de 20 y 60. Estas fluctuaciones son producto de los cambios en la resistencia del potenciómetro.
+Campo 2 (Potenciómetro): En este gráfico se observan las lecturas del potenciómetro, las cuales oscilan entre 30 y 150, lo que refleja la intervención manual. Los cambios en el potenciómetro generan variaciones directas en el brillo del LED, como se ve en el Campo 1.
 
 # 4.- Discusión:
 <p align="justify">
