@@ -440,11 +440,13 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 
 ## 2.3.2 Control desde la nube utilizando ThingSpeak
 
-En esta sección, se detalla el comportamiento del sistema diseñado, que permite controlar el brillo de un LED mediante un potenciómetro y enviar los datos de manera remota a la plataforma ThingSpeak. Los datos se enviaron cada 15 segundos, y fueron visualizados mediante gráficas en la nube de la siguiente manera:
+<p align="justify">
+En esta sección, se detalla el comportamiento del sistema diseñado, que permite controlar el brillo de un LED mediante un potenciómetro y enviar los datos de manera remota a la plataforma ThingSpeak. Los datos se enviaron cada 15 segundos, y fueron visualizados mediante gráficas en la nube, donde La imagen muestra dos gráficos: uno para el brillo del LED (Campo 1) y otro para el potenciómetro (Campo 2). Los valores del potenciómetro oscilan entre 30 y 150, mientras que el brillo del LED fluctúa entre 20 y 60. Estos datos fueron capturados y enviados a ThingSpeak, lo que permitió su monitoreo remoto y en tiempo real. Los gráficos están alineados temporalmente, demostrando la relación directa entre los cambios en la resistencia del potenciómetro y el ajuste del brillo del LED, como se muestras continuación:
+</p>
 
-| Gráficas de ThingSpeak para el control del LED y potenciómetro.  | Imagen  |
-|----------------------|-----------------------|
-| La imagen muestra dos gráficos: uno para el brillo del LED (Campo 1) y otro para el potenciómetro (Campo 2). Los valores del potenciómetro oscilan entre 30 y 150, mientras que el brillo del LED fluctúa entre 20 y 60. Estos datos fueron capturados y enviados a ThingSpeak, lo que permitió su monitoreo remoto y en tiempo real. Los gráficos están alineados temporalmente, demostrando la relación directa entre los cambios en la resistencia del potenciómetro y el ajuste del brillo del LED. |  <img src="https://github.com/user-attachments/assets/1721ac16-f1f1-4fa7-a102-f23368447065" alt="ESP32 DEVKIT V1" width="8000"/> |
+| Gráficas de ThingSpeak para el control del LED y potenciómetro.  | 
+|----------------------|
+| <img src="https://github.com/user-attachments/assets/1721ac16-f1f1-4fa7-a102-f23368447065" alt="ESP32 DEVKIT V1" width="800"/> | 
 
 ### Visualización y análisis de los datos en ThingSpeak
 
