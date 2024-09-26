@@ -441,7 +441,12 @@ Este método con Node-RED permite la configuración de una interfaz gráfica que
 </p> 
 
 # 3.- Resultados:
+
 ## 3.2.1 Lectura de un Potenciómetro con ESP32
+
+|Promedio ADC y Voltaje | Imagen |
+|-------------|------------------|
+|.   | <img src="https://github.com/user-attachments/assets/bdff6d84-d4c1-4745-8eb0-dba961c0e9fa" alt="ESP32 DEVKIT V1" width="800"/>|
 
 ## 3.2.2 Uso de la Biblioteca WiFi.h y Aplicaciones
 
@@ -455,7 +460,7 @@ https://github.com/user-attachments/assets/d47bb2dc-9fda-4e90-931b-6d869d1f2184
 
 ### Scanner WIFI con ESP32 con un Smartphone:
 
-|Obtencióndel de la direcciónIp del Smartphone | Imagen |
+|Obtencióndel de la dirección IP del Smartphone | Imagen |
 |-------------|------------------|
 |.   | <img src="https://github.com/user-attachments/assets/80b07a3a-cac8-4e08-a9cc-42a50a3064f4" alt="ESP32 DEVKIT V1" width="800"/>|
 
