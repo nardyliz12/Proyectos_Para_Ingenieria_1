@@ -456,6 +456,9 @@ En esta sección, se detalla el comportamiento del sistema diseñado, que permit
 
 - **Campo 2 (Potenciómetro):** En este gráfico se observan las lecturas del potenciómetro, las cuales oscilan entre 30 y 150, lo que refleja la intervención manual. Los cambios en el potenciómetro generan variaciones directas en el brillo del LED, como se ve en el Campo 1.
 
+
+https://github.com/user-attachments/assets/fe079d2d-f8fd-4d41-af07-30c82d5e0f4d
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo del proyecto con el ESP32, ThingSpeak y Node-RED resalta la creciente importancia de las tecnologías de Internet de las Cosas (IoT) en la creación de sistemas de monitoreo y control. A medida que las ciudades y los entornos se vuelven más interconectados, la capacidad de gestionar dispositivos de manera remota se vuelve esencial. Este proyecto no solo demuestra la viabilidad técnica de integrar diversos componentes en un solo sistema, sino que también abre la puerta a una serie de aplicaciones prácticas en diferentes ámbitos.
