@@ -420,7 +420,9 @@ void imprimirDatosSerie() {
  Serial.println("-----------------------------------------");
 }
 ```
-Este código nos permite encender o apagar el LED de manera remota, dependiendo del valor recibido desde la plataforma ThingSpeak, lo que se comprueban comprueban con éxito en las pruebas realizadas.
+<p align="justify">
+Este código permite usar un potenciómetro para controlar el LED conectado a un ESP32 y enviar los datos del LED como el valor del potenciómetro a la plataforma ThingSpeak para su monitoreo en tiempo real. El código primero incluye las librerías necesarias para conectar ThingSpeak y WiFi, así como los pines del potenciómetro y del LED. Se establece la conexión WiFi y se inicia ThingSpeak en "setup()". En el proceso "loop()", el brillo del LED se ajusta en tiempo real en función de la lectura del potenciómetro. Cada 15 segundos, estos datos se envían a ThingSpeak y se imprimen en el monitor serie. El valor del potenciómetro se convierte en un porcentaje para enviarlo como un campo, y el brillo del LED, mapeado entre 0 y 255, se envía de igual manera a otro campo.
+</p> 
 
 ## 2.4 Mini Proyecto con Node-RED
 
@@ -466,6 +468,7 @@ Además, la capacidad de visualización y gestión de datos en tiempo real a tra
 <p align="justify">
 En resumen, el proyecto no solo ha logrado cumplir con los objetivos propuestos, sino que también ha resaltado áreas de mejora y oportunidades para futuros desarrollos. La integración de tecnologías IoT ofrece un potencial significativo para transformar la manera en que interactuamos con el entorno, y este trabajo representa un paso hacia la creación de soluciones más innovadoras y efectivas.
 </p> 
+
 # 5.- Referencias bibliográficas:
 
 - [1] "Internet of Things (IoT)," IoT Agenda, TechTarget. [Online]. Available: https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT. [Accessed: 23-Sep-2024].
