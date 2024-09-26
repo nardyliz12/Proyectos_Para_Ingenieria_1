@@ -424,6 +424,10 @@ void imprimirDatosSerie() {
 Este código permite usar un potenciómetro para controlar el LED conectado a un ESP32 y enviar los datos del LED como el valor del potenciómetro a la plataforma ThingSpeak para su monitoreo en tiempo real. El código primero incluye las librerías necesarias para conectar ThingSpeak y WiFi, así como los pines del potenciómetro y del LED. Se establece la conexión WiFi y se inicia ThingSpeak en "setup()". En el proceso "loop()", el brillo del LED se ajusta en tiempo real en función de la lectura del potenciómetro. Cada 15 segundos, estos datos se envían a ThingSpeak y se imprimen en el monitor serie. El valor del potenciómetro se convierte en un porcentaje para enviarlo como un campo, y el brillo del LED, mapeado entre 0 y 255, se envía de igual manera a otro campo.
 </p> 
 
+<img src="https://github.com/nardyliz12/Proyectos_Para_Ingenieria_1/blob/main/Informes%20de%20laboratorio/Entregable_5/20240919_145938.jpg?raw=true" alt="Descripción de la imagen" width="800" />
+
+
+
 ## 2.4 Mini Proyecto con Node-RED
 <p align="justify">
 Para el mini proyecto, se estuvo utilizando Node-RED como una herramienta para gestionar y visualizar el flujo de datos en tiempo real, utilizando el protocolo MQTT. Se desarrolló un flujo de trabajo que recibe datos de de manera aleatoria conectado al ESP32 y los envía a través de un broker MQTT, permitiendo la visualización en un panel de control en Node-RED.
