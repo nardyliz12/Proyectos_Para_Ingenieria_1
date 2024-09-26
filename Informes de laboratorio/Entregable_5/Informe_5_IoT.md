@@ -441,6 +441,11 @@ Este enfoque demuestra la versatilidad de Node-RED y su facilidad para integrar 
 
 Las pruebas mostraron que, siempre que la conexión Wi-Fi se mantuvo estable, el control remoto del LED fue instantáneo, confirmando la capacidad de ThingSpeak para interactuar con dispositivos IoT en tiempo real.
 
+| Encontrar Redes Wi-Fi cercanas  | Redes  Wi-Fi  |
+|----------------------|-----------------------|
+| Para escanear las redes Wi-Fi con el ESP32, se configura un código que permite verificar todas las redes Wi-Fi cercanas en nuestra área, donde se muestra el número total de redes encontradas con el nombre (SSID) y la intensidad de la señal (RSSI). Los resultados se imprimen en el monitor serie con una pausa de 5 segundos entre cada escaneo. | <img src="https://github.com/user-attachments/assets/35430843-5053-4c84-a494-20cd5019aadb" alt="ESP32 DEVKIT V1" width="1000"/> |
+
+
 # 4.- Discusión:
 <p align="justify">
 El desarrollo del proyecto con el ESP32, ThingSpeak y Node-RED resalta la creciente importancia de las tecnologías de Internet de las Cosas (IoT) en la creación de sistemas de monitoreo y control. A medida que las ciudades y los entornos se vuelven más interconectados, la capacidad de gestionar dispositivos de manera remota se vuelve esencial. Este proyecto no solo demuestra la viabilidad técnica de integrar diversos componentes en un solo sistema, sino que también abre la puerta a una serie de aplicaciones prácticas en diferentes ámbitos.
