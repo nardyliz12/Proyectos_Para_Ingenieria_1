@@ -26,14 +26,10 @@ Por todo lo explicado anteriormente, para esta actividad se llevará a cabo dich
 
 Por lo cual el análisis se enfocará en los siguientes puntos clave:
 
-<p align="justify">
-1.- Aplicación de cargas estáticas y condiciones de contorno.
-  
-2.- Identificar todas las zonas críticas donde se concentran los esfuerzos en el componente.
+- Aplicación de cargas estáticas y condiciones de contorno.
+- Identificar todas las zonas críticas donde se concentran los esfuerzos en el componente.
+- Analizar los resultados de deformación y las tensiones internas dentro del componente estructural empleado.
 
-3.- Analizar los resultados de deformación y las tensiones internas dentro del componente estructural empleado.
-</p>
-  
 <p align="justify">
 Realizar esta simulación no solo optimiza nuestro diseño, sino que también nos garantiza la seguridad y funcionalidad del componente en nuestro prototipo, lo que nos favorece conocer antes de llevarlo a cabo y culminarlo.
 </p>
