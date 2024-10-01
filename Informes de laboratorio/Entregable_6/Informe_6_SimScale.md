@@ -4,6 +4,7 @@
 
 # INFORME DE LABORATORIO N° 6: Utilizando Sim Scale
 
+
  ### Intregantes del equipo:
  
  - Alarcon Arias Julio Erick
