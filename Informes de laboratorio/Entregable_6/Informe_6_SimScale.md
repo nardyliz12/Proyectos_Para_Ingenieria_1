@@ -39,6 +39,10 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 
 # 3.- Resultados:
 # 4.- Discusión:
+
+<p align="justify">  
+Los resultados de la simulación indican que la carcasa de PLA está bien diseñada para su propósito:
+
 # 5.- Referencias Bibliográficas:
 
 - [1] SIMSCALE, "SIMSCALE CFD," Scribd, [Online]. Available: https://es.scribd.com/presentation/460657487/SIMSCALE-CFD. [Accessed: 01-Oct-2024].
