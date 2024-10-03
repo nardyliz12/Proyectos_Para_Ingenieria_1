@@ -44,16 +44,20 @@ En esta sección se detallan los pasos seguidos para realizar las simulaciones d
 El chasís fue diseñado previamente en OnShape y exportado en formato compatible con SimScale. El material utilizado para la simulación fue PLA (ácido poliláctico), cuyas propiedades mecánicas fueron tomadas en cuenta para los cálculos:
 </p>
 
+<div align="center">
+  
+|Modelado 3D|
+|--------|
+|![image](https://github.com/user-attachments/assets/cc8d1adf-07fd-44e2-849b-fcc33885bbbd)|
 
-![image](https://github.com/user-attachments/assets/cc8d1adf-07fd-44e2-849b-fcc33885bbbd)
+</div>
 
-
-Densidad: 1,24 × 10³ kg/m³
-Módulo de Young: 3,6 GPa
-Coeficiente de Poisson: 0,38
-Límite elástico: (55-72) MPa
-Resistencia a tracción: (47-70) MPa
-Resistencia a compresión: (66-86) MPa
+- Densidad: 1,24 × 10³ kg/m³
+- Módulo de Young: 3,6 GPa
+- Coeficiente de Poisson: 0,38
+- Límite elástico: (55-72) MPa
+- Resistencia a tracción: (47-70) MPa
+- Resistencia a compresión: (66-86) MPa
 
 <p align="justify">
 Para ello también se introducieron dichas características dentro del SimScale para que este tome en cuenta las propiedades del material a la hora de generar las simulaciones.
