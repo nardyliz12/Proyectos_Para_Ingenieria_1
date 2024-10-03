@@ -94,7 +94,7 @@ Condiciones de soporte: Uno de los extremos del chasís fue fijado de igual mane
 
 En esta sección se presentan los resultados obtenidos de las simulaciones realizadas sobre el chasís en estudio, utilizando el material PLA. Las pruebas de simulación están enfocadas en analizar el comportamiento estructural del chasís bajo condiciones de tracción y compresión, con el objetivo de determinar las zonas de mayor esfuerzo y posibles fallas estructurales. Los resultados se expresan en términos de tensiones de Von Mises, que permiten evaluar la distribución de esfuerzos en todo el cuerpo del chasís, así como las posibles deformaciones bajo las condiciones aplicadas.
 
-# 3.1Tracción
+# 3.1 Tracción
 
 Para la simulación de tracción, se aplicó una fuerza de 15,000 N en los costados del chasís. Los resultados obtenidos mostraron que las tensiones de Von Mises se distribuyeron principalmente en las zonas cercanas a los bordes y áreas más delgadas del chasís. Estas zonas presentaron valores más elevados de tensión, indicando que podrían ser los puntos críticos donde ocurra una falla si las tensiones superan los límites de resistencia del material. Sin embargo, en las áreas centrales del chasís, los niveles de esfuerzo fueron considerablemente más bajos, lo que sugiere que la estructura central es capaz de soportar mejor las tensiones aplicadas.
 
