@@ -76,9 +76,11 @@ Para ello también se introducieron dichas características dentro del SimScale 
 Se utilizó SimScale como herramienta de simulación, la cual permite realizar análisis de elementos finitos (FEA) para determinar la respuesta del chasís bajo diferentes tipos de esfuerzos mecánicos. El modelo fue importado a la plataforma y se configuraron las siguientes condiciones iniciales:
 </p>
 
+Definición del material (PLA) con sus respectivas propiedades mecánicas:
+
 <div align="center">
   
-|Definición del material (PLA) con sus respectivas propiedades mecánicas|
+|  Propiedades |
 |------|
 |![image](https://github.com/user-attachments/assets/32b9ec0f-3553-4b99-b74d-ce6f5c80e30a)|
 
