@@ -63,7 +63,9 @@ El chasís fue diseñado previamente en OnShape y exportado en formato compatibl
 Para ello también se introducieron dichas características dentro del SimScale para que este tome en cuenta las propiedades del material a la hora de generar las simulaciones.
 </p>
 
-![image](https://github.com/user-attachments/assets/825238da-7dd5-4065-b400-41db89323e0c)
+| Características dentro de SimScale |
+|-----|
+|![image](https://github.com/user-attachments/assets/825238da-7dd5-4065-b400-41db89323e0c)|
 
 
 ## 2.2. Configuración del Entorno de Simulación
