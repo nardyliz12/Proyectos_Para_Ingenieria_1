@@ -63,19 +63,26 @@ El chasís fue diseñado previamente en OnShape y exportado en formato compatibl
 Para ello también se introducieron dichas características dentro del SimScale para que este tome en cuenta las propiedades del material a la hora de generar las simulaciones.
 </p>
 
+<div align="center">
+  
 | Características dentro de SimScale |
 |-----|
 |![image](https://github.com/user-attachments/assets/825238da-7dd5-4065-b400-41db89323e0c)|
 
+</div>
 
 ## 2.2. Configuración del Entorno de Simulación
 <p align="justify">
 Se utilizó SimScale como herramienta de simulación, la cual permite realizar análisis de elementos finitos (FEA) para determinar la respuesta del chasís bajo diferentes tipos de esfuerzos mecánicos. El modelo fue importado a la plataforma y se configuraron las siguientes condiciones iniciales:
 </p>
 
-Definición del material (PLA) con sus respectivas propiedades mecánicas.
+<div align="center">
+  
+|Definición del material (PLA) con sus respectivas propiedades mecánicas|
+|------|
+|![image](https://github.com/user-attachments/assets/32b9ec0f-3553-4b99-b74d-ce6f5c80e30a)|
 
-![image](https://github.com/user-attachments/assets/32b9ec0f-3553-4b99-b74d-ce6f5c80e30a)
+</div>
 
 ## 2.3 Simulación de Tracción
 <p align="justify">
