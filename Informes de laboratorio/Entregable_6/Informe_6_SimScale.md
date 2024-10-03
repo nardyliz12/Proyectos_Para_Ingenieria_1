@@ -41,7 +41,16 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 # 4.- Discusión:
 
 <p align="justify">  
-Los resultados de la simulación indican que la carcasa de PLA está bien diseñada para su propósito:
+Los resultados de nuestra simulación de la carcasa de PLA para el medidor de calidad del aire revelan varios puntos interesantes que merecen una reflexión más profunda:
+
+Resistencia Estructural:
+La carcasa demuestra una resistencia significativamente mayor a la necesaria para las condiciones de uso previstas. Esto sugiere que el diseño actual es robusto y probablemente durará mucho tiempo sin fallos estructurales. Sin embargo, también indica que podría haber oportunidades para optimizar el uso de material sin comprometer la integridad del dispositivo.
+Deformación y Precisión:
+Las deformaciones observadas son mínimas, lo cual es crucial para un dispositivo que alberga sensores sensibles. Esta rigidez asegura que los componentes internos permanecerán en su posición correcta, manteniendo la precisión de las mediciones de calidad del aire.
+Comportamiento Térmico:
+La respuesta de la carcasa a los cambios de temperatura parece ser adecuada para su función. No obstante, sería prudente considerar escenarios de uso en condiciones climáticas más extremas, especialmente si el dispositivo se utilizará en exteriores.
+Consideraciones a Largo Plazo:
+Aunque el PLA muestra un buen rendimiento en esta simulación estática, debemos tener en cuenta su comportamiento a lo largo del tiempo. Factores como la exposición a la luz UV, la humedad y las cargas cíclicas podrían afectar su durabilidad. Esto sugiere la necesidad de pruebas adicionales o la consideración de tratamientos superficiales protectores.
 
 # 5.- Referencias Bibliográficas:
 
