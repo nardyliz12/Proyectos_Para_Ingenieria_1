@@ -35,7 +35,7 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 </p>
 
 # 2.- Metodología:
-
+hcnsicnjmcsk
 
 # 3.- Resultados:
 # 4.- Discusión:
