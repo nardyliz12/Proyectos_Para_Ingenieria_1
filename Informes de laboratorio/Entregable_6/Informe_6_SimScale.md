@@ -150,13 +150,16 @@ En conjunto, los resultados obtenidos tanto en tracción como en compresión ind
 ## 4.- Discusión:
 
 <p align="justify">  
+
 Los resultados de las simulaciones de tracción y compresión realizadas sobre la carcasa de PLA del medidor de calidad del aire revelan aspectos importantes que merecen un análisis detallado:
+
 Resistencia Estructural:
-Las simulaciones muestran que la carcasa puede soportar cargas de 15,000 N tanto en tracción como en compresión sin exceder los límites de resistencia del material PLA. En el caso de tracción, la tensión máxima observada estuvo por debajo de 70 MPa, que es el límite superior de resistencia a tracción del PLA. Para la compresión, los valores máximos de tensión se mantuvieron por debajo de 86 MPa, que corresponde al límite de resistencia a compresión del material. Estos resultados indican que el diseño actual es robusto y capaz de soportar las cargas aplicadas sin riesgo inmediato de falla estructural [1].
+  
+Las simulaciones muestran que la carcasa puede soportar cargas de 15,000 N tanto en tracción como en compresión sin exceder los límites de resistencia del material PLA. En el caso de tracción, la tensión máxima observada estuvo por debajo de 70 MPa, que es el límite superior de resistencia a tracción del PLA. Para la compresión, los valores máximos de tensión se mantuvieron por debajo de 86 MPa, que corresponde al límite de resistencia a compresión del material. Estos resultados indican que el diseño actual es robusto y capaz de soportar las cargas aplicadas sin riesgo inmediato de falla estructural [2].
   
 Distribución de Esfuerzos:
 
-En ambas simulaciones, se observó que las tensiones de Von Mises se concentran principalmente en las esquinas, bordes y áreas más delgadas del chasís. Esta distribución de esfuerzos es consistente con la teoría de mecánica de materiales, donde las discontinuidades geométricas actúan como concentradores de esfuerzos [2]. En el caso de tracción, las zonas cercanas a los bordes y áreas más delgadas presentaron valores más elevados de tensión. Para la compresión, las tensiones se concentraron en las esquinas y áreas más angostas, especialmente en las zonas de contacto y apoyo.
+En ambas simulaciones, se observó que las tensiones de Von Mises se concentran principalmente en las esquinas, bordes y áreas más delgadas del chasís. Esta distribución de esfuerzos es consistente con la teoría de mecánica de materiales, donde las discontinuidades geométricas actúan como concentradores de esfuerzos [3]. En el caso de tracción, las zonas cercanas a los bordes y áreas más delgadas presentaron valores más elevados de tensión. Para la compresión, las tensiones se concentraron en las esquinas y áreas más angostas, especialmente en las zonas de contacto y apoyo.
 
 Zonas Críticas:
 
@@ -164,14 +167,23 @@ Las áreas de mayor concentración de esfuerzos identificadas en ambas simulacio
 
 Optimización del Diseño:
 
-Los resultados sugieren que hay margen para optimizar el diseño. Las áreas centrales del chasís mostraron niveles de esfuerzo considerablemente más bajos, especialmente en la simulación de tracción. Esto indica que podría ser posible reducir el material en estas zonas sin comprometer significativamente la integridad estructural del dispositivo [3].
+Los resultados sugieren que hay margen para optimizar el diseño. Las áreas centrales del chasís mostraron niveles de esfuerzo considerablemente más bajos, especialmente en la simulación de tracción. Esto indica que podría ser posible reducir el material en estas zonas sin comprometer significativamente la integridad estructural del dispositivo [4].
 
 Consideraciones para Futuras Iteraciones:
 
-Aunque los resultados actuales son favorables, sería prudente considerar análisis adicionales que tengan en cuenta factores como la fatiga del material, especialmente en las zonas identificadas como críticas. Además, dado que el dispositivo es un medidor de calidad del aire, podría ser beneficioso realizar simulaciones que consideren las condiciones ambientales a las que estará expuesto, como variaciones de temperatura y humedad [4].
+Aunque los resultados actuales son favorables, sería prudente considerar análisis adicionales que tengan en cuenta factores como la fatiga del material, especialmente en las zonas identificadas como críticas. Además, dado que el dispositivo es un medidor de calidad del aire, podría ser beneficioso realizar simulaciones que consideren las condiciones ambientales a las que estará expuesto, como variaciones de temperatura y humedad [5].
 </p>
 
 
 # 5.- Referencias Bibliográficas:
 
 - [1] SIMSCALE, "SIMSCALE CFD," Scribd, [Online]. Available: https://es.scribd.com/presentation/460657487/SIMSCALE-CFD. [Accessed: 01-Oct-2024].
+  
+- [2] A. Rodríguez-Panes, J. Claver, and A. M. Camacho, "The Influence of Manufacturing Parameters on the Mechanical Behaviour of PLA and ABS Pieces Manufactured by FDM: A Comparative Analysis," Materials, vol. 11, no. 8, p. 1333, 2018. [Online]. Available: https://www.mdpi.com/1996-1944/11/8/1333
+- 
+- [3] M. R. Layadi, M. A. Benakcha, L. Mouhali, N. Chikh, A. Zegadi, and N. E. Chabane Sari, "Finite element analysis of the effect of temperature-dependent material properties on thermo-mechanical behaviors of 3D-printed PLA parts," Journal of Thermal Analysis and Calorimetry, vol. 149, pp. 1589–1599, 2022. [Online]. Available: https://link.springer.com/article/10.1007/s10973-021-11188-1
+  
+- [4] J. R. C. Dizon, A. H. Espera, Q. Chen, and R. C. Advincula, "Mechanical characterization of 3D-printed polymers," Additive Manufacturing, vol. 20, pp. 44-67, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2214860417304718
+  
+- [5] D. Popescu, A. Zapciu, C. Amza, F. Baciu, and R. Marinescu, "FDM process parameters influence over the mechanical properties of polymer specimens: A review," Polymer Testing, vol. 69, pp. 157-166, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0142941818304495
+
