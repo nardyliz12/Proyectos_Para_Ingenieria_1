@@ -54,6 +54,7 @@ La respuesta de la carcasa a los cambios de temperatura parece ser adecuada para
 
 Consideraciones a Largo Plazo:
 Aunque el PLA muestra un buen rendimiento en esta simulación estática, debemos tener en cuenta su comportamiento a lo largo del tiempo. Factores como la exposición a la luz UV, la humedad y las cargas cíclicas podrían afectar su durabilidad. Esto sugiere la necesidad de pruebas adicionales o la consideración de tratamientos superficiales protectores.
+![image](https://github.com/user-attachments/assets/a95e6a78-47e3-4fa8-a6eb-58a93fa7d455)
 
 # 5.- Referencias Bibliográficas:
 
