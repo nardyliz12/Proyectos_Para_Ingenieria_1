@@ -150,23 +150,25 @@ En conjunto, los resultados obtenidos tanto en tracción como en compresión ind
 ## 4.- Discusión:
 
 <p align="justify">  
-Los resultados de nuestra simulación de la carcasa de PLA para el medidor de calidad del aire revelan varios puntos interesantes que merecen una reflexión más profunda:
-</p>  
-<p align="justify">
+Los resultados de las simulaciones de tracción y compresión realizadas sobre la carcasa de PLA del medidor de calidad del aire revelan aspectos importantes que merecen un análisis detallado:
 Resistencia Estructural:
-La carcasa demuestra una resistencia significativamente mayor a la necesaria para las condiciones de uso previstas. Esto sugiere que el diseño actual es robusto y probablemente durará mucho tiempo sin fallos estructurales. Sin embargo, también indica que podría haber oportunidades para optimizar el uso de material sin comprometer la integridad del dispositivo.
-</p>  
-<p align="justify">
-Deformación y Precisión:
-Las deformaciones observadas son mínimas, lo cual es crucial para un dispositivo que alberga sensores sensibles. Esta rigidez asegura que los componentes internos permanecerán en su posición correcta, manteniendo la precisión de las mediciones de calidad del aire.
-</p>  
-<p align="justify">
-Comportamiento Térmico:
-La respuesta de la carcasa a los cambios de temperatura parece ser adecuada para su función. No obstante, sería prudente considerar escenarios de uso en condiciones climáticas más extremas, especialmente si el dispositivo se utilizará en exteriores.
-</p>  
-<p align="justify">
-Consideraciones a Largo Plazo:
-Aunque el PLA muestra un buen rendimiento en esta simulación estática, debemos tener en cuenta su comportamiento a lo largo del tiempo. Factores como la exposición a la luz UV, la humedad y las cargas cíclicas podrían afectar su durabilidad. Esto sugiere la necesidad de pruebas adicionales o la consideración de tratamientos superficiales protectores.
+Las simulaciones muestran que la carcasa puede soportar cargas de 15,000 N tanto en tracción como en compresión sin exceder los límites de resistencia del material PLA. En el caso de tracción, la tensión máxima observada estuvo por debajo de 70 MPa, que es el límite superior de resistencia a tracción del PLA. Para la compresión, los valores máximos de tensión se mantuvieron por debajo de 86 MPa, que corresponde al límite de resistencia a compresión del material. Estos resultados indican que el diseño actual es robusto y capaz de soportar las cargas aplicadas sin riesgo inmediato de falla estructural [1].
+  
+Distribución de Esfuerzos:
+
+En ambas simulaciones, se observó que las tensiones de Von Mises se concentran principalmente en las esquinas, bordes y áreas más delgadas del chasís. Esta distribución de esfuerzos es consistente con la teoría de mecánica de materiales, donde las discontinuidades geométricas actúan como concentradores de esfuerzos [2]. En el caso de tracción, las zonas cercanas a los bordes y áreas más delgadas presentaron valores más elevados de tensión. Para la compresión, las tensiones se concentraron en las esquinas y áreas más angostas, especialmente en las zonas de contacto y apoyo.
+
+Zonas Críticas:
+
+Las áreas de mayor concentración de esfuerzos identificadas en ambas simulaciones representan los puntos críticos donde podría ocurrir una falla si las tensiones superaran los límites de resistencia del material. Sin embargo, dado que los valores máximos observados se mantienen por debajo de los límites del PLA, se puede concluir que la estructura es segura bajo las condiciones evaluadas.
+
+Optimización del Diseño:
+
+Los resultados sugieren que hay margen para optimizar el diseño. Las áreas centrales del chasís mostraron niveles de esfuerzo considerablemente más bajos, especialmente en la simulación de tracción. Esto indica que podría ser posible reducir el material en estas zonas sin comprometer significativamente la integridad estructural del dispositivo [3].
+
+Consideraciones para Futuras Iteraciones:
+
+Aunque los resultados actuales son favorables, sería prudente considerar análisis adicionales que tengan en cuenta factores como la fatiga del material, especialmente en las zonas identificadas como críticas. Además, dado que el dispositivo es un medidor de calidad del aire, podría ser beneficioso realizar simulaciones que consideren las condiciones ambientales a las que estará expuesto, como variaciones de temperatura y humedad [4].
 </p>
 
 
