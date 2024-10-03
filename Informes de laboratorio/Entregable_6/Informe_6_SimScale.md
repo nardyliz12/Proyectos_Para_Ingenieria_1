@@ -38,7 +38,7 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 
 En esta sección se detallan los pasos seguidos para realizar las simulaciones de esfuerzos estáticos aplicados al chasís modelado en PLA, utilizando la plataforma SimScale. El objetivo de estas simulaciones fue evaluar el comportamiento del material bajo diferentes tipos de carga, como tracción, compresión, flexión, torsión y corte, así como la rotación del modelo. A continuación, se describen las etapas del proceso.
 
-1. Preparación del Modelo 3D
+# 2.1. Preparación del Modelo 3D
    
 El chasís fue diseñado previamente en OnShape y exportado en formato compatible con SimScale. El material utilizado para la simulación fue PLA (ácido poliláctico), cuyas propiedades mecánicas fueron tomadas en cuenta para los cálculos:
 
@@ -57,14 +57,15 @@ Para ello también se introducieron dichas características dentro del SimScale 
 ![image](https://github.com/user-attachments/assets/825238da-7dd5-4065-b400-41db89323e0c)
 
 
-2. Configuración del Entorno de Simulación
+# 2.2. Configuración del Entorno de Simulación
 Se utilizó SimScale como herramienta de simulación, la cual permite realizar análisis de elementos finitos (FEA) para determinar la respuesta del chasís bajo diferentes tipos de esfuerzos mecánicos. El modelo fue importado a la plataforma y se configuraron las siguientes condiciones iniciales:
 
 Definición del material (PLA) con sus respectivas propiedades mecánicas.
 
 ![image](https://github.com/user-attachments/assets/32b9ec0f-3553-4b99-b74d-ce6f5c80e30a)
 
-Simulación de Tracción
+# 2.3 Simulación de Tracción
+
 Para la simulación de tracción, se aplicó una fuerza perpendicular a la superficie del chasís. Para ello se dejó la parte curveada de nuestro diseño como una superficie fija; ya que, esta en la vida real iría fijada a un poste como medio de soporte. Se definieron las siguientes condiciones de contorno:
 
 Fuerza aplicada: 15000 N, calculada de acuerdo con el rango de resistencia a tracción del material PLA (47-70 MPa) y el área definida.
@@ -77,7 +78,7 @@ Durante la simulación, se monitorearon las tensiones máximas alcanzadas y las 
 
 ![image](https://github.com/user-attachments/assets/40747134-b74c-4ca4-b773-10e4c63c1849)
 
-Simulación de Compresión
+# 2.4 Simulación de Compresión
 En el caso de la compresión, la fuerza se aplicó de manera similar, pero en dirección contraria, buscando simular la respuesta del chasís ante cargas compresivas. Además, se consideró de iual forma la parte posterior de este modelo para configurarlo como una superficie fija. Para esta simulación:
 
 Fuerza aplicada: 15000 N, considerando la resistencia a compresión del material (66-86 MPa) y el área de aplicación.
@@ -93,7 +94,7 @@ Condiciones de soporte: Uno de los extremos del chasís fue fijado de igual mane
 
 En esta sección se presentan los resultados obtenidos de las simulaciones realizadas sobre el chasís en estudio, utilizando el material PLA. Las pruebas de simulación están enfocadas en analizar el comportamiento estructural del chasís bajo condiciones de tracción y compresión, con el objetivo de determinar las zonas de mayor esfuerzo y posibles fallas estructurales. Los resultados se expresan en términos de tensiones de Von Mises, que permiten evaluar la distribución de esfuerzos en todo el cuerpo del chasís, así como las posibles deformaciones bajo las condiciones aplicadas.
 
-Tracción
+# 3.1Tracción
 
 Para la simulación de tracción, se aplicó una fuerza de 15,000 N en los costados del chasís. Los resultados obtenidos mostraron que las tensiones de Von Mises se distribuyeron principalmente en las zonas cercanas a los bordes y áreas más delgadas del chasís. Estas zonas presentaron valores más elevados de tensión, indicando que podrían ser los puntos críticos donde ocurra una falla si las tensiones superan los límites de resistencia del material. Sin embargo, en las áreas centrales del chasís, los niveles de esfuerzo fueron considerablemente más bajos, lo que sugiere que la estructura central es capaz de soportar mejor las tensiones aplicadas.
 
@@ -101,7 +102,7 @@ Para la simulación de tracción, se aplicó una fuerza de 15,000 N en los costa
 
 La máxima tensión observada en el análisis de tracción estuvo por debajo del límite de resistencia a tracción del PLA (70 MPa), lo cual indica que, bajo estas condiciones, el chasís no presenta riesgos significativos de falla por tracción.
 
-Compresión
+# 3.2 Compresión
 
 Para la prueba de compresión, se aplicó también una fuerza de 15,000 N en los costados del chasís. En este caso, las tensiones de Von Mises se concentraron principalmente en las esquinas y áreas más angostas, con mayores valores de tensión observados en las zonas de contacto y apoyo. Estas áreas presentan una concentración de tensiones críticas que podrían indicar una mayor probabilidad de deformación o daño estructural bajo cargas de compresión más elevadas.
 
