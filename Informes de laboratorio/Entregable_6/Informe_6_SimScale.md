@@ -39,6 +39,9 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 En esta primera etapa de la metodología, se llevará a cabo la simulación de los esfuerzos mecánicos estáticos en el sistema utilizando el software SimScale. El objetivo es analizar el comportamiento estructural del dispositivo, el cual está fijado a un poste y fabricado con material PLA (Ácido Poliláctico). Para ello, se tomarán en cuenta las propiedades mecánicas y térmicas del PLA, tales como su densidad de 1.24 x 10³ kg/m³, un módulo de Young entre 3.3 y 3.6 GPa, y un coeficiente de Poisson que varía entre 0.38 y 0.4. Además, se considerarán sus valores límite de resistencia a la tracción (47 - 70 MPa), resistencia a la compresión (66 - 86 MPa) y su límite elástico (55 - 72 MPa), entre otras propiedades clave.
 
 <p align="justify">
+Se hace énfasis en los esfuerzos de tracción y compresión; ya que, ambos ocurrirían en el momento en el que el dispositivo se encuentre de manera estática operando. Estos dos esfuerzos resultan también ser de especial interés para el momento de aplicación de nuestro modelo ya que no necesitarían de fuerzas externas para suceder al este estar en estado de reposo.
+
+<p align="justify">
 El primer paso será la importación del modelo 3D del dispositivo en SimScale, seguido de la configuración de las condiciones de frontera. Estas condiciones simularán el escenario real en el que el dispositivo está montado sobre un poste y estará sometido a cargas externas. Con esto, también definiremos que tipo de simulación realizaremos que en este caso sería de carácter estructural y de categoría estática.
 
 ![image](https://github.com/user-attachments/assets/904d5c84-78b2-4ee1-94f6-10cd02fa06d4)
@@ -64,38 +67,125 @@ También, se recalca que el modelo presentado tiene la función de medir las con
 ![image](https://github.com/user-attachments/assets/706db813-22a9-4732-bcab-e904e6185a7d)
 
 ## 2.1.- Tracción
+
+<p align="justify">
+La simulación de tracción en este trabajo se centra en analizar las fuerzas generadas por el peso del dispositivo, que es de aproximadamente 300 gramos. Para llevar a cabo esta simulación, se utiliza SimScale en un análisis estructural estático. El primer paso es importar el modelo CAD del dispositivo y verificar que esté correctamente representado. Posteriormente, se selecciona PLA (Ácido Poliláctico) como el material de simulación, con las propiedades mecánicas adecuadas, como el módulo de Young (3.3 - 3.6 GPa), el coeficiente de Poisson (0.38 - 0.4) y su límite elástico (55 - 72 MPa).
+Ecuación de la fuerza de tracción:
+
+<p align="justify">
+La fuerza de tracción que se aplicará en la simulación es el peso del dispositivo. Esta fuerza se puede calcular utilizando la fórmula:
+
+F=m⋅gF = m \cdot gF=m⋅g
+
+Donde:
+
+•	F es la fuerza de tracción (en Newtons),
+•	m es la masa del dispositivo (0.3 kg),
+•	g es la aceleración de la gravedad (9.81 m/s²).
+Por lo tanto:
+
+F = 0.3 kg ⋅ 9.81 m/s² = 2.943 N
+
+<p align="justify">
+Esta fuerza de 2.943 N se aplica en los puntos de fijación superiores, en la dirección opuesta al soporte. Se asignan condiciones de frontera en las áreas de sujeción al poste, fijando esas zonas, mientras que las fuerzas de tracción actúan sobre las zonas sujetas al peso del dispositivo. La simulación se ejecuta utilizando una malla fina para capturar con precisión las concentraciones de tensiones.
+
+![image](https://github.com/user-attachments/assets/9d4f85b0-822b-40bd-80e6-975c6ab0fdba)
+
+<p align="justify">
+El análisis de los resultados se enfoca en verificar que las tensiones generadas por la tracción no excedan los límites elásticos del material, asegurando que la estructura pueda soportar el peso sin fallos estructurales.
+
+<p align="justify">
+Finalmente, también se realizó la misma prueba pero exagerando la fuerza ejercida por el peso del dispositivo, con el fin de mostrar de que manera este reaccionaría frente al aumente de una fuerza de la misma dirección sobre todo el sistema.
+
+![image](https://github.com/user-attachments/assets/ede20c2a-9477-4d52-a169-1ba699f04201)
+
 ## 2.2.- Compresión
-## 2.3.- Flexión
+
+<p align="justify">
+Para la simulación de compresión, se estudian las fuerzas del viento que actúan de manera horizontal sobre los laterales del dispositivo. Estas fuerzas se simulan aplicando una presión sobre las superficies laterales, lo que genera tensiones de compresión. Nuevamente, se utiliza SimScale para realizar un análisis estructural estático con el material PLA, configurando sus propiedades mecánicas de acuerdo a las especificaciones mencionadas.
+
+<p align="justify">
+Ecuación de la fuerza de compresión por el viento:
+La fuerza de compresión debido al viento se puede calcular utilizando la fórmula de la presión dinámica:
+
+F = 1/2 ⋅ ρ ⋅ v^2 ⋅ A ⋅ Cd
+
+Donde:
+
+•	F es la fuerza del viento (en Newtons),
+•	ρ es la densidad del aire (1.225 kg/m),
+•	v es la velocidad del viento (en m/s),
+•	A es el área lateral del dispositivo sobre la que actúa el viento (en m²),
+•	C_d es el coeficiente de arrastre (aproximadamente 1.2 para una superficie plana).
+
+Por ejemplo, para una velocidad de viento de 4 m/s y un áreas laterales aproximadamente de 0.05 m² por lado:
+
+F = 1/2 ⋅ 1.225 ⋅ (4)^2 ⋅ 0.05 ⋅ 1.2 = 0.588 N
+
+<p align="justify">
+Esta fuerza de 0.588 N se aplica en las superficies laterales del dispositivo en la dirección del viento. Se fijan las áreas de contacto con el poste para simular correctamente las condiciones de frontera, permitiendo que las fuerzas de compresión actúen sobre las partes laterales. Una malla refinada en estas áreas críticas asegura la precisión en la distribución de tensiones.
+El análisis de resultados se enfoca en las zonas con mayores concentraciones de esfuerzos de compresión, verificando que las tensiones no excedan la resistencia a compresión del PLA (66 - 86 MPa).
+
+![image](https://github.com/user-attachments/assets/e3073ff0-6a4d-44ef-97f6-49e2062f44c4)
+
+![image](https://github.com/user-attachments/assets/719bafab-cc98-4e99-8b15-f2b7c2ed4d55)
+
+<p align="justify">
+Finalmente, de igual forma de intensifica a manera exagerada las fuerzas ejercidas en los laterales para ver como es que el material y el diseño reaccionarían ante condiciones como esta.
+
+![image](https://github.com/user-attachments/assets/3c621f55-1914-4371-80d6-24788461ffb2)
+
+![image](https://github.com/user-attachments/assets/fc2c241b-1380-470b-9b26-102f660851d7)
 
 # 3.- Resultados:
-<p align="justify">
-En esta sección se presentan los resultados obtenidos de las simulaciones realizadas sobre el chasís en estudio, utilizando el material PLA. Las pruebas de simulación están enfocadas en analizar el comportamiento estructural del chasís bajo condiciones de tracción y compresión, con el objetivo de determinar las zonas de mayor esfuerzo y posibles fallas estructurales. Los resultados se expresan en términos de tensiones de Von Mises, que permiten evaluar la distribución de esfuerzos en todo el cuerpo del chasís, así como las posibles deformaciones bajo las condiciones aplicadas.
-</p>
 
-## 3.1 Tracción
-<p align="justify">
-Para la simulación de tracción, se aplicó una fuerza de 15,000 N en los costados del chasís. Los resultados obtenidos mostraron que las tensiones de Von Mises se distribuyeron principalmente en las zonas cercanas a los bordes y áreas más delgadas del chasís. Estas zonas presentaron valores más elevados de tensión, indicando que podrían ser los puntos críticos donde ocurra una falla si las tensiones superan los límites de resistencia del material. Sin embargo, en las áreas centrales del chasís, los niveles de esfuerzo fueron considerablemente más bajos, lo que sugiere que la estructura central es capaz de soportar mejor las tensiones aplicadas.
-</p>
+## 3.1.- Tracción
 
-![image](https://github.com/user-attachments/assets/a4ef1a2b-037e-47c0-8f27-b662f00543b7)
 <p align="justify">
-La máxima tensión observada en el análisis de tracción estuvo por debajo del límite de resistencia a tracción del PLA (70 MPa), lo cual indica que, bajo estas condiciones, el chasís no presenta riesgos significativos de falla por tracción.
-</p>
+La simulación de tracción realizada en SimScale mostró los desplazamientos y las tensiones distribuidas a lo largo del dispositivo, sometido a una fuerza equivalente a su peso (aproximadamente 2.943 N). Utilizando el material PLA, las tensiones fueron evaluadas a través del criterio de Von Mises, que se observa en la escala de colores en la simulación.
 
-## 3.2 Compresión
 <p align="justify">
-Para la prueba de compresión, se aplicó también una fuerza de 15,000 N en los costados del chasís. En este caso, las tensiones de Von Mises se concentraron principalmente en las esquinas y áreas más angostas, con mayores valores de tensión observados en las zonas de contacto y apoyo. Estas áreas presentan una concentración de tensiones críticas que podrían indicar una mayor probabilidad de deformación o daño estructural bajo cargas de compresión más elevadas.
-</p>
+En la parte superior del dispositivo, especialmente en los bordes de contacto con el poste y en las zonas de fijación, las tensiones de tracción fueron mínimas, indicadas por los tonos azules en el espectro de Von Mises. Esto es consistente con la rigidez del material y la buena distribución de las fuerzas en estas zonas.
 
-![image](https://github.com/user-attachments/assets/8d5ef977-994d-4608-bcc7-0275b0bf35c1)
-<p align="justify">
-No obstante, los valores máximos de tensión de compresión se mantuvieron por debajo del límite de resistencia a compresión del material (86 MPa), lo cual sugiere que el chasís es estructuralmente seguro bajo las condiciones evaluadas. Sin embargo, se recomienda monitorear las áreas de mayor concentración de esfuerzos para asegurar que no se excedan los límites durante su uso.
-</p>  
-<p align="justify">
-En conjunto, los resultados obtenidos tanto en tracción como en compresión indican que el chasís fabricado en PLA es capaz de soportar las cargas aplicadas sin riesgo inmediato de falla estructural, aunque es importante tener en cuenta los puntos de mayor tensión para futuras optimizaciones del diseño.
-</p>
+![image](https://github.com/user-attachments/assets/5929fdb0-6647-48f6-8309-f52a2224f889)
 
-## 4.- Discusión:
+<p align="justify">
+En la base del dispositivo, donde se observan algunas concentraciones de tensiones, representadas por tonos más cercanos al verde, se detectan ligeros incrementos en las tensiones. Sin embargo, estos valores se mantienen dentro de los límites aceptables del material, ya que no se superan los valores de límite elástico del PLA (55 - 72 MPa). La mayor concentración de esfuerzo se ubica en la parte inferior de la estructura, lo que sugiere que, aunque el dispositivo experimenta tensiones, estas no son suficientes para causar deformaciones permanentes o fallas estructurales.
+
+<p align="justify">
+Finalmente, los resultados indican que la estructura es capaz de soportar el peso del dispositivo sin superar los límites de seguridad del material, lo que garantiza que el diseño puede resistir las condiciones de tracción en su aplicación real.
+
+![image](https://github.com/user-attachments/assets/794936d9-7793-4da2-b5bb-531752fcc759)
+
+<p align="justify">
+Al aplicar una fuerza de 100,000 N en la misma dirección del peso del dispositivo, la simulación muestra una distribución más notable de tensiones a lo largo de la estructura. En este caso, las tensiones más elevadas se concentran en la parte inferior del dispositivo, como se observa en la escala de colores del criterio de Von Mises, donde los tonos más cercanos al verde y amarillo indican mayores esfuerzos. A pesar de esta concentración, el modelo estructuralmente se mantiene estable en términos de desplazamientos, aunque se evidencian zonas que podrían estar próximas a su límite de resistencia, sobre todo en áreas de contacto con el poste o fijaciones.
+
+<p align="justify">
+La magnitud de la fuerza aplicada excede con creces el peso real del dispositivo, lo cual permite analizar el comportamiento del material bajo condiciones extremas de tracción. Si bien el PLA puede soportar hasta cierto punto estos esfuerzos, es posible que las tensiones máximas en ciertas regiones se aproximen o incluso excedan el límite elástico del material, provocando deformaciones plásticas si la carga fuera mantenida por tiempo prolongado. Esto destaca la importancia de realizar estudios más detallados para garantizar la seguridad y estabilidad del dispositivo bajo cargas extremas, ya que en una situación real, el material podría fallar si las tensiones superan los valores críticos.
+
+![image](https://github.com/user-attachments/assets/622cff3c-b5c2-4942-b86a-48da01b5739a)
+
+## 3.2.- Compresión
+
+<p align="justify">
+En la simulación de compresión causada por las fuerzas del viento, como se observa en la imagen, el modelo muestra una distribución considerable de esfuerzos en la estructura. La tensión de Von Mises evidencia que las zonas de mayor concentración de esfuerzos están ubicadas en la región central del modelo, destacándose en las áreas cercanas al agujero circular. Estas áreas presentan mayores tensiones, lo cual se refleja en los colores verdes y amarillos, mientras que las demás áreas permanecen en un rango de tensiones más bajas, indicadas por los colores azules.
+
+![image](https://github.com/user-attachments/assets/dd29adb0-31e4-4085-9b25-59c27077addd)
+
+<p align="justify">
+Este análisis sugiere que la estructura experimenta una mayor compresión en los laterales sometidos a la presión del viento. Las tensiones alcanzan valores significativos pero no parecen exceder el límite elástico del PLA, indicando que el material podría resistir estas fuerzas sin sufrir deformaciones permanentes. No obstante, es crucial prestar atención a las áreas donde los esfuerzos son más altos, ya que estas zonas podrían representar puntos críticos en situaciones de carga prolongada o con vientos más intensos.
+
+![image](https://github.com/user-attachments/assets/112c43c8-a6bb-446c-89ca-09213ed54125)
+
+<p align="justify">
+Cuando se aplicaron fuerzas de 100,000 N sobre los laterales del modelo, los resultados mostraron una deformación considerable en la estructura, particularmente en las áreas cercanas a las curvas y cavidades, como se ve en la imagen. Las tensiones de Von Mises revelan una concentración elevada de esfuerzos en las zonas de deformación máxima, representadas por los colores verde y amarillo. La estructura muestra una notable curvatura hacia el exterior, lo que indica que las fuerzas son mucho mayores de lo que la pieza puede resistir sin sufrir daños importantes.
+
+<p align="justify">
+Este tipo de deformación sugiere que, bajo estas condiciones de carga extrema, el material PLA está muy cerca de su límite elástico, o incluso podría estar superándolo en algunas zonas. Aunque algunas áreas de la estructura aún muestran tensiones bajas, en general, la pieza no podría mantener su integridad estructural a largo plazo bajo estas cargas. Las áreas más críticas, como las que rodean el orificio circular y las esquinas, son las que podrían sufrir daños irreparables debido a la concentración de esfuerzos.
+
+![image](https://github.com/user-attachments/assets/47d61d08-ec03-4a86-8b94-93acb0524307)
+
+# 4.- Discusión:
 
 <p align="justify">  
 
