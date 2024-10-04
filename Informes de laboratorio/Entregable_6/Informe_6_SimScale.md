@@ -36,88 +36,37 @@ Realizar esta simulación no solo optimiza nuestro diseño, sino que también no
 
 # 2.- Metodología:
 <p align="justify">
-En esta sección se detallan los pasos seguidos para realizar las simulaciones de esfuerzos estáticos aplicados al chasís modelado en PLA, utilizando la plataforma SimScale. El objetivo de estas simulaciones fue evaluar el comportamiento del material bajo diferentes tipos de carga, como tracción, compresión, flexión, torsión y corte, así como la rotación del modelo. A continuación, se describen las etapas del proceso.
-</p>
-
-## 2.1. Preparación del Modelo 3D
-<p align="justify">   
-El chasís fue diseñado previamente en OnShape y exportado en formato compatible con SimScale. El material utilizado para la simulación fue PLA (ácido poliláctico), cuyas propiedades mecánicas fueron tomadas en cuenta para los cálculos:
-</p>
-
-<div align="center">
-  
-|Modelado 3D|
-|--------|
-|![image](https://github.com/user-attachments/assets/cc8d1adf-07fd-44e2-849b-fcc33885bbbd)|
-
-</div>
-
-- Densidad: 1,24 × 10³ kg/m³
-- Módulo de Young: 3,6 GPa
-- Coeficiente de Poisson: 0,38
-- Límite elástico: (55-72) MPa
-- Resistencia a tracción: (47-70) MPa
-- Resistencia a compresión: (66-86) MPa
+En esta primera etapa de la metodología, se llevará a cabo la simulación de los esfuerzos mecánicos estáticos en el sistema utilizando el software SimScale. El objetivo es analizar el comportamiento estructural del dispositivo, el cual está fijado a un poste y fabricado con material PLA (Ácido Poliláctico). Para ello, se tomarán en cuenta las propiedades mecánicas y térmicas del PLA, tales como su densidad de 1.24 x 10³ kg/m³, un módulo de Young entre 3.3 y 3.6 GPa, y un coeficiente de Poisson que varía entre 0.38 y 0.4. Además, se considerarán sus valores límite de resistencia a la tracción (47 - 70 MPa), resistencia a la compresión (66 - 86 MPa) y su límite elástico (55 - 72 MPa), entre otras propiedades clave.
 
 <p align="justify">
-Para ello también se introducieron dichas características dentro del SimScale para que este tome en cuenta las propiedades del material a la hora de generar las simulaciones.
-</p>
+El primer paso será la importación del modelo 3D del dispositivo en SimScale, seguido de la configuración de las condiciones de frontera. Estas condiciones simularán el escenario real en el que el dispositivo está montado sobre un poste y estará sometido a cargas externas. Con esto, también definiremos que tipo de simulación realizaremos que en este caso sería de carácter estructural y de categoría estática.
 
-<div align="center">
-  
-| Características dentro de SimScale |
-|-----|
-|![image](https://github.com/user-attachments/assets/825238da-7dd5-4065-b400-41db89323e0c)|
+![image](https://github.com/user-attachments/assets/904d5c84-78b2-4ee1-94f6-10cd02fa06d4)
 
-</div>
+![image](https://github.com/user-attachments/assets/ef620c81-980b-4434-b6ab-50b55eeb42a1)
 
-## 2.2. Configuración del Entorno de Simulación
+![image](https://github.com/user-attachments/assets/7a2a597e-d91a-4f2e-b1df-23d88624c018)
+
 <p align="justify">
-Se utilizó SimScale como herramienta de simulación, la cual permite realizar análisis de elementos finitos (FEA) para determinar la respuesta del chasís bajo diferentes tipos de esfuerzos mecánicos. El modelo fue importado a la plataforma y se configuraron las siguientes condiciones iniciales:
-</p>
+Posteriormente, se definirán las propiedades del material PLA, asegurando que todos los parámetros mecánicos, como el módulo de elasticidad y la resistencia a tracción, sean correctamente introducidos en el software para obtener resultados precisos. Además, las características de este material serán consideradas con los valores que se proporcionaron dentro de la tabla de especificaciones en la plataforma educativa instuticional (BlackBoard UPCH)
 
-Definición del material (PLA) con sus respectivas propiedades mecánicas:
+![image](https://github.com/user-attachments/assets/6f5cb677-0774-489d-9362-2f2cd019e9c8)
 
-<div align="center">
-  
-|  Propiedades |
-|------|
-|![image](https://github.com/user-attachments/assets/32b9ec0f-3553-4b99-b74d-ce6f5c80e30a)|
-
-</div>
-
-## 2.3 Simulación de Tracción
 <p align="justify">
-Para la simulación de tracción, se aplicó una fuerza perpendicular a la superficie del chasís. Para ello se dejó la parte curveada de nuestro diseño como una superficie fija; ya que, esta en la vida real iría fijada a un poste como medio de soporte. Se definieron las siguientes condiciones de contorno:
-</p>  
+Las condiciones de carga incluyen el peso propio del dispositivo, las fuerzas de viento que podrían impactar en su estabilidad, y posibles vibraciones externas que generarían esfuerzos adicionales. Durante la simulación, se analizarán diferentes tipos de esfuerzos mecánicos: tracción y compresión en las áreas de contacto con el poste y las sujeciones del dispositivo, flexión debido a cargas distribuidas y fuerzas laterales, torsión causada por momentos alrededor del eje de sujeción, y finalmente, esfuerzos de corte en los puntos de fijación.
+
 <p align="justify">
-Fuerza aplicada: 15000 N, calculada de acuerdo con el rango de resistencia a tracción del material PLA (47-70 MPa) y el área definida.
-Condiciones de soporte: Un extremo del chasís se fijó mediante la condición de Fixed Support, mientras que el otro extremo se dejó libre para experimentar desplazamiento bajo la acción de la fuerza.
-</p>
-<p align="justify">  
-Durante la simulación, se monitorearon las tensiones máximas alcanzadas y las deformaciones resultantes en función de la fuerza aplicada. El objetivo fue verificar si las tensiones inducidas se mantenían dentro de los límites de resistencia a tracción del PLA.
-</p>
+Este análisis permitirá identificar las áreas críticas del diseño y verificar si el dispositivo puede soportar los esfuerzos dentro de los límites establecidos por las propiedades del material PLA. Con esto, se busca garantizar la seguridad estructural y la resistencia del dispositivo en condiciones reales de operación.
 
-![image](https://github.com/user-attachments/assets/a2b67f2b-5712-44da-b20f-9ff9102a9260)
-
-![image](https://github.com/user-attachments/assets/34c08a1e-5582-42f8-96b7-76936cdf96b5)
-
-![image](https://github.com/user-attachments/assets/40747134-b74c-4ca4-b773-10e4c63c1849)
-
-## 2.4 Simulación de Compresión
 <p align="justify">
-En el caso de la compresión, la fuerza se aplicó de manera similar, pero en dirección contraria, buscando simular la respuesta del chasís ante cargas compresivas. Además, se consideró de iual forma la parte posterior de este modelo para configurarlo como una superficie fija. Para esta simulación:
-</p>  
-<p align="justify">
-Fuerza aplicada: 15000 N, considerando la resistencia a compresión del material (66-86 MPa) y el área de aplicación.
-Condiciones de soporte: Uno de los extremos del chasís fue fijado de igual manera, utilizando Fixed Support, mientras que el extremo opuesto se mantuvo libre para experimentar la contracción debido a la fuerza aplicada.
-</p>
+También, se recalca que el modelo presentado tiene la función de medir las concentraciones de algunos contaminantes atmosféricos. Para ello, la parte posterior del dispositivo se configuró como una supercie fija debido a que esta va a estar fija y los postes funcionan como un soporte estable para el dispositivo.
 
-![image](https://github.com/user-attachments/assets/ba022c4e-580a-4bf7-a224-b20e63e90394)
+![image](https://github.com/user-attachments/assets/706db813-22a9-4732-bcab-e904e6185a7d)
 
-![image](https://github.com/user-attachments/assets/fcf7ed13-a9c9-42b9-9ff0-f62d0e815041)
+# 2.1.- Tracción
 
-![image](https://github.com/user-attachments/assets/031439b1-b19a-43d4-902a-db63a93db598)
+
+
 
 # 3.- Resultados:
 <p align="justify">
