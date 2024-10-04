@@ -63,10 +63,9 @@ También, se recalca que el modelo presentado tiene la función de medir las con
 
 ![image](https://github.com/user-attachments/assets/706db813-22a9-4732-bcab-e904e6185a7d)
 
-# 2.1.- Tracción
-
-
-
+## 2.1.- Tracción
+## 2.2.- Compresión
+## 2.3.- Flexión
 
 # 3.- Resultados:
 <p align="justify">
