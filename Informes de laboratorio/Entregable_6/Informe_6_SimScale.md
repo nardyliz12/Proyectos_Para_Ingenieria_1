@@ -334,13 +334,9 @@ Aunque los resultados actuales son favorables, sería prudente considerar análi
 
 # 5.- Referencias Bibliográficas:
 
-- [1] SIMSCALE, "SIMSCALE CFD," Scribd, [Online]. Available: https://es.scribd.com/presentation/460657487/SIMSCALE-CFD. [Accessed: 01-Oct-2024].
-  
+- [1] SIMSCALE, "SIMSCALE CFD," Scribd, [Online]. Available: https://es.scribd.com/presentation/460657487/SIMSCALE-CFD. [Accessed: 01-Oct-2024].  
 - [2] A. Rodríguez-Panes, J. Claver, and A. M. Camacho, "The Influence of Manufacturing Parameters on the Mechanical Behaviour of PLA and ABS Pieces Manufactured by FDM: A Comparative Analysis," Materials, vol. 11, no. 8, p. 1333, 2018. [Online]. Available: https://www.mdpi.com/1996-1944/11/8/1333
-
-- [3] M. R. Layadi, M. A. Benakcha, L. Mouhali, N. Chikh, A. Zegadi, and N. E. Chabane Sari, "Finite element analysis of the effect of temperature-dependent material properties on thermo-mechanical behaviors of 3D-printed PLA parts," Journal of Thermal Analysis and Calorimetry, vol. 149, pp. 1589–1599, 2022. [Online]. Available: https://link.springer.com/article/10.1007/s10973-021-11188-1
-  
-- [4] J. R. C. Dizon, A. H. Espera, Q. Chen, and R. C. Advincula, "Mechanical characterization of 3D-printed polymers," Additive Manufacturing, vol. 20, pp. 44-67, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2214860417304718
-  
+- [3] M. R. Layadi, M. A. Benakcha, L. Mouhali, N. Chikh, A. Zegadi, and N. E. Chabane Sari, "Finite element analysis of the effect of temperature-dependent material properties on thermo-mechanical behaviors of 3D-printed PLA parts," Journal of Thermal Analysis and Calorimetry, vol. 149, pp. 1589–1599, 2022. [Online]. Available: https://link.springer.com/article/10.1007/s10973-021-11188-1  
+- [4] J. R. C. Dizon, A. H. Espera, Q. Chen, and R. C. Advincula, "Mechanical characterization of 3D-printed polymers," Additive Manufacturing, vol. 20, pp. 44-67, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2214860417304718 
 - [5] D. Popescu, A. Zapciu, C. Amza, F. Baciu, and R. Marinescu, "FDM process parameters influence over the mechanical properties of polymer specimens: A review," Polymer Testing, vol. 69, pp. 157-166, 2018. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0142941818304495
 
