@@ -45,11 +45,21 @@ Se hace énfasis en los esfuerzos de tracción y compresión; ya que, ambos ocur
 El primer paso será la importación del modelo 3D del dispositivo en SimScale, seguido de la configuración de las condiciones de frontera. Estas condiciones simularán el escenario real en el que el dispositivo está montado sobre un poste y estará sometido a cargas externas. Con esto, también definiremos que tipo de simulación realizaremos que en este caso sería de carácter estructural y de categoría estática.
 </p>
 
-![image](https://github.com/user-attachments/assets/904d5c84-78b2-4ee1-94f6-10cd02fa06d4)
+<div align="center">
 
-![image](https://github.com/user-attachments/assets/ef620c81-980b-4434-b6ab-50b55eeb42a1)
+| Creaciónde la cuenta | Importación del modelo  3D|
+|----------------|----------|
+|<img src="https://github.com/user-attachments/assets/904d5c84-78b2-4ee1-94f6-10cd02fa06d4" alt="ESP32 DEVKIT V1" width="500"/> | <img src="https://github.com/user-attachments/assets/ef620c81-980b-4434-b6ab-50b55eeb42a1" alt="ESP32 DEVKIT V1" width="800"/>|
 
-![image](https://github.com/user-attachments/assets/7a2a597e-d91a-4f2e-b1df-23d88624c018)
+</div>
+
+<div align="center">
+
+|Incio de simulación  |
+|-----|
+|<img src="https://github.com/user-attachments/assets/7a2a597e-d91a-4f2e-b1df-23d88624c018" alt="ESP32 DEVKIT V1" width="500"/>|
+
+</div>
 
 <p align="justify">
 Posteriormente, se definirán las propiedades del material PLA, asegurando que todos los parámetros mecánicos, como el módulo de elasticidad y la resistencia a tracción, sean correctamente introducidos en el software para obtener resultados precisos. Además, las características de este material serán consideradas con los valores que se proporcionaron dentro de la tabla de especificaciones en la plataforma educativa instuticional (BlackBoard UPCH)
