@@ -109,11 +109,11 @@ La fuerza de tracción que se aplicará en la simulación es el peso del disposi
 
 </div>
 
-Donde:
+#### Donde:
 
-•	F es la fuerza de tracción (en Newtons),
-•	m es la masa del dispositivo (0.3 kg),
-•	g es la aceleración de la gravedad (9.81 m/s²).
+- F es la fuerza de tracción (en Newtons),
+- m es la masa del dispositivo (0.3 kg),
+- g es la aceleración de la gravedad (9.81 m/s²).
 
 <div align="center">
   
@@ -169,13 +169,13 @@ La fuerza de compresión debido al viento se puede calcular utilizando la fórmu
 
 </div>
 
-Donde:
+#### Donde:
 
-•	F es la fuerza del viento (en Newtons),
-•	ρ es la densidad del aire (1.225 kg/m),
-•	v es la velocidad del viento (en m/s),
-•	A es el área lateral del dispositivo sobre la que actúa el viento (en m²),
-•	C_d es el coeficiente de arrastre (aproximadamente 1.2 para una superficie plana).
+- F es la fuerza del viento (en Newtons),
+- ρ es la densidad del aire (1.225 kg/m),
+- v es la velocidad del viento (en m/s),
+- A es el área lateral del dispositivo sobre la que actúa el viento (en m²),
+- C_d es el coeficiente de arrastre (aproximadamente 1.2 para una superficie plana).
 
 Por ejemplo, para una velocidad de viento de 4 m/s y un áreas laterales aproximadamente de 0.05 m² por lado:
 
