@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
@@ -45,6 +46,11 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 
 - Se realizaron las conexiones entre los componentes según el diseño del circuito.
 - Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
+
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
+
 
 ## 2.2 Conversión del esquemático a PCB
 
