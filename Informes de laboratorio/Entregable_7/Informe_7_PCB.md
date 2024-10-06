@@ -52,6 +52,13 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 - Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
 - Se configuró la PCB para utilizar 2 capas de cobre.
 
+![dfef4867-0329-479f-a6e9-1346d35379bf](https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753)
+
+|Soporte fijo  |
+|-----|
+|<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
 # 3.- Resultados
 # 4.- Discusión 
 # 5.- Referencias bibliográficas
