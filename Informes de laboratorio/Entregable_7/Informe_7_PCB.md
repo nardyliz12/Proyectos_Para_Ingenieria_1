@@ -28,6 +28,31 @@ Es por tal motivo que en este informe se evidenciará todo el procedimiento de c
 </p> 
 
 # 2.- Metodología 
+
+La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiendo estos pasos utilizando la plataforma EasyEDA:
+
+2.1 Diseño del esquemático
+
+Se creó un nuevo proyecto en EasyEDA.
+Se añadieron los componentes necesarios al esquemático, incluyendo:
+
+ESP32 (30 pines)
+
+Sensor MQ (posiblemente MQ-135 para calidad de aire)
+
+Módulo MAX4466 (para medición de ruido)
+
+MT3608 (convertidor DC-DC step-up)
+
+Módulo de carga TP4056 para batería de litio
+
+Resistencias y otros componentes pasivos
+
+
+Se realizaron las conexiones entre los componentes según el diseño del circuito.
+
+Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
+
 # 3.- Resultados
 # 4.- Discusión 
 # 5.- Referencias bibliográficas
