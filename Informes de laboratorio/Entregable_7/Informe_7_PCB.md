@@ -33,25 +33,24 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 
 2.1 Diseño del esquemático
 
-Se creó un nuevo proyecto en EasyEDA.
-Se añadieron los componentes necesarios al esquemático, incluyendo:
+-Se creó un nuevo proyecto en EasyEDA.
+-Se añadieron los componentes necesarios al esquemático, incluyendo:
 
-ESP32 (30 pines)
+  - ESP32 (30 pines)
+  - Sensor MQ (posiblemente MQ-135 para calidad de aire)
+  - Módulo MAX4466 (para medición de ruido)
+  - MT3608 (convertidor DC-DC step-up)
+  - Módulo de carga TP4056 para batería de litio
+  - Resistencias y otros componentes pasivos
 
-Sensor MQ (posiblemente MQ-135 para calidad de aire)
+- Se realizaron las conexiones entre los componentes según el diseño del circuito.
+- Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
 
-Módulo MAX4466 (para medición de ruido)
+2.2 Conversión del esquemático a PCB
 
-MT3608 (convertidor DC-DC step-up)
-
-Módulo de carga TP4056 para batería de litio
-
-Resistencias y otros componentes pasivos
-
-
-Se realizaron las conexiones entre los componentes según el diseño del circuito.
-
-Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
+- Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
+- Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
+- Se configuró la PCB para utilizar 2 capas de cobre.
 
 # 3.- Resultados
 # 4.- Discusión 
