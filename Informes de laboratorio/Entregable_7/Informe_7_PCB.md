@@ -31,7 +31,7 @@ Es por tal motivo que en este informe se evidenciará todo el procedimiento de c
 
 La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiendo estos pasos utilizando la plataforma EasyEDA:
 
-2.1 Diseño del esquemático
+## 2.1 Diseño del esquemático
 
 - Se creó un nuevo proyecto en EasyEDA.
 - Se añadieron los componentes necesarios al esquemático, incluyendo:
