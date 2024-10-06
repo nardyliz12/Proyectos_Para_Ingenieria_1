@@ -90,9 +90,15 @@ Monitorear la calidad de aire considerando los contaminantes de PM2.5, PM10 y mo
 | **Almacenamiento de Datos**                 | Los datos se almacenan para permitir análisis históricos y generar reportes detallados sobre la evolución de la calidad del aire.                                       |
 | **Aplicación para Políticas Públicas**      | Apoya la implementación de políticas de salud y medio ambiente a nivel local, proporcionando datos fiables y en tiempo real para la toma de decisiones.                 |
 
+## ESQUEMA ELECTRÓNICO DEL PROTOTIPO
+
+| Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
+
 ## MODELADO 3D
 
-# Componentes
+### Componentes
 
 
 <img src="https://github.com/user-attachments/assets/af5044de-5cf7-4a33-a21a-7f0ace647b2e" alt="Imagen" width="550"/>
