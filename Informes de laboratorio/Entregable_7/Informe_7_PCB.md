@@ -66,4 +66,4 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 
 - [1] RedesZone, "Conoce EasyEDA: un completo software de simulación de circuitos y diseño de PCB online," [Online]. Available: https://www.redeszone.net/2016/02/19/conoce-easyeda-un-completo-software-de-simulacion-de-circuitos-y-diseno-de-pcb-online/. [Accessed: 06-Oct-2024].
  
-- [1] EasyEDA, "Online PCB Design & Circuit Simulator," [Online]. Available: https://easyeda.com. [Accessed: 06-Oct-2024].
+- [2] EasyEDA, "Online PCB Design & Circuit Simulator," [Online]. Available: https://easyeda.com. [Accessed: 06-Oct-2024].
