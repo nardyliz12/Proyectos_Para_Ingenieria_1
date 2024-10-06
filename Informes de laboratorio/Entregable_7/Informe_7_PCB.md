@@ -46,7 +46,7 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 - Se realizaron las conexiones entre los componentes según el diseño del circuito.
 - Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
 
-2.2 Conversión del esquemático a PCB
+## 2.2 Conversión del esquemático a PCB
 
 - Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
 - Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
