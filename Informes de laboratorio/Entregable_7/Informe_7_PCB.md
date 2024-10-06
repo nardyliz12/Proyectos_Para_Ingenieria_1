@@ -56,7 +56,9 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 
 |Soporte fijo  |
 |-----|
-|<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>||<img src="https://github.com/user-attachments/assets/9898cbbe-453c-4a25-8bc5-195e5aeae8cd" alt="ESP32 DEVKIT V1" width="800"/>|
+|<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>|
+|-----|
+|<img src="https://github.com/user-attachments/assets/9898cbbe-453c-4a25-8bc5-195e5aeae8cd" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
 
