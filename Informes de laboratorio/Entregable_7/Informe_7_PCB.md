@@ -63,6 +63,29 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 |-----|
 |<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>|
 
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
+
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
+
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
+
+
+
+
+
 
 
 
