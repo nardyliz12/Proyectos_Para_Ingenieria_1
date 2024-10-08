@@ -53,7 +53,7 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 
 <div align="center">
   
-|   Imagen 1: Esquema electrónico  |
+|   Imagen 1: Esquema electrónico inicial  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
@@ -63,7 +63,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 </p>
 <div align="center">
   
-|    Imagen 2  |
+| Imagen 2: Diseño esquemático integrado con Molex|
 |-------|
 |<img src="https://github.com/user-attachments/assets/cced40a1-85bc-49ba-bd4e-d8b153d4dc8a" alt="ESP32 DEVKIT V1" width="800"/>|
 
@@ -76,7 +76,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
 <div align="center">
   
-|Imagen 3  |
+|Imagen 3: De esquemático a PCB |
 |-----|
 |<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="400"/>|
 
@@ -88,7 +88,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
 <div align="center">
   
-|    Imagen 4  |
+|    Imagen 4: Parámetros de la placa|
 |-------|
 |<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="300"/>|
 
@@ -104,7 +104,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
 <div align="center">
   
-|    Imagen 5 |
+| Imagen 5: PCB generado por EasyEDA |
 |-------|
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
@@ -116,7 +116,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
    
 <div align="center">
   
-| Imagen 6   |
+| Imagen 6: Enrutamiento |
 |-------|
 |<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="300"/>|
 
@@ -131,7 +131,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
   
 <div align="center">
   
-|    Imagen 7  |
+|    Imagen 7: Ordenando las conexiones |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
