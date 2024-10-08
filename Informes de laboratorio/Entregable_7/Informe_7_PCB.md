@@ -82,7 +82,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
   - Revisión de la disposición automática generada por EasyEDA.
   - Reorganización manual de los componentes para una distribución más eficiente.
     
-|    Esquema electrónico  |
+|    Imagen 5 |
 |-------|
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
@@ -91,7 +91,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
    - Aplicación del ruteo automático de EasyEDA como punto de partida.
      
-| Imagen 5   |
+| Imagen 6   |
 |-------|
 |<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
      
@@ -102,7 +102,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
    - Posicionamiento estratégico de conectores Molex en los bordes de la placa.
   
 
-|    Imagen 6  |
+|    Imagen 7  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
@@ -113,12 +113,12 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
    Uso de pistas más anchas para conexiones de potencia.
 
 
-|   Imagen 7: Lineas azules  |
+|   Imagen 8: Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
-|   Imagen 8: Lineas azules  |
+|   Imagen 9: Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
 
