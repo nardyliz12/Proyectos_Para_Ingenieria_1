@@ -1,5 +1,3 @@
-![1000002140](https://github.com/user-attachments/assets/809aa5ff-fb87-46ff-9187-9627c3bacd4e)
-
 <p align="center">
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
@@ -183,6 +181,14 @@ La optimización manual del PCB también contribuyó a la minimización de la lo
 <p align="justify">
 El diseño final del PCB fue revisado y validado mediante la herramienta de visualización en 3D proporcionada por EasyEDA, lo que permitió detectar y corregir pequeños errores antes de pasar a la fase de fabricación. Este proceso de revisión visual aseguró que el PCB estuviera libre de errores importantes que pudieran haber afectado el rendimiento del circuito. Posteriormente, el proceso de fabricación se llevó a cabo sin inconvenientes, y el resultado final cumplió con las especificaciones establecidas en la fase de diseño.
 </p>
+
+<div align="center">
+  
+|Vista 3D: Capa superior|Vista 3D: Capa inferior|
+|---------|--------------|
+|<img src="https://github.com/user-attachments/assets/83d9798a-2cbe-48da-b184-0d940ae29be2" alt="ESP32 DEVKIT V1" width="700"/>|<img src="https://github.com/user-attachments/assets/989b2dbe-268a-44c3-9fc5-31d9a5b53651" alt="ESP32 DEVKIT V1" width="700"/>|
+
+</div>
 
 <p align="justify">
 Finalmente, el prototipo ensamblado fue sometido a pruebas, demostrando un rendimiento estable y confiable. Los sensores MQ-135 y MAX4466 cumplieron con sus funciones de medición de gases y ruido respectivamente, mientras que el ESP32 procesó y transmitió los datos de manera eficiente. El prototipo operó sin interrupciones, mostrando un consumo de energía adecuado para su uso continuo durante varias horas. En resumen, el PCB diseñado y optimizado para este dispositivo de medición de calidad del aire cumplió con los requisitos de funcionalidad, estabilidad y eficiencia esperados.
