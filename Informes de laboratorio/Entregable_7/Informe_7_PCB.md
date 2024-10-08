@@ -75,15 +75,28 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 |<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
+## 2.3 Diseño y optimización del PCB
 
+- Disposición inicial de componentes:
 
-cuando doy en apliacr ,me da estste diseño 
+  - Revisión de la disposición automática generada por EasyEDA.
+  - Reorganización manual de los componentes para una distribución más eficiente.
+    
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
- despues de eso pongo en ruteo aautomaticatico
+- Ruteo automático:
+
+   - Aplicación del ruteo automático de EasyEDA como punto de partida.
+     
+- Optimización manual:
+
+   - Reubicación de componentes para mejorar la eficiencia del diseño.
+   - Ajuste manual de pistas para optimizar conexiones y reducir longitudes.
+   - Posicionamiento estratégico de conectores Molex en los bordes de la placa.
+     
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
@@ -92,6 +105,12 @@ me da el ruteo de amnera desordemnad a,yo lo tengo que oredanar y queda asi,tabm
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
+
+- Configuración de pistas:
+
+Capa superior (rojo): ancho de 10 mil (0.254 mm)
+Capa inferior (azul): ancho de 10 mil (0.254 mm)
+Uso de pistas más anchas para conexiones de potencia.
 
 estas son las propiedades de clos cables o lineas rojas
 |    Lineas azules  |
@@ -103,6 +122,9 @@ y estas de las azules
 |    Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
+Esta metodología nos permitió transformar nuestro esquema electrónico inicial en un diseño de PCB funcional y optimizado para nuestro medidor de calidad de aire, asegurando una disposición eficiente de los componentes y conexiones adecuadas para su correcto funcionamiento.
 
 
 
