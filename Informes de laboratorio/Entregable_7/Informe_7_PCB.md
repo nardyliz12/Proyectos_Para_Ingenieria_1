@@ -51,6 +51,7 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 |-------|
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
+los componeentes como sensores no esatran dentro de la placa ,Se puso los molex que basicamente reeemplazan los pines que se ponde en los sensores
 
 |    Esquema electrónico  |
 |-------|
