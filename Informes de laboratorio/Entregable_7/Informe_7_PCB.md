@@ -113,6 +113,11 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
       
    Uso de pistas más anchas para conexiones de potencia.
 
+|  Imagen 8: Lineas azules   |  Imagen 9: Lineas azules  |
+|----------------------|-----------------------|
+|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
 
 |   Imagen 8: Lineas azules  |
 |-------|
