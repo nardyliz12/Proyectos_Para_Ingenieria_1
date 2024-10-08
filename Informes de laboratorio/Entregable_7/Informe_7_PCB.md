@@ -51,7 +51,7 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 |-------|
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
-Como se puede observar en la primera imagen del esquema electrónico, se han incorporado todos los componentes mencionados y se han realizado las conexiones correspondientes. Es importante destacar que los sensores no estarán directamente integrados en la placa PCB. En su lugar, se han utilizado conectores Molex que reemplazan los pines de los sensores, permitiendo una conexión flexible y modular(Imagen 2).
+Como se puede observar en la imagen 1 del esquema electrónico, se han incorporado todos los componentes mencionados y se han realizado las conexiones correspondientes. Es importante destacar que los sensores no estarán directamente integrados en la placa PCB. En su lugar, se han utilizado conectores Molex que reemplazan los pines de los sensores, permitiendo una conexión flexible y modular(Imagen 2).
 
 |    Imagen 2  |
 |-------|
@@ -62,17 +62,20 @@ Como se puede observar en la primera imagen del esquema electrónico, se han inc
 ## 2.2 Conversión del esquemático a PCB
 
 - Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
-- Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
-- Se configuró la PCB para utilizar 2 capas de cobre.
 
-
-|Soporte fijo  |
+|Imagen 3  |
 |-----|
 |<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>|
 
-|    Esquema electrónico  |
+- Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
+- Se configuró la PCB para utilizar 2 capas de cobre.
+
+|    Imagen 4  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
+
 
 cuando doy en apliacr ,me da estste diseño 
 |    Esquema electrónico  |
