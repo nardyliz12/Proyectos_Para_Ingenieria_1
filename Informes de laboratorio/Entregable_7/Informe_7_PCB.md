@@ -148,24 +148,12 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
    
 <div align="center">
   
-|  Imagen 8: Lineas azules   |  Imagen 9: Lineas azules  |
+|  Imagen 8: Lineas rojas   |  Imagen 9: Lineas azules  |
 |----------------------|-----------------------|
-|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="400"/>|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="400"/>|
+|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="300"/>|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="300"/>|
 
 </div>
 
-<div align="center">
-
-|   Imagen 8: Lineas azules  |
-|-------|
-|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|
-
-
-|   Imagen 9: Lineas azules  |
-|-------|
-|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
-
-</div>
 <p align="justify">
 Esta metodología nos permitió transformar nuestro esquema electrónico inicial en un diseño de PCB funcional y optimizado para nuestro medidor de calidad de aire, asegurando una disposición eficiente de los componentes y conexiones adecuadas para su correcto funcionamiento.
 </p>
