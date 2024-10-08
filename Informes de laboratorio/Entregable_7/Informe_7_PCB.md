@@ -74,22 +74,28 @@ los componeentes como sensores no esatran dentro de la placa ,Se puso los molex 
 |-------|
 |<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="800"/>|
 
-
+cuando doy en apliacr ,me da estste diseño 
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
+
+ despues de eso pongo en ruteo aautomaticatico
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
+me da el ruteo de amnera desordemnad a,yo lo tengo que oredanar y queda asi,tabmemncionar los huecos en las 4 esquinas 
 
 |    Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
+estas son las propiedades de clos cables o lineas rojas
 |    Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|
+
+y estas de las azules
 
 |    Lineas azules  |
 |-------|
