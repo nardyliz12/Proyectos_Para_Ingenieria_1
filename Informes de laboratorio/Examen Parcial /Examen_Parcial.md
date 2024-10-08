@@ -2,7 +2,7 @@
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
 
-# INFORME DE LABORATORIO N° 1
+# EXAMEN PARCIAL
 
  ### Intregantes del equipo:
  
@@ -11,11 +11,11 @@
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
 
-# Problemática
-# Solución
-# Requerimientos
-# Diseño mecánico
-# Simulaciones
-# Diseño Electrónico
-# Pruebas
-# PCB del circuito electrónico
+# 1.- Problemática
+# 2.- Solución
+# 3.- Requerimientos
+# 4.- Diseño mecánico
+# 5.- Simulaciones
+# 6.- Diseño Electrónico
+# 7.- Pruebas
+# 8.- PCB del circuito electrónico
