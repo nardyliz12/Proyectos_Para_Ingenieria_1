@@ -52,6 +52,12 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
+|    Esquema electrónico  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/cced40a1-85bc-49ba-bd4e-d8b153d4dc8a" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
+
 ## 2.2 Conversión del esquemático a PCB
 
 - Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
