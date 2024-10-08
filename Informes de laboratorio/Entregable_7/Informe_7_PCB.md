@@ -91,35 +91,34 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
    - Aplicación del ruteo automático de EasyEDA como punto de partida.
      
+| Imagen 5   |
+|-------|
+|<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
+     
 - Optimización manual:
 
    - Reubicación de componentes para mejorar la eficiencia del diseño.
    - Ajuste manual de pistas para optimizar conexiones y reducir longitudes.
    - Posicionamiento estratégico de conectores Molex en los bordes de la placa.
-     
-|    Esquema electrónico  |
-|-------|
-|<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
-me da el ruteo de amnera desordemnad a,yo lo tengo que oredanar y queda asi,tabmemncionar los huecos en las 4 esquinas 
+  
 
-|    Esquema electrónico  |
+|    Imagen 6  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
 - Configuración de pistas:
 
-Capa superior (rojo): ancho de 10 mil (0.254 mm)
-Capa inferior (azul): ancho de 10 mil (0.254 mm)
-Uso de pistas más anchas para conexiones de potencia.
+    - Capa superior (rojo): ancho de 10 mil (0.254 mm)
+    - Capa inferior (azul): ancho de 10 mil (0.254 mm)
+   Uso de pistas más anchas para conexiones de potencia.
 
-estas son las propiedades de clos cables o lineas rojas
-|    Lineas azules  |
+
+|   Imagen 7: Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|
 
-y estas de las azules
 
-|    Lineas azules  |
+|   Imagen 8: Lineas azules  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
 
