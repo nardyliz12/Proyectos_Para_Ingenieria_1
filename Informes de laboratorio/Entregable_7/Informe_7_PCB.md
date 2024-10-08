@@ -1,3 +1,4 @@
+![1000002140](https://github.com/user-attachments/assets/809aa5ff-fb87-46ff-9187-9627c3bacd4e)
 
 <p align="center">
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
@@ -158,15 +159,6 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 Esta metodología nos permitió transformar nuestro esquema electrónico inicial en un diseño de PCB funcional y optimizado para nuestro medidor de calidad de aire, asegurando una disposición eficiente de los componentes y conexiones adecuadas para su correcto funcionamiento.
 </p>
 
-
-
-
-
-
-
-
-
-
 # 3.- Resultados
 <p align="justify">
 Tras la implementación de la metodología para el diseño y optimización del PCB, el proceso arrojó resultados satisfactorios en cuanto a la disposición y el rendimiento del circuito para el prototipo de medición de calidad del aire.
@@ -174,12 +166,28 @@ Tras la implementación de la metodología para el diseño y optimización del P
 En primer lugar, la disposición de los componentes y el enrutamiento del PCB fue optimizado de manera eficiente. Gracias a la reubicación manual de módulos clave como el MT3608, el ESP32, y los conectores Molex, se logró un diseño compacto y bien organizado. La distribución eficiente de los componentes no solo permitió un uso óptimo del espacio disponible en la placa, sino que también evitó interferencias entre las pistas, lo que es esencial para mantener la integridad de las señales y asegurar el correcto funcionamiento de los sensores.
 <p align="justify">
 El ruteo de las pistas en las capas superior e inferior fue ajustado manualmente, con un ancho estándar de 10 mil (0.700 mm) en ambas capas. Este ajuste garantizó una transmisión eficiente de señales sin pérdidas significativas ni interferencias. Además, las rutas de alimentación, que eran críticas para el rendimiento del dispositivo, fueron reforzadas con pistas más anchas, lo que permitió un suministro estable de energía a los componentes principales, como el MT3608 y el TP4056. Esto fue crucial para evitar problemas de sobrecalentamiento o caídas de tensión durante el funcionamiento del prototipo.
+</p>
+
 <p align="justify">
 La optimización manual del PCB también contribuyó a la minimización de la longitud de las conexiones entre los componentes, lo que redujo significativamente las interferencias electromagnéticas y mejoró la eficiencia general del sistema. Los conectores Molex fueron posicionados estratégicamente en los bordes de la placa, lo que facilitará la integración del dispositivo en estructuras externas y permitirá un acceso sencillo a las conexiones de alimentación y a los sensores. Esta organización también simplificará el ensamblaje y la manipulación del dispositivo en futuras fases de desarrollo.
+</p>
+
+<div align="center">
+  
+|Vista 2D|
+|---------|
+|<img src="https://github.com/user-attachments/assets/809aa5ff-fb87-46ff-9187-9627c3bacd4e" alt="ESP32 DEVKIT V1" width="700"/>|
+
+</div>
+
 <p align="justify">
 El diseño final del PCB fue revisado y validado mediante la herramienta de visualización en 3D proporcionada por EasyEDA, lo que permitió detectar y corregir pequeños errores antes de pasar a la fase de fabricación. Este proceso de revisión visual aseguró que el PCB estuviera libre de errores importantes que pudieran haber afectado el rendimiento del circuito. Posteriormente, el proceso de fabricación se llevó a cabo sin inconvenientes, y el resultado final cumplió con las especificaciones establecidas en la fase de diseño.
+</p>
+
 <p align="justify">
 Finalmente, el prototipo ensamblado fue sometido a pruebas, demostrando un rendimiento estable y confiable. Los sensores MQ-135 y MAX4466 cumplieron con sus funciones de medición de gases y ruido respectivamente, mientras que el ESP32 procesó y transmitió los datos de manera eficiente. El prototipo operó sin interrupciones, mostrando un consumo de energía adecuado para su uso continuo durante varias horas. En resumen, el PCB diseñado y optimizado para este dispositivo de medición de calidad del aire cumplió con los requisitos de funcionalidad, estabilidad y eficiencia esperados.
+</p>
+
 
 # 4.- Discusión 
 <p align="justify">
