@@ -61,7 +61,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
 ## 2.2 Conversión del esquemático a PCB
 
-- Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
+ - Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
 
 |Imagen 3  |
 |-----|
@@ -77,7 +77,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
 ## 2.3 Diseño y optimización del PCB
 
-- Disposición inicial de componentes:
+2.3.1 Disposición inicial de componentes:
 
   - Revisión de la disposición automática generada por EasyEDA.
   - Reorganización manual de los componentes para una distribución más eficiente.
@@ -87,7 +87,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
 
-- Ruteo automático:
+2.3.2 Ruteo automático:
 
    - Aplicación del ruteo automático de EasyEDA como punto de partida.
      
@@ -95,7 +95,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 |-------|
 |<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
      
-- Optimización manual:
+2.3.3 Optimización manual:
 
    - Reubicación de componentes para mejorar la eficiencia del diseño.
    - Ajuste manual de pistas para optimizar conexiones y reducir longitudes.
