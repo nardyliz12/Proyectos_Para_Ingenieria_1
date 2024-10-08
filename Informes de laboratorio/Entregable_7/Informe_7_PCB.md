@@ -19,10 +19,10 @@
 Si hablamoms de nuestro prototipo, debemos tener en consideracion de que la contaminación del aire es uno de los problemas principales que aún persiste en nuestro planeta, ya que afecta tanto a la salud  humana como al ecosistema. Por ese motivo, tiende a la necesidad de monitorear la calidad del aire, que ha ido aumentando con el tiempo, y para ello, existen una serie de sensores que nos permiten detectar partículas finas y gases que se presentan en el ecosistema. En este informe detallaremos el diseño y la implementación de nuetro prototipo que mide la calidad del aire, donde está incorporado con tecnología de sensores y electrónica, utilizando la plataforma de diseño de circuitos EasyEDA. 
 </p>
 <p align="justify">
-EasyEDA es una plataforma en línea de diseño electrónico que nos permite crear, simular y fabricar circuitos electrónicos y PCB (Placa de circuito impreso) [1]. Un circuito PCB está diseñado para facilitar el proceso de desarrollo de prototipos electrónicos, desde la creación del esquema hasta la fabricación del PCB, todo en un entorno accesible y amigable. Una vez tengamos el esquema del circuito electrónico elaborado correctamente, la plataforma de EasyEDA nos da la opción de diseñar la PCB asignando la ubicación fisica de cada componente y trazando las pistas que conectan esos componentes, además, de que ofrece opciones avanzadas como la creacion de PCBs multicapa, ademá, de que nos brinda una visualizacion en 3D que ofrece una presentación vivida el diseño elaborado, incluyendo visualización en 2D del todo el circuito [2].
+EasyEDA es una plataforma en línea de diseño electrónico que nos permite crear, simular y fabricar circuitos electrónicos y PCB (Placa de circuito impreso) [1]. Un circuito PCB está diseñado para facilitar el proceso de desarrollo de prototipos electrónicos, desde la creación del esquema hasta la fabricación del PCB, todo en un entorno accesible y amigable. Una vez tengamos el esquema del circuito electrónico elaborado correctamente, la plataforma de EasyEDA nos da la opción de diseñar la PCB asignando la ubicación fisica de cada componente y trazando las pistas que conectan esos componentes, además, de que ofrece opciones avanzadas como la creacion de PCBs multicapa, además, de que nos brinda una visualizacion en 3D que ofrece una presentación vivida el diseño elaborado, incluyendo visualización en 2D del todo el circuito [2].
 </p>
 <p align="justify">
-Asimismo, el circuito impreso (PCB) fue diseñando de acuerdo a nuestro prototipo utilizando EasyEDA, que tal como se menciono anteriormente es una herramienta potente para la creación de este tipo de esquemas y simulaciones. Cabe mencionar que en el diseño se integraron una serie módulos como un cargador para la gestión de la batería y un controlador convertidor de voltaje que su labor es estabilizar la alimentación de los componentes, dado que el uso de EasyEDA nos facilita la optimización de cualquier circuito para asegurar su funcionalidad y eficiencia.
+Asimismo, el circuito impreso (PCB) fue diseñando de acuerdo a nuestro prototipo utilizando está plataforma, que tal como se menciono anteriormente es una herramienta potente para la creación de este tipo de esquemas y simulaciones. Cabe mencionar que en el diseño se integraron una serie módulos como un cargador para la gestión de la batería y un controlador convertidor de voltaje que su labor es estabilizar la alimentación de los componentes, dado que el uso de EasyEDA nos facilita la optimización de cualquier circuito para asegurar su funcionalidad y eficiencia.
 </p>
 <p align="justify">
 Es por tal motivo que en este informe se evidenciará todo el procedimiento de como podemos adaptar nuestro prototipo a un esquema electrónico para luego realizar un diseño en PCB, utilizando todos los componentes ya establecidos para nuestro medidor de calidad de aire que tiene como objetivo proporcionar datos confiables sobre los niveles de partículas y gases en el ambiente, además de hacer la conexión de manera correcta y colaborativa.
@@ -30,9 +30,11 @@ Es por tal motivo que en este informe se evidenciará todo el procedimiento de c
 
 # 2.- Metodología 
 
-La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiendo estos pasos utilizando la plataforma EasyEDA:
+La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiendo estos pasos mediante la plataforma de EasyEDA:
 
 ## 2.1 Diseño del esquemático
+
+##### Primeramente, para desarrollar nuestro diseño esquemático:
 
 - Se creó un nuevo proyecto en EasyEDA.
 - Se añadieron los componentes necesarios al esquemático, incluyendo:
@@ -44,80 +46,115 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
    - Módulo de carga TP4056 para batería de litio
    - Resistencias y otros componentes pasivos
 
+##### Donde:
+
 - Se realizaron las conexiones entre los componentes según el diseño del circuito.
 - Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
 
+<div align="center">
+  
 |   Imagen 1: Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
+</div>
+<p align="justify">
 Como se puede observar en la imagen 1 del esquema electrónico, se han incorporado todos los componentes mencionados y se han realizado las conexiones correspondientes. Es importante destacar que los sensores no estarán directamente integrados en la placa PCB. En su lugar, se han utilizado conectores Molex que reemplazan los pines de los sensores, permitiendo una conexión flexible y modular(Imagen 2).
-
+</p>
+<div align="center">
+  
 |    Imagen 2  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/cced40a1-85bc-49ba-bd4e-d8b153d4dc8a" alt="ESP32 DEVKIT V1" width="800"/>|
 
-
+</div>
 
 ## 2.2 Conversión del esquemático a PCB
+##### Para está sección:
 
  - Se utilizó la función "Convert to PCB" en EasyEDA para generar el diseño inicial del PCB.
 
+<div align="center">
+  
 |Imagen 3  |
 |-----|
-|<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="800"/>|
+|<img src="https://github.com/user-attachments/assets/120f2b25-55e6-4a00-85da-2c0b44b6f753" alt="ESP32 DEVKIT V1" width="400"/>|
 
+</div>
+
+##### Donde:
 - Se ajustaron las dimensiones de la placa a 134.40 mm x 75.00 mm con esquinas redondeadas (radio 11.20 mm).
-- Se configuró la PCB para utilizar 2 capas de cobre.
+- Se configuró la PCB para utilizar 2 capas de cobre, que vienen a ser la capa superior e inferior.
 
+<div align="center">
+  
 |    Imagen 4  |
 |-------|
-|<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="800"/>|
+|<img src="https://github.com/user-attachments/assets/7e86952c-6fd6-4166-a247-de3e6545358b" alt="ESP32 DEVKIT V1" width="300"/>|
 
+</div>
 
 ## 2.3 Diseño y optimización del PCB
 
-2.3.1 Disposición inicial de componentes:
+### 2.3.1 Disposición inicial de componentes:
+##### Para este caso se realizó:
 
-  - Revisión de la disposición automática generada por EasyEDA.
-  - Reorganización manual de los componentes para una distribución más eficiente.
-    
+  - Una revisión de la disposición automática generada por EasyEDA.
+  - Una reorganización manual de los componentes para una distribución más eficiente.
+
+<div align="center">
+  
 |    Imagen 5 |
 |-------|
 |<img src="https://github.com/user-attachments/assets/126afe1d-843e-4a88-a5c7-a80b1cfdb6e8" alt="ESP32 DEVKIT V1" width="800"/>|
 
+</div>
 
-2.3.2 Ruteo automático:
+### 2.3.2 Ruteo automático:
 
-   - Aplicación del ruteo automático de EasyEDA como punto de partida.
-     
+- Para el enrutamiento de las conexiones se aplicó el ruteo automático de EasyEDA como punto de partida.
+   
+<div align="center">
+  
 | Imagen 6   |
 |-------|
-|<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="800"/>|
-     
-2.3.3 Optimización manual:
+|<img src="https://github.com/user-attachments/assets/b3567ec0-0e23-4c89-8caa-1a015693e575" alt="ESP32 DEVKIT V1" width="300"/>|
+
+</div>
+
+### 2.3.3 Optimización manual:
+##### Como siguiente paso de realizó lo siguiente:
 
    - Reubicación de componentes para mejorar la eficiencia del diseño.
    - Ajuste manual de pistas para optimizar conexiones y reducir longitudes.
    - Posicionamiento estratégico de conectores Molex en los bordes de la placa.
   
-
+<div align="center">
+  
 |    Imagen 7  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
-2.3.4 Configuración de pistas:
+</div>
 
-   - Capa superior (rojo): ancho de 10 mil (0.254 mm)
-   - Capa inferior (azul): ancho de 10 mil (0.254 mm)
+### 2.3.4 Configuración de pistas:
+
+##### Para las capas se les colocó los siguientes parámetros: 
+
+   - Capa superior (rojo): ancho de 10 mil (0.700 mm)
+   - Capa inferior (azul): ancho de 10 mil (0.700 mm)
       
    Uso de pistas más anchas para conexiones de potencia.
-
+   
+<div align="center">
+  
 |  Imagen 8: Lineas azules   |  Imagen 9: Lineas azules  |
 |----------------------|-----------------------|
-|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
+|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="400"/>|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="400"/>|
 
+</div>
 
+<div align="center">
 
 |   Imagen 8: Lineas azules  |
 |-------|
@@ -128,9 +165,10 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 |-------|
 |<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
 
-
+</div>
+<p align="justify">
 Esta metodología nos permitió transformar nuestro esquema electrónico inicial en un diseño de PCB funcional y optimizado para nuestro medidor de calidad de aire, asegurando una disposición eficiente de los componentes y conexiones adecuadas para su correcto funcionamiento.
-
+</p>
 
 
 
