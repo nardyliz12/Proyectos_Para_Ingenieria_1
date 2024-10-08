@@ -110,6 +110,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 
     - Capa superior (rojo): ancho de 10 mil (0.254 mm)
     - Capa inferior (azul): ancho de 10 mil (0.254 mm)
+      
    Uso de pistas más anchas para conexiones de potencia.
 
 
