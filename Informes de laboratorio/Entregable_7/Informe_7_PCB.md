@@ -80,6 +80,15 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
+|    Lineas azules  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/9a22b0f5-79f4-4b44-8545-2a8b1f7a2e5c" alt="ESP32 DEVKIT V1" width="800"/>|
+
+|    Lineas azules  |
+|-------|
+|<img src="https://github.com/user-attachments/assets/13b97a5b-41cd-418e-8adc-e69b328ef0f9" alt="ESP32 DEVKIT V1" width="800"/>|
+
+
 
 
 
