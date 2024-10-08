@@ -106,7 +106,7 @@ Como se puede observar en la imagen 1 del esquema electrónico, se han incorpora
 |-------|
 |<img src="https://github.com/user-attachments/assets/5cfd056c-110a-43b0-ae94-ba44ff7ced8f" alt="ESP32 DEVKIT V1" width="800"/>|
 
-- Configuración de pistas:
+2.3.4 Configuración de pistas:
 
     - Capa superior (rojo): ancho de 10 mil (0.254 mm)
     - Capa inferior (azul): ancho de 10 mil (0.254 mm)
