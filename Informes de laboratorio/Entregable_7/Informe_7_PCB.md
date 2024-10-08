@@ -194,8 +194,6 @@ El diseño final del PCB fue revisado y validado mediante la herramienta de visu
 Finalmente, el prototipo ensamblado fue sometido a pruebas, demostrando un rendimiento estable y confiable. Los sensores MQ-135 y MAX4466 cumplieron con sus funciones de medición de gases y ruido respectivamente, mientras que el ESP32 procesó y transmitió los datos de manera eficiente. El prototipo operó sin interrupciones, mostrando un consumo de energía adecuado para su uso continuo durante varias horas. En resumen, el PCB diseñado y optimizado para este dispositivo de medición de calidad del aire cumplió con los requisitos de funcionalidad, estabilidad y eficiencia esperados.
 </p>
 
-https://github.com/user-attachments/assets/9d26320d-a9f5-406e-940a-aaa7307246b4
-
 [Ingresa aquí para ver nuestro circuito PCB](https://easyeda.com/editor#id=222341c9fd8a407d80cb53feb81b5513|eef4518e666f4f8183791a7ef3531143)
 
 # 4.- Discusión 
