@@ -47,13 +47,13 @@ La creación del circuito PCB para nuestro dispositivo se llevó a cabo siguiend
 - Se realizaron las conexiones entre los componentes según el diseño del circuito.
 - Se verificó el esquemático para asegurar que todas las conexiones fueran correctas.
 
-|    Esquema electrónico  |
+|   Imagen 1: Esquema electrónico  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/f2ade062-dbea-4554-ab6e-99ac0ce18663" alt="ESP32 DEVKIT V1" width="800"/>|
 
-los componeentes como sensores no esatran dentro de la placa ,Se puso los molex que basicamente reeemplazan los pines que se ponde en los sensores
+Como se puede observar en la primera imagen del esquema electrónico, se han incorporado todos los componentes mencionados y se han realizado las conexiones correspondientes. Es importante destacar que los sensores no estarán directamente integrados en la placa PCB. En su lugar, se han utilizado conectores Molex que reemplazan los pines de los sensores, permitiendo una conexión flexible y modular(Imagen 2).
 
-|    Esquema electrónico  |
+|    Imagen 2  |
 |-------|
 |<img src="https://github.com/user-attachments/assets/cced40a1-85bc-49ba-bd4e-d8b153d4dc8a" alt="ESP32 DEVKIT V1" width="800"/>|
 
