@@ -30,7 +30,17 @@ El chasis del dispositivo debe estar fabricado con un material económico y fác
 El dispositivo debe ser alimentado por una fuente de energía autónoma, preferiblemente una batería recargable, que garantice una operación continua sin depender de una fuente de alimentación externa constante. La batería debe cumplir con los estándares de seguridad, como la IEC 62133, que garantizan protección contra sobrecargas y descargas profundas. Para optimizar su operación en ubicaciones remotas o sin acceso a la red eléctrica, se podría considerar la integración de un sistema de carga solar, compatible con el enfoque low cost, para mantener la batería funcional a lo largo del tiempo sin intervenciones frecuentes.
 
 # 4.- Diseño mecánico
+
+El diseño mecánico del dispositivo se centra en la creación de un chasis funcional y eficiente que albergue los componentes electrónicos de manera segura y optimizada. Este chasis está fabricado con PLA, un material biodegradable y fácil de procesar mediante técnicas de impresión 3D, lo que no solo contribuye a un enfoque sostenible, sino que también permite una fabricación de bajo costo y accesible para la producción en pequeña escala. La elección de PLA garantiza una buena resistencia mecánica y rigidez, adecuadas para proteger los componentes internos del dispositivo.
+
+El chasis ha sido diseñado con un espacio específico para alojar el sensor de calidad de aire PMS5003, que mide las concentraciones de PM10 y PM2.5, así como el sensor de ruido KY-037. Ambas unidades se han integrado en posiciones estratégicas dentro del chasis para asegurar que estén expuestas a las condiciones ambientales que se desean medir, mientras que se minimiza la interferencia de otros componentes. Además, se han incorporado compartimentos dedicados para la batería recargable, garantizando que el sistema tenga un suministro de energía adecuado y que se mantenga una fácil accesibilidad para su carga y reemplazo.
+
+El diseño también incluye un sistema de fijación que permite que el dispositivo se instale de manera segura en un poste, proporcionando la estabilidad necesaria para resistir factores como el viento y las vibraciones. Se ha modelado una parte posterior curvada que se adapta al contorno del poste, lo que no solo mejora la estética del dispositivo, sino que también optimiza el uso del espacio y evita el sobreespacio que podría afectar su desempeño.
+
 # 5.- Simulaciones
+
+
+
 # 6.- Diseño Electrónico
 # 7.- Pruebas
 # 8.- PCB del circuito electrónico
