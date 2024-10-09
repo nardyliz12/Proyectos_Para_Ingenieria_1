@@ -39,7 +39,17 @@ El diseño también incluye un sistema de fijación que permite que el dispositi
 
 # 5.- Simulaciones
 
+La simulación de tracción realizada en SimScale mostró los desplazamientos y las tensiones distribuidas a lo largo del dispositivo, sometido a una fuerza equivalente a su peso (aproximadamente 2.943 N). Utilizando el material PLA, las tensiones fueron evaluadas a través del criterio de Von Mises, que se observa en la escala de colores en la simulación.
 
+En la parte superior del dispositivo, especialmente en los bordes de contacto con el poste y en las zonas de fijación, las tensiones de tracción fueron mínimas, indicadas por los tonos azules en el espectro de Von Mises. Esto es consistente con la rigidez del material y la buena distribución de las fuerzas en estas zonas.
+
+En la base del dispositivo, donde se observan algunas concentraciones de tensiones, representadas por tonos más cercanos al verde, se detectan ligeros incrementos en las tensiones. Sin embargo, estos valores se mantienen dentro de los límites aceptables del material, ya que no se superan los valores de límite elástico del PLA (55 - 72 MPa). La mayor concentración de esfuerzo se ubica en la parte inferior de la estructura, lo que sugiere que, aunque el dispositivo experimenta tensiones, estas no son suficientes para causar deformaciones permanentes o fallas estructurales.
+
+Finalmente, los resultados indican que la estructura es capaz de soportar el peso del dispositivo sin superar los límites de seguridad del material, lo que garantiza que el diseño puede resistir las condiciones de tracción en su aplicación real.
+
+En la simulación de compresión causada por las fuerzas del viento, como se observa en la imagen, el modelo muestra una distribución considerable de esfuerzos en la estructura. La tensión de Von Mises evidencia que las zonas de mayor concentración de esfuerzos están ubicadas en la región central del modelo, destacándose en las áreas cercanas al agujero circular. Estas áreas presentan mayores tensiones, lo cual se refleja en los colores verdes y amarillos, mientras que las demás áreas permanecen en un rango de tensiones más bajas, indicadas por los colores azules.
+
+Este análisis sugiere que la estructura experimenta una mayor compresión en los laterales sometidos a la presión del viento. Las tensiones alcanzan valores significativos pero no parecen exceder el límite elástico del PLA, indicando que el material podría resistir estas fuerzas sin sufrir deformaciones permanentes.
 
 # 6.- Diseño Electrónico
 # 7.- Pruebas
