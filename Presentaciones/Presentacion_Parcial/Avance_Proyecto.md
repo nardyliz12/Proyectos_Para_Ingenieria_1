@@ -27,7 +27,7 @@ Esta situación es especialmente preocupante, ya que los habitantes de Chicla so
 
 # 2.- Solución
  
-Desarrollaremos e implementaremos un dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire y los niveles de ruido en Chicla. Este dispositivo proporcionará datos accesibles a través de una interfaz web y emitirá alertas en caso de contaminación excesiva. El objetivo es informar a los residentes y respaldar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad. 
+Desarrollaremos e implementaremos un dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire en Chicla. Este dispositivo proporcionará datos accesibles a través de una interfaz web y emitirá alertas en caso de contaminación excesiva. El objetivo es informar a los residentes y respaldar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad. 
 
 # 3.- Requerimientos
 
