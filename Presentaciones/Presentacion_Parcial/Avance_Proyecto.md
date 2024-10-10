@@ -71,11 +71,12 @@ Este análisis sugiere que la estructura experimenta una mayor compresión en lo
 
 Figura 1: Diseño electrónico
 
-![](https://github.com/BrunoXIII-Gav/FDD_1/blob/main/Archivos_de_FDD/Imagenes/Imagenes_entregable7/Sheet_1.png)
+![](https://github.com/user-attachments/assets/1cce0267-1661-4926-81c0-e3f03fd68401)
 
 Figura 2: Diseño electrónico por partes
 
-![](https://github.com/BrunoXIII-Gav/FDD_1/blob/main/Archivos_de_FDD/Imagenes/Imagenes_entregable7/Sheet_2.png)
+![](https://github.com/user-attachments/assets/6c8ab319-f46e-4d90-9558-b88b61b3e30a)
+
 
 # 7.- Pruebas
 
