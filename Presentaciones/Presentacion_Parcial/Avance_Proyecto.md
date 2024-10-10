@@ -21,7 +21,7 @@ El Informe Mundial sobre la Calidad del Aire 2023 indica que Perú está entre l
 
 *Fuente: 2023 World Air Quality Report | Elaboración: GEE - AAP*
 
-En este contexto, nos enfocamos en la ciudad de Chicla, situada en la provincia de Huarochirí, a 11 km de Casapalca, donde operan varias minas de metales. Según el Sistema Nacional de Información Ambiental (SINIA), entre 2019 y 2022, se han reportado casos de contaminación, especialmente en el río Rímac, que fluye adyacente a Chicla. Sin embargo, casi no existen datos específicos sobre la contaminación del aire en esta ciudad. La principal fuente de información proviene de la página oficial de la Red de Salud de Huarochirí, que ofrece informes ambientales generalizados para toda la provincia, dejando a Chicla con una alarmante falta de datos actualizados sobre su calidad ambiental.
+En este contexto, nos enfocamos en la ciudad de Chicla, situada en la provincia de Huarochirí, a 11 km de Casapalca, donde operan varias minas de metales. Según el Sistema Nacional de Información Ambiental (SINIA) [3], entre 2019 y 2022, se han reportado casos de contaminación, especialmente en el río Rímac, que fluye adyacente a Chicla. Sin embargo, casi no existen datos específicos sobre la contaminación del aire en esta ciudad. La principal fuente de información proviene de la página oficial de la Red de Salud de Huarochirí, que ofrece informes ambientales generalizados para toda la provincia, dejando a Chicla con una alarmante falta de datos actualizados sobre su calidad ambiental.
 
 Esta situación es especialmente preocupante, ya que los habitantes de Chicla son vulnerables a problemas de salud. Si no se implementan medidas efectivas de regulación y control de la contaminación, se prevén efectos negativos en la salud pública en el futuro.
 
@@ -89,4 +89,5 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 
 [2] -. Org.pe. [citado el 6 de octubre de 2024]. Disponible en: https://aap.org.pe/observatorio-aap/raking-calidad-de-aire-2023/Ranking_calidad_de_aire_2023.pdf
 
+[3] -. Ministerio del Ambiente. Denuncias ambientales 2019-2022, región Lima [Internet]. 2023 [citado 2024 oct 7]. Disponible en: https://sinia.minam.gob.pe/documentos/denuncias-ambientales-2019-2022-region-lima
 
