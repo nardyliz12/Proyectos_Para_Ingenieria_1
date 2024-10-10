@@ -69,14 +69,13 @@ Este análisis sugiere que la estructura experimenta una mayor compresión en lo
 
 # 6.- Diseño Electrónico
 
-Figura 1: Diseño electrónico
+|Figura 1 : Diseño electrónico|
+|------|
+|<img src="https://github.com/user-attachments/assets/1cce0267-1661-4926-81c0-e3f03fd68401" alt="ESP32 DEVKIT V1" width="800"/>|
 
-![](https://github.com/user-attachments/assets/1cce0267-1661-4926-81c0-e3f03fd68401)
-
-Figura 2: Diseño electrónico por partes
-
-![](https://github.com/user-attachments/assets/6c8ab319-f46e-4d90-9558-b88b61b3e30a)
-
+|Diseño electrónico por partes|
+|------|
+|<img src="https://github.com/user-attachments/assets/6c8ab319-f46e-4d90-9558-b88b61b3e30a" alt="ESP32 DEVKIT V1" width="800"/>|
 
 # 7.- Pruebas
 
