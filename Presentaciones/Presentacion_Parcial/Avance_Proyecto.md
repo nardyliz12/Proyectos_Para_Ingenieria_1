@@ -125,7 +125,6 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 - un ajuste manualente las pistas para optimizar conexiones y reducir longitudes.
 - El posicionamiento estratégico de conectores Molex en los bordes de la placa.
 
-
 <div align="center">
   
 | Conexión PCB  |
@@ -133,6 +132,9 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 |<img src="https://github.com/user-attachments/assets/cbd79743-84d0-4c00-9b20-53ece9f282e7" alt="ESP32 DEVKIT V1" width="800"/>|
 
 </div>
+
+- Una vez haber realizado las conexiones en ambas capas (inferior como superiror), EasyEDA nos da la posibilidad de poder visualizar de manera panorámica el circuito elaborado en PCB, para una vista 3D y 2D.
+
 <div align="center">
   
 |  Vista 2D   |
