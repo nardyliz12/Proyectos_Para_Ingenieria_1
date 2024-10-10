@@ -117,13 +117,15 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 |------|
 |<img src="https://github.com/user-attachments/assets/f317762b-1c61-4fce-a0b2-2bd9ac3e01cd" alt="ESP32 DEVKIT V1" width="800"/>|
 
+</div>
+
 ##### se realizó:
 
 - La reubicación de los componentes para mejorar la eficiencia del diseño.
 - un ajuste manualente las pistas para optimizar conexiones y reducir longitudes.
 - El posicionamiento estratégico de conectores Molex en los bordes de la placa.
 
-</div>
+
 <div align="center">
   
 | Conexión PCB  |
