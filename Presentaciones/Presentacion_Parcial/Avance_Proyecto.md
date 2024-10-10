@@ -75,10 +75,6 @@ Figura 1:
 
 ![](https://github.com/BrunoXIII-Gav/FDD_1/blob/main/Archivos_de_FDD/Imagenes/Imagenes_entregable7/Sheet_2.png)
 
-Figura 2: 
-
-[PDF DEL CIRCUITO ELECTRICO](https://github.com/BrunoXIII-Gav/FDD_1/blob/main/Archivos_de_FDD/Hardware/Schematic_GRUPO-1_2024-06-12.pdf)
-
 # 7.- Pruebas
 
 https://github.com/user-attachments/assets/1d06c45c-0708-46ee-8a09-e7ee31cfaf3e
