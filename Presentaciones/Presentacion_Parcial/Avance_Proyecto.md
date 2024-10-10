@@ -89,6 +89,14 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 |-----------------|
 |![image](https://github.com/user-attachments/assets/cbd79743-84d0-4c00-9b20-53ece9f282e7)|
 
+|  Vista 2D   |
+|------|
+|![image](https://github.com/user-attachments/assets/501a1de1-c565-4f2a-bde5-5b63ade62740)|
+
+|  Vista 3D: Capa Inferior  | Vista 3D: Capa Superior|
+|------|----------|
+|![image](https://github.com/user-attachments/assets/520cc312-4e1a-4a8e-9691-fcd962559a62)|![image](https://github.com/user-attachments/assets/2697b088-8152-4266-bd24-61cf124d56bd)|
+
 # Referencias Bibliográficas
 
 [1] -. Contaminación atmosférica [Internet]. Who.int. [citado el 6 de octubre de 2024]. Disponible en: https://www.who.int/es/health-topics/air-pollution.
