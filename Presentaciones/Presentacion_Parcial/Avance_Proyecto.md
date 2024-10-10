@@ -64,5 +64,13 @@ En la simulación de compresión causada por las fuerzas del viento, como se obs
 Este análisis sugiere que la estructura experimenta una mayor compresión en los laterales sometidos a la presión del viento. Las tensiones alcanzan valores significativos pero no parecen exceder el límite elástico del PLA, indicando que el material podría resistir estas fuerzas sin sufrir deformaciones permanentes.
 
 # 6.- Diseño Electrónico
+
 # 7.- Pruebas
+
+https://github.com/user-attachments/assets/2b44910a-f929-49df-8d6c-5316c01ee6d0
+
+https://github.com/user-attachments/assets/7a2abd84-993c-4c1c-8da8-85aa488169c8
+
+https://github.com/user-attachments/assets/cbbd989b-34a7-4fca-ae2d-543e518797b1
+
 # 8.- PCB del circuito electrónico
