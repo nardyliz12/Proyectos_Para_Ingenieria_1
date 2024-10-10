@@ -32,7 +32,11 @@ Esta situación es especialmente preocupante, ya que los habitantes de Chicla so
 
 # 2.- Solución
 <p align="justify"> 
-Desarrollaremos e implementaremos un dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire en Chicla. Este dispositivo proporcionará datos accesibles a través de una interfaz web y emitirá alertas en caso de contaminación excesiva. El objetivo es informar a los residentes y respaldar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad. 
+Vamos a desarrollar e implementar un dispositivo diseñado para monitorear la calidad del aire en tiempo real, enfocándose en los niveles de PM10, PM2.5 y CO. Mediante una plataforma web, tanto los residentes como las autoridades podrán acceder a datos precisos y recibir alertas cuando los niveles de contaminación superen los límites establecidos. Esto facilitará la toma de decisiones informadas para mejorar la calidad del aire.
+
+El diseño del dispositivo priorizará la seguridad y la eficiencia, utilizando sensores avanzados (PMS5003, MQ7 y KY-038) montados en protoboards, con baterías situadas de manera que se minimicen las interferencias. La carcasa del dispositivo permitirá una adecuada circulación del aire y será resistente a condiciones climáticas adversas, asegurando su efectividad en el entorno industrial de Chicla. Instalado en un poste, el dispositivo garantizará un monitoreo continuo una vez conectado a la red Wi-Fi existente. Los datos se transmitirán automáticamente a la plataforma web, accesible para operadores industriales y autoridades locales, lo que permitirá la emisión de alertas cuando los niveles de contaminación excedan los límites permitidos. Además, el sistema será adaptable a diversos entornos industriales.
+
+
 </p>
 
 # 3.- Requerimientos
