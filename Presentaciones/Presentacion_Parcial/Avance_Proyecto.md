@@ -13,7 +13,7 @@
 
 # 1.- Problemática
 
-Según la Organización Mundial de la Salud (OMS), el 99% de la población mundial reside en áreas donde los niveles de calidad del aire exceden los límites establecidos. Entre los contaminantes más preocupantes se encuentran las partículas en suspensión, el monóxido de carbono, el ozono, el dióxido de nitrógeno y el dióxido de azufre. La exposición a estos contaminantes incrementa significativamente el riesgo de enfermedades graves, como accidentes cerebrovasculares, enfermedades cardíacas y pulmonares, así como ciertos tipos de cáncer.
+Según la Organización Mundial de la Salud (OMS), el 99% de la población mundial reside en áreas donde los niveles de calidad del aire exceden los límites establecidos [1]. Entre los contaminantes más preocupantes se encuentran las partículas en suspensión, el monóxido de carbono, el ozono, el dióxido de nitrógeno y el dióxido de azufre. La exposición a estos contaminantes incrementa significativamente el riesgo de enfermedades graves, como accidentes cerebrovasculares, enfermedades cardíacas y pulmonares, así como ciertos tipos de cáncer.
 
 El Informe Mundial sobre la Calidad del Aire 2023 indica que Perú está entre los países con los niveles más altos de contaminación del aire a nivel mundial. En 2021, la concentración de partículas finas (PM2.5), un indicador clave para medir la contaminación del aire, alcanzó un promedio histórico de 29.6 microgramos por metro cúbico (μg/m³). Según la OMS, los niveles de PM2.5 en una ciudad deberían situarse entre 0 y 5 μg/m³ para ser considerados adecuados.
 
@@ -74,3 +74,7 @@ https://github.com/user-attachments/assets/7a2abd84-993c-4c1c-8da8-85aa488169c8
 https://github.com/user-attachments/assets/cbbd989b-34a7-4fca-ae2d-543e518797b1
 
 # 8.- PCB del circuito electrónico
+
+# Referencias Bibliográficas
+
+[1] - https://www.who.int/es/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
