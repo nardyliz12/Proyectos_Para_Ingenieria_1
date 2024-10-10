@@ -17,9 +17,9 @@ Según la Organización Mundial de la Salud (OMS), el 99% de la población mundi
 
 El Informe Mundial sobre la Calidad del Aire 2023 indica que Perú está entre los países con los niveles más altos de contaminación del aire a nivel mundial. En 2021, la concentración de partículas finas (PM2.5), un indicador clave para medir la contaminación del aire, alcanzó un promedio histórico de 29.6 microgramos por metro cúbico (μg/m³). Según la OMS, los niveles de PM2.5 en una ciudad deberían situarse entre 0 y 5 μg/m³ para ser considerados adecuados [2]. 
 
-![image](https://github.com/user-attachments/assets/09c06a0e-7f34-4275-84eb-7f725961a0bd)
+  ![image](https://github.com/user-attachments/assets/09c06a0e-7f34-4275-84eb-7f725961a0bd)
 
-Fuente: 2023 World Air Quality Report | Elaboración: GEE - AAP
+*Fuente: 2023 World Air Quality Report | Elaboración: GEE - AAP*
 
 En este contexto, nos enfocamos en la ciudad de Chicla, situada en la provincia de Huarochirí, a 11 km de Casapalca, donde operan varias minas de metales. Según el Sistema Nacional de Información Ambiental (SINIA), entre 2019 y 2022, se han reportado casos de contaminación, especialmente en el río Rímac, que fluye adyacente a Chicla. Sin embargo, casi no existen datos específicos sobre la contaminación del aire en esta ciudad. La principal fuente de información proviene de la página oficial de la Red de Salud de Huarochirí, que ofrece informes ambientales generalizados para toda la provincia, dejando a Chicla con una alarmante falta de datos actualizados sobre su calidad ambiental.
 
@@ -81,7 +81,8 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 
 # Referencias Bibliográficas
 
-[1] -. Contaminación atmosférica [Internet]. Who.int. [citado el 6 de octubre de 2024]. Disponible en: https://www.who.int/es/health-topics/air-pollution
+[1] -. Contaminación atmosférica [Internet]. Who.int. [citado el 6 de octubre de 2024]. Disponible en: https://www.who.int/es/health-topics/air-pollution.
+
 [2] -. Org.pe. [citado el 6 de octubre de 2024]. Disponible en: https://aap.org.pe/observatorio-aap/raking-calidad-de-aire-2023/Ranking_calidad_de_aire_2023.pdf
 
 
