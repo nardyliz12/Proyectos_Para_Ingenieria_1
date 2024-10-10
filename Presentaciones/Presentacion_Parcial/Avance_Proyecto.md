@@ -22,6 +22,9 @@ En este contexto, nos enfocamos en la ciudad de Chicla, situada en la provincia 
 Esta situación es especialmente preocupante, ya que los habitantes de Chicla son vulnerables a problemas de salud. Si no se implementan medidas efectivas de regulación y control de la contaminación, se prevén efectos negativos en la salud pública en el futuro.
 
 # 2.- Solución
+
+Se necesita desarrollar e implementar un dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire y los niveles de ruido en Chicla. Este dispositivo proporcionará datos accesibles a través de una interfaz web y emitirá alertas en caso de contaminación excesiva. El objetivo es informar a los residentes y respaldar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad.
+
 # 3.- Requerimientos
 
 El diseño del dispositivo debe ser económico y eficiente, permitiendo la medición de la calidad del aire y el ruido ambiental de manera accesible para aplicaciones como monitoreo ciudadano, educación y estudios preliminares. Aunque los sensores a utilizar no tienen que ser de grado industrial, el dispositivo debe proporcionar lecturas fiables para niveles de partículas en el aire (PM10 y PM2.5) y el ruido ambiental. Las mediciones deben estar alineadas con las normativas vigentes en Perú, como la Norma de Calidad Ambiental del Aire del MINAM, y con los estándares internacionales de la Organización Mundial de la Salud (OMS), aunque con una precisión ajustada a un enfoque de bajo costo.
