@@ -17,6 +17,10 @@ Según la Organización Mundial de la Salud (OMS), el 99% de la población mundi
 
 El Informe Mundial sobre la Calidad del Aire 2023 indica que Perú está entre los países con los niveles más altos de contaminación del aire a nivel mundial. En 2021, la concentración de partículas finas (PM2.5), un indicador clave para medir la contaminación del aire, alcanzó un promedio histórico de 29.6 microgramos por metro cúbico (μg/m³). Según la OMS, los niveles de PM2.5 en una ciudad deberían situarse entre 0 y 5 μg/m³ para ser considerados adecuados.
 
+En este contexto, nos enfocamos en la ciudad de Chicla, situada en la provincia de Huarochirí, a 11 km de Casapalca, donde operan varias minas de metales. Según el Sistema Nacional de Información Ambiental (SINIA), entre 2019 y 2022, se han reportado casos de contaminación, especialmente en el río Rímac, que fluye adyacente a Chicla. Sin embargo, casi no existen datos específicos sobre la contaminación del aire en esta ciudad. La principal fuente de información proviene de la página oficial de la Red de Salud de Huarochirí, que ofrece informes ambientales generalizados para toda la provincia, dejando a Chicla con una alarmante falta de datos actualizados sobre su calidad ambiental.
+
+Esta situación es especialmente preocupante, ya que los habitantes de Chicla son vulnerables a problemas de salud. Si no se implementan medidas efectivas de regulación y control de la contaminación, se prevén efectos negativos en la salud pública en el futuro.
+
 # 2.- Solución
 # 3.- Requerimientos
 
