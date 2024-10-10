@@ -67,11 +67,11 @@ Este análisis sugiere que la estructura experimenta una mayor compresión en lo
 
 # 7.- Pruebas
 
-https://github.com/user-attachments/assets/2b44910a-f929-49df-8d6c-5316c01ee6d0
+https://github.com/user-attachments/assets/1d06c45c-0708-46ee-8a09-e7ee31cfaf3e
 
-https://github.com/user-attachments/assets/7a2abd84-993c-4c1c-8da8-85aa488169c8
+https://github.com/user-attachments/assets/96144028-8eda-495f-84b2-57fee171a812
 
-https://github.com/user-attachments/assets/cbbd989b-34a7-4fca-ae2d-543e518797b1
+https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 
 # 8.- PCB del circuito electrónico
 
