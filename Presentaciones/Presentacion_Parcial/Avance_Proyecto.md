@@ -79,6 +79,10 @@ https://github.com/user-attachments/assets/d4f08f1d-42be-4acf-876a-4c91c198ecf7
 
 # 8.- PCB del circuito electrónico
 
+| Conexión PCB  |
+|-----------------|
+|![image](https://github.com/user-attachments/assets/cbd79743-84d0-4c00-9b20-53ece9f282e7)|
+
 # Referencias Bibliográficas
 
 [1] -. Contaminación atmosférica [Internet]. Who.int. [citado el 6 de octubre de 2024]. Disponible en: https://www.who.int/es/health-topics/air-pollution.
