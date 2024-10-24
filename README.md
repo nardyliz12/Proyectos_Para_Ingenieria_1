@@ -77,8 +77,8 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 |Propiedades físicas:|
 |----------------------|
-|- **Método de detección**: Utiliza un transductor acústico (micrófono electret) que convierte las ondas sonoras en señales eléctricas. Basado en el principio de transducción acústica.|
-|- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación, adecuado para aplicaciones tanto en interiores como exteriores.|
+|- **Principio de funcionamiento**: Basado en la dispersión de luz láser para identificar y contar partículas. Un ventilador integrado ayuda a mantener un flujo de aire constante sobre el área de medición del láser.|
+|- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación.|
 |- **Compatibilidad**: El sensor es compatible con microcontroladores como el ESP32.|
 
 
