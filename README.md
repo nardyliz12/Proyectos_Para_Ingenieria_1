@@ -84,7 +84,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 |Propiedades  químicas:|
 |----------------------|
-|- El PMS5003 utiliza un diodo láser de **arseniuro de galio (GaAs)* o *fosfuro de galio (GaP)*, ambos materiales semiconductores.|
+|- El PMS5003 utiliza un diodo láser de *arseniuro de galio (GaAs)* o *fosfuro de galio (GaP)*, ambos materiales semiconductores.|
 |- La carcasa protectora del sensor está fabricada con **policarbonato*, un material polimérico conocido por su resistencia química a la mayoría de ácidos, bases y alcoholes.|
 
 |Funcionamiento básico:|
