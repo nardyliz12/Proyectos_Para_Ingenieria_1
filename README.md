@@ -32,7 +32,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 # PROGRESO TRL
 
-## TRL1:Principios básicos observados y reportados
+## TRL1: Principios básicos observados y reportados
 
 ### Sensores utilizados: 
 ### 1) Sensor MQ -7
