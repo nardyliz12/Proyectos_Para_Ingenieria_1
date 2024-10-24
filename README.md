@@ -20,10 +20,7 @@
 |4. Condori Mamani Nardy Liz | **Coordinadora de software y programación** |nardy.condori@upch.pe|
 |5. Vega Pahuara Millene Nadile | **Coordinadora de Hardware**| millene.vega@upch.pe |
 
-![image](https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d)
-
-
-
-
 # Objetivo 🌱: 
 Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire, proporcionando datos accesibles a través de una interfaz web y emitiendo alertas en caso de contaminación excesiva, con el fin de informar a los residentes y apoyar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad.
+
+![image](https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d)
