@@ -63,7 +63,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 ### 2) Sensor PMS5003
 |Descripción| Imagen del sensor |
 |-------|-----|
-|El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.| <img src="https://github.com/user-attachments/assets/90288d1b-94f3-4142-a6d0-a87a8103ddc7" width="700"/>|
+|El PMS5003 es un sensor de partículas diseñado para medir concentraciones de material particulado (PM2.5 y PM10) en el aire mediante el principio de dispersión de luz láser. El dispositivo detecta partículas en suspensión como polvo, polen y humo, midiendo la cantidad de luz dispersada por las partículas cuando atraviesan un haz de luz láser. Este sensor es útil para monitorear la calidad del aire en aplicaciones de control ambiental.| <img src="https://github.com/user-attachments/assets/90288d1b-94f3-4142-a6d0-a87a8103ddc7" width="700"/>|
 
 | Características principales del MQ-7:|
 |---------------------------------------|
