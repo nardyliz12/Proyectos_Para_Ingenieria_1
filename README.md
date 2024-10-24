@@ -19,6 +19,20 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 </div>
 
+# ¿Quiénes somos? 
+<p align="justify">
+¡Bienvenidos a nuestro repositorio! 🤓☝️ Somos el Grupo 9 del curso de Proyectos para Ingeniería I ( 2024-2), y nos complace utilizar este repositorio para compartir y cargar el proyecto que estaremos desarrollando durante cada sesión a lo largo del curso. Estamos entusiasmados por contribuir al desarrollo sostenible de nuestro país y esperamos compartir nuestros avances y aprendizajes con ustedes.
+</p>
+
+## Intregrantes y Roles del Grupo
+|Nombres:                      |Rol:        | Correo: |
+|---------------------|---------------------------------|-----------|
+|1. Alarcon Arias Julio Erick |  **Coordinador General y de modelado**| julio.alarcon@upch.pe        |
+|2. Atao Surichaqui Ester Solamyt| **Coordinadora de Manufactura digital**|ester.atao@upch.pe|
+|3. Castañeda Reategui Mercedes del Rosario | **Coordinadora Diseño Web**|mercedes.castaneda@upch.pe|
+|4. Condori Mamani Nardy Liz | **Coordinadora de software y programación** |nardy.condori@upch.pe|
+|5. Vega Pahuara Millene Nadile | **Coordinadora de Hardware**| millene.vega@upch.pe |
+
 # PROGRESO TRL
 
 ## TRL1: Principios básicos observados y reportados
@@ -81,19 +95,6 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El sensor mide la relación entre la resistencia en presencia del gas (RS) y su resistencia en aire limpio (R0), usando la ley de Ohm para calcular el voltaje de salida.|
 |- Luego, mediante la ecuación de la recta logarítmica, se obtiene la concentración de CO en ppm.|
 
-# ¿Quiénes somos? 
-<p align="justify">
-¡Bienvenidos a nuestro repositorio! 🤓☝️ Somos el Grupo 9 del curso de Proyectos para Ingeniería I ( 2024-2), y nos complace utilizar este repositorio para compartir y cargar el proyecto que estaremos desarrollando durante cada sesión a lo largo del curso. Estamos entusiasmados por contribuir al desarrollo sostenible de nuestro país y esperamos compartir nuestros avances y aprendizajes con ustedes.
-</p>
-
-## Intregrantes y Roles del Grupo
-|Nombres:                      |Rol:        | Correo: |
-|---------------------|---------------------------------|-----------|
-|1. Alarcon Arias Julio Erick |  **Coordinador General y de modelado**| julio.alarcon@upch.pe        |
-|2. Atao Surichaqui Ester Solamyt| **Coordinadora de Manufactura digital**|ester.atao@upch.pe|
-|3. Castañeda Reategui Mercedes del Rosario | **Coordinadora Diseño Web**|mercedes.castaneda@upch.pe|
-|4. Condori Mamani Nardy Liz | **Coordinadora de software y programación** |nardy.condori@upch.pe|
-|5. Vega Pahuara Millene Nadile | **Coordinadora de Hardware**| millene.vega@upch.pe |
 
 ## Referencias: 
 
