@@ -93,12 +93,6 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- 2CO(g) + O-(ads) -> 2CO2 + 2e- |
 |- **Cambio en la Conductividad:** Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).|
 
-
-|Propiedades  químicas:|
-|----------------------|
-|- El PMS5003 utiliza un diodo láser de *arseniuro de galio (GaAs)* o *fosfuro de galio (GaP)*, ambos materiales semiconductores.|
-|- La carcasa protectora del sensor está fabricada con **policarbonato*, un material polimérico conocido por su resistencia química a la mayoría de ácidos, bases y alcoholes.|
-
 |Funcionamiento básico:|
 |----------------------|
 |- El PMS5003 emite un rayo láser a través del aire que entra en el dispositivo. Este rayo es esencial para la medición, ya que interactúa con las partículas en el flujo de aire.|
