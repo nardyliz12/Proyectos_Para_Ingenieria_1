@@ -70,8 +70,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 | Características principales del MQ-7:|
 |---------------------------------------|
-|1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.|
-|2. **Curva de respuesta**: La relación entre la resistencia del sensor y la concentración de gas sigue una curva logarítmica. Para efectos prácticos, se asume que es lineal.|
+|1. **Rango de detección**: Detecta partículas con diámetros entre 0.3 y 10 µm.|
+|2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino (PM2.5) y grueso (PM10) basándose en la intensidad de la luz dispersada.|
+|3. **Tiempo de respuesta**: Respuesta rápida en menos de 1 segundo para la detección de variaciones en la concentración de partículas.|
 |3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
 |4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
 
