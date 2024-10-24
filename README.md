@@ -25,6 +25,10 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 ![image](https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d)
 
+# PROGRESO TRL
+
+## TRL1:Principios básicos observados y reportados
+
 # Sensores utilizados: 
 
 # 1) MQ - 7:
@@ -32,10 +36,6 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.
 
 ![image](https://github.com/user-attachments/assets/f64460c6-8bc2-4d36-9aa9-209316468d77)
-
-# PROGRESO TRL
-
-# TRL1:Principios básicos observados y reportados
 
 ### Características principales del MQ-7:
 1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.
