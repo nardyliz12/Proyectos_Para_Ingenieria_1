@@ -99,7 +99,8 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 | Descripción | Imagen del sensor |
 |-------------|-------------------|
-| El **MAX4466** es un amplificador de micrófono que se utiliza como sensor de ruido para detectar niveles de sonido en el entorno. Su diseño incluye un circuito de amplificación de bajo ruido, lo que permite captar sonidos con alta sensibilidad y precisión. ||
+| El **MAX4466** es un amplificador de micrófono que se utiliza como sensor de ruido para detectar niveles de sonido en el entorno. Su diseño incluye un circuito de amplificación de bajo ruido, lo que permite captar sonidos con alta sensibilidad y precisión. | ![image](https://github.com/user-attachments/assets/4698ce5c-aca9-4606-b371-12ebb498ca29) |
+ |
 
 | Características principales del MAX4466: |
 |-----------------------------------------|
