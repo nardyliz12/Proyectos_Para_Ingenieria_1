@@ -49,9 +49,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 | Características principales del MQ-7:|
 |---------------------------------------|
-| **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.|
-|**Curva de respuesta**: La relación entre la resistencia del sensor y la concentración de gas sigue una curva logarítmica. Para efectos prácticos, se asume que es lineal.|
-|**Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
+|1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.|
+|2. **Curva de respuesta**: La relación entre la resistencia del sensor y la concentración de gas sigue una curva logarítmica. Para efectos prácticos, se asume que es lineal.|
+|3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
 |4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
 
 |Propiedades físicas:|
@@ -77,7 +77,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 |Propiedades físicas:|
 |----------------------|
-|**Método de detección**: Utiliza un transductor acústico (micrófono electret) que convierte las ondas sonoras en señales eléctricas. Basado en el principio de transducción acústica.|
+|- **Método de detección**: Utiliza un transductor acústico (micrófono electret) que convierte las ondas sonoras en señales eléctricas. Basado en el principio de transducción acústica.|
 |- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación, adecuado para aplicaciones tanto en interiores como exteriores.|
 |- **Compatibilidad**: El sensor es compatible con microcontroladores como el ESP32.|
 
@@ -90,10 +90,10 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |Funcionamiento básico:|
 |----------------------|
 |- El PMS5003 emite un rayo láser a través del aire que entra en el dispositivo. Este rayo es esencial para la medición, ya que interactúa con las partículas en el flujo de aire.|
-|- Dispersión de la Luz: Al pasar las partículas (como polvo y humo) a través del rayo láser, estas dispersan la luz. Este fenómeno puede clasificarse como dispersión de Rayleigh o Mie, dependiendo del tamaño de las partículas, lo que influye en la cantidad de luz dispersada.|
-|- Detección de la Luz Dispersada: Un fotodetector en el sensor recoge la luz que ha sido dispersada. La intensidad de esta luz dispersada ayuda a determinar tanto la cantidad como el tamaño de las partículas presentes en el aire, ya que una mayor dispersión indica una mayor concentración de partículas.|
-|- Procesamiento de Datos: El sensor incluye un microprocesador que analiza las señales recibidas del fotodetector. Este procesamiento convierte las señales ópticas en concentraciones de partículas, permitiendo la detección de tamaños específicos como PM1.0, PM2.5 y PM10.|
-|- Salida de Datos: Finalmente, el PMS5003 genera datos procesados en un formato digital mediante una interfaz serie (UART). Estos datos, que reflejan las concentraciones de partículas, se envían a un microcontrolador o computadora, facilitando la evaluación de la calidad del aire en tiempo real.|
+|- Al pasar las partículas (como polvo y humo) a través del rayo láser, estas dispersan la luz. Este fenómeno puede clasificarse como dispersión de Rayleigh o Mie, dependiendo del tamaño de las partículas, lo que influye en la cantidad de luz dispersada.|
+|- Un fotodetector en el sensor recoge la luz que ha sido dispersada. La intensidad de esta luz dispersada ayuda a determinar tanto la cantidad como el tamaño de las partículas presentes en el aire, ya que una mayor dispersión indica una mayor concentración de partículas.|
+|- El sensor incluye un microprocesador que analiza las señales recibidas del fotodetector. Este procesamiento convierte las señales ópticas en concentraciones de partículas, permitiendo la detección de tamaños específicos como PM1.0, PM2.5 y PM10.|
+|- Finalmente, el PMS5003 genera datos procesados en un formato digital mediante una interfaz serie (UART). Estos datos, que reflejan las concentraciones de partículas, se envían a un microcontrolador o computadora, facilitando la evaluación de la calidad del aire en tiempo real.|
 
 
 ### 3) Sensor MAX4466
