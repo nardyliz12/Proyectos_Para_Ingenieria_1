@@ -92,7 +92,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El sensor mide la relación entre la resistencia en presencia del gas (RS) y su resistencia en aire limpio (R0), usando la ley de Ohm para calcular el voltaje de salida.|
 |- Luego, mediante la ecuación de la recta logarítmica, se obtiene la concentración de CO en ppm.|
 
-### Sensor MAX4466
+### 3) Sensor MAX4466
 
 | Descripción | Imagen del sensor |
 |-------------|-------------------|
