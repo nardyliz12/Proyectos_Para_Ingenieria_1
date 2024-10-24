@@ -74,3 +74,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- Luego, mediante la ecuación de la recta logarítmica, se obtiene la concentración de CO en ppm.|
 
 
+## Referencias: 
+
+[1] "MQ-7 Gas Sensor," SparkFun Electronics. [En línea]. Disponible en: https://www.sparkfun.com/datasheets/Sensors/Biometric/MQ-7.pdf. [Accedido: 24-Oct-2024].
+
+
+
