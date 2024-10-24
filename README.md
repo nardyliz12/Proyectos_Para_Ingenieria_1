@@ -40,12 +40,15 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |-------|-----|
 |El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.| <img src="https://github.com/user-attachments/assets/f64460c6-8bc2-4d36-9aa9-209316468d77" width="700"/>|
 
+
 | Características principales del MQ-7:|
 |---------------------------------------|
 |1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.|
 |2. **Curva de respuesta**: La relación entre la resistencia del sensor y la concentración de gas sigue una curva logarítmica. Para efectos prácticos, se asume que es lineal.|
 |3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
 |4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
+
+
 
 |Propiedades físicas:|
 |----------------------|
@@ -54,10 +57,13 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El sensor puede operar en un rango de temperatura de -20°C a 50°C, lo que lo hace útil para diversas condiciones ambientales.|
 |- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
 
+
+
 |Propiedades  químicas:|
 |----------------------|
 |- El SnO2 es altamente sensible a gases reductores como el CO. Cuando el gas se encuentra en el aire, los átomos de oxígeno en la superficie del material reaccionan con el gas, cambiando la conductividad del sensor.|
 |- l CO, al entrar en contacto con el SnO2, reduce los átomos de oxígeno en la superficie del sensor. Esta reacción química provoca una disminución en la resistencia eléctrica del sensor, lo que permite calcular la concentración del gas.|
+
 
 
 |Funcionamiento básico:|
