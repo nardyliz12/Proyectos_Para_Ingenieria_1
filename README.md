@@ -131,7 +131,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 ## Referencias: 
 
-[1] "MQ-7 Gas Sensor," SparkFun Electronics. [En línea]. Disponible en: https://www.sparkfun.com/datasheets/Sensors/Biometric/MQ-7.pdf. [Accedido: 24-Oct-2024].
+[1] Naciones Unidas, "Cambio climático," 2023. [En línea]. Disponible: https://www.un.org/sustainabledevelopment/es/climate-change-2/. [Accedido: 24-oct-2024].
+
+[2] "MQ-7 Gas Sensor," SparkFun Electronics. [En línea]. Disponible en: https://www.sparkfun.com/datasheets/Sensors/Biometric/MQ-7.pdf. [Accedido: 24-Oct-2024].
 
 
 
