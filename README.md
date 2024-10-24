@@ -1,8 +1,8 @@
-# Proyectos De Ingeniería - I
-
 <p align="center">
   <img src="https://github.com/JefHuiza/Fundamentos-de-Dise-o/assets/156036185/d3c66dfb-5faa-419b-bf1b-d897ea110ce7" width="70%">
 </p>
+
+# PROYECTOS DE INGENIERIA - I
 
 #  AIRVIBE: Sistema Integrado de Monitoreo de Calidad del Aire
 
@@ -26,7 +26,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 </p>
 <div align="center">
   
-<img src="https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d" width="700"/>
+|<img src="https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d" width="700"/>|
+|-------------------------------------------------------------------------------------------------------|
+|Fuente: EduFORS
 
 </div>
 
