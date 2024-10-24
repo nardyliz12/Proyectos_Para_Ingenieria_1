@@ -33,6 +33,9 @@ El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (C
 
 ![image](https://github.com/user-attachments/assets/f64460c6-8bc2-4d36-9aa9-209316468d77)
 
+# PROGRESO TRL
+
+# TRL1:Principios básicos observados y reportados
 
 ### Características principales del MQ-7:
 1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.
