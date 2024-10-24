@@ -20,6 +20,9 @@
 |4. Condori Mamani Nardy Liz | **Coordinadora de software y programación** |nardy.condori@upch.pe|
 |5. Vega Pahuara Millene Nadile | **Coordinadora de Hardware**| millene.vega@upch.pe |
 
+![image](https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d)
+
+
 
 
 # Objetivo 🌱: 
