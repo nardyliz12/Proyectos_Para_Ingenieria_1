@@ -72,8 +72,8 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |1. **Rango de detección**: Detecta partículas con diámetros entre 0.3 y 10 µm.|
 |2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino (PM2.5) y grueso (PM10) basándose en la intensidad de la luz dispersada.|
 |3. **Tiempo de respuesta**: Respuesta rápida en menos de 1 segundo para la detección de variaciones en la concentración de partículas.|
-|3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
-|4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial
+|3. **Precalentamiento**: Requiere un voltaje de 4.5V a 5.5V, por lo que se usará el regulador MT3608 para ajustarlo, ya que su tiempo de precalentamiento es de 30 segundos antes de tomar lecturas fiables.|
+|4. **Circuito**: Se conecta a un microcontroldor a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
 
 |Propiedades físicas:|
 |----------------------|
