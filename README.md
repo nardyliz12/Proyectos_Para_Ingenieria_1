@@ -65,9 +65,13 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- Fórmula para calcular el voltaje de salida: Vout = Vsupply x (Rf / Rs + Rf) |
 |- Donde:  Vsupply: Voltaje de alimentación (generalmente 5V).  Rs: Resistencia del sensor. Rf: Resistencia de carga.|
 
-| Propiedades químicas:|
+|Propiedades químicas:|
+|----------------------|
 |- El funcionamiento químico del sensor MQ-7 implica una serie de reacciones en la superficie del semiconductor:|
 |- **Adsorción de Oxígeno:** En primer lugar, el oxígeno del aire se adsorbe en la superficie del SnO2.|
+|- **Interacción con Monóxido de Carbono:** Cuando el CO entra en contacto con la superficie del sensor, se produce una reacción de oxidación: |
+|- 2CO(g) + O-(ads) -> 2CO2 + 2e- |
+|- **Cambio en la Conductividad:** Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).|
 
 
 ### 2) Sensor PMS5003
@@ -89,9 +93,6 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- **Principio de funcionamiento**: Basado en la dispersión de luz láser para identificar y contar partículas. Un ventilador integrado ayuda a mantener un flujo de aire constante sobre el área de medición del láser.|
 |- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación.|
 |- **Compatibilidad**: El sensor es compatible con microcontroladores como el ESP32.|
-|- **Interacción con Monóxido de Carbono:** Cuando el CO entra en contacto con la superficie del sensor, se produce una reacción de oxidación: |
-|- 2CO(g) + O-(ads) -> 2CO2 + 2e- |
-|- **Cambio en la Conductividad:** Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).|
 
 |Funcionamiento básico:|
 |----------------------|
