@@ -73,7 +73,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino (PM2.5) y grueso (PM10) basándose en la intensidad de la luz dispersada.|
 |3. **Tiempo de respuesta**: Respuesta rápida en menos de 1 segundo para la detección de variaciones en la concentración de partículas.|
 |3. **Precalentamiento**: Requiere un voltaje de 4.5V a 5.5V, por lo que se usará el regulador MT3608 para ajustarlo, ya que su tiempo de precalentamiento es de 30 segundos antes de tomar lecturas fiables.|
-|4. **Circuito**: Se conecta a un microcontroldor a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
+|4. **Circuito**: Se conecta a un microcontrolador a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
 
 |Propiedades físicas:|
 |----------------------|
