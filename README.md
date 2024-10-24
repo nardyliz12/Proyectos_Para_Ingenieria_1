@@ -60,6 +60,16 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El MQ-7 tiene un tiempo de respuesta relativamente rápido, típicamente de 60 a 90 segundos, una vez completada la fase de calentamiento para estabilizar el sensor.|
 |- El sensor puede operar en un rango de temperatura de -20°C a 50°C, lo que lo hace útil para diversas condiciones ambientales.|
 |- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
+|- La ecuación para calcular la concentración de monóxido de carbono (CO) en ppm es la siguiente:
+
+\[
+CO_{\text{ppm}} = 10^{\left(\frac{\log_{10}\left(\frac{R_s}{R_0}\right) - (-0.239)}{-0.59}\right)}
+\]
+
+Donde:
+- \( R_s \) es la resistencia del sensor en presencia de CO (en kOhm).
+- \( R_0 \) es la resistencia del sensor en aire limpio (en kOhm).|
+
 
 ### 2) Sensor PMS5003
 
