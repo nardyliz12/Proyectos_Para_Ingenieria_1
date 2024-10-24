@@ -95,6 +95,35 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El sensor mide la relación entre la resistencia en presencia del gas (RS) y su resistencia en aire limpio (R0), usando la ley de Ohm para calcular el voltaje de salida.|
 |- Luego, mediante la ecuación de la recta logarítmica, se obtiene la concentración de CO en ppm.|
 
+### Sensor MAX4466
+
+| Descripción | Imagen del sensor |
+|-------------|-------------------|
+| El **MAX4466** es un amplificador de micrófono que se utiliza como sensor de ruido para detectar niveles de sonido en el entorno. Su diseño incluye un circuito de amplificación de bajo ruido, lo que permite captar sonidos con alta sensibilidad y precisión. ||
+
+| Características principales del MAX4466: |
+|-----------------------------------------|
+| 1. **Amplificación ajustable**: Proporciona un aumento de ganancia de hasta 125x, ideal para captar sonidos débiles y medir niveles de ruido. |
+| 2. **Bajo nivel de ruido**: Diseñado con tecnología de bajo ruido, minimizando la distorsión y mejorando la calidad de la señal de audio. |
+| 3. **Voltaje de operación**: Funciona con un rango de voltaje de 2.7V a 5.5V, adecuado para diversos proyectos de electrónica. |
+| 4. **Salida analógica**: La señal de salida es analógica y se puede conectar fácilmente a microcontroladores, sistemas de audio o circuitos de procesamiento de señales. |
+
+| Propiedades físicas: |
+|----------------------|
+| - El MAX4466 se presenta en un encapsulado compacto, facilitando su integración en proyectos de diseño de circuitos. |
+| - Tiene un bajo consumo de energía, lo que lo hace ideal para aplicaciones portátiles y de batería. |
+| - Las conexiones son sencillas, con terminales claramente identificados para VCC, GND, y la señal de salida. |
+
+| Propiedades químicas: |
+|-----------------------|
+| - El sensor no tiene reacciones químicas internas, ya que su función es puramente electrónica, enfocándose en la amplificación de señales acústicas. |
+| - Utiliza componentes electrónicos de alta calidad que contribuyen a la estabilidad y durabilidad del amplificador en diferentes condiciones ambientales. |
+
+| Funcionamiento básico: |
+|------------------------|
+| - El micrófono electret integrado capta las ondas sonoras y las convierte en señales eléctricas de bajo voltaje. |
+| - La señal es enviada al MAX4466, donde es amplificada según la ganancia configurada. |
+| - La señal amplificada se presenta en la salida, que se puede conectar a un microcontrolador, sistema de registro de datos o visualización de niveles de ruido. |
 
 ## Referencias: 
 
