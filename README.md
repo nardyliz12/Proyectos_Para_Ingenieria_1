@@ -132,7 +132,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 | Funcionamiento básico: |
 |------------------------|
 | - El micrófono electret integrado capta las ondas sonoras y las convierte en señales eléctricas de bajo voltaje. |
-| - La señal es enviada al MAX4466, donde es amplificada según la ganancia configurada. |
+| - Funciona como un transductor o sensor electroacústico y convierte el sonido (ondas sonoras) en una señal eléctrica para aumentar su intensidad, transmitirla y registrarla. |
 | - La señal amplificada se presenta en la salida, que se puede conectar a un microcontrolador, sistema de registro de datos o visualización de niveles de ruido. |
 
 ## Referencias: 
