@@ -7,9 +7,9 @@
 #  AIRVIBE: Sistema Integrado de Monitoreo de Calidad del Aire
 
 # ¿Quiénes somos? 
-
+<p align="justify">
 ¡Bienvenidos a nuestro repositorio! 🤓☝️ Somos el Grupo 9 del curso de Proyectos para Ingeniería I ( 2024-2), y nos complace utilizar este repositorio para compartir y cargar el proyecto que estaremos desarrollando durante cada sesión a lo largo del curso. Estamos entusiasmados por contribuir al desarrollo sostenible de nuestro país y esperamos compartir nuestros avances y aprendizajes con ustedes.
-
+</p>
 
 ## Intregrantes y Roles del Grupo
 |Nombres:                      |Rol:        | Correo: |
@@ -21,8 +21,9 @@
 |5. Vega Pahuara Millene Nadile | **Coordinadora de Hardware**| millene.vega@upch.pe |
 
 # Objetivo 🌱: 
+<p align="justify">
 Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que mida en tiempo real la calidad del aire, proporcionando datos accesibles a través de una interfaz web y emitiendo alertas en caso de contaminación excesiva, con el fin de informar a los residentes y apoyar al gobierno local en la toma de decisiones para mejorar las condiciones ambientales de la comunidad. Para ello, nuestro objetivo esta abarcando el ODS número 13 que se centra en la necesidad de adoptar medidas urgentes para acabar con el cambio climático que afecta a todos los países del mundo.
-
+</p>
 <div align="center">
   
 <img src="https://github.com/user-attachments/assets/86ac4f6f-d762-420a-a34b-f254d1ed591d" width="700"/>
@@ -35,11 +36,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 ### Sensores utilizados: 
 
-#### 1) MQ - 7:
-
-El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.
-
-![image](https://github.com/user-attachments/assets/f64460c6-8bc2-4d36-9aa9-209316468d77)
+|1) MQ - 7:| Imagen del sensor |
+|-------|-----|
+|El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.| <img src="https://github.com/user-attachments/assets/f64460c6-8bc2-4d36-9aa9-209316468d77" width="700"/>|
 
 ### Características principales del MQ-7:
 1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.
