@@ -61,14 +61,43 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- El sensor puede operar en un rango de temperatura de -20°C a 50°C, lo que lo hace útil para diversas condiciones ambientales.|
 |- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
 |- La ecuación para calcular la concentración de monóxido de carbono (CO) en ppm es la siguiente:
+|- El sensor MQ-7 está conectado a un circuito, generalmente un microcontrolador, que utiliza un divisor de voltaje para convertir la resistencia del sensor en un voltaje analógico. El circuito típicamente consiste en una resistencia de carga (Rf) que se conecta en serie con el sensor.|
+|- Fórmula para calcular el voltaje de salida: Vout = Vsupply x (Rf / Rs + Rf) |
+|- Donde:
+- Vsupply: Voltaje de alimentación (generalmente 5V).
+- Rs: Resistencia del sensor.
+- Rf: Resistencia de carga.|
+
+|Propiedades químicas:|
+
+## Funcionamiento Químico del Sensor MQ-7
+
+El funcionamiento químico del sensor MQ-7 implica una serie de reacciones en la superficie del semiconductor:
+
+### 1. Adsorción de Oxígeno
+
+En primer lugar, el oxígeno del aire se adsorbe en la superficie del SnO2. Este proceso de adsorción ocurre de la siguiente manera:
 
 \[
-CO_{\text{ppm}} = 10^{\left(\frac{\log_{10}\left(\frac{R_s}{R_0}\right) - (-0.239)}{-0.59}\right)}
+\text{O}_2 (g) \rightarrow 2 \text{O}^- (ads)
 \]
 
-Donde:
-- \( R_s \) es la resistencia del sensor en presencia de CO (en kOhm).
-- \( R_0 \) es la resistencia del sensor en aire limpio (en kOhm).|
+El oxígeno se convierte en iones de oxígeno (\( \text{O}^- \)) en la superficie del SnO2.
+
+### 2. Interacción con Monóxido de Carbono
+
+Cuando el CO entra en contacto con la superficie del sensor, se produce una reacción de oxidación:
+
+\[
+2 \text{CO} (g) + \text{O}^- (ads) \rightarrow 2 \text{CO}_2 (g) + 2 e^-
+\]
+
+Aquí, el monóxido de carbono reduce los iones de oxígeno, liberando electrones (\( e^- \)). Este aumento en los electrones libres causa una disminución en la resistencia del SnO2.
+
+### 3. Cambio en la Conductividad
+
+Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).
+
 
 
 ### 2) Sensor PMS5003
