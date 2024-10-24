@@ -54,8 +54,6 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
 |4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
 
-
-
 |Propiedades físicas:|
 |----------------------|
 |- El material sensible del MQ-7 es dióxido de estaño (SnO2), que es un semiconductor. Este material cambia su resistencia en presencia de gases reductores como el CO.|
@@ -64,35 +62,30 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
 
 ### 2) Sensor PMS5003
+
 |Descripción| Imagen del sensor |
 |-------|-----|
 |El PMS5003 es un sensor de partículas diseñado para medir concentraciones de material particulado (PM2.5 y PM10) en el aire mediante el principio de dispersión de luz láser. El dispositivo detecta partículas en suspensión como polvo, polen y humo, midiendo la cantidad de luz dispersada por las partículas cuando atraviesan un haz de luz láser. Este sensor es útil para monitorear la calidad del aire en aplicaciones de control ambiental.| <img src="https://github.com/user-attachments/assets/90288d1b-94f3-4142-a6d0-a87a8103ddc7" width="700"/>|
 
-| Características principales del MQ-7:|
+| Características principales del PMS5003:|
 |---------------------------------------|
 |1. **Rango de detección**: Detecta partículas con diámetros entre 0.3 y 10 µm.|
 |2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino (PM2.5) y grueso (PM10) basándose en la intensidad de la luz dispersada.|
 |3. **Tiempo de respuesta**: Respuesta rápida en menos de 1 segundo para la detección de variaciones en la concentración de partículas.|
 |3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
-|4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
-
-
+|4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial
 
 |Propiedades físicas:|
 |----------------------|
 |- El material sensible del MQ-7 es dióxido de estaño (SnO2), que es un semiconductor. Este material cambia su resistencia en presencia de gases reductores como el CO.|
 |- El MQ-7 tiene un tiempo de respuesta relativamente rápido, típicamente de 60 a 90 segundos, una vez completada la fase de calentamiento para estabilizar el sensor.|
 |- El sensor puede operar en un rango de temperatura de -20°C a 50°C, lo que lo hace útil para diversas condiciones ambientales.|
-|- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
-
-
+|- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino
 
 |Propiedades  químicas:|
 |----------------------|
 |- El SnO2 es altamente sensible a gases reductores como el CO. Cuando el gas se encuentra en el aire, los átomos de oxígeno en la superficie del material reaccionan con el gas, cambiando la conductividad del sensor.|
 |- l CO, al entrar en contacto con el SnO2, reduce los átomos de oxígeno en la superficie del sensor. Esta reacción química provoca una disminución en la resistencia eléctrica del sensor, lo que permite calcular la concentración del gas.|
-
-
 
 |Funcionamiento básico:|
 |----------------------|
