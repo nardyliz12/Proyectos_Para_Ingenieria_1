@@ -29,9 +29,9 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 ## TRL1:Principios básicos observados y reportados
 
-# Sensores utilizados: 
+### Sensores utilizados: 
 
-# 1) MQ - 7:
+#### 1) MQ - 7:
 
 El sensor MQ-7 es un dispositivo diseñado para detectar monóxido de carbono (CO) en el aire. Su principio de funcionamiento se basa en la medición de la resistencia variable del material sensor frente a diferentes concentraciones de gas, que cambia según la presencia de gases como CO, H2, LPG y CH4.
 
