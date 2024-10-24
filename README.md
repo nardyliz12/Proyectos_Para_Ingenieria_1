@@ -63,41 +63,11 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- La ecuación para calcular la concentración de monóxido de carbono (CO) en ppm es la siguiente:
 |- El sensor MQ-7 está conectado a un circuito, generalmente un microcontrolador, que utiliza un divisor de voltaje para convertir la resistencia del sensor en un voltaje analógico. El circuito típicamente consiste en una resistencia de carga (Rf) que se conecta en serie con el sensor.|
 |- Fórmula para calcular el voltaje de salida: Vout = Vsupply x (Rf / Rs + Rf) |
-|- Donde:
-- Vsupply: Voltaje de alimentación (generalmente 5V).
-- Rs: Resistencia del sensor.
-- Rf: Resistencia de carga.|
+|- Donde:  Vsupply: Voltaje de alimentación (generalmente 5V).  Rs: Resistencia del sensor. Rf: Resistencia de carga.|
 
-|Propiedades químicas:|
-
-## Funcionamiento Químico del Sensor MQ-7
-
-El funcionamiento químico del sensor MQ-7 implica una serie de reacciones en la superficie del semiconductor:
-
-### 1. Adsorción de Oxígeno
-
-En primer lugar, el oxígeno del aire se adsorbe en la superficie del SnO2. Este proceso de adsorción ocurre de la siguiente manera:
-
-\[
-\text{O}_2 (g) \rightarrow 2 \text{O}^- (ads)
-\]
-
-El oxígeno se convierte en iones de oxígeno (\( \text{O}^- \)) en la superficie del SnO2.
-
-### 2. Interacción con Monóxido de Carbono
-
-Cuando el CO entra en contacto con la superficie del sensor, se produce una reacción de oxidación:
-
-\[
-2 \text{CO} (g) + \text{O}^- (ads) \rightarrow 2 \text{CO}_2 (g) + 2 e^-
-\]
-
-Aquí, el monóxido de carbono reduce los iones de oxígeno, liberando electrones (\( e^- \)). Este aumento en los electrones libres causa una disminución en la resistencia del SnO2.
-
-### 3. Cambio en la Conductividad
-
-Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).
-
+| Propiedades químicas:|
+|- El funcionamiento químico del sensor MQ-7 implica una serie de reacciones en la superficie del semiconductor:|
+|- **Adsorción de Oxígeno:** En primer lugar, el oxígeno del aire se adsorbe en la superficie del SnO2.|
 
 
 ### 2) Sensor PMS5003
@@ -119,6 +89,9 @@ Este proceso de reducción del oxígeno provoca un aumento en la conductividad d
 |- **Principio de funcionamiento**: Basado en la dispersión de luz láser para identificar y contar partículas. Un ventilador integrado ayuda a mantener un flujo de aire constante sobre el área de medición del láser.|
 |- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación.|
 |- **Compatibilidad**: El sensor es compatible con microcontroladores como el ESP32.|
+|- **Interacción con Monóxido de Carbono:** Cuando el CO entra en contacto con la superficie del sensor, se produce una reacción de oxidación: |
+|- 2CO(g) + O-(ads) -> 2CO2 + 2e- |
+|- **Cambio en la Conductividad:** Este proceso de reducción del oxígeno provoca un aumento en la conductividad del material, lo que se traduce en una menor resistencia. Este cambio en resistencia es medido por el circuito del sensor, que puede ser calibrado para mostrar la concentración de CO en partes por millón (ppm).|
 
 
 |Propiedades  químicas:|
