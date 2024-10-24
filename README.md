@@ -84,8 +84,8 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 |Propiedades  químicas:|
 |----------------------|
-|- El SnO2 es altamente sensible a gases reductores como el CO. Cuando el gas se encuentra en el aire, los átomos de oxígeno en la superficie del material reaccionan con el gas, cambiando la conductividad del sensor.|
-|- l CO, al entrar en contacto con el SnO2, reduce los átomos de oxígeno en la superficie del sensor. Esta reacción química provoca una disminución en la resistencia eléctrica del sensor, lo que permite calcular la concentración del gas.|
+|- El PMS5003 utiliza un diodo láser de **arseniuro de galio (GaAs)* o *fosfuro de galio (GaP)*, ambos materiales semiconductores.|
+|- La carcasa protectora del sensor está fabricada con **policarbonato*, un material polimérico conocido por su resistencia química a la mayoría de ácidos, bases y alcoholes.|
 
 |Funcionamiento básico:|
 |----------------------|
