@@ -62,7 +62,8 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |- Los sensores MQ suelen tener un encapsulado cilíndrico con terminales para conectarse fácilmente a un circuito. El MQ-7 es compacto y fácil de integrar en proyectos de electrónica como en un Arduino.|
 |- La ecuación para calcular la concentración de monóxido de carbono (CO) en ppm es la siguiente:
 |- El sensor MQ-7 está conectado a un circuito, generalmente un microcontrolador, que utiliza un divisor de voltaje para convertir la resistencia del sensor en un voltaje analógico. El circuito típicamente consiste en una resistencia de carga (Rf) que se conecta en serie con el sensor.|
-|- Fórmula para calcular el voltaje de salida: Vout = Vsupply x (Rf / Rs + Rf) |
+|- Fórmula para calcular el voltaje de salida: |
+|- Vout = Vsupply x (Rf / Rs + Rf) |
 |- Donde:  Vsupply: Voltaje de alimentación (generalmente 5V).  Rs: Resistencia del sensor. Rf: Resistencia de carga.|
 
 |Propiedades químicas:|
