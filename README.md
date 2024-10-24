@@ -51,7 +51,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |---------------------------------------|
 |1. **Rango de detección**: Puede detectar concentraciones de gases en un rango de 50 a 5000 ppm.|
 |2. **Curva de respuesta**: La relación entre la resistencia del sensor y la concentración de gas sigue una curva logarítmica. Para efectos prácticos, se asume que es lineal.|
-|3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 60 segundos y 1.4V durante 90 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
+|3. **Precalentamiento**: Para una operación precisa, el sensor alterna entre dos fases de voltaje: 5V durante 90 segundos y 1.4V durante 60 segundos. Esto ayuda a estabilizar el sensor para obtener lecturas precisas.|
 |4. **Circuito**: El sensor MQ-7 se conecta a un Arduino, donde la señal analógica se procesa y se convierte en una lectura de concentración de CO usando una ecuación basada en regresión exponencial.|
 
 |Propiedades físicas:|
