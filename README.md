@@ -84,14 +84,13 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 | Características principales del PMS5003:|
 |---------------------------------------|
 |1. **Rango de detección**: Detecta partículas con diámetros entre 0.3 y 10 µm.|
-|2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino (PM2.5) y grueso (PM10) basándose en la intensidad de la luz dispersada.|
+|2. **Curva de respuesta**: El sensor puede diferenciar entre partículas de tamaño fino de 2.5 micrómetros o menos (PM2.5) y grueso de 10 micrómetros o menos (PM10) basándose en la intensidad de la luz dispersada.|
 |3. **Tiempo de respuesta**: Respuesta rápida en menos de 1 segundo para la detección de variaciones en la concentración de partículas.|
 |3. **Precalentamiento**: Requiere un voltaje de 4.5V a 5.5V, por lo que se usará el regulador MT3608 para ajustarlo, ya que su tiempo de precalentamiento es de 30 segundos antes de tomar lecturas fiables.|
-|4. **Circuito**: Se conecta a un microcontrolador a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
 
 |Principio de funcionamiento:|
 |----------------------|
-|El sensor utiliza un láser que emite luz en un área de medición. Cuando las partículas suspendidas en el aire atraviesan este haz de luz, dispersan la luz. La cantidad de luz dispersada se mide y se traduce en una concentración de partículas, lo que permite evaluar la calidad del aire. Este principio es ampliamente utilizado en sensores de calidad del aire debido a su eficacia y precisión|
+|El sensor utiliza un láser que emite luz en un área de medición. Cuando las partículas suspendidas en el aire atraviesan este haz de luz utilizando el principio optico, que dispersan la luz en diferentes direcciones. La cantidad de luz dispersada se mide y se traduce en una concentración de partículas, lo que permite evaluar la calidad del aire.|
 
 |Condiciones de operación:|
 |----------------------|
