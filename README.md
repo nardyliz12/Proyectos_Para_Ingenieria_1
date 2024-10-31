@@ -89,7 +89,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |3. **Precalentamiento**: Requiere un voltaje de 4.5V a 5.5V, por lo que se usará el regulador MT3608 para ajustarlo, ya que su tiempo de precalentamiento es de 30 segundos antes de tomar lecturas fiables.|
 |4. **Circuito**: Se conecta a un microcontrolador a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
 
-|Principio de funcionaminiento:|
+|Principio de funcionamiento:|
 |----------------------|
 |El sensor utiliza un láser que emite luz en un área de medición. Cuando las partículas suspendidas en el aire atraviesan este haz de luz, dispersan la luz. La cantidad de luz dispersada se mide y se traduce en una concentración de partículas, lo que permite evaluar la calidad del aire. Este principio es ampliamente utilizado en sensores de calidad del aire debido a su eficacia y precisión|
 
