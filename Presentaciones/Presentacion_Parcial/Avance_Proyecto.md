@@ -10,6 +10,7 @@
  - Atao Surichaqui Ester Solamyt
  - Condori Mamani Nardy Liz
  - Vega Pahuara Millene Nadile
+ - Castañeda Reátegui Mercedes
 
 # 1.- Problemática
 <p align="justify">
