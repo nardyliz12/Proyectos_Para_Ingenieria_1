@@ -77,7 +77,7 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 
 ### 2) Sensor PMS5003
 
-|Descripción| Imagen del sensor |
+|Descripción| Imagen del principio de dispersión |
 |-------|-----|
 |El PMS5003 es un sensor de partículas diseñado para medir concentraciones de material particulado (PM2.5 y PM10) en el aire mediante el principio de dispersión de luz láser. El dispositivo detecta partículas en suspensión como polvo, polen y humo, midiendo la cantidad de luz dispersada por las partículas cuando atraviesan un haz de luz láser. Este sensor es útil para monitorear la calidad del aire en aplicaciones de control ambiental.| <img src="https://github.com/user-attachments/assets/60da6064-f1e5-45c7-a8c4-63ddfce8dfcf" width="3000"/>|
 
