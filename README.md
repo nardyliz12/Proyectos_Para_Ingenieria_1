@@ -89,20 +89,13 @@ Desarrollar e implementar un prototipo de dispositivo de monitoreo ambiental que
 |3. **Precalentamiento**: Requiere un voltaje de 4.5V a 5.5V, por lo que se usará el regulador MT3608 para ajustarlo, ya que su tiempo de precalentamiento es de 30 segundos antes de tomar lecturas fiables.|
 |4. **Circuito**: Se conecta a un microcontrolador a través de una interfaz serial, emitiendo datos digitales como el conteo de partículas por volumen de aire.|
 
-|Propiedades físicas:|
+|Principio de funcionaminiento:|
 |----------------------|
-|- **Principio de funcionamiento**: Basado en la dispersión de luz láser para identificar y contar partículas. Un ventilador integrado ayuda a mantener un flujo de aire constante sobre el área de medición del láser.|
-|- **Condiciones de operación**: Funciona en un rango de -40°C a 80°C, con una humedad relativa máxima del 99% sin condensación.|
-|- **Compatibilidad**: El sensor es compatible con microcontroladores como el ESP32.|
+|El sensor utiliza un láser que emite luz en un área de medición. Cuando las partículas suspendidas en el aire atraviesan este haz de luz, dispersan la luz. La cantidad de luz dispersada se mide y se traduce en una concentración de partículas, lo que permite evaluar la calidad del aire. Este principio es ampliamente utilizado en sensores de calidad del aire debido a su eficacia y precisión|
 
-|Funcionamiento básico:|
+|Condiciones de operación:|
 |----------------------|
-|- El PMS5003 emite un rayo láser a través del aire que entra en el dispositivo. Este rayo es esencial para la medición, ya que interactúa con las partículas en el flujo de aire.|
-|- Al pasar las partículas (como polvo y humo) a través del rayo láser, estas dispersan la luz. Este fenómeno puede clasificarse como dispersión de Rayleigh o Mie, dependiendo del tamaño de las partículas, lo que influye en la cantidad de luz dispersada.|
-|- Un fotodetector en el sensor recoge la luz que ha sido dispersada. La intensidad de esta luz dispersada ayuda a determinar tanto la cantidad como el tamaño de las partículas presentes en el aire, ya que una mayor dispersión indica una mayor concentración de partículas.|
-|- El sensor incluye un microprocesador que analiza las señales recibidas del fotodetector. Este procesamiento convierte las señales ópticas en concentraciones de partículas, permitiendo la detección de tamaños específicos como PM1.0, PM2.5 y PM10.|
-|- Finalmente, el PMS5003 genera datos procesados en un formato digital mediante una interfaz serie (UART). Estos datos, que reflejan las concentraciones de partículas, se envían a un microcontrolador o computadora, facilitando la evaluación de la calidad del aire en tiempo real.|
-
+|El PMS5003 opera en un rango de temperaturas de -40°C a 80°C y puede funcionar con una humedad relativa máxima del 99% sin condensación, lo que lo hace versátil para diversas condiciones ambientales.|
 
 ### 3) Sensor MAX4466
 
