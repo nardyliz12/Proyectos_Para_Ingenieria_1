@@ -1,0 +1,51 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import './Main.css';
+
+const Main = () => {
+    const navigate = useNavigate();
+    const texto1 = En el marco de la Universidad Peruana Cayetano Heredia, un grupo de estudiantes provenientes de las carreras de Ingeniería Informática y Ambiental se ha unido con el propósito de desarrollar un proyecto relevante para abordar la problemática ambiental sobre la contaminación sonora y del aire que afecta al pueblo de Chicla y, por ende, se ha desarrollado este proyecto el cual se enfoca en abordar el problema antes mencionado.;
+
+    return (
+        <div className="main-container">
+            <header className="main-header">
+                <h1 className="main-title">AirVibe</h1>
+            </header>
+
+            <section className="intro-section">
+                <div className="intro-text">
+                    <h2>Sobre Nosotros</h2>
+                    <p>{texto1}</p>
+                </div>
+                <div className="intro-images">
+                    <img
+                        className="intro-image"
+                        src="https://www.legaltoday.com/wp-content/uploads/2023/05/impacto-ambiental696.jpg"
+                        alt="Impacto Ambiental"
+                    />
+                    <img
+                        className="intro-image"
+                        src="https://100.cientifica.edu.pe/wp-content/uploads/2021/12/a161.jpg"
+                        alt="Sonido"
+                    />
+                </div>
+            </section>
+
+            <section className="research-section">
+                <img
+                    className="research-image"
+                    src="https://www.iessdeh.org/images/logo-centro-de-investigacion3.jpg"
+                    alt="Centro de Investigación"
+                />
+            </section>
+
+            <footer className="main-footer">
+                <button className="menu-button" onClick={() => navigate('/menuOpti')}>
+                    Ir al Menú
+                </button>
+            </footer>
+        </div>
+    );
+};
+
+export default Main;
